@@ -1,9 +1,6 @@
 import React from "react";
-import { ReactComponent as UndrawProgrammer } from "../../assets/svg/undraw_programmer.svg";
 import { Carousel } from "../components/Carousel/Carousel";
 import { StayUpToDate } from "./StayUpToDate";
-import VideoBG from "../../assets/videos/BG2.mp4";
-import { Player } from "../components/HorizontalScroll";
 import { Link } from "react-router-dom";
 import { Partners } from "../components/Partners/Partners";
 import { MultipleItems } from "../components/Carousel/MultipleItemsCarousel";
