@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --white: #f7f8fa;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  scroll-behaviour: smooth;
+  scrollbar-color: darkgrey #212529ff;
+}
+
+/* button bg =  #1c64f0 */
+
+.btn {
+  @apply cursor-pointer shadow-md py-3 px-6  transition duration-300;
+}
+
+.hoverTransition {
+  @apply transition-all shadow-md ease-linear duration-500;
+}
+
+.btn-black {
+  @apply border border-core-black hover:bg-core-black hover:text-white;
+}
+.btn-small {
+  @apply shadow-md py-4 px-4 rounded-md transition duration-300;
+}
+
+.btn-purple {
+  @apply bg-purple-500 text-white;
+}
+
+.btn-white {
+  @apply bg-white text-black;
+}
+
+.borderHover {
+  @apply outline-none hover:border-gray-700 border-transparent border-2 hover:border-current;
+}
+
+.borderTest {
+  @apply border-2 border-red-500 border-dashed;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.card-zoom-image {
+  @apply transition-all duration-500 ease-in-out transform bg-center bg-cover;
+}
+
+.card-zoom:hover .card-zoom-image {
+  @apply scale-150;
+}
+/* 
+.social-icons:hover {
+  fill: #9146ff;
+  transition: all ease 0.3s;
+} */
+
+/* Scrollbar Customize */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #212529ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: darkgrey;
+  border-radius: 50px;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+/* 
+a {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 900;
+  display: inline-block;
+  background-image: linear-gradient(45deg, #e65100, #ff9d00);
+  transition: transform 0.3s;
+} */
+
+/* bg-gradient-to-tr from-blue-400 via-green-500 to-red-500 bg-opacity-90 */
+
+/* .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  left: 100%;
+  background: #0319f4;
+  mix-blend-mode: overlay;
+} */
+
+/* .gradient-text {
+  background-image: linear-gradient(90deg, red, blue);
+  background-clip: text;
+  color: transparent;
+} */
+
+.gradient-text {
+  /* @apply bg-gradient-to-r from-green-400  via-pink-500 to-blue-500 bg-clip-text	text-transparent; */
+  @apply bg-gradient-to-r from-green-400  to-social-facebook bg-clip-text	text-transparent;
+}
+
+/* # #0057ff
+
+#     border: 1
+# px
+#  solid #e8e8e8;
+ */
+
+.slick-dots {
+  position: absolute;
+  top: 0;
+}
+.slick-dots ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.select option {
+  background: #fff;
+  -moz-background: #fff;
+}
