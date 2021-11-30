@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import { Navbar } from "./Navbar";
 
 const MobileNavItems = [
-  { title: "Solutions", link: "/solutions" },
-  { title: "About", link: "/about" },
+  { title: "Products", link: "/products" },
   { title: "Technology", link: "/technology" },
-  { title: "Join us", link: "/careers" },
+  { title: "Research", link: "/research" },
+  { title: "Careers", link: "/careers" },
+  { title: "About Us", link: "/about" },
+  { title: "Contact Us", link: "/contact" },
+  { title: "Book a Demo", link: "/demo" },
 ];
 export const Header = () => {
   const [isOpen, setisOpen] = useState(false);
@@ -15,7 +18,6 @@ export const Header = () => {
   const closeMobileMenu = () => setisOpen(false);
 
   return (
-    // fixed bg-transparent h-full w-full
     <header className=" ">
       <Navbar
         isOpen={isOpen}

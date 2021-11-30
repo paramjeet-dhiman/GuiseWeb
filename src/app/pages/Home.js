@@ -6,7 +6,6 @@ import { ReactComponent as UndrawHello } from "../../assets/svg/undraw_hello.svg
 import { ReactComponent as UndrawProgrammer } from "../../assets/svg/undraw_programmer.svg";
 import { ReactComponent as UndrawLostOnline } from "../../assets/svg/undraw_lost_online.svg";
 import { Partners } from "../components/Partners/Partners";
-// import { ReactComponent as UndrawPolaroid } from "../../assets/svg/undraw_polaroid.svg";
 
 export function Home() {
   const [slideIndex, setSlideIndex] = useState(0);

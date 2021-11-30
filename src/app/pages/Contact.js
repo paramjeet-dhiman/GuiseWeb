@@ -7,7 +7,6 @@ export const Contact = () => {
         className="w-full bg-center bg-cover "
         style={{
           height: "36rem",
-          // boxShadow: `inset 0 0 0 2000px rgb(0 0 0 / 9%)`,
           background: `url(https://images.pexels.com/photos/4476606/pexels-photo-4476606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center center / cover no-repeat`,
         }}>
         <div className="flex items-center justify-center w-full h-full bg-bookmark-blue bg-opacity-70">

@@ -11,9 +11,9 @@ export const Technology = () => {
           <div className="flex ">
             <div className="flex items-center text-center lg:text-left w-full md:px-16 lg:w-1/2">
               <div className="w-full ">
-                <p className="font-medium text-sm lg:text-lg text-social-instagram mb-2">
+                {/* <p className="font-medium text-sm lg:text-lg text-social-instagram mb-2">
                   Technology
-                </p>
+                </p> */}
                 <h2 className="text-5xl font-semibold upper text-gray-100 mb-2 md:text-7xl">
                   Transforming Technology
                 </h2>
@@ -647,6 +647,7 @@ export const Technology = () => {
           </div>
         </div>
       </section>
+
       <StayUpToDate />
     </div>
   );

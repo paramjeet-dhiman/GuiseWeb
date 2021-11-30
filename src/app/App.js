@@ -3,7 +3,7 @@ import { Router } from "./Router";
 
 function App() {
   return (
-    <div className="">
+    <div>
       <BrowserRouter>
         <Router />
       </BrowserRouter>

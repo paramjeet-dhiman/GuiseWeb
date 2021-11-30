@@ -58,7 +58,7 @@ export const Products = () => {
                   draggable="false"
                 />
               </div>
-              <div className="flex flex-col items-center mt-10">
+              <div className="flex flex-col items-center mt-10 text-center">
                 {/* <p className="font-semibold text-sm lg:text-lg text-gray-900 mb-2">
                   {item.label}
                 </p> */}
@@ -129,11 +129,11 @@ export const Products = () => {
                   draggable="false"
                 />
               </div>
-              <div className="flex flex-col items-center mt-10">
+              <div className="flex flex-col items-center mt-10 text-center">
                 {/* <p className="font-semibold text-sm lg:text-lg text-gray-900 mb-2">
                   {item.label}
                 </p> */}
-                <div className="text-lg lg:text-xl  flex space-x-2">
+                <div className="text-lg  lg:text-xl  flex space-x-2">
                   <p>{item.description}</p>
                 </div>
 
@@ -200,7 +200,7 @@ export const Products = () => {
                   draggable="false"
                 />
               </div>
-              <div className="flex flex-col items-center mt-10">
+              <div className="flex flex-col items-center mt-10 text-center">
                 {/* <p className="font-semibold text-sm lg:text-lg text-gray-900 mb-2">
                   {item.label}
                 </p> */}
@@ -271,7 +271,7 @@ export const Products = () => {
                   draggable="false"
                 />
               </div>
-              <div className="flex flex-col items-center mt-10">
+              <div className="flex flex-col items-center mt-10 text-center">
                 {/* <p className="font-semibold text-sm lg:text-lg text-gray-900 mb-2">
                   {item.label}
                 </p> */}
@@ -342,7 +342,7 @@ export const Products = () => {
                   draggable="false"
                 />
               </div>
-              <div className="flex flex-col items-center mt-10">
+              <div className="flex flex-col items-center mt-10 text-center">
                 {/* <p className="font-semibold text-sm lg:text-lg text-gray-900 mb-2">
                   {item.label}
                 </p> */}

@@ -38,7 +38,6 @@ export const Router = () => {
         <Route path="/products/overview" element={<ProductsDescribe />} />
         <Route path="/partners" element={<Partners />} />
         <Route path="*" element={<NotFound />} />
-        {/* <Route path="*" render={() => <Redirect to="about-us" />} /> */}
       </Routes>
       <Footer />
     </>

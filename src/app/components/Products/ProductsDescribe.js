@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Tick } from "../Ticks/Tick";
 
 export const ProductsDescribe = () => {
@@ -32,7 +31,6 @@ export const ProductsDescribe = () => {
         className="w-full bg-center bg-cover  "
         style={{
           height: "36rem",
-          // boxShadow: `inset 0 0 0 2000px rgb(0 0 0 / 9%)`,
           background: `url(${data.bgImg}) center center / cover no-repeat`,
         }}>
         <div className="flex  items-center justify-center w-full h-full bg-black bg-opacity-80">
@@ -44,31 +42,6 @@ export const ProductsDescribe = () => {
           </div>
         </div>
       </section>
-
-      {/* <section className="bg-white py-20">
-        <div className="px-10 lg:px-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-16 ">
-          <div className="">
-            <h2 className="text-3xl lg:text-5xl font-medium w-3/4">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            </h2>
-          </div>
-
-          <div className="text-lg lg:text-xl font-light space-y-5">
-            <p>
-              When you remove a steering wheel, pedals, a rearview mirror, and
-              more, you get something new — an experience purely designed around
-              the rider. That means a spacious cabin and an on-demand,
-              consistent experience where you can relax, work, or connect.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-              numquam esse quam corrupti officiis, veritatis fugiat omnis
-              blanditiis voluptatem voluptatibus exercitationem quod accusantium
-              earum! Repudiandae laudantium reprehenderit eius vitae quis.
-            </p>
-          </div>
-        </div>
-      </section> */}
 
       <section className="flex flex-col lg:flex-row px-10 py-10 bg-bookmark-smoke lg:py-20 lg:px-40 gap-16 ">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
@@ -319,171 +292,7 @@ export const ProductsDescribe = () => {
             </div>
           </div>
         </section>
-        {/* <div className="py-10 lg:py-20 container px-10 md:px-0">
-          <div className="grid lg:grid-cols-2  gap-16 ">
-            <div className="bg-bookmark-white px-5 py-10 shadow-lg hover:shadow-xl">
-              <h3 className="text-xl w-full lg:text-3xl uppercase font-bold text-bookmark-blue mb-4">
-                Safety Detection
-              </h3>
-              <div className="text-sm md:text-lg font-medium text-gray-700 mb-4">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-                porro ducimus ipsam veritatis quasi cupiditate ut recusandae
-                doloremque accusamus iste nemo ullam repudiandae voluptatibus,
-                ex labore quisquam nam! Quisquam, iure!
-              </div>
-            </div>
-            <div className="bg-bookmark-white px-5 py-10 shadow-lg hover:shadow-xl">
-              <h3 className="text-xl w-full lg:text-3xl uppercase font-bold text-bookmark-blue mb-4">
-                Vehicle Detection
-              </h3>
-              <div className="text-sm md:text-lg font-medium text-gray-700 mb-4">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Obcaecati blanditiis rem illum reprehenderit sed suscipit
-                  impedit facilis minus aut numquam maxime quia id veniam
-                  tenetur cumque incidunt quos, ipsam voluptate.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-bookmark-white px-5 py-10 shadow-lg hover:shadow-xl">
-              <h3 className="text-xl w-full lg:text-3xl uppercase font-bold text-bookmark-blue mb-4">
-                Object Tracking
-              </h3>
-              <div className="text-sm md:text-lg font-medium text-gray-700 mb-4">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Obcaecati blanditiis rem illum reprehenderit sed suscipit
-                  impedit facilis minus aut numquam maxime quia id veniam
-                  tenetur cumque incidunt quos, ipsam voluptate.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-bookmark-white px-5 py-10 shadow-lg hover:shadow-xl">
-              <h3 className="text-xl w-full lg:text-3xl uppercase font-bold text-bookmark-blue mb-4">
-                Baggage Detection
-              </h3>
-              <div className="text-sm md:text-lg font-medium text-gray-700 mb-4">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Obcaecati blanditiis rem illum reprehenderit sed suscipit
-                  impedit facilis minus aut numquam maxime quia id veniam
-                  tenetur cumque incidunt quos, ipsam voluptate.
-                </p>
-              </div>
-            </div>
-            <div className="bg-bookmark-white px-5 py-10 shadow-lg hover:shadow-xl">
-              <h3 className="text-xl w-full lg:text-3xl uppercase font-bold text-bookmark-blue mb-4">
-                Logo detection
-              </h3>
-              <div className="text-sm md:text-lg font-medium text-gray-700 mb-4">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Obcaecati blanditiis rem illum reprehenderit sed suscipit
-                  impedit facilis minus aut numquam maxime quia id veniam
-                  tenetur cumque incidunt quos, ipsam voluptate.
-                </p>
-              </div>
-            </div>
-            <div className="bg-bookmark-white px-5 py-10 shadow-lg hover:shadow-xl">
-              <h3 className="text-xl w-full lg:text-3xl uppercase font-bold text-bookmark-blue mb-4">
-                Upcoming Soon
-              </h3>
-              <div className="text-sm md:text-lg font-medium text-gray-700 mb-4">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Obcaecati blanditiis rem illum reprehenderit sed suscipit
-                  impedit facilis minus aut numquam maxime quia id veniam
-                  tenetur cumque incidunt quos, ipsam voluptate.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </section>
-      {/* 
-      <section className="flex flex-col lg:flex-row px-10 py-10  lg:mt-20 bg-white lg:py-20 lg:px-40 gap-16 ">
-        <div className="flex mx-auto flex-col lg:flex-row items-center  justify-around gap-10">
-          <div className="flex justify-center">
-            <img
-              className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
-              src={data.image4}
-              alt=""
-              draggable="false"
-            />
-          </div>
-
-          <div className="md:pr-12 mt-10 md:mt-0 ">
-            <h3 className="text-3xl font-semibold">Advantages</h3>
-            <ul className="list-none mt-6">
-              <li className="py-2">
-                <div className="flex items-center">
-                  <div>
-                    <h4 className="text-gray-800 font-medium">
-                      Optimize ground operations efficiency
-                    </h4>
-                  </div>
-                </div>
-              </li>
-              <li className="py-2">
-                <div className="flex items-center">
-                  <div>
-                    <h4 className="text-gray-800 font-medium">
-                      Turnaround time reduction (increase throughput)
-                    </h4>
-                  </div>
-                </div>
-              </li>
-              <li className="py-2">
-                <div className="flex items-center">
-                  <div>
-                    <h4 className="text-gray-800 font-medium">
-                      Maximize asset utilization
-                    </h4>
-                  </div>
-                </div>
-              </li>
-              <li className="py-2">
-                <div className="flex items-center">
-                  <div>
-                    <h4 className="text-gray-800 font-medium">
-                      Increase passenger flow
-                    </h4>
-                  </div>
-                </div>
-              </li>
-              <li className="py-2">
-                <div className="flex items-center">
-                  <div>
-                    <h4 className="text-gray-800 font-medium">
-                      Improve customer satisfaction
-                    </h4>
-                  </div>
-                </div>
-              </li>
-              <li className="py-2">
-                <div className="flex items-center">
-                  <div>
-                    <h4 className="text-gray-800 font-medium">
-                      Accurate data to aid with safety audits
-                    </h4>
-                  </div>
-                </div>
-              </li>
-              <li className="py-2">
-                <div className="flex items-center">
-                  <div>
-                    <h4 className="text-gray-800 font-medium">
-                      Better real-time data to help with workforce training
-                    </h4>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section> */}
 
       <section className="bg-bookmark-white py-10 lg:py-36  ">
         <div className="container px-10 lg:px-10">

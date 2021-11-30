@@ -4,7 +4,6 @@ export const StayUpToDate = () => {
   return (
     <section className=" bg-white text-bookmark-blue py-20 lg:py-28   ">
       <div className=" container  lg:flex">
-        {/* heading */}
         <div className="container sm:w-3/4 w-11/12 lg:w-3/4">
           <h1 className="font-medium text-3xl lg:text-5xl lg:font-medium sm:text-center lg:text-left ">
             Stay up to date
@@ -13,7 +12,7 @@ export const StayUpToDate = () => {
             Get the latest news from Cruise delivered directly to your inbox.
           </p>
         </div>
-        {/* form */}
+
         <div className="container sm:w-3/4 w-11/12 lg:w-3/4 flex flex-col  ">
           <div className="flex flex-col  gap-5 mt-8">
             <div className="border-b-2 border-gray-400">
