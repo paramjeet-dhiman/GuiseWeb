@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Tick } from "../components/Ticks/Tick";
-
 import { StayUpToDate } from "./StayUpToDate";
 
 export const Products = () => {

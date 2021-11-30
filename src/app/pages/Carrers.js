@@ -4,19 +4,12 @@ import { Carousel } from "../components/Carousel/Carousel";
 import { Partners } from "../components/Partners/Partners";
 
 export const Carrers = () => {
-  const locations = [
-    { title: "Munich", link: "/careers/jobs", country: "Germany" },
-    { title: "Banglore", link: "/careers/jobs", country: "India" },
-    { title: "Norway", link: "/careers/jobs", country: "US" },
-    { title: "Remote ", link: "/careers/jobs", country: "Anywhere" },
-  ];
   return (
     <div className="bg-bookmark-blue pt-10 h-full">
       <section
         className="w-full bg-center bg-cover "
         style={{
           height: "36rem",
-          // boxShadow: `inset 0 0 0 2000px rgb(0 0 0 / 9%)`,
           background: `url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80) center center / cover no-repeat`,
         }}>
         <div className="flex items-center justify-center w-full h-full  bg-black bg-opacity-70">

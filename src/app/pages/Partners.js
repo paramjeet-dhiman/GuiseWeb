@@ -2,7 +2,6 @@ import React from "react";
 import UndrawRedHat from "../../assets/images/redHat.png";
 import UndrawSharp from "../../assets/images/sharpNec.png";
 import UndrawNorden from "../../assets/images/norden.png";
-import UndrawIntel from "../../assets/images/intel.png";
 
 const BusinessPartners = [
   {
