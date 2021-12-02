@@ -5,7 +5,7 @@ export const ProductsDescribe = () => {
   let data = {
     bgImg: `https://images.pexels.com/photos/240524/pexels-photo-240524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
 
-    label: "Airport Ground Operations Software",
+    label: "Airport Ground Operations",
 
     subText: `The ability of Airports, Airlines, and Aviation Authorities to
     implement high-impact strategies is critical in order to increase
@@ -34,11 +34,13 @@ export const ProductsDescribe = () => {
           background: `url(${data.bgImg}) center center / cover no-repeat`,
         }}>
         <div className="flex  items-center justify-center w-full h-full bg-black bg-opacity-80">
-          <div className="text-center px-10 lg:px-0">
+          <div className="text-center px-10 lg:px-0 w-4/6">
             <h1 className="text-4xl font-bold  text-white uppercase md:text-7xl mb-4">
               {data.label}
             </h1>
-            <p className="text-bookmark-white">{data.subText}</p>
+            <p className="text-bookmark-white text-lg lg:text-xl">
+              {data.subText}
+            </p>
           </div>
         </div>
       </section>
@@ -57,12 +59,17 @@ export const ProductsDescribe = () => {
           </div>
           <div className="flex flex-col w-full lg:w-6/12">
             <h2 className="text-3xl lg:text-5xl font-medium mb-4">
-              {data.title}
+              Airport Ground Operations
             </h2>
 
             <div className="text-lg lg:text-xl space-y-5 text-gray-500">
-              <p>{data.desc1}</p>
-              <p>{data.desc2}</p>
+              <p>
+                Guise Airport Ground Operations provides algorithms for accurate
+                and comprehensive analyses of images and videos. The ability for
+                Airports, Airlines, and Aviation Authorities to implement
+                high-impact strategies is critical in order to increase customer
+                satisfaction and operational efficiency.
+              </p>
             </div>
           </div>
         </div>
@@ -70,13 +77,13 @@ export const ProductsDescribe = () => {
 
       <section className="bg-white py-10 lg:py-28">
         <div className="sm:w-3/4 container lg:w-6/12 mx-auto px-12 ">
-          <h4 className="text-center uppercase text-sm font-semibold md:text-lg text-social-instagram mb-4">
+          {/* <h4 className="text-center uppercase text-sm font-semibold md:text-lg text-social-instagram mb-4">
             Features
-          </h4>
+          </h4> */}
           <h1 className="text-3xl w-full lg:text-5xl font-bold text-center text-bookmark-blue">
             We make it Easier for you
           </h1>
-          <p className="text-gray-800 font-medium text-sm lg:text-base pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
+          <p className="text-gray-800 font-medium text-lg lg:text-xl pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
             Here's how these features help you
           </p>
         </div>
@@ -97,50 +104,46 @@ export const ProductsDescribe = () => {
             </div>
             <div className="flex flex-col w-full lg:pl-20 lg:w-6/12 ">
               <h2 className="text-3xl lg:text-5xl font-medium lg:mb-10">
-                Mitigates risks and responds to security threats
+                Experience an all-round solution with AI
               </h2>
 
               <div className="text-lg lg:text-xl space-y-5 text-gray-500">
                 <div className="lg:pl-2 lg:pb-10">
-                  <h2 class="text-xl font-semibold mb-4 text-gray-700">
-                    Lorem ipsum
+                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
+                    Turnaround Time and Efficiency
                   </h2>
                   <p className="font-light">
-                    See how many people are coming to your site and watch your
-                    business grow!
+                    Airlines and Airports suffer huge losses with every second
+                    of delay in the operations. While there are several factors
+                    that can affect this delay, unmet standards of ground
+                    operations are a significant contributing factor.
                   </p>
                 </div>
 
                 <div className="lg:pl-2 lg:pb-10">
-                  <h2 class="text-xl font-semibold mb-4 text-gray-700">
-                    Lorem ipsum
+                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
+                    Optimized Strategies
                   </h2>
                   <p className="font-light">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Itaque nostrum facere, quia nesciunt debitis quis sint
-                    aperiam obcaecati fugit architecto, veritatis ipsa corporis,
-                    excepturi illo iure molestias ut voluptate sit!
+                    Planning resources for each flight becomes a challenging
+                    task for Airport Authorities in large Airports with shared
+                    resources. Airlines that outsource ground operational tasks,
+                    rely heavily on the turnaround time of these operations.
                   </p>
                 </div>
                 <div className="lg:pl-2 lg:pb-10">
-                  <h2 class="text-xl font-semibold mb-4 text-gray-700">
-                    Lorem ipsum
+                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
+                    Safety Operations
                   </h2>
                   <p className="font-light">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Itaque nostrum facere, quia nesciunt debitis quis sint
-                    aperiam obcaecati.
-                  </p>
-                </div>
-
-                <div className="lg:pl-2 lg:pb-10">
-                  <h2 class="text-xl font-semibold mb-4 text-gray-700">
-                    Lorem ipsum
-                  </h2>
-                  <p className="font-light">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Itaque nostrum facere, quia nesciunt debitis quis sint
-                    aperiam obcaecati.
+                    Dealing with aircraft and running operations with
+                    individuals on tarmacs, can pose a serious threat to human
+                    lives. Elaborate safety measures are put in place to keep
+                    accidents from happening, but the risk of these measures
+                    failing increases with external factors like human error and
+                    natural causes such as harsh weather. Keeping safety
+                    standards in check is a difficult task to maintain given the
+                    large volume of flights that are accommodated in a day.
                   </p>
                 </div>
               </div>
@@ -162,50 +165,47 @@ export const ProductsDescribe = () => {
             </div>
             <div className="flex flex-col w-full lg:w-6/12">
               <h2 className="text-3xl lg:text-5xl font-medium mb-8">
-                {data.title}
+                Explore our Suite
               </h2>
 
               <div className="text-lg lg:text-xl space-y-5 text-gray-500">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8">
-                  <div class="flex items-center space-x-4">
-                    <div class="flex-shrink-0 flex items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8">
+                  <div className="flex items-center space-x-2">
+                    <div className="flex-shrink-0 flex items-center">
                       <Tick />
                     </div>
-                    <div class="copy-body">
-                      Monitor and manage airport video surveillances
+                    <div className="copy-body">
+                      Safety detections and tracking
                     </div>
                   </div>
-                  <div class="flex items-center space-x-4">
-                    <div class="flex-shrink-0 flex items-center">
+                  <div className="flex items-center space-x-2">
+                    <div className="flex-shrink-0 flex items-center">
                       <Tick />
                     </div>
-                    <div class="copy-body">Parking and curbside management</div>
+                    <div className="copy-body">Staff detection and count</div>
                   </div>
-                  <div class="flex items-center space-x-4">
-                    <div class="flex-shrink-0 flex items-center">
+                  <div className="flex items-center space-x-2">
+                    <div className="flex-shrink-0 flex items-center">
                       <Tick />
                     </div>
-                    <div class="copy-body">
-                      Manage access to restricted areas
+                    <div className="copy-body">Logo detection</div>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="flex-shrink-0 flex items-center">
+                      <Tick />
+                    </div>
+                    <div className="copy-body">
+                      {" "}
+                      Vehicle detection, tracking and counting
                     </div>
                   </div>
-                  <div class="flex items-center space-x-4">
-                    <div class="flex-shrink-0 flex items-center">
+                  <div className="flex items-center space-x-2">
+                    <div className="flex-shrink-0 flex items-center">
                       <Tick />
                     </div>
-                    <div class="copy-body">Analyze flow of passengers</div>
-                  </div>
-                  <div class="flex items-center space-x-4">
-                    <div class="flex-shrink-0 flex items-center">
-                      <Tick />
+                    <div className="copy-body">
+                      Baggage Detection and tracking
                     </div>
-                    <div class="copy-body">Boaring Route Management</div>
-                  </div>
-                  <div class="flex items-center space-x-4">
-                    <div class="flex-shrink-0 flex items-center">
-                      <Tick />
-                    </div>
-                    <div class="copy-body">Spot and track intrusions</div>
                   </div>
                 </div>
               </div>
@@ -227,12 +227,25 @@ export const ProductsDescribe = () => {
             </div>
             <div className="flex flex-col w-full lg:w-6/12">
               <h2 className="text-3xl lg:text-5xl font-medium mb-4">
-                {data.title}
+                Customer Satisfaction
               </h2>
 
               <div className="text-lg lg:text-xl space-y-5 text-gray-500">
-                <p>{data.desc1}</p>
-                <p>{data.desc2}</p>
+                <p>
+                  With improved turnaround times and safety operations carried
+                  out, customers can be satisfied and assured to have the best
+                  experience possible. As quoted by Steve Jobs - “ Get Closer
+                  than Ever to your customers. So close, in fact, that you tell
+                  them what they need well before they realize it themselves”
+                </p>
+                <p>
+                  Guise AI algorithms generate meaningful insights from camera
+                  video streams to optimize airport ground operations. The
+                  untapped data-driven insights help to reduce delays on the
+                  tarmac and improve turnaround efficiency. Cameras installed
+                  are monitored continuously to ensure safety procedures are
+                  followed and also to detect at-risk behavior.
+                </p>
               </div>
             </div>
           </div>
@@ -258,7 +271,7 @@ export const ProductsDescribe = () => {
 
               <div className="text-lg lg:text-xl  text-gray-500">
                 <div className="lg:pl-2 lg:pb-10">
-                  <h2 class="text-xl font-semibold mb-4 text-gray-700">
+                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
                     Lorem ipsum
                   </h2>
                   <p className="font-light">
@@ -268,7 +281,7 @@ export const ProductsDescribe = () => {
                 </div>
 
                 <div className="lg:pl-2 lg:pb-10">
-                  <h2 class="text-xl font-semibold mb-4 text-gray-700">
+                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
                     Lorem ipsum
                   </h2>
                   <p className="font-light">
@@ -279,7 +292,7 @@ export const ProductsDescribe = () => {
                   </p>
                 </div>
                 <div className="lg:pl-2 lg:pb-10">
-                  <h2 class="text-xl font-semibold mb-4 text-gray-700">
+                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
                     Lorem ipsum
                   </h2>
                   <p className="font-light">

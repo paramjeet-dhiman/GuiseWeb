@@ -364,7 +364,7 @@ export const Carrers = () => {
         </div>
 
         <div className="py-20 container ">
-          <div className="grid grid-cols-2 gap-y-16 gap-16 px-10 lg:px-0 ">
+          <div className="grid grid-cols-2  gap-y-16 gap-16 px-10 lg:px-0 ">
             <div className="">
               <h3 className="text-xl w-full lg:text-3xl font-medium text-bookmark-blue mb-4">
                 We’re integrated

@@ -112,7 +112,7 @@ export const Products = () => {
           {[
             {
               label: "Safety detection",
-              img: `https://images.unsplash.com/photo-1583330357508-1864f8e57785?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80`,
+              img: `https://images.pexels.com/photos/1634278/pexels-photo-1634278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
               description: ` Lorem ipsum dolor, sit amet consectetur adipisicing elit.`,
             },
           ].map((item) => (
@@ -325,7 +325,7 @@ export const Products = () => {
           {[
             {
               label: "Safety detection",
-              img: `https://images.unsplash.com/photo-1487875961445-47a00398c267?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+              img: `https://cdn.pixabay.com/photo/2019/12/24/12/11/solar-panel-4716640_960_720.jpg`,
               description: ` Lorem ipsum dolor, sit amet consectetur adipisicing elit.`,
             },
           ].map((item) => (

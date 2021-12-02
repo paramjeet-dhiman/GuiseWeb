@@ -1,74 +1,37 @@
 export const ResearchData = [
   {
-    title: "Continuous Learning",
-    description: `
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat recusandae aperiam illo saepe. Necessitatibus earum facere recusandae maiores cupiditate laudantium modi voluptatum vitae harum ex est, voluptatem a nam accusamus.
-Laudantium officia aliquid praesentium doloribus necessitatibus natus iusto mollitia blanditiis, minima nam rem aspernatur provident delectus obcaecati asperiores rerum quae cupiditate optio sunt. Architecto ducimus doloremque dolores cupiditate amet eius.
-Maxime alias quos, laudantium, dolorem consequatur nesciunt eos vel quisquam sit voluptatum explicabo fugit tempora vitae eveniet maiores delectus, molestiae sunt id temporibus sint. Non atque amet optio cupiditate vel.
-Voluptates odit in architecto ad dolorum inventore, aperiam unde molestias hic doloribus a maiores delectus earum omnis. Facilis labore culpa quos dicta ab sit, maiores, aut, quia voluptate quaerat laboriosam!
-Optio earum fuga blanditiis quibusdam officiis, rerum ratione architecto illum ut modi inventore molestiae a iste minus sint vero nihil repellendus in perferendis quisquam? Enim natus quidem dolores vel at?
-Eveniet rem eligendi id repudiandae voluptas! Ipsam ullam deserunt dolore maiores, labore aut obcaecati sunt blanditiis eos itaque? Ratione architecto magnam tenetur perferendis error facilis et ducimus? Quidem, maiores beatae.
-Nisi aperiam cupiditate nesciunt quam ea commodi voluptas, delectus architecto quaerat odio temporibus provident aut deleniti corrupti vel corporis ipsam numquam quibusdam eius aliquam rerum? Porro repellat itaque deleniti incidunt.
-Nulla dignissimos ea cum illo, quia tempore soluta inventore dolore veniam excepturi delectus facere. Corporis alias laboriosam cupiditate fugit officia recusandae, itaque officiis, dolorum quo odit aspernatur, hic esse eum!
-Molestiae reprehenderit repellendus voluptas. Suscipit, ratione esse? Pariatur maxime repellat minus facere quo. Assumenda dolor nostrum beatae deserunt unde dolorem, iure hic ipsa, quo maxime soluta, aspernatur provident corrupti et!
-Sunt rem sint reiciendis neque, laboriosam vero corrupti voluptatibus minima nemo cum dicta iste quia, dolorem, numquam optio omnis suscipit qui officia commodi nesciunt? Nulla delectus adipisci nemo fugiat natus?
-Cumque necessitatibus distinctio rem consectetur odio tempore perferendis, illum asperiores pariatur quos suscipit impedit totam. Tempore sed alias tempora, iusto labore laudantium aspernatur repellendus nam minima praesentium pariatur beatae culpa.
-Reprehenderit, itaque animi facere sapiente, et obcaecati quam quae iusto fugit ipsum tenetur id qui dolorum dolorem molestias culpa non, adipisci doloribus recusandae. Esse unde eius animi placeat necessitatibus nesciunt?
-Commodi in quidem eos, deserunt, inventore quibusdam similique voluptate consequatur saepe voluptas cumque earum autem quam obcaecati atque! Laudantium natus suscipit itaque quod consequatur autem ullam, asperiores cupiditate nisi mollitia!
-Voluptatem, alias a! Dignissimos veritatis sint eveniet suscipit magni asperiores facere quia ipsam deleniti, commodi iure, eaque recusandae, impedit esse sed in fugit officiis dolor veniam consequuntur quas nostrum. Magni.
-Quo temporibus deserunt asperiores dignissimos esse nulla laudantium, neque dolorum labore eaque dolores. Labore sit fugiat amet repellat provident. In laborum eaque necessitatibus amet autem vero aliquid voluptas? Illum, alias?
-Reprehenderit maiores, cum quae cupiditate non temporibus hic voluptatem enim quam sunt quo ea vitae facilis? Reiciendis delectus explicabo excepturi aperiam voluptates pariatur eaque quisquam quod, itaque temporibus, unde inventore!
-Officiis architecto voluptate debitis eius quidem magni itaque quas saepe autem ipsa eveniet, sequi suscipit enim distinctio alias asperiores ducimus fugit iusto, cupiditate maiores qui deserunt dolorum tempore velit? Recusandae.
-Quasi rerum, praesentium dolore numquam distinctio recusandae animi natus provident maxime cumque dicta perspiciatis qui itaque impedit. Omnis velit fugiat nisi ab non! Modi nemo corrupti, fugit facilis obcaecati accusantium.
-Tempore saepe sunt nesciunt omnis, blanditiis tempora corporis minima nisi quos provident quasi necessitatibus ipsa vero pariatur, fugiat possimus. Adipisci quia nam sit sunt animi beatae officia tempora delectus asperiores?
-Deserunt, dignissimos! Assumenda voluptas repudiandae non veritatis vero, unde alias veniam, reprehenderit corporis quod vel aspernatur optio iste. Obcaecati dolorem placeat maiores reiciendis quo debitis, omnis quod mollitia consequuntur necessitatibus.`,
+    title: `Incremental cluster validity index-guided online learning for performance and robustness to presentation order`,
+
+    description: `In streaming data applications incoming samples are processed and discarded, therefore, intelligent decision-making is crucial for the performance of lifelong learning systems. In addition, the order in which samples arrive may heavily affect the performance of online (and offline) incremental learners. The recently introduced incremental cluster validity indices (iCVIs) provide valuable aid in addressing
+    such class of problems. Their primary use-case has been cluster quality monitoring; nonetheless, they have been very recently integrated in a streaming clustering method to assist the clustering task itself. In this context, the work presented here introduces the first adaptive resonance theory (ART)-based model that uses iCVIs for unsupervised and semi-supervised online learning. Moreover, it shows for the first time how
+    to use iCVIs to regulate ART vigilance. The model achieves improved accuracy and robustness to ordering effects by combining topological adaptive resonance theory predictive mapping (TopoARTMAP) and an online iCVI framework — thereby being named iCVI-TopoARTMAP —, as well as employing iCVI-driven post-processing heuristics at the end of each learning step. The labeling component of the supervised learning system relies on iCVIs by replacing module B of TopoARTMAP with an online iCVI framework, which provides assignments of input samples to clusters at each iteration in accordance to any of several iCVIs. Moreover, when the novel iCVI-based match tracking is enabled, following successive worsening
+    of the selected iCVI, the vigilance of iCVI-TopoARTMAP is changed until the iCVI value restarts to improve. At the end of each learning step, if enabled, any combination of the following operations can be performed: swap of categories, merge of clusters, split of clusters, prune-and-reassignment of categories, and compression of clusters. The iCVI-TopoARTMAP maintains useful properties shared by ARTMAP
+    models, such as stability, immunity to catastrophic forgetting, and the many-to-one mapping capability via the map field module. On unsupervised learning experiments with a synthetic data set and deep embeddings of a real-world face image data set, iCVI-TopoARTMAP outperformed several state-ofthe-art ART-based models and another iCVI-based online clustering algorithm. Moreover, while some methods showed drastic performance changes upon different orderings, the iCVI-TopoARTMAP yielded consistent performance in all experiments, which was either superior or comparable to performances of the other methods. Similarly, in our experiments, iCVI-TopoARTMAP in semi-supervised learning mode yielded results that were either superior or comparable to a supervised nearest neighbor classifier in prediction mode`,
+
+    link: `/`,
   },
   {
-    title: "AI on edge",
-    description: `
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat recusandae aperiam illo saepe. Necessitatibus earum facere recusandae maiores cupiditate laudantium modi voluptatum vitae harum ex est, voluptatem a nam accusamus.
-Laudantium officia aliquid praesentium doloribus necessitatibus natus iusto mollitia blanditiis, minima nam rem aspernatur provident delectus obcaecati asperiores rerum quae cupiditate optio sunt. Architecto ducimus doloremque dolores cupiditate amet eius.
-Maxime alias quos, laudantium, dolorem consequatur nesciunt eos vel quisquam sit voluptatum explicabo fugit tempora vitae eveniet maiores delectus, molestiae sunt id temporibus sint. Non atque amet optio cupiditate vel.
-Voluptates odit in architecto ad dolorum inventore, aperiam unde molestias hic doloribus a maiores delectus earum omnis. Facilis labore culpa quos dicta ab sit, maiores, aut, quia voluptate quaerat laboriosam!
-Optio earum fuga blanditiis quibusdam officiis, rerum ratione architecto illum ut modi inventore molestiae a iste minus sint vero nihil repellendus in perferendis quisquam? Enim natus quidem dolores vel at?
-Eveniet rem eligendi id repudiandae voluptas! Ipsam ullam deserunt dolore maiores, labore aut obcaecati sunt blanditiis eos itaque? Ratione architecto magnam tenetur perferendis error facilis et ducimus? Quidem, maiores beatae.
-Nisi aperiam cupiditate nesciunt quam ea commodi voluptas, delectus architecto quaerat odio temporibus provident aut deleniti corrupti vel corporis ipsam numquam quibusdam eius aliquam rerum? Porro repellat itaque deleniti incidunt.
-Nulla dignissimos ea cum illo, quia tempore soluta inventore dolore veniam excepturi delectus facere. Corporis alias laboriosam cupiditate fugit officia recusandae, itaque officiis, dolorum quo odit aspernatur, hic esse eum!
-Molestiae reprehenderit repellendus voluptas. Suscipit, ratione esse? Pariatur maxime repellat minus facere quo. Assumenda dolor nostrum beatae deserunt unde dolorem, iure hic ipsa, quo maxime soluta, aspernatur provident corrupti et!
-Sunt rem sint reiciendis neque, laboriosam vero corrupti voluptatibus minima nemo cum dicta iste quia, dolorem, numquam optio omnis suscipit qui officia commodi nesciunt? Nulla delectus adipisci nemo fugiat natus?
-Cumque necessitatibus distinctio rem consectetur odio tempore perferendis, illum asperiores pariatur quos suscipit impedit totam. Tempore sed alias tempora, iusto labore laudantium aspernatur repellendus nam minima praesentium pariatur beatae culpa.
-Reprehenderit, itaque animi facere sapiente, et obcaecati quam quae iusto fugit ipsum tenetur id qui dolorum dolorem molestias culpa non, adipisci doloribus recusandae. Esse unde eius animi placeat necessitatibus nesciunt?
-Commodi in quidem eos, deserunt, inventore quibusdam similique voluptate consequatur saepe voluptas cumque earum autem quam obcaecati atque! Laudantium natus suscipit itaque quod consequatur autem ullam, asperiores cupiditate nisi mollitia!
-Voluptatem, alias a! Dignissimos veritatis sint eveniet suscipit magni asperiores facere quia ipsam deleniti, commodi iure, eaque recusandae, impedit esse sed in fugit officiis dolor veniam consequuntur quas nostrum. Magni.
-Quo temporibus deserunt asperiores dignissimos esse nulla laudantium, neque dolorum labore eaque dolores. Labore sit fugiat amet repellat provident. In laborum eaque necessitatibus amet autem vero aliquid voluptas? Illum, alias?
-Reprehenderit maiores, cum quae cupiditate non temporibus hic voluptatem enim quam sunt quo ea vitae facilis? Reiciendis delectus explicabo excepturi aperiam voluptates pariatur eaque quisquam quod, itaque temporibus, unde inventore!
-Officiis architecto voluptate debitis eius quidem magni itaque quas saepe autem ipsa eveniet, sequi suscipit enim distinctio alias asperiores ducimus fugit iusto, cupiditate maiores qui deserunt dolorum tempore velit? Recusandae.
-Quasi rerum, praesentium dolore numquam distinctio recusandae animi natus provident maxime cumque dicta perspiciatis qui itaque impedit. Omnis velit fugiat nisi ab non! Modi nemo corrupti, fugit facilis obcaecati accusantium.
-Tempore saepe sunt nesciunt omnis, blanditiis tempora corporis minima nisi quos provident quasi necessitatibus ipsa vero pariatur, fugiat possimus. Adipisci quia nam sit sunt animi beatae officia tempora delectus asperiores?
-Deserunt, dignissimos! Assumenda voluptas repudiandae non veritatis vero, unde alias veniam, reprehenderit corporis quod vel aspernatur optio iste. Obcaecati dolorem placeat maiores reiciendis quo debitis, omnis quod mollitia consequuntur necessitatibus.`,
-  },
-  {
-    title: "Computer Vision / Sound",
-    description: `
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat recusandae aperiam illo saepe. Necessitatibus earum facere recusandae maiores cupiditate laudantium modi voluptatum vitae harum ex est, voluptatem a nam accusamus.
-Laudantium officia aliquid praesentium doloribus necessitatibus natus iusto mollitia blanditiis, minima nam rem aspernatur provident delectus obcaecati asperiores rerum quae cupiditate optio sunt. Architecto ducimus doloremque dolores cupiditate amet eius.
-Maxime alias quos, laudantium, dolorem consequatur nesciunt eos vel quisquam sit voluptatum explicabo fugit tempora vitae eveniet maiores delectus, molestiae sunt id temporibus sint. Non atque amet optio cupiditate vel.
-Voluptates odit in architecto ad dolorum inventore, aperiam unde molestias hic doloribus a maiores delectus earum omnis. Facilis labore culpa quos dicta ab sit, maiores, aut, quia voluptate quaerat laboriosam!
-Optio earum fuga blanditiis quibusdam officiis, rerum ratione architecto illum ut modi inventore molestiae a iste minus sint vero nihil repellendus in perferendis quisquam? Enim natus quidem dolores vel at?
-Eveniet rem eligendi id repudiandae voluptas! Ipsam ullam deserunt dolore maiores, labore aut obcaecati sunt blanditiis eos itaque? Ratione architecto magnam tenetur perferendis error facilis et ducimus? Quidem, maiores beatae.
-Nisi aperiam cupiditate nesciunt quam ea commodi voluptas, delectus architecto quaerat odio temporibus provident aut deleniti corrupti vel corporis ipsam numquam quibusdam eius aliquam rerum? Porro repellat itaque deleniti incidunt.
-Nulla dignissimos ea cum illo, quia tempore soluta inventore dolore veniam excepturi delectus facere. Corporis alias laboriosam cupiditate fugit officia recusandae, itaque officiis, dolorum quo odit aspernatur, hic esse eum!
-Molestiae reprehenderit repellendus voluptas. Suscipit, ratione esse? Pariatur maxime repellat minus facere quo. Assumenda dolor nostrum beatae deserunt unde dolorem, iure hic ipsa, quo maxime soluta, aspernatur provident corrupti et!
-Sunt rem sint reiciendis neque, laboriosam vero corrupti voluptatibus minima nemo cum dicta iste quia, dolorem, numquam optio omnis suscipit qui officia commodi nesciunt? Nulla delectus adipisci nemo fugiat natus?
-Cumque necessitatibus distinctio rem consectetur odio tempore perferendis, illum asperiores pariatur quos suscipit impedit totam. Tempore sed alias tempora, iusto labore laudantium aspernatur repellendus nam minima praesentium pariatur beatae culpa.
-Reprehenderit, itaque animi facere sapiente, et obcaecati quam quae iusto fugit ipsum tenetur id qui dolorum dolorem molestias culpa non, adipisci doloribus recusandae. Esse unde eius animi placeat necessitatibus nesciunt?
-Commodi in quidem eos, deserunt, inventore quibusdam similique voluptate consequatur saepe voluptas cumque earum autem quam obcaecati atque! Laudantium natus suscipit itaque quod consequatur autem ullam, asperiores cupiditate nisi mollitia!
-Voluptatem, alias a! Dignissimos veritatis sint eveniet suscipit magni asperiores facere quia ipsam deleniti, commodi iure, eaque recusandae, impedit esse sed in fugit officiis dolor veniam consequuntur quas nostrum. Magni.
-Quo temporibus deserunt asperiores dignissimos esse nulla laudantium, neque dolorum labore eaque dolores. Labore sit fugiat amet repellat provident. In laborum eaque necessitatibus amet autem vero aliquid voluptas? Illum, alias?
-Reprehenderit maiores, cum quae cupiditate non temporibus hic voluptatem enim quam sunt quo ea vitae facilis? Reiciendis delectus explicabo excepturi aperiam voluptates pariatur eaque quisquam quod, itaque temporibus, unde inventore!
-Officiis architecto voluptate debitis eius quidem magni itaque quas saepe autem ipsa eveniet, sequi suscipit enim distinctio alias asperiores ducimus fugit iusto, cupiditate maiores qui deserunt dolorum tempore velit? Recusandae.
-Quasi rerum, praesentium dolore numquam distinctio recusandae animi natus provident maxime cumque dicta perspiciatis qui itaque impedit. Omnis velit fugiat nisi ab non! Modi nemo corrupti, fugit facilis obcaecati accusantium.
-Tempore saepe sunt nesciunt omnis, blanditiis tempora corporis minima nisi quos provident quasi necessitatibus ipsa vero pariatur, fugiat possimus. Adipisci quia nam sit sunt animi beatae officia tempora delectus asperiores?
-Deserunt, dignissimos! Assumenda voluptas repudiandae non veritatis vero, unde alias veniam, reprehenderit corporis quod vel aspernatur optio iste. Obcaecati dolorem placeat maiores reiciendis quo debitis, omnis quod mollitia consequuntur necessitatibus.`,
+    title: `Accelerating and improving clustering using adaptive resonance theory predictive mapping and incremental cluster validity indices`,
+
+    description: `This paper presents an adaptive resonance theory (ART) model for unsupervised learning, namely
+    iCVI-ARTMAP, which uses incremental cluster validity indices (iCVIs) to drive the clustering process
+    within an ART predictive mapping (ARTMAP) model. Incorporating iCVIs to the decision-making and
+    many-to-one mapping capabilities of ARTMAP can improve the choices of clusters to which samples
+    are incrementally assigned. These improvements are accomplished by intelligently performing the operations of swapping sample assignments between clusters, splitting and merging clusters, and caching
+    the values of variables when iCVI values need to be recomputed. Using recursive formulations enables
+    iCVI-ARTMAP to considerably reduce the computational burden associated with the cluster validity
+    index (CVI)-based offline incremental multi-prototype-based clustering task. Depending on the iCVI
+    and the data set, it can achieve running times up to two orders of magnitude shorter than when performing the same clustering task using batch CVI computations. The aforementioned merging operation is
+    performed because it is known that, when guided by a CVI, it has the potential to improve the data partition; splitting, however, is used to enforce the desired number of clusters. In this work, the incremental
+    versions of Calinski-Harabasz (iCH), WB-index (iWB), Xie-Beni (iXB), Davies-Bouldin (iDB), PakhiraBandyopadhyay-Maulik (iPBM), and negentropy increment (iNI) were integrated into fuzzy ARTMAP.
+    In extensive comparative experiments on synthetic benchmark data sets, iNI-ARTMAP yielded the best
+    performance among these iCVI-ARTMAP variants, followed by iCH-, iWB- and iXB-ARTMAPs. Moreover, iNI-ARTMAP outperformed fuzzy ART, dual vigilance fuzzy ART, kmeans, spectral clustering,
+    Gaussian mixture models and hierarchical agglomerative clustering algorithms in the vast majority of
+    the synthetic benchmark data sets. It also performed competitively when clustering on projections and
+    on the latent space generated by deep neural clustering models for real world image benchmark data
+    sets. Naturally, the performance of iCVI-ARTMAP is subject to the selected iCVI and its suitability to
+    the data at hand; fortunately, it is a general model wherein other iCVIs can be easily embedded.`,
+
+    link: `/`,
   },
 ];

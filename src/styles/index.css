@@ -36,7 +36,7 @@ body,
 }
 
 .hoverTransition {
-  @apply transition-all shadow-md ease-linear duration-500;
+  @apply transition-all  ease-linear duration-300;
 }
 
 .btn-black {
