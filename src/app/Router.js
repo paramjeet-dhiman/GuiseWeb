@@ -17,6 +17,8 @@ import { Partners } from "./pages/Partners";
 import { Products } from "./pages/Products";
 import { BookADemo } from "./pages/BookADemo";
 import { ProductsDescribe } from "./components/Products/ProductsDescribe";
+import { EMOverview } from "./components/Products/EMOverview";
+import { IAOverview } from "./components/Products/IAOverview";
 
 export const Router = () => {
   return (
@@ -36,6 +38,14 @@ export const Router = () => {
         <Route path="/products" element={<Products />} />
         <Route path="/demo" element={<BookADemo />} />
         <Route path="/products/overview" element={<ProductsDescribe />} />
+        <Route
+          path="/products/intelligent-audio-overview"
+          element={<IAOverview />}
+        />
+        <Route
+          path="/products/energy-management-overview"
+          element={<EMOverview />}
+        />
         <Route path="/partners" element={<Partners />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

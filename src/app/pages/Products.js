@@ -209,7 +209,7 @@ export const Products = () => {
                 <div className=" text-sm lg:text-lg mt-2 lg:mt-6  ">
                   <Link
                     className="text-blue-500 cursor-pointer hover:text-blue-400 flex items-center space-x-2 "
-                    to="/products/overview">
+                    to="/products/intelligent-audio-overview">
                     <span className="text-sm lg:text-xl font-medium ">
                       Read more
                     </span>
@@ -351,7 +351,7 @@ export const Products = () => {
                 <div className=" text-sm lg:text-lg mt-2 lg:mt-6  ">
                   <Link
                     className="text-blue-500 cursor-pointer hover:text-blue-400 flex items-center space-x-2 "
-                    to="/products/overview">
+                    to="/products/energy-management-overview">
                     <span className="text-sm lg:text-xl font-medium ">
                       Read more
                     </span>

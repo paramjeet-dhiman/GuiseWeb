@@ -14,6 +14,7 @@ const BusinessPartners = [
         className="w-full h-full  px-10 py-2"
         alt="redhat logo"
       />
+      
     ),
     URL: "https://www.redhat.com/en",
   },

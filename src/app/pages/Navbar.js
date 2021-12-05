@@ -214,12 +214,12 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               {toggle ? (
                 <div
                   onMouseLeave={handleMouseLeave}
-                  className="absolute right-0 py-3 mt-3 space-y-5 bg-white flex flex-col justify-center items-center rounded-md shadow-xl  w-48  transform hover:scale-105  transition-all duration-300  origin-top-right ">
+                  className="absolute right-0 py-3 mt-3 space-y-5 bg-white flex flex-col justify-center  rounded-md shadow-xl  w-48  transform hover:scale-105  transition-all duration-300  origin-top-right ">
                   <div>
                     <NavLink
                       onClick={handleToggle}
                       to="/careers"
-                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent  rounded-lg dark-mode:bg-transparent md:mt-0 hover:text-gray-600  ">
+                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-gray-200  dark-mode:bg-transparent md:mt-0 hover:text-gray-900 text-center  ">
                       Careers
                     </NavLink>
                   </div>
@@ -228,7 +228,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                     <NavLink
                       onClick={handleToggle}
                       to="/about"
-                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent  rounded-lg dark-mode:bg-transparent md:mt-0 hover:text-gray-600  ">
+                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-gray-200  dark-mode:bg-transparent md:mt-0 hover:text-gray-900 text-center  ">
                       About Us
                     </NavLink>
                   </div>
@@ -236,7 +236,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                     <NavLink
                       onClick={handleToggle}
                       to="/contact"
-                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent  rounded-lg dark-mode:bg-transparent md:mt-0 hover:text-gray-600  ">
+                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-gray-200  dark-mode:bg-transparent md:mt-0 hover:text-gray-900 text-center  ">
                       Contact Us
                     </NavLink>
                   </div>
