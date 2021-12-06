@@ -19,6 +19,7 @@ import { BookADemo } from "./pages/BookADemo";
 import { ProductsDescribe } from "./components/Products/ProductsDescribe";
 import { EMOverview } from "./components/Products/EMOverview";
 import { IAOverview } from "./components/Products/IAOverview";
+import { TMOverview } from "./components/Products/TMOverview";
 
 export const Router = () => {
   return (
@@ -38,6 +39,10 @@ export const Router = () => {
         <Route path="/products" element={<Products />} />
         <Route path="/demo" element={<BookADemo />} />
         <Route path="/products/overview" element={<ProductsDescribe />} />
+        <Route
+          path="/products/traffic-management-overview"
+          element={<TMOverview />}
+        />
         <Route
           path="/products/intelligent-audio-overview"
           element={<IAOverview />}
