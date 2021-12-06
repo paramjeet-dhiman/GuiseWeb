@@ -16,18 +16,15 @@ export const ProductsDescribe = () => {
 
     image1: `https://images.unsplash.com/photo-1524592714635-d77511a4834d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     image2: `https://images.unsplash.com/photo-1578434972378-e3c393d983db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80`,
-    image3: `https://images.pexels.com/photos/301930/pexels-photo-301930.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-    image4: `https://images.pexels.com/photos/4213043/pexels-photo-4213043.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500`,
-    image5: `https://images.pexels.com/photos/804463/pexels-photo-804463.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-    image6: `https://images.pexels.com/photos/221258/pexels-photo-221258.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-
-    desc1: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rem, ratione mollitia accusamus tempore sequi debitis minima error molestiae veritatis architecto doloribus culpa aperiam ipsum soluta deleniti dignissimos recusandae ex?`,
-
-    desc2: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis commodi ipsum rerum provident placeat officiis eius iure alias soluta debitis!`,
+    image3: `https://images.unsplash.com/photo-1565108404384-2919e47c07c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+    image4: `https://images.unsplash.com/photo-1517400508447-f8dd518b86db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    image5: `https://images.unsplash.com/photo-1530758857751-3c6e5147e24d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80`,
+    image6: `https://images.pexels.com/photos/804463/pexels-photo-804463.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+    image7: `https://images.unsplash.com/photo-1503365194569-df4e1d04cec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80`,
   };
 
   return (
-    <div className="bg-white h-full select-none">
+    <div className="bg-white h-full ">
       <section
         className="w-full bg-center bg-cover  "
         style={{
@@ -95,7 +92,7 @@ export const ProductsDescribe = () => {
               <div className="flex justify-center relative">
                 <img
                   className="shadow-xl w-full h-full"
-                  src={`https://images.unsplash.com/photo-1565108404384-2919e47c07c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`}
+                  src={data.image2}
                   alt=""
                   draggable="false"
                 />
@@ -158,7 +155,7 @@ export const ProductsDescribe = () => {
               <div className="flex justify-center relative ">
                 <img
                   className="shadow-xl w-full h-full"
-                  src={data.image2}
+                  src={data.image3}
                   alt=""
                   draggable="false"
                 />
@@ -172,7 +169,7 @@ export const ProductsDescribe = () => {
               <div className="text-lg lg:text-xl space-y-5 text-gray-500">
                 <div className="lg:pl-2 lg:pb-10">
                   <h2 className="text-xl font-semibold mb-4 text-gray-700">
-                    Turnaround Time and Efficiency
+                    Turnaround Time
                   </h2>
                   <p className="font-light w-5/6">
                     Airlines and Airports suffer huge losses with every second
@@ -191,22 +188,6 @@ export const ProductsDescribe = () => {
                     task for Airport Authorities in large Airports with shared
                     resources. Airlines that outsource ground operational tasks,
                     rely heavily on the turnaround time of these operations.
-                  </p>
-                </div>
-                <div className="lg:pl-2 lg:pb-10">
-                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
-                    Safety Operations
-                  </h2>
-                  <p className="font-light w-5/6">
-                    Dealing with aircrafts and running operations with
-                    individuals on tarmacs, can pose a serious threat to human
-                    lives. Elaborate safety measures are put in place to keep
-                    accidents from happening, but the risk of them failing
-                    increases with internal factors like human error and
-                    external factors like harsh weather. Keeping safety
-                    standards in check is a difficult task to maintain given the
-                    large volume of flights that are accommodated in a single
-                    day.
                   </p>
                 </div>
               </div>
@@ -228,24 +209,19 @@ export const ProductsDescribe = () => {
             </div>
             <div className="flex lg:pl-20 flex-col w-full lg:w-6/12">
               <h2 className="text-3xl lg:text-5xl font-medium mb-4">
-                Customer Satisfaction
+                Safety Operations
               </h2>
 
               <div className="text-lg lg:text-xl space-y-5 text-gray-500">
                 <p className=" font-light">
-                  With improved turnaround times and safety operations carried
-                  out, customers can be satisfied and assured to have the best
-                  experience possible. As quoted by Steve Jobs - “ Get Closer
-                  than Ever to your customers. So close, in fact, that you tell
-                  them what they need well before they realize it themselves”
-                </p>
-                <p className=" font-light">
-                  Guise AI algorithms generate meaningful insights from camera
-                  video streams to optimize airport ground operations. The
-                  untapped data-driven insights help to reduce delays on the
-                  tarmac and improve turnaround efficiency. Cameras installed
-                  are monitored continuously to ensure safety procedures are
-                  followed and also to detect at-risk behavior.
+                  Dealing with aircrafts and running operations with individuals
+                  on tarmacs, can pose a serious threat to human lives.
+                  Elaborate safety measures are put in place to keep accidents
+                  from happening, but the risk of them failing increases with
+                  internal factors like human error and external factors like
+                  harsh weather. Keeping safety standards in check is a
+                  difficult task to maintain given the large volume of flights
+                  that are accommodated in a single day.
                 </p>
               </div>
             </div>
@@ -258,14 +234,15 @@ export const ProductsDescribe = () => {
               <div className="flex justify-center relative">
                 <img
                   className=" shadow-xl w-full h-full"
-                  src={`https://images.unsplash.com/photo-1549894595-4698795b38ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80`}
+                  src={data.image5}
+                  // src={`https://images.unsplash.com/photo-1549894595-4698795b38ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80`}
                   alt=""
                   draggable="false"
                 />
               </div>
             </div>
             <div className="flex flex-col w-full lg:w-6/12 ">
-              <h2 className="text-3xl  lg:text-4xl font-medium lg:mb-10">
+              <h2 className="text-3xl lg:text-5xl font-medium lg:mb-10 w-5/6">
                 Experience what AI can do for you
               </h2>
 
@@ -307,32 +284,68 @@ export const ProductsDescribe = () => {
           </div>
         </section>
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:py-20 lg:px-40 gap-16 ">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-            <div className=" w-full lg:w-6/12 md:m-0 md:order-2  order-1">
+        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-16 ">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-20">
+            <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
                 <img
                   className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
-                  src={data.image3}
+                  src={data.image6}
                   alt=""
                   draggable="false"
                 />
               </div>
             </div>
-            <div className="flex lg:pl-20 flex-col w-full lg:w-6/12 order-2">
+            <div className="flex lg:pl-20 flex-col w-full lg:w-6/12">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4">
+                Customer Satisfaction
+              </h2>
+
+              <div className="text-lg lg:text-xl space-y-5 text-gray-500">
+                <p className=" font-light">
+                  With improved turnaround times and safety operations carried
+                  out, customers can be satisfied and assured to have the best
+                  experience possible. As quoted by Steve Jobs - “ Get Closer
+                  than Ever to your customers. So close, in fact, that you tell
+                  them what they need well before they realize it themselves”
+                </p>
+                <p className=" font-light">
+                  Guise AI algorithms generate meaningful insights from camera
+                  video streams to optimize airport ground operations. The
+                  untapped data-driven insights help to reduce delays on the
+                  tarmac and improve turnaround efficiency. Cameras installed
+                  are monitored continuously to ensure safety procedures are
+                  followed and also to detect at-risk behavior.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:py-20 lg:px-40 gap-16 ">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div className=" w-full lg:w-6/12 md:m-0 md:order-2  ">
+              <div className="flex justify-center relative">
+                <img
+                  className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
+                  src={data.image7}
+                  alt=""
+                  draggable="false"
+                />
+              </div>
+            </div>
+            <div className="flex  flex-col w-full lg:w-6/12 ">
               <h2 className="text-3xl lg:text-5xl font-medium mb-8">
                 Explore our Suite
               </h2>
 
-              <div className="text-lg lg:text-xl space-y-5 text-gray-500">
+              <div className="text-lg lg:text-xl space-y-5 text-gray-500 lg:w-5/6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8">
                   <div className="flex items-center space-x-2">
                     <div className="flex-shrink-0 flex items-center">
                       <Tick />
                     </div>
-                    <div className="copy-body">
-                      Safety detections and tracking
-                    </div>
+                    <div className="copy-body">Logo detection</div>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="flex-shrink-0 flex items-center">
@@ -344,7 +357,9 @@ export const ProductsDescribe = () => {
                     <div className="flex-shrink-0 flex items-center">
                       <Tick />
                     </div>
-                    <div className="copy-body">Logo detection</div>
+                    <div className="copy-body">
+                      Safety detections and tracking
+                    </div>
                   </div>
                   <div className="flex items-center space-x-2">
                     <div className="flex-shrink-0 flex items-center">

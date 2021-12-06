@@ -6,19 +6,18 @@ export const EMOverview = () => {
   let data = {
     label: "Energy Management",
     subText: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo aut veniam vel dolores, obcaecati libero commodi est dicta magnam atque dignissimos ratione mollitia vitae sequi repellat possimus quasi magni aliquid?`,
-    bgImg: `https://images.unsplash.com/photo-1622228862437-aa0316bb3b93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    bgImg: `https://images.unsplash.com/photo-1467533003447-e295ff1b0435?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
 
     title: `Lorem Ipsum`,
     image1: `https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
-    image2: `https://images.unsplash.com/photo-1607679314701-efa14aa743d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80`,
-    image3: `https://images.unsplash.com/photo-1515614457209-3c7081d62743?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    image2: `https://images.unsplash.com/photo-1595437193398-f24279553f4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80`,
+    image3: `https://images.unsplash.com/photo-1607679314701-efa14aa743d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80`,
     image4: `https://images.unsplash.com/photo-1628010055450-21f2a0863767?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    image5: `https://images.pexels.com/photos/804463/pexels-photo-804463.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-    image6: `https://images.pexels.com/photos/221258/pexels-photo-221258.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-
-    desc1: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rem, ratione mollitia accusamus tempore sequi debitis minima error molestiae veritatis architecto doloribus culpa aperiam ipsum soluta deleniti dignissimos recusandae ex?`,
-
-    desc2: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis commodi ipsum rerum provident placeat officiis eius iure alias soluta debitis!`,
+    image5: `https://images.pexels.com/photos/735468/pexels-photo-735468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+    image6: `https://images.pexels.com/photos/6040783/pexels-photo-6040783.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+    image7: `https://images.pexels.com/photos/9893729/pexels-photo-9893729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+    image8: `https://images.unsplash.com/photo-1515614457209-3c7081d62743?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    image9: `https://images.pexels.com/photos/9800092/pexels-photo-9800092.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
   };
 
   return (
@@ -41,6 +40,7 @@ export const EMOverview = () => {
         </div>
       </section>
 
+      {/* ==================== section #1 ========================== */}
       <section className="flex flex-col lg:flex-row px-10 py-10 bg-bookmark-smoke lg:py-20 lg:px-40 gap-16 ">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
           <div className=" w-full lg:w-6/12 md:m-0 md:order-2 ">
@@ -89,13 +89,15 @@ export const EMOverview = () => {
           </p>
         </div>
 
+        {/* ==================== section #2 ========================== */}
+
         <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
             <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
                 <img
                   className="shadow-xl w-full h-full"
-                  src={`https://images.unsplash.com/photo-1595437193398-f24279553f4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80`}
+                  src={data.image2}
                   alt=""
                   draggable="false"
                 />
@@ -156,22 +158,55 @@ export const EMOverview = () => {
           </div>
         </section>
 
-        {/* ======================  Feature #1 ================== */}
+        {/* ==================== section #3 ========================== */}
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
-          <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
+        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-16 ">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-20">
             <div className=" w-full lg:w-6/12 md:m-0 order-2">
-              <div className="flex justify-center relative ">
+              <div className="flex justify-center relative">
                 <img
-                  className="shadow-xl w-full h-full"
-                  src={data.image2}
+                  className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
+                  src={data.image4}
                   alt=""
                   draggable="false"
                 />
               </div>
             </div>
-            <div className="flex flex-col w-full lg:w-6/12 order-1">
-              <h2 className="text-3xl lg:text-5xl w-5/6 font-medium lg:mb-10">
+            <div className="flex  flex-col w-full lg:w-6/12 order-1">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4 w-5/6">
+                Real Time and Self Adapting predictions
+              </h2>
+
+              <div className="text-lg lg:text-xl space-y-5 text-gray-500">
+                <p className=" font-light w-5/6">
+                  With its homegrown Continual Learning Algorithm, we aim to
+                  assist in this problem by providing highly scalable and robust
+                  real time forecasting applications. When data is ingested and
+                  learned from continuously, prediction systems become more
+                  incisive and are able to understand the data much more
+                  accurately, even through fluctuations in the trend.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ==================== section #4 ========================== */}
+
+        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
+          <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
+            <div className=" w-full lg:w-6/12 md:m-0 ">
+              <div className="flex justify-center relative ">
+                <img
+                  className="shadow-xl w-full h-full"
+                  src={data.image3}
+                  alt=""
+                  draggable="false"
+                />
+              </div>
+            </div>
+            <div className="flex lg:pl-20 flex-col w-full lg:w-6/12 ">
+              <h2 className="text-3xl  lg:text-5xl w-5/6 font-medium lg:mb-10">
                 Anomaly Detection in Power Grids
               </h2>
 
@@ -223,51 +258,67 @@ export const EMOverview = () => {
           </div>
         </section>
 
+        {/* ==================== section #5 ========================== */}
         <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-16 ">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-20">
-            <div className=" w-full lg:w-6/12 md:m-0">
+            <div className=" w-full lg:w-6/12 md:m-0 order-2">
               <div className="flex justify-center relative">
                 <img
                   className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
-                  src={data.image4}
+                  src={data.image6}
                   alt=""
                   draggable="false"
                 />
               </div>
             </div>
-            <div className="flex lg:pl-20 flex-col w-full lg:w-6/12">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-4">
-                Real Time and Self Adapting predictions
+            <div className="flex  flex-col w-full lg:w-6/12 order-1">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4 w-5/6">
+                Theft Detection
               </h2>
 
               <div className="text-lg lg:text-xl space-y-5 text-gray-500">
-                <p className=" font-light">
-                  With its homegrown Continual Learning Algorithm, we aim to
-                  assist in this problem by providing highly scalable and robust
-                  real time forecasting applications. When data is ingested and
-                  learned from continuously, prediction systems become more
-                  incisive and are able to understand the data much more
-                  accurately, even through fluctuations in the trend.
+                <p className=" font-light w-5/6">
+                  Currently, most work concentrates on analyzing characteristics
+                  of electricity consumption to detect NTL among residential
+                  customers. With the introduction of Smart Meter data we can
+                  analyse and study the consumption patterns thoroughly and on a
+                  more frequent basis.
+                </p>
+                <p className=" font-light w-5/6">
+                  Moreover the data can be tallied and analysed at various
+                  checkpoints throughout the grid, enabling us to pinpoint the
+                  exact stretch or location of leaks. But it is highly possible
+                  in real world scenarios that the general trend of consumption
+                  changes over time.
+                </p>
+                <p className=" font-light w-5/6">
+                  Guise AI’s Continual Learning AI caters to these industry
+                  requirements and performs extremely well in adapting to real
+                  time data. With the help of the Outlier Detection devised from
+                  our Algorithm we can have real time knowledge updation leading
+                  to accurate predictions and germane alerts.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
+        {/* ==================== section #6 ========================== */}
+
         <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:py-20 lg:px-40 gap-16 ">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-            <div className=" w-full lg:w-6/12 md:m-0 md:order-2  ">
+            <div className=" w-full lg:w-6/12 md:m-0 md:order-2 order-1 ">
               <div className="flex justify-center relative">
                 <img
                   className=" shadow-xl w-full h-full"
-                  src={`https://images.unsplash.com/photo-1634412115833-10348d4b4c04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80`}
+                  src={data.image5}
                   alt=""
                   draggable="false"
                 />
               </div>
             </div>
-            <div className="flex flex-col w-full lg:w-6/12 ">
-              <h2 className="text-3xl  lg:text-4xl font-medium lg:mb-10">
+            <div className="flex flex-col lg:pl-20 w-full lg:w-6/12 order-2">
+              <h2 className="text-3xl  lg:text-4xl font-medium lg:mb-10 w-5/6">
                 Network Intrusion Detection for SCADA systems
               </h2>
 
@@ -340,69 +391,70 @@ export const EMOverview = () => {
           </div>
         </section>
 
+        {/* ==================== section #7 ========================== */}
+
         <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-16 ">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-20">
-            <div className=" w-full lg:w-6/12 md:m-0">
+            <div className=" w-full lg:w-6/12 md:m-0 order-2">
               <div className="flex justify-center relative">
                 <img
                   className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
-                  src={`https://images.pexels.com/photos/6040783/pexels-photo-6040783.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`}
+                  src={data.image9}
                   alt=""
                   draggable="false"
                 />
               </div>
             </div>
-            <div className="flex lg:pl-20 flex-col w-full lg:w-6/12">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-4">
-                Theft Detection
+            <div className="flex  flex-col w-full lg:w-6/12 order-1">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4 w-5/6">
+                Network Intrusion Detection
               </h2>
 
               <div className="text-lg lg:text-xl space-y-5 text-gray-500">
-                <p className=" font-light">
-                  Currently, most work concentrates on analyzing characteristics
-                  of electricity consumption to detect NTL among residential
-                  customers. With the introduction of Smart Meter data we can
-                  analyse and study the consumption patterns thoroughly and on a
-                  more frequent basis.
+                <p className=" font-light w-5/6">
+                  Data over the internet is shared in the form of packets, all
+                  these packets are shared in continuous real time streams where
+                  each packet, apart from the data being shared, stores metadata
+                  of the communication happening (such as sender and receiver IP
+                  addresses etc). While the data is strictly prohibited to read
+                  as per ethical norms (or is usually encrypted) NIDS performs
+                  anomaly detection on the metadata which is open to
+                  consumption.
                 </p>
-                <p className=" font-light">
-                  Moreover the data can be tallied and analysed at various
-                  checkpoints throughout the grid, enabling us to pinpoint the
-                  exact stretch or location of leaks. But it is highly possible
-                  in real world scenarios that the general trend of consumption
-                  changes over time.
-                </p>
-                <p className=" font-light">
-                  Guise AI’s Continual Learning AI caters to these industry
-                  requirements and performs extremely well in adapting to real
-                  time data. With the help of the Outlier Detection devised from
-                  our Algorithm we can have real time knowledge updation leading
-                  to accurate predictions and germane alerts.
+                <p className=" font-light w-5/6">
+                  With the help of our Continuous Learning AI at GuiseAI we can
+                  help the NIDS learn about the network data flow and understand
+                  trends and isolated points. The NIDS will aso be able to
+                  update itself in real time as per the data flowing through the
+                  network, this helps identify the latest of anomalies as per
+                  current network trends.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
+        {/* ==================== section #7 ========================== */}
+
         <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
-            <div className=" w-full lg:w-6/12 md:m-0 order-2">
+            <div className=" w-full lg:w-6/12 md:m-0 ">
               <div className="flex justify-center relative">
                 <img
                   className="shadow-xl w-full h-full"
-                  src={`https://images.pexels.com/photos/9893729/pexels-photo-9893729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`}
+                  src={data.image7}
                   alt=""
                   draggable="false"
                 />
               </div>
             </div>
-            <div className="flex flex-col w-full  lg:w-6/12 order-1 ">
+            <div className="flex lg:pl-20 flex-col w-full  lg:w-6/12  ">
               <h2 className="text-3xl lg:text-5xl font-medium lg:mb-10 w-5/6">
                 Customer Profile and Load Balancing
               </h2>
 
               <div className="text-lg lg:pl-2 lg:text-xl space-y-5 text-gray-500">
-                <div className="lg:pl-2 lg:pb-10">
+                <div className=" lg:pb-10">
                   <h2 className="text-xl font-semibold mb-4 text-gray-700">
                     Customer segmentation
                   </h2>
@@ -416,7 +468,7 @@ export const EMOverview = () => {
                   </p>
                 </div>
 
-                <div className="lg:pl-2 lg:pb-10">
+                <div className=" lg:pb-10">
                   <h2 className="text-xl font-semibold mb-4 text-gray-700">
                     Smart Meter Data
                   </h2>
@@ -438,25 +490,27 @@ export const EMOverview = () => {
           </div>
         </section>
 
+        {/* ==================== section #8 ========================== */}
+
         <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:py-20 lg:px-40 gap-16 ">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-            <div className=" w-full lg:w-6/12 md:m-0 md:order-2  order-1">
+            <div className=" w-full lg:w-6/12 md:m-0 order-2">
               <div className="flex justify-center relative">
                 <img
                   className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
-                  src={data.image3}
+                  src={data.image8}
                   alt=""
                   draggable="false"
                 />
               </div>
             </div>
-            <div className="flex lg:pl-20 flex-col w-full lg:w-6/12 order-2">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-8">
+            <div className="flex  flex-col w-full lg:w-6/12 order-1">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-8 w-5/6">
                 Explore our Suite of Solutions
               </h2>
 
               <div className="text-lg lg:text-xl space-y-5 text-gray-500">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 w-5/6 gap-x-8">
                   <div className="flex items-center space-x-2">
                     <div className="flex-shrink-0 flex items-center">
                       <Tick />
