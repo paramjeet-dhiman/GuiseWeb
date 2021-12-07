@@ -6,6 +6,7 @@ import { ReactComponent as UndrawHello } from "../../assets/svg/undraw_hello.svg
 import { ReactComponent as UndrawProgrammer } from "../../assets/svg/undraw_programmer.svg";
 import { ReactComponent as UndrawLostOnline } from "../../assets/svg/undraw_lost_online.svg";
 import { Partners } from "../components/Partners/Partners";
+import { StayUpToDate } from "./StayUpToDate";
 
 export function Home() {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -69,7 +70,7 @@ export function Home() {
       <section className="relative h-screen">
         <div
           style={{
-            background: `url("https://images.ctfassets.net/95kuvdv8zn1v/6O9hC60HzPsKMmchWQ9RHv/84d0d3f2feceb9497f54890bf09b99f2/GetCruise-Homepage-Hero-Desktop-Cropped_webp.webp") center center / cover no-repeat`,
+            background: `url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80) center center / cover no-repeat`,
             height: "100%",
           }}>
           <div
@@ -80,7 +81,7 @@ export function Home() {
             }}>
             <div className="px-10 md:px-44 space-y-5 sm:text-center">
               <h1 className="sm:w-full text-center	md:w-full lg:w-4/12 lg:text-left font-normal lg:font-extrabold text-5xl  md:text-6xl lg:text-5xl leading-tight lg:leading-tight  ">
-                Driving cities forward
+                Lorem ipsum dolor sit ame
               </h1>
               <p className="w-full lg:w-3/12 md:text-xl text-center lg:text-left   text-base  lg:font-normal   lg:leading-normal lg:text-xl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
@@ -97,11 +98,11 @@ export function Home() {
       <section className="bg-white py-10 lg:py-20 mt-10 lg:mt-10 ">
         <div className="sm:w-3/4 lg:w-5/12 mx-auto    px-12 lg:px-2">
           <h1 className="text-4xl font-semibold lg:text-5xl lg:font-bold text-center text-bookmark-blue">
-            Meet the Fleet
+            Lorem ipsum dolor sit ame
           </h1>
           <p className="text-gray-800 font-medium text-sm lg:text-lg pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 lg:mt-4">
-            There are two self-driving vehicles in the Cruise family. One is our
-            ride of today. The other is your ride of tomorrow.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil error
+            rem iste.
           </p>
           <div className="flex justify-center items-center mt-2 ">
             <a
@@ -190,37 +191,14 @@ export function Home() {
       <section className="bg-bookmark-white py-20 lg:py-20 mt-5 lg:mt-10">
         <div className="sm:w-3/4 lg:w-4/12 mx-auto px-12 lg:px-5">
           <h1 className="text-4xl font-semibold lg:text-5xl lg:font-bold text-center text-bookmark-blue">
-            Driving change in how we live
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil error
+            rem iste.
           </h1>
           <p className="text-gray-800 font-medium text-sm lg:text-lg pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 lg:mt-4">
-            We’re giving more people more access to more of what they need — all
-            while saving lives and improving the health of our planet.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ut
+            similique temporibus officia iste omnis sequi, eligendi nihil, qui
+            aut delectus incid
           </p>
-
-          <div className="flex justify-center items-center mt-2 ">
-            <a
-              // id="go_to_/technology_textHeader_index_2"
-              className="text-blue-500  hover:text-blue-400 flex items-center space-x-2 rounded-md px-10 py-1"
-              href="/technology">
-              <span className="text-sm  lg:text-lg font-medium">
-                See what we offer
-              </span>
-              <svg className="h-3 w-3 " viewBox="0 0 12 12" fill="none">
-                <path
-                  d="M0 1.00586H11V12.0059"
-                  stroke="currentColor"
-                  strokeWidth="2"></path>
-                <line
-                  x1="10.857"
-                  y1="1.15437"
-                  x2="0.745382"
-                  y2="11.266"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeMiterlimit="2.61313"></line>
-              </svg>
-            </a>
-          </div>
         </div>
 
         <div className="relative  mt-20 lg:mt-40">
@@ -232,7 +210,7 @@ export function Home() {
             {/* content */}
             <div className="w-3/4 lg:w-auto flex flex-1 flex-col items-center lg:items-start">
               <h1 className="text-xl lg:text-4xl font-semibold text-blue-500">
-                Self-driving ride-hail
+                Lorem ipsum dolor sit
               </h1>
               <p className="text-gray-800 font-medium text-sm lg:text-lg pl-2 lg:text-left  mt-4 lg:mt-6   my-4 text-center  sm:w-3/4 lg:w-full">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -253,7 +231,7 @@ export function Home() {
             {/* content */}
             <div className="w-3/4 lg:w-auto flex flex-1 flex-col items-center lg:items-start">
               <h1 className="text-xl lg:text-4xl font-semibold text-blue-500">
-                Self-driving delivery
+                Lorem ipsum dolor sit
               </h1>
               <p className="text-gray-800 font-medium text-sm lg:text-lg pl-2 lg:text-left  mt-4 lg:mt-6   my-4 text-center  sm:w-3/4 lg:w-full">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -302,8 +280,8 @@ export function Home() {
         </div>
         <div className="lg:container py-10">
           <ReactCompareImage
-            leftImage="https://images.ctfassets.net/95kuvdv8zn1v/5arv9KLmG5G7Y6c5pDHnrA/04c3ab5ed779227679f3e63c4d2f2770/Good_webp.webp?fm=webp"
-            rightImage="https://images.ctfassets.net/95kuvdv8zn1v/4sCtUzO3ZV8VuACTE1Vuas/4f8d419ce0501a84eef4ee8498493c9e/Bad_webp.webp?fm=webp"
+            leftImage="https://images.pexels.com/photos/5696661/pexels-photo-5696661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            rightImage="https://i.postimg.cc/NFKCQWTq/Group-69.png"
             className=""
           />
         </div>
@@ -349,7 +327,7 @@ export function Home() {
               className="cursor-pointer text-gray-900 hover:text-blue-500 transform hover:scale-105  card-zoom-image">
               <div className="flex justify-center mb-4 shadow-xl">
                 <img
-                  src="https://images.ctfassets.net/95kuvdv8zn1v/36KGXBtiMA29YpPzTXqc1x/60aa2392e417f1f8ced7f98f54bf820b/Cruise_2nd-Floor_0404.jpg?fm=webp"
+                  src="https://images.unsplash.com/photo-1589884629038-b631346a23c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                   className="w-full h-full"
                   alt="sdf"
                   draggable="false"
@@ -358,7 +336,7 @@ export function Home() {
               <div className="flex flex-col  space-y-1">
                 <p className="font-medium text-sm">04 · 23 · 21</p>
                 <div className="text-lg lg:text-xl font-medium flex space-x-2">
-                  <p>The Guise Origin Story</p>
+                  <p>The Guise News</p>
                   <svg className="" width="11" viewBox="0 0 19 19" fill="none">
                     <path
                       d="M1 2H17V18"
@@ -388,18 +366,19 @@ export function Home() {
 
       <hr className="border-b border-gray-200" />
       <Partners />
-      <hr className="border-b border-gray-200" />
+
       {/*============================= Join Team =========================== */}
 
-      <section className="py-10 mt-10 lg:py-16 lg:mt-10">
+      <section className="bg-bookmark-white py-10 mt-10 lg:py-16 lg:mt-10">
         <div className="container w-5/6 lg:w-11/12  ">
           <h1 className="text-4xl lg:text-5xl font-semibold text-bookmark-blue">
             Join our team
           </h1>
           <p className="text-gray-800 font-medium text-sm lg:text-lg pl-2 lg:text-left sm:w-3/4 lg:w-5/6 mt-4 lg:mt-2 ">
-            With partners like GM, Honda, Softbank, Microsoft, and Walmart
-            backing our mission to Drive Change, there's no better time to
-            become a Cruiser.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
+            autem corrupti quaerat, tenetur mollitia accusantium cupiditate sunt
+            eos ullam odit, similique eveniet repellendus itaque magni. Quas
+            quaerat amet tenetur consectetur!
           </p>
           <div className="w-3/4 text-sm lg:text-lg pl-2 mt-2 lg:mt-4 ">
             <Link
@@ -434,7 +413,7 @@ export function Home() {
               className="cursor-pointer text-gray-900 hover:text-blue-500 transform hover:scale-105  card-zoom-image ">
               <div className="flex justify-center mb-4 shadow-xl">
                 <img
-                  src="https://images.ctfassets.net/95kuvdv8zn1v/36KGXBtiMA29YpPzTXqc1x/60aa2392e417f1f8ced7f98f54bf820b/Cruise_2nd-Floor_0404.jpg?fm=webp"
+                  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
                   className="w-full h-full"
                   alt="sdf"
                   draggable="false"
@@ -469,61 +448,7 @@ export function Home() {
       </section>
 
       {/* ========================= Stay up to date ============================ */}
-      <section className=" bg-bookmark-white text-bookmark-blue py-20 mt-20  ">
-        <div className=" container  lg:flex">
-          {/* heading */}
-          <div className="container sm:w-3/4 w-11/12 lg:w-3/4">
-            <h1 className="font-medium text-3xl lg:text-5xl lg:font-medium sm:text-center lg:text-left ">
-              Stay up to date
-            </h1>
-            <p className="w-auto sm:text-center lg:text-left font-normal text-gray-800 text-sm lg:text-lg mt-4 lg:mt-6 lg:w-4/6  ">
-              Get the latest news from Cruise delivered directly to your inbox.
-            </p>
-          </div>
-          {/* form */}
-          <div className="container sm:w-3/4 w-11/12 lg:w-3/4 flex flex-col  ">
-            <div className="flex flex-col  gap-5 mt-8">
-              <div className="border-b-2 border-gray-400">
-                <input
-                  type="text"
-                  placeholder="First, Last"
-                  className="text-gray-900 font-medium text-sm lg:text-xl pl-1 focus:outline-none bg-transparent flex-1"
-                  required
-                />
-              </div>
-              <div className="flex items-center border-b-2 border-gray-400  w-auto">
-                <input
-                  type="text"
-                  placeholder="email@address.com"
-                  className="text-gray-900 font-medium text-sm lg:text-xl pl-1 focus:outline-none bg-transparent flex-1"
-                  required
-                />
-                <span className="text-blue-500 flex space-x-2 items-center lg:mr-3  font-semibold text-sm lg:text-xl  cursor-pointer hover:text-blue-400">
-                  <p>Submit</p>
-                  <svg
-                    className="w-3 h-3"
-                    width="11"
-                    viewBox="0 0 19 19"
-                    fill="none">
-                    <path
-                      d="M1 2H17V18"
-                      strokeWidth="3"
-                      stroke="currentColor"></path>
-                    <line
-                      x1="15.9606"
-                      y1="3.06066"
-                      x2="1.55018"
-                      y2="17.471"
-                      strokeWidth="3"
-                      strokeMiterlimit="2.61313"
-                      stroke="currentColor"></line>
-                  </svg>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <StayUpToDate />
     </div>
   );
 }

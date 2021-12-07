@@ -20,6 +20,7 @@ import { ProductsDescribe } from "./components/Products/ProductsDescribe";
 import { EMOverview } from "./components/Products/EMOverview";
 import { IAOverview } from "./components/Products/IAOverview";
 import { TMOverview } from "./components/Products/TMOverview";
+import { ProductReview } from "./components/Products/ProductReview";
 
 export const Router = () => {
   return (
@@ -39,6 +40,7 @@ export const Router = () => {
         <Route path="/products" element={<Products />} />
         <Route path="/demo" element={<BookADemo />} />
         <Route path="/products/overview" element={<ProductsDescribe />} />
+        <Route path="/product-review" element={<ProductReview />} />
         <Route
           path="/products/traffic-management-overview"
           element={<TMOverview />}

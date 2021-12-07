@@ -9,7 +9,7 @@ export const StayUpToDate = () => {
             Stay up to date
           </h1>
           <p className="w-auto sm:text-center lg:text-left font-normal text-gray-800 text-sm lg:text-lg mt-4 lg:mt-6 lg:w-4/6  ">
-            Get the latest news from Cruise delivered directly to your inbox.
+            Get the latest news from Guise delivered directly to your inbox.
           </p>
         </div>
 

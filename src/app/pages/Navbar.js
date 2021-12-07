@@ -94,6 +94,18 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               </NavLink>
             </div> */}
 
+            {/* <div>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "px-2  text-social-facebook border-b-4 text-lg border-social-facebook  tracking-wide font-bold py-5 transition-all duration-300"
+                    : "px-2 cursor-pointer  tracking-wide py-5 text-lg font-medium hover:text-gray-600 "
+                }
+                to="/product-review">
+                Review
+              </NavLink>
+            </div> */}
+
             <div>
               <NavLink
                 className={({ isActive }) =>

@@ -33,13 +33,13 @@ export const HorizontalScroll = ({ sliderRef, setSlideIndex }) => {
 
   const slides = [
     {
-      title: "The Guise First-Generation AV",
+      title: "Lorem ipsum dolor sit amet",
       img: "https://images.pexels.com/photos/4960464/pexels-photo-4960464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       detail:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea amet fuga similique asperiores eveniet  ",
     },
     {
-      title: "The Guise First-Generation AV",
+      title: "Lorem ipsum dolor sit amet",
       img: "https://images.pexels.com/photos/4960464/pexels-photo-4960464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       detail:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea amet fuga similique asperiores eveniet ",

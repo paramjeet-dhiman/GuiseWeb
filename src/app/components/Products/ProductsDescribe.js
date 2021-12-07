@@ -60,7 +60,7 @@ export const ProductsDescribe = () => {
               Airport Ground Operations
             </h2>
 
-            <div className="text-lg lg:text-xl space-y-5 text-gray-500 w-5/6">
+            <div className="text-lg lg:text-xl text-justify space-y-5 text-gray-500 w-5/6">
               <p>
                 Guise Airport Ground Operations provides algorithms for accurate
                 and comprehensive analyses of images and videos. The ability for
@@ -108,7 +108,7 @@ export const ProductsDescribe = () => {
                   <h2 className="text-xl font-semibold mb-4 text-gray-700">
                     Airports
                   </h2>
-                  <p className="font-light">
+                  <p className="font-light text-justify">
                     With every passing year, statistics show that the number of
                     people utilizing flight services have been increasing
                     exponentially, while the number and size of Airports remain
@@ -128,7 +128,7 @@ export const ProductsDescribe = () => {
                   <h2 className="text-xl font-semibold mb-4 text-gray-700">
                     Airlines
                   </h2>
-                  <p className="font-light">
+                  <p className="font-light text-justify">
                     The costing strategy of airlines includes keeping their
                     flights in transit at all possible times. Primarily because
                     the aircrafts are usually leased and in such a scenario time
@@ -171,7 +171,7 @@ export const ProductsDescribe = () => {
                   <h2 className="text-xl font-semibold mb-4 text-gray-700">
                     Turnaround Time
                   </h2>
-                  <p className="font-light w-5/6">
+                  <p className="font-light text-justify w-5/6">
                     Airlines and Airports suffer huge losses with every second
                     of delay in the operations. While there are several factors
                     that can affect this delay, unmet standards of ground
@@ -183,7 +183,7 @@ export const ProductsDescribe = () => {
                   <h2 className="text-xl font-semibold mb-4 text-gray-700">
                     Optimized Strategies
                   </h2>
-                  <p className="font-light w-5/6">
+                  <p className="font-light text-justify w-5/6">
                     Planning resources for each flight becomes a challenging
                     task for Airport Authorities in large Airports with shared
                     resources. Airlines that outsource ground operational tasks,
@@ -213,7 +213,7 @@ export const ProductsDescribe = () => {
               </h2>
 
               <div className="text-lg lg:text-xl space-y-5 text-gray-500">
-                <p className=" font-light">
+                <p className=" font-light text-justify">
                   Dealing with aircrafts and running operations with individuals
                   on tarmacs, can pose a serious threat to human lives.
                   Elaborate safety measures are put in place to keep accidents
@@ -251,7 +251,7 @@ export const ProductsDescribe = () => {
                   <h2 className="text-xl font-semibold mb-4 text-gray-700">
                     Generate statistics
                   </h2>
-                  <p className="font-light w-5/6">
+                  <p className="font-light text-justify w-5/6">
                     Our applications run continuously on the edge, converting
                     visual data into comprehensible statistics that were not
                     possible to record and examine before.
@@ -262,7 +262,7 @@ export const ProductsDescribe = () => {
                   <h2 className="text-xl font-semibold mb-4 text-gray-700">
                     Plan Smarter
                   </h2>
-                  <p className="font-light w-5/6">
+                  <p className="font-light text-justify w-5/6">
                     Data generated can be used to plan statistically more
                     efficient resource management decisions and flight
                     scheduling. A more organized airport leads to lesser delays
@@ -273,7 +273,7 @@ export const ProductsDescribe = () => {
                   <h2 className="text-xl font-semibold mb-4 text-gray-700">
                     Operate Safer
                   </h2>
-                  <p className="font-light w-5/6">
+                  <p className="font-light text-justify w-5/6">
                     Maintain safety standards thoroughly and get real time
                     alerts in case of a violation. No more lives need to be lost
                     or endangered. Operate safely and smartly.
@@ -302,14 +302,14 @@ export const ProductsDescribe = () => {
               </h2>
 
               <div className="text-lg lg:text-xl space-y-5 text-gray-500">
-                <p className=" font-light">
+                <p className=" font-light text-justify">
                   With improved turnaround times and safety operations carried
                   out, customers can be satisfied and assured to have the best
                   experience possible. As quoted by Steve Jobs - “ Get Closer
                   than Ever to your customers. So close, in fact, that you tell
                   them what they need well before they realize it themselves”
                 </p>
-                <p className=" font-light">
+                <p className=" font-light text-justify">
                   Guise AI algorithms generate meaningful insights from camera
                   video streams to optimize airport ground operations. The
                   untapped data-driven insights help to reduce delays on the

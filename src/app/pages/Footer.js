@@ -42,13 +42,13 @@ export const Footer = () => {
           </div>
           <a
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
-            href="/solutions">
-            Solutions <span className="text-social-facebook text-xs p-1"></span>
+            href="/products">
+            Products <span className="text-social-facebook text-xs p-1"></span>
           </a>
           <a
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
             href="/technology">
-            Technology{" "}
+            Technology
             <span className="text-social-facebook text-xs p-1"></span>
           </a>
           <a
@@ -56,52 +56,51 @@ export const Footer = () => {
             href="/about">
             About Us <span className="text-social-facebook text-xs p-1"></span>
           </a>
-          <a
+          {/* <a
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
             href="/team">
             Team <span className="text-social-facebook text-xs p-1"></span>
-          </a>
+          </a> */}
           <a
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
-            href="/#">
-            Partners{" "}
-            <span className="text-social-facebook text-xs p-1">New</span>
+            href="/partners">
+            Partners <span className="text-social-facebook text-xs p-1"></span>
           </a>
         </div>
         <div className="p-5 w-48 lg:w-2/12">
           <div className="text-base uppercase   text-gray-50   mb-5 font-semibold">
             User
           </div>
-          <a
+          {/* <a
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
             href="/#">
             Sign in <span className="text-social-facebook text-xs p-1"></span>
-          </a>
-          <a
+          </a> */}
+          {/* <a
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
             href="/#">
             New Account{" "}
             <span className="text-social-facebook text-xs p-1"></span>
+          </a> */}
+          <a
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
+            href="/demo">
+            Demo <span className="text-social-facebook text-xs p-1"></span>
           </a>
           <a
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
-            href="/#">
-            Demo <span className="text-social-facebook text-xs p-1">New</span>
-          </a>
-          <a
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
-            href="/#">
-            Career{" "}
+            href="/careers">
+            Careers{" "}
             <span className="text-social-facebook text-xs p-1">
               We're hiring
             </span>
           </a>
-          <a
+          {/* <a
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
             href="/#">
             Surveys{" "}
             <span className="text-social-facebook text-xs p-1">New</span>
-          </a>
+          </a> */}
         </div>
         <div className="p-5 w-48 lg:w-2/12">
           <div className="text-base uppercase   text-gray-50   mb-5 font-semibold">
@@ -115,17 +114,17 @@ export const Footer = () => {
           </a>
           <a
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
-            href="/#">
-            Tutorials <span className="text-social-facebook text-xs p-1"></span>
+            href="/research">
+            Research <span className="text-social-facebook text-xs p-1"></span>
           </a>
-          <a
+          {/* <a
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
             href="/#">
             Support{" "}
             <span className="text-social-facebook text-xs p-1">New</span>
-          </a>
+          </a> */}
         </div>
-        <div className="p-5 w-48 lg:w-2/12">
+        {/* <div className="p-5 w-48 lg:w-2/12">
           <div className="text-base uppercase   text-gray-50   mb-5 font-semibold">
             Product
           </div>
@@ -151,7 +150,7 @@ export const Footer = () => {
             href="/#">
             Mobile <span className="text-social-facebook text-xs p-1"></span>
           </a>
-        </div>
+        </div> */}
         <div className="p-5 w-48 lg:w-2/12">
           <div className="text-base uppercase   text-gray-50   mb-5 font-semibold">
             Support
@@ -170,8 +169,8 @@ export const Footer = () => {
           </a>
           <a
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
-            href="/#">
-            Conditions{" "}
+            href="/contact">
+            Contact Us{" "}
             <span className="text-social-facebook text-xs p-1"></span>
           </a>
         </div>
@@ -198,7 +197,7 @@ export const Footer = () => {
         <div className="flex mx-auto md:px-12 lg:px-0 max-w-7xl justify-between py-5  text-gray-400 text-sm flex-col items-center  md:flex-row ">
           <div className="pb-4 md:pb-0 font-medium">
             <p className="text-center">
-              &copy; Copyright {new Date().getFullYear()} Guise Ai. All Rights
+              &copy; Copyright {new Date().getFullYear()} Guise AI. All Rights
               Reserved.
             </p>
           </div>
