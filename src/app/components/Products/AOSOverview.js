@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Tick } from "../Ticks/Tick";
+import { ScrollButton } from "../ScrollButton/ScrollBtn";
 
-export const ProductsDescribe = () => {
+export const AOSOverview = () => {
   let data = {
     bgImg: `https://images.pexels.com/photos/240524/pexels-photo-240524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
 
@@ -36,7 +37,7 @@ export const ProductsDescribe = () => {
             <h1 className="text-4xl font-bold  text-white uppercase md:text-7xl mb-4">
               {data.label}
             </h1>
-            <p className="text-bookmark-white text-lg lg:text-xl">
+            <p className="text-bookmark-white text-lg lg:text-xl lg:container lg:px-20">
               {data.subText}
             </p>
           </div>
@@ -416,6 +417,8 @@ export const ProductsDescribe = () => {
           </div>
         </div>
       </section>
+
+      <ScrollButton />
     </div>
   );
 };

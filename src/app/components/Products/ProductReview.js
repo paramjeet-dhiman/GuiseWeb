@@ -3,11 +3,12 @@ import ReactCompareImage from "react-compare-image";
 import { Link } from "react-router-dom";
 import Tab from "../TabSlider/TabSlider";
 import { Tick } from "../Ticks/Tick";
+import { ScrollButton } from "../ScrollButton/ScrollBtn";
 
 export const ProductReview = () => {
   let data = {
     label: "Traffic Management",
-    subText: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod doloribus at adipisci earum aspernatur veritatis, ad quia reprehenderit repudiandae laudantium, obcaecati molestiae laboriosam? Blanditiis eligendi facilis pariatur omnis cupiditate quibusdam.`,
+    subText: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod doloribus at adipisci earum aspernatur veritatis, ad quia reprehenderit repudiandae laudantium`,
     bgImg: `https://images.unsplash.com/photo-1488134684157-fea2d81a5ec4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80`,
 
     title: `Lorem Ipsum`,
@@ -22,51 +23,24 @@ export const ProductReview = () => {
   const tabContent = [
     {
       title: "Vehicle Detection",
-      content: `Chennai is the capital of the Indian state of Tamil Nadu.
-                Located on the Coromandel Coast of the Bay of Bengal, it is one
-                of the largest cultural, economic and educational centres of
-                south India. According to the 2011 Indian census, it is the
-                sixth-most populous city and fourth-most populous urban
-                agglomeration in India. The city together with the adjoining
-                regions constitutes the Chennai Metropolitan Area, which is the
-                36th-largest urban area by population in the world.`,
+      content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quod, commodi totam sunt officia expedita ipsum suscipit veniam quia recusandae esse iure. In provident doloremque vitae placeat officiis laborum reprehenderit.`,
 
       img: `https://images.unsplash.com/photo-1535015585980-7cb6b4de8f14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
     },
     {
       title: "Road Violation detection",
-      content: `Abu Dhabi is the capital and the second-most populous city of
-                the United Arab Emirates (after Dubai). The city of Abu Dhabi is
-                located on an island in the Persian Gulf, off the Central West
-                Coast. Most of the city and the Emirate reside on the mainland
-                connected to the rest of the country. As of 2020, Abu Dhabi's
-                urban area had an estimated population of 1.48 million,[6] out
-                of 2.9 million in the emirate of Abu Dhabi, as of 2016.`,
+      content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sequi maiores dignissimos id harum sit atque architecto, ratione aliquid quas cum. Quo cupiditate, nemo quibusdam adipisci maxime eum repellendus libero.`,
 
       img: `https://images.unsplash.com/photo-1499351094445-76ef13077fb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80`,
     },
     {
       title: "License Plate Recognition",
-      content: `New York City (NYC), often called simply New York, is the most
-                populous city in the United States. With an estimated 2019
-                population of 8,336,817 distributed over about 302.6 square
-                miles (784 km2), New York City is also the most densely
-                populated major city in the United States.[11] Located at the
-                southern tip of the U.S. state of New York, the city is the
-                center of the New York metropolitan area, the largest
-                metropolitan area in the world by urban landmass.`,
-      img: `https://imgr.search.brave.com/ZiqF8schuHAAYw3a4rZL8VF4MWJvGzZ30xAhLXW-pcY/fit/1200/720/ce/1/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9F/dDR4OGJkcFNxYy9t/YXhyZXNkZWZhdWx0/LmpwZw`,
+      content: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita debitis quam impedit explicabo nostrum modi officia, quibusdam dolores eveniet porro ad a facere ipsum quia ipsam officiis sed! Dolorum, eum.`,
+      img: `https://images.unsplash.com/photo-1535015585980-7cb6b4de8f14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
     },
     {
       title: " Vehicle Count",
-      content: `New York City (NYC), often called simply New York, is the most
-                populous city in the United States. With an estimated 2019
-                population of 8,336,817 distributed over about 302.6 square
-                miles (784 km2), New York City is also the most densely
-                populated major city in the United States.[11] Located at the
-                southern tip of the U.S. state of New York, the city is the
-                center of the New York metropolitan area, the largest
-                metropolitan area in the world by urban landmass.`,
+      content: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita debitis quam impedit explicabo nostrum modi officia, quibusdam dolores eveniet porro ad a facere ipsum quia ipsam officiis sed! Dolorum, eum.`,
       img: `https://imgr.search.brave.com/dCW7U6hq-tYWrNx85YtehGnUMQjLvE0fwyCWs6RvG8k/fit/1024/687/ce/1/aHR0cHM6Ly9jMS5z/dGF0aWNmbGlja3Iu/Y29tLzkvODQ0MS83/OTc5NDc4NDEwX2Y4/ZmJlNWE0NDFfYi5q/cGc`,
     },
   ];
@@ -80,11 +54,11 @@ export const ProductReview = () => {
           background: `url(${data.bgImg}) center center / cover no-repeat`,
         }}>
         <div className="flex  items-center justify-center w-full h-full bg-black bg-opacity-80">
-          <div className="text-center px-10 lg:px-0 w-4/6">
+          <div className="text-center px-10 lg:px-0">
             <h1 className="text-4xl font-bold  text-white uppercase md:text-7xl mb-4">
               {data.label}
             </h1>
-            <p className="text-bookmark-white text-lg lg:text-xl">
+            <p className="text-bookmark-white text-lg lg:text-xl lg:container lg:px-20">
               {data.subText}
             </p>
           </div>
@@ -97,7 +71,7 @@ export const ProductReview = () => {
           <div className=" w-full lg:w-6/12 md:m-0 md:order-2 ">
             <div className="flex justify-center relative">
               <img
-                className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
+                className="relative z-10  self-start rounded-md shadow-xl w-full h-full"
                 src={data.image1}
                 alt=""
                 draggable="false"
@@ -109,7 +83,7 @@ export const ProductReview = () => {
               {data.label}
             </h2>
 
-            <div className="text-lg lg:text-xl space-y-5 text-gray-500 w-5/6">
+            <div className="text-lg lg:text-xl space-y-5  text-gray-500 w-5/6">
               <p>
                 Guise Intelligent traffic provides solutions for accurate and
                 comprehensive analyses of city traffic by comprehending visual
@@ -131,11 +105,11 @@ export const ProductReview = () => {
             We make it Easier for you
           </h1>
           <p className="text-gray-800 font-medium text-lg lg:text-xl pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
-            Here's how these features help you
+            Here's glimpse how these features help you
           </p>
         </div>
 
-        <section className="flex flex-col lg:flex-row px-10 py-10  bg-white lg:py-20 lg:px-40  ">
+        <section className="flex flex-col lg:flex-row px-10 py-10   bg-white lg:py-20 lg:px-40  ">
           <div className="text-bookmark-blue w-full h-full">
             <Tab>
               {tabContent.map((tab, idx) => (
@@ -152,7 +126,7 @@ export const ProductReview = () => {
             <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
                 <img
-                  className="shadow-xl w-full h-full"
+                  className="shadow-xl  rounded-md w-full h-full"
                   src={data.image2}
                   alt=""
                   draggable="false"
@@ -209,7 +183,7 @@ export const ProductReview = () => {
             <div className=" w-full lg:w-6/12 md:m-0 order-2">
               <div className="flex justify-center relative ">
                 <img
-                  className="shadow-xl w-full h-full"
+                  className="shadow-xl rounded-md w-full h-full"
                   src={data.image3}
                   alt=""
                   draggable="false"
@@ -240,7 +214,98 @@ export const ProductReview = () => {
         </section>
 
         {/* 5 screen with bg-gray opposite of 4 screen*/}
-        <section className="bg-bookmark-white py-10 mt-10 lg:py-20  ">
+        <section className="bg-bookmark-white py-10 mt-10 lg:py-20  lg:px-40  ">
+          <div className="flex flex-wrap items-center pt-8">
+            <div className="w-full md:w-6/12  ">
+              <div className="justify-center flex flex-wrap relative">
+                <div className="my-4 w-full lg:w-6/12 ">
+                  <div
+                    className=" shadow-lg rounded-md text-center h-52 lg:h-56"
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1597762333765-cbcd63dd8acc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80) center center / cover no-repeat`,
+                    }}></div>
+
+                  <div
+                    className="  shadow-lg p-8 mt-8 rounded-md text-center hidden lg:block lg:h-56"
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1524567492592-cee28084482e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80) center center / cover no-repeat`,
+                    }}></div>
+
+                  <div
+                    className=" shadow-lg p-8 mt-8 rounded-md text-center hidden lg:block lg:h-56"
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1503025768915-494859bd53b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80) center center / cover no-repeat`,
+                    }}></div>
+                </div>
+                <div className="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
+                  <div
+                    className=" shadow-lg rounded-md text-center  hidden lg:block lg:h-56 "
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1515678845848-b037361130e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80) center center / cover no-repeat`,
+                    }}></div>
+
+                  <div
+                    className="  shadow-lg p-8 mt-8 rounded-md text-center hidden lg:block lg:h-56"
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1531270144996-257a6b16bea6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80) center center / cover no-repeat`,
+                    }}></div>
+
+                  <div
+                    className="  shadow-lg p-8 mt-8 rounded-md text-center hidden lg:block lg:h-56"
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1596188431116-f858853f2be3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center center / cover no-repeat`,
+                    }}></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-16">
+              <h3 className="text-2xl font-medium tracking-wide text-gray-800 md:text-4xl   lg:text-5xl  mb-2  leading-normal">
+                Lorem ipsum dolor
+              </h3>
+              <p className="text-lg font-light leading-relaxed mt-4 mb-8 text-blueGray-600">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Impedit possimus iure adipisci iste accusamus obcaecati tempora
+                eligendi, tenetur ipsam molestiae, eius voluptatibus cum sint
+                pariatur autem dicta, illo sequi quis?
+              </p>
+              <div className="grid gap-6 mt-8 sm:grid-cols-2 gap-y-4 gap-x-8">
+                <div className="flex items-center space-x-2">
+                  <div className="flex-shrink-0 flex items-center">
+                    <Tick />
+                  </div>
+                  <div className="copy-body">Vehicle Detection</div>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="flex-shrink-0 flex items-center">
+                    <Tick />
+                  </div>
+                  <div className="copy-body">Vehicle make and build</div>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="flex-shrink-0 flex items-center">
+                    <Tick />
+                  </div>
+                  <div className="copy-body">Road Violation detection</div>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="flex-shrink-0 flex items-center">
+                    <Tick />
+                  </div>
+                  <div className="copy-body">License Plate Recognition</div>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="flex-shrink-0 flex items-center">
+                    <Tick />
+                  </div>
+                  <div className="copy-body">Vehicle Count</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white py-10  lg:py-20  ">
           <div className="sm:w-3/4 container lg:w-6/12 mx-auto px-12 ">
             {/* <h4 className="text-center uppercase text-sm font-semibold md:text-lg text-social-instagram mb-4">
             Features
@@ -249,15 +314,15 @@ export const ProductReview = () => {
               Let's see in action
             </h1>
             <p className="text-gray-800 font-medium text-lg lg:text-xl pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
-              Here's how these features help you
+              Lorem ipsum dolor sit amet
             </p>
           </div>
 
-          <div className="lg:container mt-10">
+          <div className="lg:container mt-10 rounded-md">
             <ReactCompareImage
+              className="rounded-md"
               leftImage="https://images.pexels.com/photos/5696661/pexels-photo-5696661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
               rightImage="https://i.postimg.cc/NFKCQWTq/Group-69.png"
-              className=""
             />
           </div>
         </section>
@@ -311,8 +376,8 @@ export const ProductReview = () => {
               </div>
             </div>
             <div className="flex  flex-col w-full lg:w-6/12 ">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-8 lg:w-5/6 lg:leading-tight">
-                Explore our Suite of solutions for all your problems
+              <h2 className=" lg:text-5xl  mb-8 lg:w-5/6  text-2xl font-medium tracking-wide text-gray-800 md:text-4xl">
+                Explore our Suite
               </h2>
 
               <div className="text-lg lg:text-xl space-y-5 text-gray-500 lg:w-5/6">
@@ -355,7 +420,7 @@ export const ProductReview = () => {
       </section>
 
       {/* ====================== DEMO BUTTON  ================== */}
-      <section className="bg-bookmark-white py-10 lg:py-36  ">
+      <section className="bg-bookmark-white py-10 lg:py-36 pattern  ">
         <div className="container px-10 lg:px-10">
           <h1 className="text-xl font-medium lg:text-5xl text-core-black uppercase lg:font-black lg:px-4 text-center ">
             See what Guise can do for you
@@ -386,6 +451,8 @@ export const ProductReview = () => {
           </div>
         </div>
       </section>
+
+      <ScrollButton />
     </div>
   );
 };

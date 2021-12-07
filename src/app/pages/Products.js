@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ScrollButton } from "../components/ScrollButton/ScrollBtn";
 import { StayUpToDate } from "./StayUpToDate";
 
 export const Products = () => {
@@ -67,7 +68,7 @@ export const Products = () => {
                 <div className=" text-sm lg:text-lg mt-2 lg:mt-6  ">
                   <Link
                     className="text-blue-500 cursor-pointer hover:text-blue-400 flex items-center space-x-2 "
-                    to="/products/overview">
+                    to="/products/airport-operations-overview">
                     <span className="text-sm lg:text-xl font-medium ">
                       Read more
                     </span>
@@ -138,7 +139,7 @@ export const Products = () => {
                 <div className=" text-sm lg:text-lg mt-2 lg:mt-6  ">
                   <Link
                     className="text-blue-500 cursor-pointer hover:text-blue-400 flex items-center space-x-2 "
-                    to="/products/overview">
+                    to="/products/digital-signage-overview">
                     <span className="text-sm lg:text-xl font-medium ">
                       Read more
                     </span>
@@ -379,6 +380,7 @@ export const Products = () => {
 
       <hr className="border-b border-gray-200" />
       <StayUpToDate />
+      <ScrollButton />
     </div>
   );
 };

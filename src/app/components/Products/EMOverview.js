@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Tick } from "../Ticks/Tick";
+import { ScrollButton } from "../ScrollButton/ScrollBtn";
 
 export const EMOverview = () => {
   let data = {
@@ -33,7 +34,7 @@ export const EMOverview = () => {
             <h1 className="text-4xl font-bold  text-white uppercase md:text-7xl mb-4">
               {data.label}
             </h1>
-            <p className="text-bookmark-white text-lg lg:text-xl">
+            <p className="text-bookmark-white text-lg lg:text-xl lg:container lg:px-20">
               {data.subText}
             </p>
           </div>
@@ -367,24 +368,6 @@ export const EMOverview = () => {
                     electric power substations and distribution grids, sewage
                     processing units or even nuclear power plants.
                   </p>
-                  <p className="font-light w-5/6 mb-4">
-                    Data over the internet is shared in the form of packets, all
-                    these packets are shared in continuous real time streams
-                    where each packet, apart from the data being shared, stores
-                    metadata of the communication happening (such as sender and
-                    receiver IP addresses etc). While the data is strictly
-                    prohibited to read as per ethical norms (or is usually
-                    encrypted) NIDS performs anomaly detection on the metadata
-                    which is open to consumption.
-                  </p>
-                  <p className="font-light w-5/6">
-                    With the help of our Continuous Learning AI at GuiseAI we
-                    can help the NIDS learn about the network data flow and
-                    understand trends and isolated points. The NIDS will aso be
-                    able to update itself in real time as per the data flowing
-                    through the network, this helps identify the latest of
-                    anomalies as per current network trends.
-                  </p>
                 </div>
               </div>
             </div>
@@ -579,6 +562,8 @@ export const EMOverview = () => {
           </div>
         </div>
       </section>
+
+      <ScrollButton />
     </div>
   );
 };

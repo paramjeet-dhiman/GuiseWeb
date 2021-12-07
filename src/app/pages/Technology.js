@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ScrollButton } from "../components/ScrollButton/ScrollBtn";
 import { StayUpToDate } from "./StayUpToDate";
 
 export const Technology = () => {
@@ -693,6 +694,7 @@ export const Technology = () => {
       </section>
 
       <StayUpToDate />
+      <ScrollButton />
     </div>
   );
 };

@@ -25,11 +25,12 @@ const Tab = ({ children, active = 0 }) => {
         {tabsData.map(({ tab }, idx) => (
           <li className=" cursor-pointer py-2" key={idx}>
             <div
-              className={` ${
+              className={` 
+              ${
                 idx === activeTab
-                  ? " text-gray-50 border-blue-500 font-semibold bg-blue-500"
-                  : "border-gray-400"
-              } border-2  border-transparent rounded shadow-md  whitespace-nowrap cursor-base py-2  px-4 text-xl lg:text-xl font-normal`}
+                  ? " text-gray-50 border-blue-500 shadow-md font-semibold bg-blue-500"
+                  : "border-gray-100"
+              } border-2  border-transparent rounded   transition-all ease-linear duration-300 whitespace-nowrap cursor-base py-2  px-4 text-base lg:text-lg font-normal`}
               onClick={() => setActiveTab(idx)}>
               {tab}
             </div>
@@ -37,7 +38,7 @@ const Tab = ({ children, active = 0 }) => {
         ))}
       </ul>
 
-      <div className="gap-10 lg:gap-20   grid grid-cols-1 lg:grid-cols-2  h-full  w-full  py-10 bg-bookmark-white px-5 shadow-md">
+      <div className="gap-10 lg:gap-20 hoverTransition  grid grid-cols-1 lg:grid-cols-2  h-full  w-full  py-10 bg-bookmark-white px-5 shadow-md">
         <div className="order-2 lg:order-1 lg:px-20 flex flex-col justify-center ">
           <h2 className="text-3xl lg:text-5xl font-medium mb-4 ">
             {tabsData[activeTab] && tabsData[activeTab].children.title}

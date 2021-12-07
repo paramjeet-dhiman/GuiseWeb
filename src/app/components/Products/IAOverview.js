@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { ScrollButton } from "../ScrollButton/ScrollBtn";
 
 export const IAOverview = () => {
   let data = {
@@ -26,7 +27,7 @@ export const IAOverview = () => {
             <h1 className="text-4xl font-bold  text-white uppercase md:text-7xl mb-4">
               {data.label}
             </h1>
-            <p className="text-bookmark-white text-lg lg:text-xl">
+            <p className="text-bookmark-white text-lg lg:text-xl lg:container lg:px-20">
               {data.subText}
             </p>
           </div>
@@ -163,6 +164,8 @@ export const IAOverview = () => {
           </div>
         </div>
       </section>
+
+      <ScrollButton />
     </div>
   );
 };
