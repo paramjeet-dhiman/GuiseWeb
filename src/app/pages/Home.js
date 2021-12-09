@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import ReactCompareImage from "react-compare-image";
 import { HorizontalScroll } from "../components/HorizontalScroll/HorizontalScroll";
-import { ReactComponent as UndrawHello } from "../../assets/svg/undraw_hello.svg";
 import { ReactComponent as UndrawProgrammer } from "../../assets/svg/undraw_programmer.svg";
 import { ReactComponent as UndrawLostOnline } from "../../assets/svg/undraw_lost_online.svg";
 import { Partners } from "../components/Partners/Partners";
@@ -15,33 +14,29 @@ export function Home() {
   return (
     <div className="">
       {/*================= HERO  screen Navbar Background h-screen middle text headline with subheading ===================*/}
-      <section className="relative h-screen grid place-content-center bg-white  ">
-        <div className=" md:hidden flex justify-center mb-10 ">
+      <section className="relative h-screen grid place-content-center bg-white pattern  ">
+        {/* <div className=" md:hidden flex justify-center mb-10 ">
           <UndrawHello className="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" />
-        </div>
-        <div className="px-10 md:px-28 flex flex-col-reverse lg:flex-row items-center  lg:mt-20">
+        </div> */}
+        <div className="px-10 md:px-28 flex flex-col-reverse lg:flex-row items-center  lg:mt-20 ">
           <div className="flex ">
             <div className="flex items-center text-center lg:text-left w-full md:px-16 lg:w-1/2">
               <div className="w-full ">
-                <h2 className="text-5xl font-semibold text-gray-800 mb-2 md:text-7xl">
-                  Build Your New
-                  <span className="text-indigo-600  text-7xl"> Idea</span>
+                <h2 className="text-5xl font-semibold upper text-gray-900 mb-4 md:text-7xl  lg:w-3/4">
+                  Lorem ipsum dolor sit amet Idea
                 </h2>
-                <p className="text-gray-500 lg:w-3/4 text-sm md:text-lg text-center lg:text-left mb-6">
+                <p className="text-gray-500 lg:w-3/4 text-lg md:text-lg text-center lg:text-left mb-6">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Blanditiis commodi cum cupiditate ducimus, fugit harum id
                   necessitatibus odio quam quasi, quibusdam rem tempora
                   voluptates. Cumque debitis dignissimos id quam vel!
                 </p>
                 <div className="flex justify-center lg:justify-start flex-wrap gap-6 py-5">
-                  <button className="btn bg-gray-900 text-gray-200  text-sm md:text-lg font-semibold rounded hover:bg-gray-800">
-                    Book a Demo
-                  </button>
-                  {/* <button
-                    className="btn bg-gray-300 text-gray-900 text-sm md:text-lg font-semibold rounded hover:bg-gray-400"
-                    href="#">
-                    Learn More
-                  </button> */}
+                  <Link to="/technology">
+                    <button className="btn bg-core-black text-gray-100 transform hover:scale-105 hoverTransition  text-lg md:text-xl font-semibold rounded hover:bg-gray-700">
+                      Read more
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -50,14 +45,14 @@ export function Home() {
               style={{
                 height: "750px",
                 // clipPath: `polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%)`,
-                clipPath: ` polygon(150px 100%, 100% 100%, 100% 0, 0 0)`,
+                // clipPath: ` polygon(150px 100%, 100% 100%, 100% 0, 0 0)`,
               }}>
               <div
-                className="h-full object-cover  ring-4 ring-gray-200 shadow-xl "
+                className="h-full object-cover  rounded shadow-xl "
                 style={{
                   height: "100%",
                   width: "100%",
-                  background: ` url("https://images.pexels.com/photos/2528118/pexels-photo-2528118.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center center / cover no-repeat`,
+                  background: ` url("https://image.freepik.com/free-photo/designer-using-transparent-digital-tablet-screen-futuristic-technology_53876-105379.jpg") center center / cover no-repeat`,
                 }}>
                 <div className="h-full bg-black opacity-25"></div>
               </div>

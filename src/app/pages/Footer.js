@@ -61,28 +61,36 @@ export const Footer = () => {
             href="/team">
             Team <span className="text-social-facebook text-xs p-1"></span>
           </a> */}
-          <a
+          {/* <a
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
             href="/partners">
             Partners <span className="text-social-facebook text-xs p-1"></span>
+          </a> */}
+          <a
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
+            href="/careers">
+            Careers
+            {/* <span className="text-social-facebook text-xs p-1">
+              We're hiring
+            </span> */}
           </a>
         </div>
-        <div className="p-5 w-48 lg:w-2/12">
-          <div className="text-base uppercase   text-gray-50   mb-5 font-semibold">
+        {/* <div className="p-5 w-48 lg:w-2/12"> */}
+        {/* <div className="text-base uppercase   text-gray-50   mb-5 font-semibold">
             User
-          </div>
-          {/* <a
+          </div> */}
+        {/* <a
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
             href="/#">
             Sign in <span className="text-social-facebook text-xs p-1"></span>
           </a> */}
-          {/* <a
+        {/* <a
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
             href="/#">
             New Account{" "}
             <span className="text-social-facebook text-xs p-1"></span>
           </a> */}
-          <a
+        {/* <a
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
             href="/demo">
             Demo <span className="text-social-facebook text-xs p-1"></span>
@@ -94,14 +102,14 @@ export const Footer = () => {
             <span className="text-social-facebook text-xs p-1">
               We're hiring
             </span>
-          </a>
-          {/* <a
+          </a> */}
+        {/* <a
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
             href="/#">
             Surveys{" "}
             <span className="text-social-facebook text-xs p-1">New</span>
           </a> */}
-        </div>
+        {/* </div> */}
         <div className="p-5 w-48 lg:w-2/12">
           <div className="text-base uppercase   text-gray-50   mb-5 font-semibold">
             Resources
