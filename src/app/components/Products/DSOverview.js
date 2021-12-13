@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Tick } from "../Ticks/Tick";
 import { ScrollButton } from "../ScrollButton/ScrollBtn";
+import { DemoComponent } from "../DemoComponent";
 
 export const DSOverview = () => {
   let data = {
     label: "Digital Signage",
-    subText: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima quo doloribus quisquam vel veritatis nam provident cum perferendis.`,
+    subText: `Guise AI generates meaningful insights from camera video streams to help you create the greatest impact on your customers and improve operations.`,
     bgImg: `https://images.unsplash.com/photo-1488273478515-f13bd0b73037?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80`,
     title: `Lorem Ipsum`,
     image1: `https://images.unsplash.com/photo-1471991750293-5fc0e377b550?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1296&q=80`,
@@ -206,37 +206,7 @@ export const DSOverview = () => {
         </section>
       </section>
 
-      <section className="bg-bookmark-white py-10 lg:py-36  ">
-        <div className="container px-10 lg:px-10">
-          <h1 className="text-xl font-medium lg:text-5xl text-core-black uppercase lg:font-black lg:px-4 text-center ">
-            See what Guise can do for you
-          </h1>
-          <div className="flex justify-center items-center mt-10 ">
-            <Link
-              to="/demo"
-              // id="go_to_/technology_textHeader_index_2"
-              className="text-blue-500 hover:text-blue-400 flex items-center space-x-2 py-1">
-              <span className="text-base lg:text-xl font-medium">
-                Book a DEMO Now
-              </span>
-              <svg className="h-3 w-3" viewBox="0 0 12 12" fill="none">
-                <path
-                  d="M0 1.00586H11V12.0059"
-                  stroke="currentColor"
-                  strokeWidth="2"></path>
-                <line
-                  x1="10.857"
-                  y1="1.15437"
-                  x2="0.745382"
-                  y2="11.266"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeMiterlimit="2.61313"></line>
-              </svg>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <DemoComponent />
 
       <ScrollButton />
     </div>

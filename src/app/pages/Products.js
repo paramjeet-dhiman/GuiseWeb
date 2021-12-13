@@ -43,7 +43,7 @@ export const Products = () => {
             {
               label: "Safety detection",
               img: `https://images.unsplash.com/photo-1582809998712-4fc340132e1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
-              description: ` Lorem ipsum dolor, sit amet consectetur adipisicing elit.`,
+              description: `The ability of Airports, Airlines, and Aviation Authorities to implement high-impact strategies is critical in order to increase customer satisfaction and operational efficiency.`,
             },
           ].map((item) => (
             <div
@@ -114,7 +114,7 @@ export const Products = () => {
             {
               label: "Safety detection",
               img: `https://images.unsplash.com/photo-1521989841745-2fded4328e13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-              description: ` Lorem ipsum dolor, sit amet consectetur adipisicing elit.`,
+              description: `Guise AI generates meaningful insights from camera video streams to help you create the greatest impact on your customers and improve operations.`,
             },
           ].map((item) => (
             <div
@@ -185,7 +185,7 @@ export const Products = () => {
             {
               label: "Safety detection",
               img: `https://images.unsplash.com/photo-1510279410431-2d0808d69bf8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-              description: ` Lorem ipsum dolor, sit amet consectetur adipisicing elit.`,
+              description: `Experience the next level of Noise cancellation with the new Guise  AI assisted Intelligent Audio with improved audio filtration and customizable noise cancellation.`,
             },
           ].map((item) => (
             <div
@@ -327,7 +327,7 @@ export const Products = () => {
             {
               label: "Safety detection",
               img: `https://cdn.pixabay.com/photo/2019/12/24/12/11/solar-panel-4716640_960_720.jpg`,
-              description: ` Lorem ipsum dolor, sit amet consectetur adipisicing elit.`,
+              description: `Guise AI with its real time video and data analysis is empowering the energy sector both at the downstream and upstream sectors with real time and efficient predictions.`,
             },
           ].map((item) => (
             <div

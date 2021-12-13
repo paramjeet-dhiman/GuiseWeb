@@ -29,12 +29,12 @@ export const ScrollButton = () => {
 
   return (
     <div
-      className=" hidden right-2 fixed md:right-10 lg:right-20 bottom-24 z-10 cursor-pointer "
+      className="right-2 fixed md:right-8 lg:right-10 bottom-24 z-10 cursor-pointer "
       onClick={scrollToTop}
       style={{ display: visible ? "inline" : "none" }}>
-      <div className="flex items-center justify-center   hover:bg-blue-500 text-gray-300  hover:text-white my-auto  rounded-full  hover:shadow-xl hoverTransition">
+      <div className="hidden md:flex items-center justify-center   hover:bg-blue-500 text-gray-300  hover:text-white my-auto  rounded-full  hover:shadow-xl hoverTransition">
         <svg
-          className="h-6 w-6 md:w-10 md:h-10 "
+          className="w-10 h-10 "
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg">

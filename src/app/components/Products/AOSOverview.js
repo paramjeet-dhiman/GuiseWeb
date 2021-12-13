@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Tick } from "../Ticks/Tick";
 import { ScrollButton } from "../ScrollButton/ScrollBtn";
+import { DemoComponent } from "../DemoComponent";
 
 export const AOSOverview = () => {
   let data = {
@@ -63,11 +63,12 @@ export const AOSOverview = () => {
 
             <div className="text-lg lg:text-xl text-justify space-y-5 text-gray-500 w-5/6">
               <p>
-                Guise Airport Ground Operations provides algorithms for accurate
-                and comprehensive analyses of images and videos. The ability for
-                Airports, Airlines, and Aviation Authorities to implement
-                high-impact strategies is critical in order to increase customer
-                satisfaction and operational efficiency.
+                Guise Airport Ground Operations assist Airports to maximize
+                their asset utilization, catering to the needs of supporting the
+                ever-growing flying population. Our application also help
+                Airlines to keep flights on time with better resource
+                management, reducing the number of delays and cost inefficient
+                grounded flights
               </p>
             </div>
           </div>
@@ -87,7 +88,7 @@ export const AOSOverview = () => {
           </p>
         </div>
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
+        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
             <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
@@ -146,7 +147,7 @@ export const AOSOverview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* ======================  Feature #1 ================== */}
 
@@ -386,37 +387,7 @@ export const AOSOverview = () => {
         </section>
       </section>
 
-      <section className="bg-bookmark-white py-10 lg:py-36  ">
-        <div className="container px-10 lg:px-10">
-          <h1 className="text-xl font-medium lg:text-5xl text-core-black uppercase lg:font-black lg:px-4 text-center ">
-            See what Guise can do for you
-          </h1>
-          <div className="flex justify-center items-center mt-10 ">
-            <Link
-              to="/demo"
-              // id="go_to_/technology_textHeader_index_2"
-              className="text-blue-500 hover:text-blue-400 flex items-center space-x-2 py-1">
-              <span className="text-base lg:text-xl font-medium">
-                Book a DEMO Now
-              </span>
-              <svg className="h-3 w-3" viewBox="0 0 12 12" fill="none">
-                <path
-                  d="M0 1.00586H11V12.0059"
-                  stroke="currentColor"
-                  strokeWidth="2"></path>
-                <line
-                  x1="10.857"
-                  y1="1.15437"
-                  x2="0.745382"
-                  y2="11.266"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeMiterlimit="2.61313"></line>
-              </svg>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <DemoComponent />
 
       <ScrollButton />
     </div>

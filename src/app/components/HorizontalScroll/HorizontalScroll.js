@@ -23,7 +23,7 @@ export const HorizontalScroll = ({ sliderRef, setSlideIndex }) => {
       {
         breakpoint: 320,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 0,
           draggable: false,
           swipeToSlide: false,
         },
@@ -34,20 +34,20 @@ export const HorizontalScroll = ({ sliderRef, setSlideIndex }) => {
   const slides = [
     {
       title: "Lorem ipsum dolor sit amet",
-      img: "https://images.pexels.com/photos/4960464/pexels-photo-4960464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
       detail:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea amet fuga similique asperiores eveniet  ",
     },
     {
       title: "Lorem ipsum dolor sit amet",
-      img: "https://images.pexels.com/photos/4960464/pexels-photo-4960464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      img: "https://images.unsplash.com/photo-1568952433726-3896e3881c65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       detail:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea amet fuga similique asperiores eveniet ",
     },
   ];
 
   return (
-    <div className=" w-full bg-white  text-bookmark-blue overflow-hidden">
+    <div className=" w-full bg-bookmark-white  text-bookmark-blue overflow-hidden">
       <Slider {...settings} className="" ref={sliderRef}>
         {slides.map((item, index) => (
           <div
