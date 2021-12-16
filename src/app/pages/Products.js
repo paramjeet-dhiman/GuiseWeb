@@ -69,10 +69,10 @@ export const Products = () => {
                   <Link
                     className="text-blue-500 cursor-pointer hover:text-blue-400 flex items-center space-x-2 "
                     to="/products/airport-operations-overview">
-                    <span className="text-sm lg:text-xl font-medium ">
+                    <span className="text-sm lg:text-xl font-bold transform hover:scale-105 hoverTransition ">
                       Read more
                     </span>
-                    <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none">
+                    {/* <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none">
                       <path
                         d="M0 1.00586H11V12.0059"
                         stroke="currentColor"
@@ -85,7 +85,7 @@ export const Products = () => {
                         stroke="currentColor"
                         strokeWidth="2"
                         strokeMiterlimit="2.61313"></line>
-                    </svg>
+                    </svg> */}
                   </Link>
                 </div>
               </div>
@@ -140,10 +140,10 @@ export const Products = () => {
                   <Link
                     className="text-blue-500 cursor-pointer hover:text-blue-400 flex items-center space-x-2 "
                     to="/products/digital-signage-overview">
-                    <span className="text-sm lg:text-xl font-medium ">
+                    <span className="text-sm lg:text-xl font-bold transform hover:scale-105 hoverTransition ">
                       Read more
                     </span>
-                    <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none">
+                    {/* <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none">
                       <path
                         d="M0 1.00586H11V12.0059"
                         stroke="currentColor"
@@ -156,7 +156,7 @@ export const Products = () => {
                         stroke="currentColor"
                         strokeWidth="2"
                         strokeMiterlimit="2.61313"></line>
-                    </svg>
+                    </svg> */}
                   </Link>
                 </div>
               </div>
@@ -211,10 +211,10 @@ export const Products = () => {
                   <Link
                     className="text-blue-500 cursor-pointer hover:text-blue-400 flex items-center space-x-2 "
                     to="/products/intelligent-audio-overview">
-                    <span className="text-sm lg:text-xl font-medium ">
+                    <span className="text-sm lg:text-xl font-bold transform hover:scale-105 hoverTransition ">
                       Read more
                     </span>
-                    <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none">
+                    {/* <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none">
                       <path
                         d="M0 1.00586H11V12.0059"
                         stroke="currentColor"
@@ -227,7 +227,7 @@ export const Products = () => {
                         stroke="currentColor"
                         strokeWidth="2"
                         strokeMiterlimit="2.61313"></line>
-                    </svg>
+                    </svg> */}
                   </Link>
                 </div>
               </div>
@@ -282,10 +282,10 @@ export const Products = () => {
                   <Link
                     className="text-blue-500 cursor-pointer hover:text-blue-400 flex items-center space-x-2 "
                     to="/products/traffic-management-overview">
-                    <span className="text-sm lg:text-xl font-medium ">
+                    <span className="text-sm lg:text-xl font-bold transform hover:scale-105 hoverTransition ">
                       Read more
                     </span>
-                    <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none">
+                    {/* <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none">
                       <path
                         d="M0 1.00586H11V12.0059"
                         stroke="currentColor"
@@ -298,7 +298,7 @@ export const Products = () => {
                         stroke="currentColor"
                         strokeWidth="2"
                         strokeMiterlimit="2.61313"></line>
-                    </svg>
+                    </svg> */}
                   </Link>
                 </div>
               </div>
@@ -353,10 +353,10 @@ export const Products = () => {
                   <Link
                     className="text-blue-500 cursor-pointer hover:text-blue-400 flex items-center space-x-2 "
                     to="/products/energy-management-overview">
-                    <span className="text-sm lg:text-xl font-medium ">
+                    <span className="text-sm lg:text-xl font-bold transform hover:scale-105 hoverTransition ">
                       Read more
                     </span>
-                    <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none">
+                    {/* <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none">
                       <path
                         d="M0 1.00586H11V12.0059"
                         stroke="currentColor"
@@ -369,7 +369,7 @@ export const Products = () => {
                         stroke="currentColor"
                         strokeWidth="2"
                         strokeMiterlimit="2.61313"></line>
-                    </svg>
+                    </svg> */}
                   </Link>
                 </div>
               </div>

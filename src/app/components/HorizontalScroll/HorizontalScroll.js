@@ -34,13 +34,13 @@ export const HorizontalScroll = ({ sliderRef, setSlideIndex }) => {
   const slides = [
     {
       title: "Lorem ipsum dolor sit amet",
-      img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
+      img: "https://images.unsplash.com/photo-1625014618427-fbc980b974f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80",
       detail:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea amet fuga similique asperiores eveniet  ",
     },
     {
       title: "Lorem ipsum dolor sit amet",
-      img: "https://images.unsplash.com/photo-1568952433726-3896e3881c65?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      img: "https://images.unsplash.com/photo-1625014618427-fbc980b974f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80",
       detail:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea amet fuga similique asperiores eveniet ",
     },

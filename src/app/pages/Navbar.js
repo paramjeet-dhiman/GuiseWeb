@@ -94,7 +94,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               </NavLink>
             </div> */}
 
-            <div>
+            {/* <div>
               <NavLink
                 className={({ isActive }) =>
                   isActive
@@ -104,7 +104,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                 to="/product-review">
                 Review
               </NavLink>
-            </div>
+            </div> */}
 
             <div>
               <NavLink

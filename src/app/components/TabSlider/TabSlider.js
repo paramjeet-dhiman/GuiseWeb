@@ -28,9 +28,9 @@ const Tab = ({ children, active = 0 }) => {
               className={` 
               ${
                 idx === activeTab
-                  ? " text-gray-50 border-blue-500 shadow-md font-semibold bg-blue-500"
-                  : "border-gray-100"
-              } border-2  border-transparent rounded   transition-all ease-linear duration-300 whitespace-nowrap cursor-base py-2  px-4 text-base lg:text-lg font-normal`}
+                  ? " text-gray-50 border-blue-500 shadow-2xl font-bold bg-blue-500"
+                  : "border-gray-100 text-gray-700"
+              } border-2  border-transparent rounded font-semibold shadow-lg hover:shadow-2xl  transition-all ease-linear duration-300 whitespace-nowrap cursor-base py-2  px-4 text-base lg:text-lg `}
               onClick={() => setActiveTab(idx)}>
               {tab}
             </div>

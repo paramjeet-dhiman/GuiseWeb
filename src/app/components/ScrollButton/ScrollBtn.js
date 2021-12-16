@@ -29,10 +29,10 @@ export const ScrollButton = () => {
 
   return (
     <div
-      className="right-2 fixed md:right-8 lg:right-10 bottom-24 z-10 cursor-pointer "
+      className="right-2 fixed   z-10 cursor-pointer "
       onClick={scrollToTop}
       style={{ display: visible ? "inline" : "none" }}>
-      <div className="hidden md:flex items-center justify-center   hover:bg-blue-500 text-gray-300  hover:text-white my-auto  rounded-full  hover:shadow-xl hoverTransition">
+      <div className=" fixed shadow-md lg:p-2 bottom-20 bg-white right-5  lg:right-10 animate-bounce  hidden md:flex items-center justify-center   hover:bg-blue-500 text-gray-400  hover:text-white my-auto  rounded-full  hover:shadow-xl hoverTransition">
         <svg
           className="w-10 h-10 "
           fill="currentColor"
@@ -40,7 +40,7 @@ export const ScrollButton = () => {
           xmlns="http://www.w3.org/2000/svg">
           <path
             fillRule="evenodd"
-            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z"
+            d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
             clipRule="evenodd"
           />
         </svg>
