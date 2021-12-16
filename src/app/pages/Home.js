@@ -304,7 +304,7 @@ export function Home() {
             <p className="text-gray-700 text-xl lg:text-2xl font-light  mt-4 md:mt-6 lg:w-5/6">
               We're always looking for talented, creative and passionate people
               to join our team. If you're interested in opportunities at our
-              company, we'd love to head from you.
+              company, we'd love to hear from you.
             </p>
 
             <div>
