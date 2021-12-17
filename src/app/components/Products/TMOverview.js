@@ -21,26 +21,47 @@ export const TMOverview = () => {
 
   const tabContent = [
     {
-      title: "Vehicle Detection",
-      content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quod, commodi totam sunt officia expedita ipsum suscipit veniam quia recusandae esse iure. In provident doloremque vitae placeat officiis laborum reprehenderit.`,
-
-      img: `https://images.unsplash.com/photo-1535015585980-7cb6b4de8f14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
-    },
-    {
-      title: "Road Violation detection",
-      content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sequi maiores dignissimos id harum sit atque architecto, ratione aliquid quas cum. Quo cupiditate, nemo quibusdam adipisci maxime eum repellendus libero.`,
-
-      img: `https://images.unsplash.com/photo-1499351094445-76ef13077fb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80`,
+      title: "Road Violation Detection",
+      content: `Maintain road safety with real time alerts though automated AI assisted detections`,
+      list: [
+        { title: "Helmet Detection" },
+        { title: "Wrong lane driving" },
+        { title: "Triple seater detection" },
+        { title: "Speed Violation detection" },
+        { title: "Illegal parking detection" },
+      ],
+      // https://images.unsplash.com/photo-1529572079217-04ffdce1059b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
+      img: `https://images.unsplash.com/photo-1558953845-7674f75ab373?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1226&q=80`,
     },
     {
       title: "License Plate Recognition",
-      content: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita debitis quam impedit explicabo nostrum modi officia, quibusdam dolores eveniet porro ad a facere ipsum quia ipsam officiis sed! Dolorum, eum.`,
-      img: `https://images.unsplash.com/photo-1535015585980-7cb6b4de8f14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+      content: `Track and record vehicles through license plates automatically`,
+      list: [
+        { title: "Licence plate detection" },
+        { title: "LP Character recognition" },
+      ],
+      img: `https://images.unsplash.com/photo-1503470069725-dacc9110076e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
     {
-      title: " Vehicle Count",
-      content: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita debitis quam impedit explicabo nostrum modi officia, quibusdam dolores eveniet porro ad a facere ipsum quia ipsam officiis sed! Dolorum, eum.`,
-      img: `https://imgr.search.brave.com/dCW7U6hq-tYWrNx85YtehGnUMQjLvE0fwyCWs6RvG8k/fit/1024/687/ce/1/aHR0cHM6Ly9jMS5z/dGF0aWNmbGlja3Iu/Y29tLzkvODQ0MS83/OTc5NDc4NDEwX2Y4/ZmJlNWE0NDFfYi5q/cGc`,
+      title: "Traffic Management",
+      content: `Manage traffic at key junctions and areas by monitoring people and vehicles`,
+      list: [
+        { title: "Mob Detection" },
+        { title: "Vehicle count" },
+        { title: "Obstruction Detection" },
+      ],
+      img: `https://images.unsplash.com/photo-1508798179027-a00aa5326443?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+    },
+    {
+      title: "Vehicle Profiling",
+      content: `Profile vehicles with advanced analysis with the help of AI`,
+      list: [
+        { title: "Vehicle Type" },
+        { title: "Vehicle color" },
+        { title: "Vehicle count" },
+        { title: "Logo Detection" },
+      ],
+      img: `https://images.unsplash.com/photo-1521674685714-2446ff917fbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
   ];
 

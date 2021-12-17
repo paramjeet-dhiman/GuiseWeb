@@ -18,26 +18,41 @@ export const DSOverview = () => {
 
   const tabContent = [
     {
-      title: "Vehicle Detection",
-      content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quod, commodi totam sunt officia expedita ipsum suscipit veniam quia recusandae esse iure. In provident doloremque vitae placeat officiis laborum reprehenderit.`,
-
-      img: `https://images.unsplash.com/photo-1535015585980-7cb6b4de8f14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+      title: "Footfall Analysis",
+      content: `Record the following operational events and track them automatically with the Guise AI airport Ground Operations Suite.`,
+      list: [
+        { title: "People entry count" },
+        { title: "People exit count" },
+        { title: "Person tracking" },
+      ],
+      img: `https://images.unsplash.com/photo-1528406745358-6c3112259eb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80`,
     },
     {
-      title: "Road Violation detection",
-      content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sequi maiores dignissimos id harum sit atque architecto, ratione aliquid quas cum. Quo cupiditate, nemo quibusdam adipisci maxime eum repellendus libero.`,
-
-      img: `https://images.unsplash.com/photo-1499351094445-76ef13077fb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80`,
+      title: "Customer Profiling",
+      content: `Maintain safety standards and minimize violations with all time surveillance and alerts.`,
+      list: [{ title: "Customer Age" }, { title: "Customer Gender" }],
+      img: `https://images.unsplash.com/photo-1440985465094-6ac443aab454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
     {
-      title: "License Plate Recognition",
-      content: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita debitis quam impedit explicabo nostrum modi officia, quibusdam dolores eveniet porro ad a facere ipsum quia ipsam officiis sed! Dolorum, eum.`,
-      img: `https://images.unsplash.com/photo-1535015585980-7cb6b4de8f14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+      title: "Apparel Analysis",
+      content: `Manage, count, and record the duration of ground staff, cleaning crew and other members with automated people counting and tracking.`,
+      list: [
+        { title: "Apparel Detection" },
+        { title: "Apparel Type" },
+        { title: "Apparel Color" },
+      ],
+      img: `https://images.unsplash.com/photo-1517732306149-e8f829eb588a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80`,
     },
     {
-      title: " Vehicle Count",
-      content: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita debitis quam impedit explicabo nostrum modi officia, quibusdam dolores eveniet porro ad a facere ipsum quia ipsam officiis sed! Dolorum, eum.`,
-      img: `https://imgr.search.brave.com/dCW7U6hq-tYWrNx85YtehGnUMQjLvE0fwyCWs6RvG8k/fit/1024/687/ce/1/aHR0cHM6Ly9jMS5z/dGF0aWNmbGlja3Iu/Y29tLzkvODQ0MS83/OTc5NDc4NDEwX2Y4/ZmJlNWE0NDFfYi5q/cGc`,
+      title: "Crowd Management",
+      content: `Manage airport resources efficiently by tracking usage and durations assigned to every airplane.`,
+      list: [
+        { title: "Dwell time" },
+        { title: "Wait time" },
+        { title: "Crowd counting" },
+        { title: "Queue detection and tracking" },
+      ],
+      img: `https://images.unsplash.com/photo-1471991750293-5fc0e377b550?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1296&q=80`,
     },
   ];
   return (
