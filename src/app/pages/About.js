@@ -1,6 +1,5 @@
 import React from "react";
 import { Carousel } from "../components/Carousel/Carousel";
-import { StayUpToDate } from "./StayUpToDate";
 import { Link } from "react-router-dom";
 import { Partners } from "../components/Partners/Partners";
 import { MultipleItems } from "../components/Carousel/MultipleItemsCarousel";
@@ -74,7 +73,7 @@ export const About = () => {
             <span className="text-lg lg:text-xl font-medium">
               Learn how it all works
             </span>
-            <svg className="h-3 w-3" viewBox="0 0 12 12" fill="none">
+            {/* <svg className="h-3 w-3" viewBox="0 0 12 12" fill="none">
               <path
                 d="M0 1.00586H11V12.0059"
                 stroke="currentColor"
@@ -87,7 +86,7 @@ export const About = () => {
                 stroke="currentColor"
                 strokeWidth="2"
                 strokeMiterlimit="2.61313"></line>
-            </svg>
+            </svg> */}
           </a>
         </div>
       </section>
@@ -297,7 +296,7 @@ export const About = () => {
               <span className="text-base lg:text-xl font-medium">
                 community@guiseai.com
               </span>
-              <svg className="h-3 w-3" viewBox="0 0 12 12" fill="none">
+              {/* <svg className="h-3 w-3" viewBox="0 0 12 12" fill="none">
                 <path
                   d="M0 1.00586H11V12.0059"
                   stroke="currentColor"
@@ -310,12 +309,11 @@ export const About = () => {
                   stroke="currentColor"
                   strokeWidth="2"
                   strokeMiterlimit="2.61313"></line>
-              </svg>
+              </svg> */}
             </a>
           </div>
         </div>
       </section>
-      <StayUpToDate />
     </div>
   );
 };

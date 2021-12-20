@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ScrollButton } from "../components/ScrollButton/ScrollBtn";
-import { StayUpToDate } from "./StayUpToDate";
 
 export const Technology = () => {
   return (
     <div className="pt-10 h-full ">
       {/* ========================== HERO Section ====================  */}
-      <section className=" md:pt-20 lg:pt-0 relative h-screen grid place-content-center bg-bookmark-blue pattern ">
+      <section className=" md:pt-20 lg:pt-0 relative h-screen grid place-content-center bg-bookmark-blue  ">
         <div className="lg:px-28 flex flex-col-reverse lg:flex-row items-center  lg:mt-20">
           <div className="flex space-y-10 lg:space-y-0 lg:flex-row flex-col ">
             <div className="px-10 flex items-center text-center lg:text-left w-full md:px-16 lg:w-1/2">
@@ -43,7 +42,7 @@ export const Technology = () => {
 
             <div className=" lg:w-1/2  ">
               <img
-                src={`https://images.pexels.com/photos/461082/pexels-photo-461082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`}
+                src={`https://media.istockphoto.com/photos/virtual-intelligence-and-network-security-picture-id1304572643?k=20&m=1304572643&s=612x612&w=0&h=HZwEWHBU1Pou7FUBIDY-yvWenP36oPyDZetXfMXYWAY=`}
                 className="w-full h-full"
                 alt="sdf"
                 draggable="false"
@@ -561,7 +560,7 @@ export const Technology = () => {
               <div className="flex justify-center relative">
                 <img
                   className="shadow-xl w-full h-full"
-                  src={`https://lh6.googleusercontent.com/yRDIv11cbGlBjYsvS4rm_qC3UGnPkZYNNXS0IzAH3eqtq3Z34uh5rRFH0cFr8jdHju8I0XGPycHPQUxxG9oUM_TrFguPU7V022HSu6ksIob2OGXYk3BM1fXquyngHhq1-uU0GfM2`}
+                  src={`https://www.rcrwireless.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-03-at-9.12.39-AM.png`}
                   alt=""
                   draggable="false"
                 />
@@ -694,7 +693,6 @@ export const Technology = () => {
         </div>
       </section>
 
-      <StayUpToDate />
       <ScrollButton />
     </div>
   );

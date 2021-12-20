@@ -16,7 +16,7 @@ export const DemoComponent = () => {
             <span className="text-base lg:text-xl uppercase  font-semibold">
               Book A DEMO
             </span>
-            <svg className="h-3 w-3" viewBox="0 0 12 12" fill="none">
+            {/* <svg className="h-3 w-3" viewBox="0 0 12 12" fill="none">
               <path
                 d="M0 1.00586H11V12.0059"
                 stroke="currentColor"
@@ -29,7 +29,7 @@ export const DemoComponent = () => {
                 stroke="currentColor"
                 strokeWidth="2"
                 strokeMiterlimit="2.61313"></line>
-            </svg>
+            </svg> */}
           </Link>
         </div>
       </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import { ReactComponent as UndrawProgrammer } from "../../assets/svg/undraw_programmer.svg";
 import { ReactComponent as UndrawStartup } from "../../assets/svg/Start_Up.svg";
-import { StayUpToDate } from "./StayUpToDate";
 import { Link } from "react-router-dom";
 
 export const Solutions = () => {
@@ -149,7 +148,6 @@ export const Solutions = () => {
           </div>
         </div>
       </section>
-      <StayUpToDate />
     </div>
   );
 };

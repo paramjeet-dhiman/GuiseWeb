@@ -48,7 +48,7 @@ export const BookADemo = () => {
             <div className="flex flex-col flex-auto lg:flex-row -mx-3">
               <div className="lg:w-1/2 px-3 mb-5">
                 <label
-                  for=""
+                  htmlFor=""
                   className="text-sm text-gray-700 font-semibold px-1">
                   Full name
                 </label>
@@ -61,9 +61,9 @@ export const BookADemo = () => {
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                   </div>
@@ -77,7 +77,7 @@ export const BookADemo = () => {
               </div>
               <div className="lg:w-1/2 px-3 mb-5">
                 <label
-                  for=""
+                  htmlFor=""
                   className="text-sm text-gray-700 font-semibold px-1">
                   Company
                 </label>
@@ -90,9 +90,9 @@ export const BookADemo = () => {
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                   </div>
@@ -108,7 +108,7 @@ export const BookADemo = () => {
             <div className="flex -mx-3">
               <div className="w-full px-3 mb-5">
                 <label
-                  for=""
+                  htmlFor=""
                   className="text-sm text-gray-700 font-semibold px-1">
                   Email
                 </label>
@@ -121,9 +121,9 @@ export const BookADemo = () => {
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
                   </div>
@@ -140,7 +140,7 @@ export const BookADemo = () => {
             <div className="flex flex-col flex-auto lg:flex-row -mx-3">
               <div className="lg:w-1/2 px-3 mb-5">
                 <label
-                  for=""
+                  htmlFor=""
                   className="text-sm text-gray-700 font-semibold px-1">
                   Phone
                 </label>
@@ -153,9 +153,9 @@ export const BookADemo = () => {
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                     </svg>
                   </div>
@@ -169,7 +169,7 @@ export const BookADemo = () => {
               </div>
               <div className="lg:w-1/2 px-3 mb-5">
                 <label
-                  for=""
+                  htmlFor=""
                   className="text-sm text-gray-700 font-semibold px-1">
                   Select Solution
                 </label>
@@ -193,7 +193,7 @@ export const BookADemo = () => {
                   <select
                     // value="1"
                     className="select w-full rounded-lg border-2 text-gray-400 border-gray-200 outline-none focus:border-gray-900  bg-white  pl-4 py-4 appearance-none flex items-center ">
-                    <option selected disabled>
+                    <option defaultValue disabled>
                       Select Solution you're looking for
                     </option>
                     <option value="AGO">Airport Ground Ops</option>
@@ -207,7 +207,7 @@ export const BookADemo = () => {
             <div className="flex -mx-3">
               <div className="w-full px-3 mb-12">
                 <label
-                  for=""
+                  htmlFor=""
                   className="text-sm text-gray-700 font-semibold px-1">
                   How do you hear about us?
                 </label>
@@ -231,7 +231,7 @@ export const BookADemo = () => {
                     <select
                       // value={"1"}
                       className="select w-full rounded-lg border-2 text-gray-400 border-gray-200 outline-none focus:border-gray-900  bg-white  pl-4 py-4 appearance-none flex items-center">
-                      <option selected disabled>
+                      <option defaultValue disabled>
                         How do you hear about us?
                       </option>
                       <option value="facebook">Facebook</option>

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ScrollButton } from "../components/ScrollButton/ScrollBtn";
-import { StayUpToDate } from "./StayUpToDate";
 
 export const Products = () => {
   return (
@@ -378,8 +377,6 @@ export const Products = () => {
         </div>
       </section>
 
-      <hr className="border-b border-gray-200" />
-      <StayUpToDate />
       <ScrollButton />
     </div>
   );

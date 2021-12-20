@@ -1,13 +1,13 @@
-import { useRef, useState } from "react";
+// import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import ReactCompareImage from "react-compare-image";
-import { HorizontalScroll } from "../components/HorizontalScroll/HorizontalScroll";
+// import ReactCompareImage from "react-compare-image";
+// import { HorizontalScroll } from "../components/HorizontalScroll/HorizontalScroll";
 import BGTech from "../../assets/images/globe-6858907.jpg";
 import BGTech2 from "../../assets/images/2880645.jpg";
 
 export function Home() {
-  const [slideIndex, setSlideIndex] = useState(0);
-  const sliderRef = useRef();
+  // const [slideIndex, setSlideIndex] = useState(0);
+  // const sliderRef = useRef();
 
   const products = [
     {
@@ -40,23 +40,23 @@ export function Home() {
   return (
     <div className="">
       {/*================= Hero Section ===================*/}
-      <section className="flex items-center justify-center py-20  relative h-screen pattern  bg-white">
+      <section className="flex items-center justify-center py-20  relative h-screen  bg-black">
         <div className=" lg:px-44 flex flex-col   mx-auto  md:h-128 space-y-10 gap-y-10 lg:gap-y-0 lg:space-y-0 lg:flex-row lg:items-center lg:space-x-6">
           <div className="flex flex-col items-center w-full pt-20  sm:pt-36 md:pt-48 lg:pt-0   lg:flex-row lg:w-1/2">
             <div className="px-10 lg:px-0 md:order-2 flex flex-col justify-center items-center md:items-start ">
-              <h2 className="text-3xl font-bold text-center md:text-left  lg:leading-tight text-gray-900 md:text-5xl">
+              <h2 className="text-3xl font-bold text-center md:text-left  lg:leading-tight text-gray-300 md:text-5xl">
                 We design and develop experiences that make people's live
-                <span className="text-blue-500 font-bold"> simple.</span>
+                Simple.
               </h2>
-              <p className="mt-4 text-gray-600 text-center md:text-left  text-lg lg:text-xl w-5/6">
+              <p className="mt-4 text-gray-400 text-center md:text-left  text-lg lg:text-xl w-5/6">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
                 quia asperiores alias vero magnam recusandae adipisci ad vitae
                 laudantium quod rem voluptatem eos accusantium cumque.
               </p>
 
-              <div className=" mt-6 flex justify-center lg:justify-start">
+              <div className=" mt-10 flex justify-center lg:justify-start">
                 <Link to="/technology">
-                  <button className="btn bg-core-black text-gray-100 transform hover:scale-105 hoverTransition  text-lg md:text-xl  md:inline font-semibold  hover:bg-gray-700">
+                  <button className="btn bg-white hover:text-white hover:bg-blue-500 text-core-black transform hover:scale-105 hoverTransition  text-lg md:text-xl  md:inline font-semibold">
                     Read more
                   </button>
                 </Link>
@@ -138,7 +138,7 @@ export function Home() {
       </section>
 
       {/*========================= Horizontal Carousel ====================== */}
-      <section className="bg-bookmark-white py-10 lg:py-20 mt-10 lg:mt-10 ">
+      {/* <section className="bg-bookmark-white py-10 lg:py-20 mt-10 lg:mt-10 ">
         <div className="sm:w-3/4 lg:w-5/12 mx-auto    px-12 lg:px-2">
           <h1 className="text-3xl font-semibold lg:text-5xl  text-center text-bookmark-blue">
             Lorem ipsum dolor sit amet
@@ -197,7 +197,7 @@ export function Home() {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/*============ 2 col right-left image and text ===========*/}
 
@@ -214,7 +214,7 @@ export function Home() {
           </p>
         </div>
 
-        <div className="relative  mt-20 lg:mt-40">
+        {/* <div className="relative  mt-20 lg:mt-40">
           <div className="md:px-44  flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
             <div className="flex flex-1 justify-center z-40 mb-10 lg:mb-0">
               <img
@@ -235,7 +235,7 @@ export function Home() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className=" relative mt-20 lg:mt-36">
           <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-24">
@@ -262,10 +262,9 @@ export function Home() {
       </section>
 
       {/*Slider image*/}
-      <section className="bg-bookmark-white py-10 mt-10 lg:py-20 lg:mt-20 ">
+      {/* <section className="bg-bookmark-white py-10 mt-10 lg:py-20 lg:mt-20 ">
         <div className="sm:w-3/4 lg:w-5/12 mx-auto  px-12 lg:px-2">
           <h1 className="text-3xl lg:text-5xl font-semibold text-center text-bookmark-blue">
-            {/* <h1 className="text-3xl font-semibold lg:text-6xl lg:font-bold text-center text-bookmark-blue"> */}
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.{" "}
           </h1>
           <p className="text-gray-800   text-lg lg:text-xl  lg:text-center w-3/4  container  text-center  lg:w-4/6 mt-2 md:mt-4">
@@ -279,7 +278,7 @@ export function Home() {
             className=""
           />
         </div>
-      </section>
+      </section> */}
 
       {/*============================= Join Team =========================== */}
 

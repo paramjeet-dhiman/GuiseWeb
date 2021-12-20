@@ -20,8 +20,10 @@ export const Research = () => {
         </div>
       </section>
 
-      {ResearchData.map((item) => (
-        <section className=" bg-white py-10 lg:py-20 px-10 lg:px-0 container ">
+      {ResearchData.map((item, index) => (
+        <section
+          className=" bg-white py-10 lg:py-20 px-10 lg:px-0 container "
+          key={index}>
           <a href={item.link} target="_blank" rel="noreferrer">
             <h1 className="text-bookmark-blue underline text-xl lg:text-3xl hover:text-blue-500  tracking-wide leading-normal font-black mb-4">
               {item.title}
