@@ -22,72 +22,35 @@ export const EMOverview = () => {
     image9: `https://images.pexels.com/photos/9800092/pexels-photo-9800092.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
   };
 
-
-
   const tabContent = [
     {
-      title: "Operations Tracking",
-      content: `Record the following operational events and track them automatically with the Guise AI airport Ground Operations Suite.`,
-      list: [
-        { title: "Aircraft check in and check out time" },
-        { title: "Baggage Offload and Onload time" },
-        { title: "Footbridge attach and detach time" },
-        { title: "Aircraft Logo Detection" },
-      ],
-      img: `https://images.unsplash.com/photo-1482351437900-d57cf1b9cd37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+      title: "Microgrid",
+      content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempore, deleniti aspernatur quis omnis quidem repudiandae. Perspiciatis voluptatum, aut dolorem amet, dolores repellendus exercitationem porro quasi, quisquam animi quod mollitia.`,
+      list: [{ title: "Predictive analysis" }],
+      img: `https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1158&q=80`,
     },
     {
-      title: "Safety Checking",
-      content: `Maintain safety standards and minimize violations with all time surveillance and alerts.`,
+      title: "Power Management SCADA Systems",
+      content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fugit veritatis voluptates quidem. Eligendi a obcaecati eos perspiciatis, impedit dolore ratione facere nihil vel nam delectus quibusdam sit, debitis quisquam!`,
       list: [
-        { title: "Safety Chokes detection" },
-        { title: "Safety jacket detection" },
-        { title: "Parking Lines detection" },
+        { title: "Real Time data management and Alerts" },
+        { title: "Real time Network Intrusion Detection" },
       ],
-      img: `https://images.unsplash.com/photo-1541707423647-46d6213e390a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+      img: `https://images.unsplash.com/photo-1502637098811-fa9526d2b659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80`,
     },
     {
-      title: "Staff Management",
-      content: `Manage, count, and record the duration of ground staff, cleaning crew and other members with automated people counting and tracking.`,
+      title: "Customer Profiling",
+      content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fugit veritatis voluptates quidem. Eligendi a obcaecati eos perspiciatis, impedit dolore ratione facere nihil vel nam delectus quibusdam sit, debitis quisquam!`,
       list: [
-        { title: "Ground staff monitoring" },
-        { title: "Cleaning crew detection and count" },
+        { title: "Consumption Analysis" },
+        { title: "Real time Alerts" },
+        { title: "Real time self adjusting predictions" },
       ],
-      img: `https://images.pexels.com/photos/2599729/pexels-photo-2599729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-    },
-    {
-      title: "Resource Management",
-      content: `Manage airport resources efficiently by tracking usage and durations assigned to every airplane.`,
-      list: [
-        { title: "Vehicle detection and tracking" },
-        { title: "Vehicle counting" },
-      ],
-      img: `https://images.unsplash.com/photo-1515941719567-48bbfc9163f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80`,
-    },
-    {
-      title: "Baggage Management",
-      content: `Manage and track baggage either in the airport for safety purposes or for operational management during segregation, unloading or offloading.`,
-      list: [
-        { title: "Baggage detection" },
-        { title: "Baggage size and color" },
-        { title: "Baggage counting" },
-        { title: "Baggage dwell time" },
-      ],
-      img: `https://images.unsplash.com/photo-1569512850669-7baa648e82d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    },
-    {
-      title: "Passenger Management",
-      content: `Manage passengers through long queues and boarding processes at the airport with automated analytics through computer vision.`,
-      list: [
-        { title: "Queue wait time" },
-        { title: "Flight passenger counting" },
-        { title: "Dwell time at airport locations" },
-      ],
-      img: `https://images.unsplash.com/photo-1581745841536-c10790870219?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+      img: `https://images.unsplash.com/photo-1594818379496-da1e345b0ded?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80`,
     },
   ];
   return (
-    <div className="bg-white h-full select-none">
+    <div className="bg-white h-full ">
       <section
         className="w-full bg-center bg-cover  "
         style={{
@@ -95,7 +58,7 @@ export const EMOverview = () => {
           background: `url(${data.bgImg}) center center / cover no-repeat`,
         }}>
         <div className="flex  items-center justify-center w-full h-full bg-black bg-opacity-80">
-          <div className="text-center px-10 lg:px-0 w-4/6">
+          <div className="text-center px-10 lg:px-0 lg:w-5/6">
             <h1 className="text-4xl font-bold  text-white uppercase md:text-7xl mb-4">
               {data.label}
             </h1>
@@ -112,7 +75,7 @@ export const EMOverview = () => {
           <div className=" w-full lg:w-6/12 md:m-0 md:order-2 ">
             <div className="flex justify-center relative">
               <img
-                className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
+                className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
                 src={data.image1}
                 alt=""
                 draggable="false"
@@ -124,7 +87,7 @@ export const EMOverview = () => {
               Energy Mangement
             </h2>
 
-            <div className="text-lg lg:text-xl space-y-5 text-gray-500 w-5/6">
+            <div className="text-lg lg:text-xl text-justify space-y-5 text-gray-500 lg:w-5/6">
               <p className="font-light">
                 The energy sector, one of our primary focuses, suffers from a
                 deficit of analytics for optimal management and faces a series
@@ -155,7 +118,6 @@ export const EMOverview = () => {
           </p>
         </div>
 
-
         <section className="flex flex-col lg:flex-row px-10 py-10   bg-white lg:py-20 lg:px-40  ">
           <div className="text-bookmark-blue w-full h-full">
             <Tab>
@@ -174,7 +136,7 @@ export const EMOverview = () => {
             <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
                 <img
-                  className="shadow-xl w-full h-full"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
                   src={data.image2}
                   alt=""
                   draggable="false"
@@ -182,13 +144,13 @@ export const EMOverview = () => {
               </div>
             </div>
             <div className="flex flex-col w-full lg:pl-20 lg:w-6/12 ">
-              <h2 className="text-3xl lg:text-5xl font-medium lg:mb-10">
+              <h2 className="text-3xl lg:text-5xl font-medium  mb-4 lg:mb-10">
                 Predictive analysis in Microgrids
               </h2>
 
-              <div className="text-lg lg:pl-2 lg:text-xl space-y-5 text-gray-500">
-                <div className="lg:pl-2 lg:pb-10">
-                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
+              <div className="text-lg lg:text-xl text-justify space-y-10 text-gray-500">
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Sources of Energy
                   </h2>
                   <p className="font-light">
@@ -202,8 +164,8 @@ export const EMOverview = () => {
                   </p>
                 </div>
 
-                <div className="lg:pl-2 lg:pb-10">
-                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Problems faced
                   </h2>
                   <p className="font-light">
@@ -215,8 +177,8 @@ export const EMOverview = () => {
                     obtain accurate details of energy generation.
                   </p>
                 </div>
-                <div className="lg:pl-2 lg:pb-10">
-                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Issues with current solutions
                   </h2>
                   <p className="font-light">
@@ -238,25 +200,25 @@ export const EMOverview = () => {
 
         {/* ==================== section #3 ========================== */}
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-16 ">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-20">
-            <div className=" w-full lg:w-6/12 md:m-0 order-2">
+        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40  ">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div className=" w-full lg:w-6/12 md:m-0 lg:order-2">
               <div className="flex justify-center relative">
                 <img
-                  className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
                   src={data.image4}
                   alt=""
                   draggable="false"
                 />
               </div>
             </div>
-            <div className="flex  flex-col w-full lg:w-6/12 order-1">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-4 w-5/6">
+            <div className="flex  flex-col w-full lg:w-6/12 lg:order-1">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:w-5/6">
                 Real Time and Self Adapting predictions
               </h2>
 
-              <div className="text-lg lg:text-xl space-y-5 text-gray-500">
-                <p className=" font-light w-5/6">
+              <div className="text-lg lg:text-xl text-justify text-gray-500">
+                <p className=" font-light lg:w-5/6">
                   With its homegrown Continual Learning Algorithm, we aim to
                   assist in this problem by providing highly scalable and robust
                   real time forecasting applications. When data is ingested and
@@ -276,7 +238,7 @@ export const EMOverview = () => {
             <div className=" w-full lg:w-6/12 md:m-0 ">
               <div className="flex justify-center relative ">
                 <img
-                  className="shadow-xl w-full h-full"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
                   src={data.image3}
                   alt=""
                   draggable="false"
@@ -284,16 +246,16 @@ export const EMOverview = () => {
               </div>
             </div>
             <div className="flex lg:pl-20 flex-col w-full lg:w-6/12 ">
-              <h2 className="text-3xl  lg:text-5xl w-5/6 font-medium lg:mb-10">
+              <h2 className="text-3xl  lg:text-5xl lg:w-5/6 font-medium mb-4 lg:mb-10">
                 Anomaly Detection in Power Grids
               </h2>
 
-              <div className="text-lg lg:text-xl space-y-5 text-gray-500">
-                <div className="lg:pl-2 lg:pb-10">
-                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
+              <div className="text-lg lg:text-xl text-justify space-y-10 text-gray-500">
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Non-Technical Losses
                   </h2>
-                  <p className="font-light w-5/6">
+                  <p className="font-light lg:w-5/6">
                     Non-technical losses (NTL) are one of the most major
                     problems pertaining to the power grid, and have been for
                     quite a long time. Unlike technical losses which are
@@ -303,11 +265,11 @@ export const EMOverview = () => {
                   </p>
                 </div>
 
-                <div className="lg:pl-2 lg:pb-10">
-                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Electricity Theft
                   </h2>
-                  <p className="font-light w-5/6">
+                  <p className="font-light lg:w-5/6">
                     A major portion of the NTLs are caused by some mode of
                     electricity theft.Referring to World Bank reports, NTL
                     represents a significant part of the total power losses in
@@ -317,11 +279,11 @@ export const EMOverview = () => {
                     challenge to deal with.
                   </p>
                 </div>
-                <div className="lg:pl-2 lg:pb-10">
-                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Smart Grids
                   </h2>
-                  <p className="font-light w-5/6">
+                  <p className="font-light lg:w-5/6">
                     Thanks to the introduction of IoT, Smart Power grids are
                     quickly rising as a standard norm across the globe. Majority
                     of microgrids and power grids are shifting towards the use
@@ -339,37 +301,37 @@ export const EMOverview = () => {
         {/* ==================== section #5 ========================== */}
         <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-16 ">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-20">
-            <div className=" w-full lg:w-6/12 md:m-0 order-2">
+            <div className=" w-full lg:w-6/12 md:m-0 lg:order-2">
               <div className="flex justify-center relative">
                 <img
-                  className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
                   src={data.image6}
                   alt=""
                   draggable="false"
                 />
               </div>
             </div>
-            <div className="flex  flex-col w-full lg:w-6/12 order-1">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-4 w-5/6">
+            <div className="flex  flex-col w-full lg:w-6/12 lg:order-1">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:w-5/6">
                 Theft Detection
               </h2>
 
-              <div className="text-lg lg:text-xl space-y-5 text-gray-500">
-                <p className=" font-light w-5/6">
+              <div className="text-lg lg:text-xl text-justify space-y-5 text-gray-500">
+                <p className=" font-light lg:w-5/6">
                   Currently, most work concentrates on analyzing characteristics
                   of electricity consumption to detect NTL among residential
                   customers. With the introduction of Smart Meter data we can
                   analyse and study the consumption patterns thoroughly and on a
                   more frequent basis.
                 </p>
-                <p className=" font-light w-5/6">
+                <p className=" font-light lg:w-5/6">
                   Moreover the data can be tallied and analysed at various
                   checkpoints throughout the grid, enabling us to pinpoint the
                   exact stretch or location of leaks. But it is highly possible
                   in real world scenarios that the general trend of consumption
                   changes over time.
                 </p>
-                <p className=" font-light w-5/6">
+                <p className=" font-light lg:w-5/6">
                   Guise AI’s Continual Learning AI caters to these industry
                   requirements and performs extremely well in adapting to real
                   time data. With the help of the Outlier Detection devised from
@@ -388,7 +350,7 @@ export const EMOverview = () => {
             <div className=" w-full lg:w-6/12 md:m-0 md:order-2 order-1 ">
               <div className="flex justify-center relative">
                 <img
-                  className=" shadow-xl w-full h-full"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
                   src={data.image5}
                   alt=""
                   draggable="false"
@@ -396,16 +358,16 @@ export const EMOverview = () => {
               </div>
             </div>
             <div className="flex flex-col lg:pl-20 w-full lg:w-6/12 order-2">
-              <h2 className="text-3xl  lg:text-4xl font-medium lg:mb-10 w-5/6">
+              <h2 className="text-3xl  lg:text-4xl font-medium mb-4 lg:mb-10 lg:w-5/6">
                 Network Intrusion Detection for SCADA systems
               </h2>
 
-              <div className="text-lg lg:text-xl  text-gray-500">
-                <div className="lg:pl-2 lg:pb-10">
-                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
+              <div className="text-lg lg:text-xl  text-justify space-y-5   text-gray-500">
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     SCADA
                   </h2>
-                  <p className="font-light w-5/6 mb-4">
+                  <p className="font-light lg:w-5/6">
                     Industry 4.0 makes everything in your supply chain “smart” –
                     from smart manufacturing and factories to smart warehousing
                     and logistics. It also interconnects with back-end systems,
@@ -414,11 +376,11 @@ export const EMOverview = () => {
                     of a lot of these major Industry 4.0 systems work with the
                     help of SCADA systems.
                   </p>
-                  <div className="font-light w-5/6 mb-4">
+                  <div className="font-light mt-4 lg:w-5/6">
                     Supervisory control and data acquisition (SCADA) is a system
                     of software and hardware elements that allows industrial
                     organizations to:
-                    <ul className="list-disc lg:pl-10 mt-4 font-light w-5/6 ">
+                    <ul className="list-disc lg:pl-10 mt-4 font-light lg:w-5/6 ">
                       <li>
                         Control industrial processes locally or at remote
                         locations
@@ -434,11 +396,11 @@ export const EMOverview = () => {
                   </div>
                 </div>
 
-                <div className="lg:pl-2 lg:pb-10">
-                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Security
                   </h2>
-                  <p className="font-light w-5/6 mb-4">
+                  <p className="font-light lg:w-5/6 ">
                     Cybersecurity is currently one of the main concerns for
                     SCADA ICS operators, as a result of a series of recent
                     successful cyberattacks against several targets, such as
@@ -454,24 +416,24 @@ export const EMOverview = () => {
         {/* ==================== section #7 ========================== */}
 
         <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-16 ">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-20">
-            <div className=" w-full lg:w-6/12 md:m-0 order-2">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div className=" w-full lg:w-6/12 md:m-0 lg:order-2">
               <div className="flex justify-center relative">
                 <img
-                  className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
                   src={data.image9}
                   alt=""
                   draggable="false"
                 />
               </div>
             </div>
-            <div className="flex  flex-col w-full lg:w-6/12 order-1">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-4 w-5/6">
+            <div className="flex  flex-col w-full lg:w-6/12 lg:order-1">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-10 lg:w-5/6">
                 Network Intrusion Detection
               </h2>
 
-              <div className="text-lg lg:text-xl space-y-5 text-gray-500">
-                <p className=" font-light w-5/6">
+              <div className="text-lg lg:text-xl text-justify space-y-5 text-gray-500">
+                <p className=" font-light lg:w-5/6">
                   Data over the internet is shared in the form of packets, all
                   these packets are shared in continuous real time streams where
                   each packet, apart from the data being shared, stores metadata
@@ -481,7 +443,7 @@ export const EMOverview = () => {
                   anomaly detection on the metadata which is open to
                   consumption.
                 </p>
-                <p className=" font-light w-5/6">
+                <p className=" font-light lg:w-5/6">
                   With the help of our Continuous Learning AI at GuiseAI we can
                   help the NIDS learn about the network data flow and understand
                   trends and isolated points. The NIDS will aso be able to
@@ -501,7 +463,7 @@ export const EMOverview = () => {
             <div className=" w-full lg:w-6/12 md:m-0 ">
               <div className="flex justify-center relative">
                 <img
-                  className="shadow-xl w-full h-full"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
                   src={data.image7}
                   alt=""
                   draggable="false"
@@ -509,16 +471,16 @@ export const EMOverview = () => {
               </div>
             </div>
             <div className="flex lg:pl-20 flex-col w-full  lg:w-6/12  ">
-              <h2 className="text-3xl lg:text-5xl font-medium lg:mb-10 w-5/6">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-10 lg:w-5/6">
                 Customer Profile and Load Balancing
               </h2>
 
-              <div className="text-lg lg:pl-2 lg:text-xl space-y-5 text-gray-500">
-                <div className=" lg:pb-10">
-                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
+              <div className="text-lg  lg:text-xl text-justify space-y-10 text-gray-500">
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Customer segmentation
                   </h2>
-                  <p className="font-light w-5/6">
+                  <p className="font-light lg:w-5/6">
                     Customer segmentation allows organizations to divide a
                     market into subsets of customers that have, or are perceived
                     to have, common needs, interests, and priorities – then
@@ -528,11 +490,11 @@ export const EMOverview = () => {
                   </p>
                 </div>
 
-                <div className=" lg:pb-10">
-                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Smart Meter Data
                   </h2>
-                  <p className="font-light w-5/6">
+                  <p className="font-light lg:w-5/6">
                     Due to the increase in the number of smart meter devices, a
                     power grid generates a large amount of data. Analyzing the
                     data can help in understanding the users’ electricity
@@ -552,54 +514,82 @@ export const EMOverview = () => {
 
         {/* ==================== section #8 ========================== */}
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:py-20 lg:px-40 gap-16 ">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-            <div className=" w-full lg:w-6/12 md:m-0 order-2">
-              <div className="flex justify-center relative">
-                <img
-                  className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
-                  src={data.image8}
-                  alt=""
-                  draggable="false"
-                />
+        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40  ">
+          <div className="flex flex-wrap items-center pt-8  ">
+            <div className="w-full md:w-6/12  md:order-2">
+              <div className="justify-center flex flex-wrap relative">
+                <div className="my-4 w-full lg:w-6/12 ">
+                  <div
+                    className=" object-cover bg-cover bg-center rounded-lg shadow-xl  h-52 lg:h-72"
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1515614457209-3c7081d62743?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center center / cover no-repeat`,
+                    }}></div>
+
+                  <div
+                    className="p-8 mt-8 hidden lg:block lg:h-72 object-cover bg-cover bg-center rounded-lg shadow-xl"
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1509389928833-fe62aef36deb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1112&q=80) center center / cover no-repeat`,
+                    }}></div>
+                </div>
+                <div className="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
+                  <div
+                    className=" object-cover bg-cover bg-center  shadow-lg rounded-md text-center  hidden lg:block lg:h-72 "
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1592833159155-c62df1b65634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80) center center / cover no-repeat`,
+                    }}></div>
+
+                  <div
+                    className="p-8 mt-8 hidden lg:block lg:h-72 object-cover bg-cover bg-center rounded-lg shadow-xl"
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1459802243250-97792e921da4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center center / cover no-repeat`,
+                    }}></div>
+                </div>
               </div>
             </div>
-            <div className="flex  flex-col w-full lg:w-6/12 order-1">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-8 w-5/6">
+
+            <div className="flex flex-col w-full lg:w-6/12   md:order-1 ">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4  lg:w-5/6">
                 Explore our Suite of Solutions
               </h2>
 
-              <div className="text-lg lg:text-xl space-y-5 text-gray-500">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 w-5/6 gap-x-8">
-                  <div className="flex items-center space-x-2">
-                    <div className="flex-shrink-0 flex items-center">
-                      <Tick />
-                    </div>
-                    <div className="copy-body">
-                      Predictive analysis in Microgrids
-                    </div>
+              <p className=" font-light text-justify lg:w-5/6 text-lg lg:text-xl  space-y-10 text-gray-500">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Quaerat ipsa unde soluta necessitatibus, ut itaque rerum illum
+                maxime obcaecati ad? Mollitia autem itaque quisquam eligendi
+                recusandae laboriosam magnam rem harum!
+              </p>
+
+              <div className="grid  mt-8 sm:grid-cols-2 gap-y-4 lg:w-5/6   ">
+                <div className="flex items-center space-x-2">
+                  <div className="flex-shrink-0 flex items-center">
+                    <Tick />
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="flex-shrink-0 flex items-center">
-                      <Tick />
-                    </div>
-                    <div className="copy-body">
-                      Anomaly Detection in Power Grids
-                    </div>
+                  <div className="font-medium text-lg lg:text-xl text-gray-700">
+                    Predictive analysis in Microgrids
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="flex-shrink-0 flex items-center">
-                      <Tick />
-                    </div>
-                    <div className="copy-body">
-                      Network Intrusion Detection in SCADA systems
-                    </div>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="flex-shrink-0 flex items-center">
+                    <Tick />
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="flex-shrink-0 flex items-center">
-                      <Tick />
-                    </div>
-                    <div className="copy-body">Customer Profiling</div>
+                  <div className="font-medium text-lg lg:text-xl text-gray-700">
+                    Anomaly Detection in Power Grids
+                  </div>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="flex-shrink-0 flex items-center">
+                    <Tick />
+                  </div>
+                  <div className="font-medium text-lg lg:text-xl text-gray-700">
+                    Network Intrusion Detection in SCADA systems
+                  </div>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="flex-shrink-0 flex items-center">
+                    <Tick />
+                  </div>
+                  <div className="font-medium text-lg lg:text-xl text-gray-700">
+                    Customer Profiling
                   </div>
                 </div>
               </div>

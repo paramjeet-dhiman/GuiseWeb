@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ScrollButton } from "../components/ScrollButton/ScrollBtn";
+import airplaneProduct from "../../assets/images/airplane_product.jpg";
 
 export const Products = () => {
   return (
@@ -41,7 +42,7 @@ export const Products = () => {
           {[
             {
               label: "Safety detection",
-              img: `https://images.unsplash.com/photo-1582809998712-4fc340132e1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+              img: airplaneProduct,
               description: `The ability of Airports, Airlines, and Aviation Authorities to implement high-impact strategies is critical in order to increase customer satisfaction and operational efficiency.`,
             },
           ].map((item) => (
@@ -183,7 +184,8 @@ export const Products = () => {
           {[
             {
               label: "Safety detection",
-              img: `https://images.unsplash.com/photo-1510279410431-2d0808d69bf8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+              // `https://images.unsplash.com/photo-1510279410431-2d0808d69bf8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`
+              img: `https://images.pexels.com/photos/4062563/pexels-photo-4062563.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
               description: `Experience the next level of Noise cancellation with the new Guise  AI assisted Intelligent Audio with improved audio filtration and customizable noise cancellation.`,
             },
           ].map((item) => (
@@ -255,7 +257,7 @@ export const Products = () => {
             {
               label: "Safety detection",
               img: `https://images.unsplash.com/photo-1611147533125-9ca445f32036?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-              description: ` Lorem ipsum dolor, sit amet consectetur adipisicing elit.`,
+              description: ` Revolutionize vehicle and crowd management with real-time accurate analytics for better planning and design of city routes. Smart Cities rise from smart analytics.`,
             },
           ].map((item) => (
             <div

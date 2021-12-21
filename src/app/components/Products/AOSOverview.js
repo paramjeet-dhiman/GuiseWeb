@@ -36,8 +36,8 @@ export const AOSOverview = () => {
       list: [
         { title: "Aircraft check in and check out time" },
         { title: "Baggage Offload and Onload time" },
-        { title: "Footbridge attach and detach time" },
-        { title: "Aircraft Logo Detection" },
+        { title: "JetBridge attach and detach time" },
+        { title: "Airline Detection" },
       ],
       img: `https://images.unsplash.com/photo-1482351437900-d57cf1b9cd37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
@@ -85,7 +85,7 @@ export const AOSOverview = () => {
       content: `Manage passengers through long queues and boarding processes at the airport with automated analytics through computer vision.`,
       list: [
         { title: "Queue wait time" },
-        { title: "Flight passenger counting" },
+        { title: "Passenger counting" },
         { title: "Dwell time at airport locations" },
       ],
       img: `https://images.unsplash.com/photo-1581745841536-c10790870219?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
@@ -376,7 +376,7 @@ export const AOSOverview = () => {
           </div>
         </section>
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-bookmark-white lg:py-20 lg:px-40 gap-10 ">
+        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20  lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between gap-10">
             <div className=" w-full lg:w-6/12 md:m-0 ">
               <div className="flex justify-center relative ">

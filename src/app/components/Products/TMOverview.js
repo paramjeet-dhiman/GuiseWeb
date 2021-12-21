@@ -7,7 +7,7 @@ import Tab from "../TabSlider/TabSlider";
 export const TMOverview = () => {
   let data = {
     label: "Traffic Management",
-    subText: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod doloribus at adipisci earum aspernatur veritatis, ad quia reprehenderit repudiandae laudantium, obcaecati molestiae laboriosam? Blanditiis eligendi facilis pariatur omnis cupiditate quibusdam.`,
+    subText: `Revolutionize vehicle and crowd management with real-time accurate analytics for better planning and design of city routes. Smart Cities rise from smart analytics.`,
     bgImg: `https://images.unsplash.com/photo-1488134684157-fea2d81a5ec4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80`,
 
     title: `Lorem Ipsum`,
@@ -74,7 +74,7 @@ export const TMOverview = () => {
           background: `url(${data.bgImg}) center center / cover no-repeat`,
         }}>
         <div className="flex  items-center justify-center w-full h-full bg-black bg-opacity-80">
-          <div className="text-center px-10 lg:px-0 w-4/6">
+          <div className="text-center px-10 lg:px-0 lg:w-5/6">
             <h1 className="text-4xl font-bold  text-white uppercase md:text-7xl mb-4">
               {data.label}
             </h1>
@@ -91,7 +91,7 @@ export const TMOverview = () => {
           <div className=" w-full lg:w-6/12 md:m-0 md:order-2 ">
             <div className="flex justify-center relative">
               <img
-                className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
+                className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
                 src={data.image1}
                 alt=""
                 draggable="false"
@@ -103,7 +103,7 @@ export const TMOverview = () => {
               {data.label}
             </h2>
 
-            <div className="text-lg lg:text-xl space-y-5 text-gray-500 w-5/6">
+            <div className="text-lg  text-justify lg:text-xl space-y-5 text-gray-500 lg:w-5/6">
               <p>
                 Guise Intelligent traffic provides solutions for accurate and
                 comprehensive analyses of city traffic by comprehending visual
@@ -129,7 +129,7 @@ export const TMOverview = () => {
           </p>
         </div>
 
-        <section className="flex flex-col lg:flex-row px-10 py-10   bg-white lg:py-20 lg:px-40  ">
+        <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:py-20 lg:px-40  ">
           <div className="text-bookmark-blue w-full h-full">
             <Tab>
               {tabContent.map((tab, idx) => (
@@ -147,7 +147,7 @@ export const TMOverview = () => {
             <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
                 <img
-                  className="shadow-xl w-full h-full"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
                   src={data.image2}
                   alt=""
                   draggable="false"
@@ -155,37 +155,37 @@ export const TMOverview = () => {
               </div>
             </div>
             <div className="flex flex-col w-full lg:pl-20 lg:w-6/12 ">
-              <h2 className="text-3xl lg:text-5xl font-medium lg:mb-10">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-10">
                 Build a Smarter City with the help of AI
               </h2>
 
-              <div className="text-lg lg:pl-2 lg:text-xl space-y-5 text-gray-500">
-                <div className="lg:pl-2 lg:pb-10">
-                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
+              <div className="text-lg  text-justify  lg:text-xl space-y-10 text-gray-500">
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Understand traffic
                   </h2>
-                  <p className="font-light">
+                  <p className="font-light lg:w-5/6">
                     Have an automated system to help understand your city’s
                     movement better. Get accurate numbers on vehicle density and
                     location and systematically make decisions.
                   </p>
                 </div>
-                <div className="lg:pl-2 lg:pb-10">
-                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Be prepared
                   </h2>
-                  <p className="font-light">
+                  <p className="font-light lg:w-5/6">
                     With analyzed data, prepare for special cases well in
                     advance with efficient roadblocks and route management.
                     Preparing for the worst has been easier.
                   </p>
                 </div>
 
-                <div className="lg:pl-2 lg:pb-10">
-                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Maintain Safer roads
                   </h2>
-                  <p className="font-light">
+                  <p className="font-light lg:w-5/6">
                     Violating road safety standards have led to countless
                     accidents every year that have cost human lives. With an
                     automated system, receive real time alerts and records to
@@ -204,21 +204,21 @@ export const TMOverview = () => {
             <div className=" w-full lg:w-6/12 md:m-0 order-2">
               <div className="flex justify-center relative ">
                 <img
-                  className="shadow-xl w-full h-full"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
                   src={data.image3}
                   alt=""
                   draggable="false"
                 />
               </div>
             </div>
-            <div className="flex flex-col w-full lg:w-6/12 order-1">
-              <h2 className="text-3xl lg:text-5xl font-medium lg:mb-10">
+            <div className="flex flex-col w-full lg:w-6/12 order-2 md:order-1">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-10">
                 Real time traffic analysis
               </h2>
 
-              <div className="text-lg lg:text-xl space-y-5 text-gray-500">
-                <div className=" lg:pb-10">
-                  <p className="font-light w-5/6">
+              <div className="text-lg lg:text-xl space-y-5 text-gray-500 order-1 md:order-2">
+                <div className="">
+                  <p className="font-light text-justify lg:w-5/6">
                     Real time streaming will help understand traffic trends
                     across the city much better. Junction signals need not be
                     statically programmed and can be updated in real time as per
@@ -236,11 +236,11 @@ export const TMOverview = () => {
 
         {/* ====================== Section #4  ================== */}
         <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-16 ">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-20">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
             <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
                 <img
-                  className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
                   src={data.image4}
                   alt=""
                   draggable="false"
@@ -253,7 +253,7 @@ export const TMOverview = () => {
               </h2>
 
               <div className="text-lg lg:text-xl space-y-5 text-gray-500">
-                <p className=" font-light">
+                <p className=" font-light text-lg  text-justify lg:text-xl space-y-5 text-gray-500 lg:w-5/6">
                   Road safety rules need to be maintained in order to avoid
                   fatal repercussions. Violations such as breaking the signal or
                   no helmets for two-wheelers and triple riding can be tracked
@@ -270,54 +270,91 @@ export const TMOverview = () => {
         </section>
 
         {/* ====================== Section #5  ================== */}
-        <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:py-20 lg:px-40 gap-16 ">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-            <div className=" w-full lg:w-6/12 md:m-0 md:order-2  ">
-              <div className="flex justify-center relative">
-                <img
-                  className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
-                  src={data.image5}
-                  alt=""
-                  draggable="false"
-                />
+
+        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40  ">
+          <div className="flex flex-wrap items-center pt-8  ">
+            <div className="w-full md:w-6/12  md:order-2">
+              <div className="justify-center flex flex-wrap relative">
+                <div className="my-4 w-full lg:w-6/12 ">
+                  <div
+                    className=" object-cover bg-cover bg-center rounded-lg shadow-xl  h-52 lg:h-72"
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1596188431116-f858853f2be3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center center / cover no-repeat`,
+                    }}></div>
+
+                  <div
+                    className="p-8 mt-8 hidden lg:block lg:h-72 object-cover bg-cover bg-center rounded-lg shadow-xl"
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1580742744464-d67b9e35ddff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmVoaWNsZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60) center center / cover no-repeat`,
+                    }}></div>
+                </div>
+                <div className="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
+                  <div
+                    className=" object-cover bg-cover bg-center  shadow-lg rounded-md text-center  hidden lg:block lg:h-72 "
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1511814104612-47a8f022914b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center center / cover no-repeat`,
+                    }}></div>
+
+                  <div
+                    className="p-8 mt-8 hidden lg:block lg:h-72 object-cover bg-cover bg-center rounded-lg shadow-xl"
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1629365628992-674c410064fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80) center center / cover no-repeat`,
+                    }}></div>
+                </div>
               </div>
             </div>
-            <div className="flex  flex-col w-full lg:w-6/12 ">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-8 lg:w-5/6 lg:leading-tight">
-                Explore our Suite of solutions for all your problems
+
+            <div className="flex flex-col w-full lg:w-6/12   md:order-1 ">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4  lg:w-5/6">
+                Explore our Suite
               </h2>
 
-              <div className="text-lg lg:text-xl space-y-5 text-gray-500 lg:w-5/6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8">
-                  <div className="flex items-center space-x-2">
-                    <div className="flex-shrink-0 flex items-center">
-                      <Tick />
-                    </div>
-                    <div className="copy-body">Vehicle Detection</div>
+              <p className=" font-light text-justify lg:w-5/6 text-lg lg:text-xl  space-y-10 text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                explicabo numquam dicta ea, cumque maxime dolor optio similique
+                quo, provident iste itaque ipsa impedit temporibus! Itaque
+                reiciendis pariatur unde quae.
+              </p>
+
+              <div className="grid  mt-8 sm:grid-cols-2 gap-y-4 lg:w-5/6   ">
+                <div className="flex items-center space-x-2">
+                  <div className="flex-shrink-0 flex items-center">
+                    <Tick />
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="flex-shrink-0 flex items-center">
-                      <Tick />
-                    </div>
-                    <div className="copy-body">Vehicle make and build</div>
+                  <div className="font-medium text-lg lg:text-xl text-gray-700">
+                    Vehicle Detection
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="flex-shrink-0 flex items-center">
-                      <Tick />
-                    </div>
-                    <div className="copy-body">Road Violation detection</div>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="flex-shrink-0 flex items-center">
+                    <Tick />
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="flex-shrink-0 flex items-center">
-                      <Tick />
-                    </div>
-                    <div className="copy-body">License Plate Recognition</div>
+                  <div className="font-medium text-lg lg:text-xl text-gray-700">
+                    Vehicle make and build
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <div className="flex-shrink-0 flex items-center">
-                      <Tick />
-                    </div>
-                    <div className="copy-body">Vehicle Count</div>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="flex-shrink-0 flex items-center">
+                    <Tick />
+                  </div>
+                  <div className="font-medium text-lg lg:text-xl text-gray-700">
+                    Vehicle Count
+                  </div>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="flex-shrink-0 flex items-center">
+                    <Tick />
+                  </div>
+                  <div className="font-medium text-lg lg:text-xl text-gray-700">
+                    License Plate Recognition
+                  </div>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="flex-shrink-0 flex items-center">
+                    <Tick />
+                  </div>
+                  <div className="font-medium text-lg lg:text-xl text-gray-700">
+                    Road Violation detection
                   </div>
                 </div>
               </div>

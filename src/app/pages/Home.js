@@ -1,14 +1,8 @@
-// import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-// import ReactCompareImage from "react-compare-image";
-// import { HorizontalScroll } from "../components/HorizontalScroll/HorizontalScroll";
 import BGTech from "../../assets/images/globe-6858907.jpg";
 import BGTech2 from "../../assets/images/2880645.jpg";
 
 export function Home() {
-  // const [slideIndex, setSlideIndex] = useState(0);
-  // const sliderRef = useRef();
-
   const products = [
     {
       label: "Airports",
@@ -56,7 +50,7 @@ export function Home() {
 
               <div className=" mt-10 flex justify-center lg:justify-start">
                 <Link to="/technology">
-                  <button className="btn bg-white hover:text-white hover:bg-blue-500 text-core-black transform hover:scale-105 hoverTransition  text-lg md:text-xl  md:inline font-semibold">
+                  <button className="btn border-2 hover:border-white  text-white hover:text-core-black hover:bg-white transform hover:scale-105 hoverTransition  text-lg md:text-xl  md:inline font-semibold">
                     Read more
                   </button>
                 </Link>
@@ -137,68 +131,6 @@ export function Home() {
         </div>
       </section>
 
-      {/*========================= Horizontal Carousel ====================== */}
-      {/* <section className="bg-bookmark-white py-10 lg:py-20 mt-10 lg:mt-10 ">
-        <div className="sm:w-3/4 lg:w-5/12 mx-auto    px-12 lg:px-2">
-          <h1 className="text-3xl font-semibold lg:text-5xl  text-center text-bookmark-blue">
-            Lorem ipsum dolor sit amet
-          </h1>
-          <p className="text-gray-800   text-lg lg:text-xl  lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
-
-        <div className="lg:w-full  cursor-grab">
-          <HorizontalScroll
-            sliderRef={sliderRef}
-            setSlideIndex={setSlideIndex}
-          />
-          <div className="px-20 py-5 text-gray-900  hidden lg:block">
-            <div
-              className={`${
-                slideIndex === 0
-                  ? "hidden"
-                  : "bg-red-500 hover:bg-red-600 hover:shadow-xl hover:animate-pulse transform hover:scale-110  px-3 py-3  lg:px-5 lg:py-5  rounded-full float-left flex justify-center items-center transition-all ease-linear duration-500 "
-              }`}
-              onClick={() => sliderRef?.current?.slickPrev()}>
-              <svg
-                className="w-10 h-10 text-white animate-goLeft"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M15 19l-7-7 7-7"></path>
-              </svg>
-            </div>
-
-            <button
-              className={`${
-                slideIndex === 1
-                  ? "hidden"
-                  : "bg-red-500 hover:bg-red-600 hover:shadow-xl hover:animate-pulse transform hover:scale-110 px-3 py-3 lg:px-5 lg:py-5   float-right	 rounded-full flex justify-center items-center transition-all ease-linear duration-500 "
-              }`}
-              onClick={() => sliderRef?.current?.slickNext()}>
-              <svg
-                className="w-10 h-10 text-white  animate-goRight   "
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M9 5l7 7-7 7"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section> */}
-
       {/*============ 2 col right-left image and text ===========*/}
 
       <section className="bg-white py-20 lg:py-20 mt-5 lg:mt-10">
@@ -213,29 +145,6 @@ export function Home() {
             guise ai's realtime solutions on the edge
           </p>
         </div>
-
-        {/* <div className="relative  mt-20 lg:mt-40">
-          <div className="md:px-44  flex flex-col lg:flex-row-reverse items-center justify-center gap-x-24">
-            <div className="flex flex-1 justify-center z-40 mb-10 lg:mb-0">
-              <img
-                src={`https://image.freepik.com/free-photo/human-brain-medical-digital-illustration_53876-103046.jpg`}
-                className=" w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl"
-                alt="sdf"
-                draggable="false"
-              />
-            </div>
-
-            <div className="px-10 md:px-0 flex flex-1 flex-col items-center lg:items-start">
-              <p className="text-core-black font-medium lg:leading-snug text-xl lg:text-2xl text-left  lg:w-5/6">
-                Guise AI's solutions at the edge deliver feedback rapidly and
-                locally within the system. Localized processing is more
-                efficient, less expensive, and it increases the level of
-                security in terms of data privacy while maintaining GDPR
-                compliance.
-              </p>
-            </div>
-          </div>
-        </div> */}
 
         <div className=" relative mt-20 lg:mt-36">
           <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-24">
@@ -260,25 +169,6 @@ export function Home() {
           </div>
         </div>
       </section>
-
-      {/*Slider image*/}
-      {/* <section className="bg-bookmark-white py-10 mt-10 lg:py-20 lg:mt-20 ">
-        <div className="sm:w-3/4 lg:w-5/12 mx-auto  px-12 lg:px-2">
-          <h1 className="text-3xl lg:text-5xl font-semibold text-center text-bookmark-blue">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.{" "}
-          </h1>
-          <p className="text-gray-800   text-lg lg:text-xl  lg:text-center w-3/4  container  text-center  lg:w-4/6 mt-2 md:mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing.
-          </p>
-        </div>
-        <div className="lg:container mt-10 shadow-xl">
-          <ReactCompareImage
-            leftImage="https://images.pexels.com/photos/5696661/pexels-photo-5696661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            rightImage="https://i.postimg.cc/NFKCQWTq/Group-69.png"
-            className=""
-          />
-        </div>
-      </section> */}
 
       {/*============================= Join Team =========================== */}
 
@@ -323,9 +213,6 @@ export function Home() {
           </div>
         </div>
       </section>
-
-      {/* ========================= Stay up to date ============================ */}
-      {/* <StayUpToDate /> */}
     </div>
   );
 }
