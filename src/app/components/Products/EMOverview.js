@@ -26,11 +26,25 @@ export const EMOverview = () => {
     {
       title: "Microgrid",
       content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempore, deleniti aspernatur quis omnis quidem repudiandae. Perspiciatis voluptatum, aut dolorem amet, dolores repellendus exercitationem porro quasi, quisquam animi quod mollitia.`,
-      list: [{ title: "Predictive analysis" }],
+      list: [
+        { title: "Predictive analysis" },
+        { title: "Real time updation with CL" },
+        { title: "Energy Conservation and planning" },
+      ],
       img: `https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1158&q=80`,
     },
     {
-      title: "Power Management SCADA Systems",
+      title: "Power Management",
+      content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fugit veritatis voluptates quidem. Eligendi a obcaecati eos perspiciatis, impedit dolore ratione facere nihil vel nam delectus quibusdam sit, debitis quisquam!`,
+      list: [
+        { title: "Consumption reports" },
+        { title: "Distribution Analytics" },
+        { title: "Theft Detection" },
+      ],
+      img: `https://images.unsplash.com/photo-1515614457209-3c7081d62743?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    },
+    {
+      title: "SCADA Systems",
       content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fugit veritatis voluptates quidem. Eligendi a obcaecati eos perspiciatis, impedit dolore ratione facere nihil vel nam delectus quibusdam sit, debitis quisquam!`,
       list: [
         { title: "Real Time data management and Alerts" },
