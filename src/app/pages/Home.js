@@ -34,15 +34,15 @@ export function Home() {
   return (
     <div className="">
       {/*================= Hero Section ===================*/}
-      <section className="flex items-center justify-center py-20  relative h-screen  bg-black">
+      <section className="flex items-center justify-center py-20  relative h-screen  bg-white">
         <div className=" lg:px-44 flex flex-col   mx-auto  md:h-128 space-y-10 gap-y-10 lg:gap-y-0 lg:space-y-0 lg:flex-row lg:items-center lg:space-x-6">
           <div className="flex flex-col items-center w-full pt-20  sm:pt-36 md:pt-48 lg:pt-0   lg:flex-row lg:w-1/2">
             <div className="px-10 lg:px-0 md:order-2 flex flex-col justify-center items-center md:items-start ">
-              <h2 className="text-3xl font-bold text-center md:text-left  lg:leading-tight text-gray-300 md:text-5xl">
+              <h2 className="text-3xl font-bold text-center md:text-left  lg:leading-tight text-core-black md:text-5xl">
                 We design and develop experiences that make people's live
                 Simple.
               </h2>
-              <p className="mt-4 text-gray-400 text-center md:text-left  text-lg lg:text-xl w-5/6">
+              <p className="mt-4 text-gray-500 text-center md:text-left  text-lg lg:text-xl w-5/6">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
                 quia asperiores alias vero magnam recusandae adipisci ad vitae
                 laudantium quod rem voluptatem eos accusantium cumque.
@@ -50,7 +50,7 @@ export function Home() {
 
               <div className=" mt-10 flex justify-center lg:justify-start">
                 <Link to="/technology">
-                  <button className="btn border-2 hover:border-white  text-white hover:text-core-black hover:bg-white transform hover:scale-105 hoverTransition  text-lg md:text-xl  md:inline font-semibold">
+                  <button className="btn border-2 rounded-md border-core-black hover:bg-core-black hover:text-gray-100   transform hover:scale-105 hoverTransition  text-lg md:text-xl  md:inline font-semibold">
                     Read more
                   </button>
                 </Link>
@@ -77,26 +77,29 @@ export function Home() {
             height: "100%",
           }}>
           <div
-            className="lg:text-left py-20 text-bookmark-white flex flex-col items-center justify-center"
+            className="lg:text-left py-20  flex flex-col items-center justify-center"
             style={{
               boxShadow: `inset 0 0 0 2000px rgb(0 0 0 / 80%)`,
               height: "100%",
             }}>
-            <div className="px-10 md:px-44 space-y-10 sm:text-center">
-              <p className="w-full text-xl md:text-3xl text-left  font-medium lg:text-3xl lg:leading-normal">
-                Guise AI solves the cost and efficiency problems endemic in AI
-                today. Our continuous learning AI solutions on the edge allow
-                machines to continuously learn and adapt to dynamically changing
-                data in the real world without having to constantly retrain
-                models.
-              </p>
-
-              <p className="w-full text-xl md:text-3xl text-left  font-medium lg:text-3xl lg:leading-normal">
-                Clients and OEMs who require an accurate, cost-efficient and
-                secure solution turn to Guise AI to continuously extract
-                patterns and predict from real-time and dynamically changing
-                data to create the greatest impact on end-users.
-              </p>
+            <div className="flex flex-col md:flex-row px-10 md:px-40 gap-20 lg:gap-40 sm:text-center">
+              <div className="backdrop bg-white bg-opacity-10 rounded-md hoverTransition transform hover:scale-105 hover:bg-core-black text-white border-2 border-gray-800 p-5 shadow-xl">
+                <p className="text-shadow md:text-2xl text-justify w-full text-xl lg:leading-normal font-normal">
+                  Guise AI solves the cost and efficiency problems endemic in AI
+                  today. Our continuous learning AI solutions on the edge allow
+                  machines to continuously learn and adapt to dynamically
+                  changing data in the real world without having to constantly
+                  retrain models.
+                </p>
+              </div>
+              <div className="backdrop bg-white bg-opacity-10 rounded-md hoverTransition transform hover:scale-105 hover:bg-core-black text-white border-2 border-gray-800 p-5 shadow-xl">
+                <p className="text-shadow md:text-2xl text-justify w-full text-xl lg:leading-normal font-normal">
+                  Clients and OEMs who require an accurate, cost-efficient and
+                  secure solution turn to Guise AI to continuously extract
+                  patterns and predict from real-time and dynamically changing
+                  data to create the greatest impact on end-users.
+                </p>
+              </div>
             </div>
           </div>
         </div>

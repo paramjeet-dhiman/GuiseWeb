@@ -2,7 +2,6 @@ import React from "react";
 import ReactCompareImage from "react-compare-image";
 import Tab from "../TabSlider/TabSlider";
 import { Tick } from "../Ticks/Tick";
-import { ScrollButton } from "../ScrollButton/ScrollBtn";
 import { DemoComponent } from "../DemoComponent";
 
 export const ProductReview = () => {
@@ -458,7 +457,6 @@ export const ProductReview = () => {
 
       {/* ====================== DEMO BUTTON  ================== */}
       <DemoComponent />
-      <ScrollButton />
     </div>
   );
 };

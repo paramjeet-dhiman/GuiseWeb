@@ -1,6 +1,5 @@
 import React from "react";
 import { Tick } from "../Ticks/Tick";
-import { ScrollButton } from "../ScrollButton/ScrollBtn";
 import { DemoComponent } from "../DemoComponent";
 import Tab from "../TabSlider/TabSlider";
 
@@ -219,14 +218,11 @@ export const TMOverview = () => {
               <div className="text-lg lg:text-xl space-y-5 text-gray-500 order-1 md:order-2">
                 <div className="">
                   <p className="font-light text-justify lg:w-5/6">
-                    Real time streaming will help understand traffic trends
-                    across the city much better. Junction signals need not be
-                    statically programmed and can be updated in real time as per
-                    the seen traffic. Vehicle density and analysis as per the
-                    day and time can be used to plan efficient routes and manage
-                    crowding. Uncertainty caused by special cases such as
-                    roadblocks can be diffused in real time with alternate route
-                    planning and predictions as per the density.
+                    Vehicle density and analysis as per the day and time can be
+                    used to plan efficient routes and manage crowding.
+                    Uncertainty caused by special cases such as roadblocks can
+                    be diffused in real time with alternate route planning and
+                    predictions as per the density.
                   </p>
                 </div>
               </div>
@@ -254,15 +250,10 @@ export const TMOverview = () => {
 
               <div className="text-lg lg:text-xl space-y-5 text-gray-500">
                 <p className=" font-light text-lg  text-justify lg:text-xl space-y-5 text-gray-500 lg:w-5/6">
-                  Road safety rules need to be maintained in order to avoid
-                  fatal repercussions. Violations such as breaking the signal or
-                  no helmets for two-wheelers and triple riding can be tracked
-                  easily with the help of constant monitoring. Driving on the
-                  wrong side of the street or violating speed norms can also be
-                  easily detected and tracked in real time. Maintaining records
-                  of repeat offenders and rewarding them with appropriate
-                  decisions can help clear the roads of such unwanted potential
-                  risks.
+                  Maintain safer roads with automated detection and tracking of
+                  violators. Setup real time alerts with constant monitoring on
+                  a day-to-day basis. Make your city a smarter city and a safer
+                  city.
                 </p>
               </div>
             </div>
@@ -366,7 +357,6 @@ export const TMOverview = () => {
       {/* ====================== DEMO BUTTON  ================== */}
 
       <DemoComponent />
-      <ScrollButton />
     </div>
   );
 };

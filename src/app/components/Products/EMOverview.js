@@ -1,6 +1,5 @@
 import React from "react";
 import { Tick } from "../Ticks/Tick";
-import { ScrollButton } from "../ScrollButton/ScrollBtn";
 import { DemoComponent } from "../DemoComponent";
 import Tab from "../TabSlider/TabSlider";
 
@@ -15,7 +14,7 @@ export const EMOverview = () => {
     image2: `https://images.unsplash.com/photo-1595437193398-f24279553f4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80`,
     image3: `https://images.unsplash.com/photo-1607679314701-efa14aa743d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80`,
     image4: `https://images.unsplash.com/photo-1628010055450-21f2a0863767?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    image5: `https://images.pexels.com/photos/735468/pexels-photo-735468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+    image5: `https://images.unsplash.com/photo-1620415629284-975004d37752?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     image6: `https://images.pexels.com/photos/6040783/pexels-photo-6040783.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
     image7: `https://images.pexels.com/photos/9893729/pexels-photo-9893729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
     image8: `https://images.unsplash.com/photo-1515614457209-3c7081d62743?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
@@ -25,7 +24,7 @@ export const EMOverview = () => {
   const tabContent = [
     {
       title: "Microgrid",
-      content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempore, deleniti aspernatur quis omnis quidem repudiandae. Perspiciatis voluptatum, aut dolorem amet, dolores repellendus exercitationem porro quasi, quisquam animi quod mollitia.`,
+      content: `Improve resource management and delivery improved efficiency in resource management with AI.`,
       list: [
         { title: "Predictive analysis" },
         { title: "Real time updation with CL" },
@@ -35,7 +34,7 @@ export const EMOverview = () => {
     },
     {
       title: "Power Management",
-      content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fugit veritatis voluptates quidem. Eligendi a obcaecati eos perspiciatis, impedit dolore ratione facere nihil vel nam delectus quibusdam sit, debitis quisquam!`,
+      content: `Manage complex power distribution systems and track electricity consumption to reduce theft.`,
       list: [
         { title: "Consumption reports" },
         { title: "Distribution Analytics" },
@@ -45,16 +44,17 @@ export const EMOverview = () => {
     },
     {
       title: "SCADA Systems",
-      content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fugit veritatis voluptates quidem. Eligendi a obcaecati eos perspiciatis, impedit dolore ratione facere nihil vel nam delectus quibusdam sit, debitis quisquam!`,
+      content: `Gear up your network security systems with real time AI assisted threat detection.`,
       list: [
+        { title: "Anomaly detection" },
         { title: "Real Time data management and Alerts" },
-        { title: "Real time Network Intrusion Detection" },
+        { title: "Real Time Network Intrusion Detection" },
       ],
       img: `https://images.unsplash.com/photo-1502637098811-fa9526d2b659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80`,
     },
     {
       title: "Customer Profiling",
-      content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fugit veritatis voluptates quidem. Eligendi a obcaecati eos perspiciatis, impedit dolore ratione facere nihil vel nam delectus quibusdam sit, debitis quisquam!`,
+      content: `Understand and analyze your customer consumption patterns for better load balancing and resource optimization.`,
       list: [
         { title: "Consumption Analysis" },
         { title: "Real time Alerts" },
@@ -108,11 +108,10 @@ export const EMOverview = () => {
                 of challenges related to supply models, demand, and efficiency.
               </p>
               <p className="font-light">
-                However, several energy sectors can benefit in large quantities
-                with the use of AI and ML right from the oil and gas segments to
-                supporting communication within smart grids, IoT devices, and
-                meters. These technologies have proved to help advance power
-                management’s performance and expand renewable energy sources.
+                At Guise AI we aim to provide real time and self-adapting
+                analytics that can adjust to the uncertainties in real time and
+                provide accurate predictions, leading to efficient resource
+                allocation.
               </p>
             </div>
           </div>
@@ -379,40 +378,7 @@ export const EMOverview = () => {
               <div className="text-lg lg:text-xl  text-justify space-y-5   text-gray-500">
                 <div className="">
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    SCADA
-                  </h2>
-                  <p className="font-light lg:w-5/6">
-                    Industry 4.0 makes everything in your supply chain “smart” –
-                    from smart manufacturing and factories to smart warehousing
-                    and logistics. It also interconnects with back-end systems,
-                    like enterprise resource planning (ERP), to give companies
-                    an unprecedented level of visibility and control. The core
-                    of a lot of these major Industry 4.0 systems work with the
-                    help of SCADA systems.
-                  </p>
-                  <div className="font-light mt-4 lg:w-5/6">
-                    Supervisory control and data acquisition (SCADA) is a system
-                    of software and hardware elements that allows industrial
-                    organizations to:
-                    <ul className="list-disc lg:pl-10 mt-4 font-light lg:w-5/6 ">
-                      <li>
-                        Control industrial processes locally or at remote
-                        locations
-                      </li>
-                      <li>Monitor, gather, and process real-time data</li>
-                      <li>
-                        Directly interact with devices such as sensors, valves,
-                        pumps, motors, and more through human-machine interface
-                        (HMI) software
-                      </li>
-                      <li>Record events into a log file</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Security
+                    Cybersecurity
                   </h2>
                   <p className="font-light lg:w-5/6 ">
                     Cybersecurity is currently one of the main concerns for
@@ -460,10 +426,7 @@ export const EMOverview = () => {
                 <p className=" font-light lg:w-5/6">
                   With the help of our Continuous Learning AI at GuiseAI we can
                   help the NIDS learn about the network data flow and understand
-                  trends and isolated points. The NIDS will aso be able to
-                  update itself in real time as per the data flowing through the
-                  network, this helps identify the latest of anomalies as per
-                  current network trends.
+                  trends and isolated points.
                 </p>
               </div>
             </div>
@@ -492,31 +455,13 @@ export const EMOverview = () => {
               <div className="text-lg  lg:text-xl text-justify space-y-10 text-gray-500">
                 <div className="">
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Customer segmentation
-                  </h2>
-                  <p className="font-light lg:w-5/6">
-                    Customer segmentation allows organizations to divide a
-                    market into subsets of customers that have, or are perceived
-                    to have, common needs, interests, and priorities – then
-                    design and implement strategies targeted toward them which
-                    can make the difference between an underutilized service and
-                    one that resonates with customers.
-                  </p>
-                </div>
-
-                <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Smart Meter Data
                   </h2>
                   <p className="font-light lg:w-5/6">
-                    Due to the increase in the number of smart meter devices, a
-                    power grid generates a large amount of data. Analyzing the
-                    data can help in understanding the users’ electricity
-                    consumption behavior and demands; thus, enabling better
-                    service to be provided to them. Performing power load
-                    profile clustering is the basis for mining the users’
-                    electricity consumption behavior. By examining the
-                    complexity, randomness, and uncertainty of the users’
+                    Analyzing the data can help in understanding the users
+                    electricity consumption behavior and demands; thus, enabling
+                    better service to be provided to them. By examining the
+                    complexity, randomness, and uncertainty of the users
                     electricity consumption behavior, Guise AI proposes
                     Continual Learning method to analyze this behavior
                   </p>
@@ -613,7 +558,6 @@ export const EMOverview = () => {
       </section>
 
       <DemoComponent />
-      <ScrollButton />
     </div>
   );
 };

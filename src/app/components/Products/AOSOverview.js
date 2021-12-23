@@ -1,8 +1,6 @@
 import React from "react";
 import { Tick } from "../Ticks/Tick";
 import Tab from "../TabSlider/TabSlider";
-
-import { ScrollButton } from "../ScrollButton/ScrollBtn";
 import { DemoComponent } from "../DemoComponent";
 import ReactCompareImage from "react-compare-image";
 import Airport1 from "../../../assets/images/airport1.jpg";
@@ -586,8 +584,6 @@ export const AOSOverview = () => {
       </section>
 
       <DemoComponent />
-
-      <ScrollButton />
     </div>
   );
 };

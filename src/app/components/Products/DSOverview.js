@@ -1,6 +1,5 @@
 import React from "react";
 import { Tick } from "../Ticks/Tick";
-import { ScrollButton } from "../ScrollButton/ScrollBtn";
 import { DemoComponent } from "../DemoComponent";
 import Tab from "../TabSlider/TabSlider";
 
@@ -19,7 +18,7 @@ export const DSOverview = () => {
   const tabContent = [
     {
       title: "Footfall Analysis",
-      content: `Record the following operational events and track them automatically with the Guise AI airport Ground Operations Suite.`,
+      content: `Quantify and analyze the interaction of your retail outlets with the customers.`,
       list: [
         { title: "People entry count" },
         { title: "People exit count" },
@@ -29,13 +28,13 @@ export const DSOverview = () => {
     },
     {
       title: "Customer Profiling",
-      content: `Maintain safety standards and minimize violations with all time surveillance and alerts.`,
+      content: `Understand your customers better and target the right audience with AI assisted detections.`,
       list: [{ title: "Customer Age" }, { title: "Customer Gender" }],
       img: `https://images.unsplash.com/photo-1440985465094-6ac443aab454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
     {
       title: "Apparel Analysis",
-      content: `Manage, count, and record the duration of ground staff, cleaning crew and other members with automated people counting and tracking.`,
+      content: `Update with customers trends and fashion statements, and analyze the information for smarter decisions.`,
       list: [
         { title: "Apparel Detection" },
         { title: "Apparel Type" },
@@ -45,7 +44,7 @@ export const DSOverview = () => {
     },
     {
       title: "Crowd Management",
-      content: `Manage airport resources efficiently by tracking usage and durations assigned to every airplane.`,
+      content: `Detect, log and manage crowded areas with the help of constant supervision with Guise AI.`,
       list: [
         { title: "Dwell time" },
         { title: "Wait time" },
@@ -293,8 +292,6 @@ export const DSOverview = () => {
       </section>
 
       <DemoComponent />
-
-      <ScrollButton />
     </div>
   );
 };

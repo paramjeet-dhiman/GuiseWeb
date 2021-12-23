@@ -259,8 +259,8 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "btn bg-gray-900 border-2 border-gray-900  text-white text-lg font-semibold"
-                    : "btn btn-black border-0 text-lg font-semibold ring-1 ring-core-black"
+                    ? "btn bg-gray-900 border-2 border-gray-900  text-white text-lg font-semibold  rounded"
+                    : "btn btn-black border-0 text-lg font-semibold ring-1 ring-core-black rounded"
                 }
                 to="/demo">
                 Book a Demo

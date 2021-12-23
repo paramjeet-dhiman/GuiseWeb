@@ -22,6 +22,7 @@ import { IAOverview } from "./components/Products/IAOverview";
 import { TMOverview } from "./components/Products/TMOverview";
 import { ProductReview } from "./components/Products/ProductReview";
 import { DSOverview } from "./components/Products/DSOverview";
+import { ScrollButton } from "./components/ScrollButton/ScrollBtn";
 
 export const Router = () => {
   return (
@@ -64,6 +65,7 @@ export const Router = () => {
         <Route path="/partners" element={<Partners />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <ScrollButton />
       <Footer />
     </>
   );

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ScrollButton } from "../components/ScrollButton/ScrollBtn";
 import airplaneProduct from "../../assets/images/airplane_product.jpg";
 
 export const Products = () => {
@@ -378,8 +377,6 @@ export const Products = () => {
           ))}
         </div>
       </section>
-
-      <ScrollButton />
     </div>
   );
 };

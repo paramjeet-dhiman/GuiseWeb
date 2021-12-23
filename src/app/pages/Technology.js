@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ScrollButton } from "../components/ScrollButton/ScrollBtn";
 
 export const Technology = () => {
   return (
@@ -692,8 +691,6 @@ export const Technology = () => {
           </div>
         </div>
       </section>
-
-      <ScrollButton />
     </div>
   );
 };
