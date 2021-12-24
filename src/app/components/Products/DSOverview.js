@@ -129,7 +129,7 @@ export const DSOverview = () => {
           </div>
         </section>
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
+        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
             <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
@@ -170,11 +170,11 @@ export const DSOverview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* ======================  Feature #1 ================== */}
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
+        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
             <div className=" w-full lg:w-6/12 md:m-0 lg:order-2">
               <div className="flex justify-center relative ">
@@ -205,7 +205,7 @@ export const DSOverview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white  lg:px-40  ">
           <div className="flex flex-col lg:flex-row items-center  justify-between gap-x-10">
