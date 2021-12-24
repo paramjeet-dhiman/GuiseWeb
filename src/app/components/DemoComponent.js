@@ -6,7 +6,7 @@ export const DemoComponent = () => {
     <section className="bg-bookmark-white py-20 lg:py-36 ">
       <div className="container px-10 lg:px-10">
         <h1 className="text-2xl lg:text-5xl text-core-black uppercase font-black lg:px-4 text-center ">
-          See what Guise can do for you
+          See what Guise AI can do for you ?
         </h1>
         <div className="flex justify-center items-center mt-5 lg:mt-10 ">
           <Link

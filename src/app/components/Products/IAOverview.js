@@ -11,8 +11,8 @@ export const IAOverview = () => {
 
     title: `Lorem Ipsum`,
 
-    image1: `https://images.pexels.com/photos/4062563/pexels-photo-4062563.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-    image2: `https://images.unsplash.com/photo-1567721537939-868edb6564a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80`,
+    image1: `https://images.unsplash.com/photo-1612831455359-970e23a1e4e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80`,
+    image2: `https://images.unsplash.com/photo-1610702875227-f796c246cebf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80`,
   };
 
   const tabContent = [
@@ -23,7 +23,7 @@ export const IAOverview = () => {
         { title: "Real Time Alerts" },
         { title: "Custom Noise Detection" },
       ],
-      img: `https://images.pexels.com/photos/7586662/pexels-photo-7586662.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+      img: `https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
     {
       title: "Noise Cancellation",
@@ -171,13 +171,13 @@ export const IAOverview = () => {
                 <div
                   className=" object-cover bg-cover bg-center rounded-lg shadow-xl  h-52 lg:h-72"
                   style={{
-                    background: `url(https://images.unsplash.com/photo-1568185518838-3300c90c9170?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1224&q=80) center center / cover no-repeat`,
+                    background: `url(https://images.unsplash.com/photo-1573497161249-42447f9f6706?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center center / cover no-repeat`,
                   }}></div>
 
                 <div
                   className="p-8 mt-8 hidden lg:block lg:h-72 object-cover bg-cover bg-center rounded-lg shadow-xl"
                   style={{
-                    background: `url(https://images.unsplash.com/photo-1572119244337-bcb4aae995af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center center / cover no-repeat`,
+                    background: `url(https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80) center center / cover no-repeat`,
                   }}></div>
               </div>
               <div className="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
@@ -190,7 +190,7 @@ export const IAOverview = () => {
                 <div
                   className="p-8 mt-8 hidden lg:block lg:h-72 object-cover bg-cover bg-center rounded-lg shadow-xl"
                   style={{
-                    background: `url(https://images.unsplash.com/photo-1559732277-7453b141e3a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center center / cover no-repeat`,
+                    background: `url(https://images.unsplash.com/photo-1573164574397-dd250bc8a598?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80) center center / cover no-repeat`,
                   }}></div>
               </div>
             </div>

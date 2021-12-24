@@ -15,7 +15,7 @@ export const Products = () => {
         <div className="flex  items-center justify-center w-full h-full bg-black bg-opacity-70">
           <div className="text-center px-10 lg:px-0">
             <h1 className="text-4xl font-bold  text-white uppercase md:text-7xl mb-4">
-              Products
+              Product Categories
             </h1>
           </div>
         </div>
@@ -183,8 +183,7 @@ export const Products = () => {
           {[
             {
               label: "Safety detection",
-              // `https://images.unsplash.com/photo-1510279410431-2d0808d69bf8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`
-              img: `https://images.pexels.com/photos/4062563/pexels-photo-4062563.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+              img: `https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
               description: `Experience the next level of Noise cancellation with the new Guise  AI assisted Intelligent Audio with improved audio filtration and customizable noise cancellation.`,
             },
           ].map((item) => (

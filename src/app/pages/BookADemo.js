@@ -33,7 +33,7 @@ export const BookADemo = () => {
           </p>
         </div>
       </section>
-      <section className=" py-10 lg:py-20 mt-10 lg:mt-10 container bg-bookmark-smoke border border-gray-100 relative mb-8 rounded-md shadow-xl">
+      <section className=" py-10 lg:py-20 mt-10 lg:mt-10 container bg-white border border-gray-100 relative mb-8 rounded-lg shadow-xl">
         <div className="px-10 md:px-20 flex flex-col justify-center ">
           <div className="container mb-8">
             <h1 className="text-xl lg:text-3xl font-semibold text-gray-900">
@@ -245,7 +245,7 @@ export const BookADemo = () => {
             </div>
             <div className="flex">
               <div className="w-full mb-5">
-                <button className="btn btn-black  text-lg font-semibold">
+                <button className="btn btn-black border-2 rounded-md border-core-black hover:bg-core-black hover:text-gray-100   transform hover:scale-105 hoverTransition  text-lg md:text-xl  md:inline font-semibold">
                   Submit
                 </button>
               </div>

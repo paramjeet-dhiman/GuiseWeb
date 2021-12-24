@@ -3,25 +3,34 @@ import { NavLink } from "react-router-dom";
 
 export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
   const [toggle, setToggle] = useState(false);
+  const [show, setShow] = useState(false);
   const ref = useRef();
+  const ref2 = useRef();
 
   useEffect(() => {
     const checkIfClickedOutside = (e) => {
       if (toggle && ref.current && !ref.current.contains(e.target)) {
         setToggle(false);
       }
+      if (show && ref2.current && !ref2.current.contains(e.target)) {
+        setShow(false);
+      }
     };
     document.addEventListener("mousedown", checkIfClickedOutside);
     return () => {
       document.removeEventListener("mousedown", checkIfClickedOutside);
     };
-  }, [toggle]);
+  }, [toggle, show]);
 
   const handleToggle = () => {
     setToggle(!toggle);
   };
   const handleMouseLeave = () => {
     setToggle(false);
+    setShow(false);
+  };
+  const handleShow = () => {
+    setShow(!show);
   };
 
   return (
@@ -141,7 +150,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               </NavLink>
             </div> */}
 
-            <div>
+            {/* <div>
               <NavLink
                 className={({ isActive }) =>
                   isActive
@@ -149,10 +158,83 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                     : "px-2 cursor-pointer  tracking-wide py-5 text-lg font-medium hover:text-gray-600 "
                 }
                 to="/research">
-                Research
+                Resources
               </NavLink>
-            </div>
+            </div> */}
 
+            <div className="relative" ref={ref2}>
+              <div
+                onClick={handleShow}
+                onMouseOver={handleShow}
+                // onMouseEnter={handleToggle}
+                className="flex items-center  px-2 cursor-pointer  tracking-wide py-3 transition-all duration-1000 text-lg font-medium hover:text-gray-600 ">
+                Resources
+                {!show ? (
+                  <svg
+                    className="w-7 h-7 "
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fillRule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clipRule="evenodd"></path>
+                  </svg>
+                ) : (
+                  <svg
+                    className="w-7 h-7"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fillRule="evenodd"
+                      d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                      clipRule="evenodd"></path>
+                  </svg>
+                )}
+              </div>
+
+              {show ? (
+                <div
+                  onMouseLeave={handleMouseLeave}
+                  className="absolute right-0 py-3 mt-3 space-y-5 bg-white flex flex-col justify-center  rounded-md shadow-xl  w-48  transform hover:scale-105  transition-all duration-300  origin-top-right ">
+                  <div>
+                    <NavLink
+                      onClick={handleShow}
+                      to="/404"
+                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-gray-200  dark-mode:bg-transparent md:mt-0 hover:text-gray-900 text-center  ">
+                      Blogs
+                    </NavLink>
+                  </div>
+
+                  <div>
+                    <NavLink
+                      onClick={handleShow}
+                      to="/404"
+                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-gray-200  dark-mode:bg-transparent md:mt-0 hover:text-gray-900 text-center  ">
+                      Videos
+                    </NavLink>
+                  </div>
+
+                  <div>
+                    <NavLink
+                      onClick={handleShow}
+                      to="/404"
+                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-gray-200  dark-mode:bg-transparent md:mt-0 hover:text-gray-900 text-center  ">
+                      Research
+                    </NavLink>
+                  </div>
+                  <div>
+                    <NavLink
+                      onClick={handleShow}
+                      to="/404"
+                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-gray-200  dark-mode:bg-transparent md:mt-0 hover:text-gray-900 text-center  ">
+                      White Papers
+                    </NavLink>
+                  </div>
+                </div>
+              ) : null}
+            </div>
             {/* <div>
               <NavLink
                 className={({ isActive }) =>

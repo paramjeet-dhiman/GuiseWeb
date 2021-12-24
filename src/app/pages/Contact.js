@@ -34,8 +34,8 @@ export const Contact = () => {
       </section>
 
       <section className="bg-white py-10 pb-28">
-        <div className="grid  md:grid-cols-12  md:px-32  w-full  gap-x-20 gap-y-16 ">
-          <div className="flex items-center px-5 lg:px-0 col-auto md:col-span-5  text-gray-800">
+        <div className="grid md:px-32  w-full  gap-x-20 gap-y-16 ">
+          {/* <div className="flex items-center px-5 lg:px-0 col-auto md:col-span-5  text-gray-800">
             <div className="w-full ">
               <div className="grid gap-8">
                 <div className="col-span-12 sm:col-span-6 md:col-span-3 shadow-lg ">
@@ -108,13 +108,13 @@ export const Contact = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className=" col-auto md:col-span-7 ">
-            <div className="shadow-xl">
+          <div className=" col-span-full mx-auto container">
+            <div className="">
               <div className="flex flex-wrap justify-center  ">
                 <div className="w-full px-5 lg:px-0 ">
-                  <div className="relative bg-bookmark-smoke rounded-md   flex flex-col min-w-0 break-words w-full  shadow-lg ">
+                  <div className="relative bg-white rounded-md   flex flex-col min-w-0 break-words w-full  shadow-lg ">
                     <div className="flex-auto p-5 lg:p-10">
                       <h4 className="text-2xl font-semibold">
                         Want to work with us?

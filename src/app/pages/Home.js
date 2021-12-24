@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import BGTech from "../../assets/images/globe-6858907.jpg";
+import BGTech from "../../assets/images/15408.jpg";
 import BGTech2 from "../../assets/images/2880645.jpg";
 
 export function Home() {
@@ -14,7 +14,7 @@ export function Home() {
     },
 
     {
-      label: "Energy Utilities",
+      label: "Energy",
       img: "https://images.unsplash.com/photo-1467533003447-e295ff1b0435?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     },
     {
@@ -22,12 +22,12 @@ export function Home() {
       img: "https://images.unsplash.com/36/yJl7OB3sSpOdEIpHhZhd_DSC_1929_1.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80",
     },
     {
-      label: "Public Safety",
-      img: "https://images.pexels.com/photos/5474288/pexels-photo-5474288.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    },
-    {
       label: "Cities",
       img: "https://images.unsplash.com/photo-1551793611-5e15858c0b01?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    },
+    {
+      label: "Intelligent Audio",
+      img: "https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     },
   ];
 
@@ -38,14 +38,11 @@ export function Home() {
         <div className=" lg:px-44 flex flex-col   mx-auto  md:h-128 space-y-10 gap-y-10 lg:gap-y-0 lg:space-y-0 lg:flex-row lg:items-center lg:space-x-6">
           <div className="flex flex-col items-center w-full pt-20  sm:pt-36 md:pt-48 lg:pt-0   lg:flex-row lg:w-1/2">
             <div className="px-10 lg:px-0 md:order-2 flex flex-col justify-center items-center md:items-start ">
-              <h2 className="text-3xl font-bold text-center md:text-left  lg:leading-tight text-core-black md:text-5xl">
-                We design and develop experiences that make people's live
-                Simple.
+              <h2 className="text-3xl  font-extrabold text-center md:text-left  lg:leading-tight text-core-black md:text-5xl">
+                We are AI on the edge
               </h2>
-              <p className="mt-4 text-gray-500 text-center md:text-left  text-lg lg:text-xl w-5/6">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
-                quia asperiores alias vero magnam recusandae adipisci ad vitae
-                laudantium quod rem voluptatem eos accusantium cumque.
+              <p className="mt-4 font-medium  text-gray-500 text-center md:text-left  text-lg lg:text-xl lg:w-5/6">
+                Guise AI runs AI models on the edge for...
               </p>
 
               <div className=" mt-10 flex justify-center lg:justify-start">
@@ -70,7 +67,7 @@ export function Home() {
       </section>
 
       {/*========================== Background Image with text ==========================*/}
-      <section className="relative h-screen py-10 lg:py-0">
+      <section className="relative h-screen py-10 lg:py-0 text-white">
         <div
           style={{
             background: `url(${BGTech}) center center / cover no-repeat`,
@@ -79,27 +76,17 @@ export function Home() {
           <div
             className="lg:text-left py-20  flex flex-col items-center justify-center"
             style={{
-              boxShadow: `inset 0 0 0 2000px rgb(0 0 0 / 80%)`,
+              boxShadow: `inset 0 0 0 2000px rgb(0 0 0 / 60%)`,
               height: "100%",
             }}>
-            <div className="flex flex-col md:flex-row px-10 md:px-40 gap-20 lg:gap-40 sm:text-center">
-              <div className="backdrop bg-white bg-opacity-10 rounded-md hoverTransition transform hover:scale-105 hover:bg-core-black text-white border-2 border-gray-800 p-5 shadow-xl">
-                <p className="text-shadow md:text-2xl text-justify w-full text-xl lg:leading-normal font-normal">
-                  Guise AI solves the cost and efficiency problems endemic in AI
-                  today. Our continuous learning AI solutions on the edge allow
-                  machines to continuously learn and adapt to dynamically
-                  changing data in the real world without having to constantly
-                  retrain models.
-                </p>
-              </div>
-              <div className="backdrop bg-white bg-opacity-10 rounded-md hoverTransition transform hover:scale-105 hover:bg-core-black text-white border-2 border-gray-800 p-5 shadow-xl">
-                <p className="text-shadow md:text-2xl text-justify w-full text-xl lg:leading-normal font-normal">
-                  Clients and OEMs who require an accurate, cost-efficient and
-                  secure solution turn to Guise AI to continuously extract
-                  patterns and predict from real-time and dynamically changing
-                  data to create the greatest impact on end-users.
-                </p>
-              </div>
+            <div className="flex flex-col w-3/4  md:flex-row px-10 md:px-40 gap-20 lg:gap-40 text-center">
+              <p className="text-shadow md:text-3xl  text-justify w-full text-xl lg:leading-normal font-bold">
+                Guise AI solves the cost and efficiency problems endemic in AI
+                today. Our continuous learning AI solutions on the edge allow
+                machines to continuously learn and adapt to dynamically changing
+                data in the real world without having to constantly retrain
+                models.
+              </p>
             </div>
           </div>
         </div>
@@ -108,7 +95,7 @@ export function Home() {
       {/* ============================= 6 SOLUTIONS CARDS ========================== */}
       <section className="bg-white py-10 lg:py-20 mt-10 lg:mt-10 ">
         <div className="sm:w-3/4 container mx-auto">
-          <h1 className="px-10 text-2xl lg:text-3xl lg:leading-tight font-semibold text-center text-core-black">
+          <h1 className="px-10 text-2xl lg:text-4xl lg:leading-tight font-semibold text-center text-core-black">
             With Guise AI Continual Learning technology, our solutions are
             revolutionizing technology and making significant impact in several
             mission critical industries.
@@ -136,22 +123,19 @@ export function Home() {
 
       {/*============ 2 col right-left image and text ===========*/}
 
-      <section className="bg-white py-20 lg:py-20 mt-5 lg:mt-10">
+      <section className="bg-white py-20 lg:py-20 mt-5 lg:mt-0 ">
         <div className="sm:w-3/4 container mx-auto">
-          <h1 className="text-3xl lg:text-5xl font-semibold text-center text-bookmark-blue">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil error
-            rem iste.
-          </h1>
-
-          <p className="text-gray-800   text-lg lg:text-xl  lg:text-center w-3/4  container  text-center  lg:w-4/6 mt-2 md:mt-4">
+          <h1 className="px-10 text-2xl lg:text-4xl  font-semibold text-center text-bookmark-blue">
             Deliver the most dynamic and effective customer experience with
             guise ai's realtime solutions on the edge
-          </p>
+          </h1>
+
+          <p className="text-gray-800   text-lg lg:text-xl  lg:text-center w-3/4  container  text-center  lg:w-4/6 mt-2 md:mt-4"></p>
         </div>
 
-        <div className=" relative mt-20 lg:mt-36">
-          <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-24">
-            <div className="flex flex-1 justify-center z-40 mb-10 lg:mb-0">
+        <div className=" relative mt-10 lg:py-10">
+          <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-24 ">
+            <div className="flex flex-1 justify-center ">
               <img
                 src={`https://image.freepik.com/free-photo/ai-technology-microchip-background-digital-transformation-concept_53876-124669.jpg`}
                 className=" w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl"
@@ -160,8 +144,8 @@ export function Home() {
               />
             </div>
 
-            <div className="px-10 md:px-0  flex flex-1 flex-col items-center lg:items-start">
-              <p className="text-core-black font-medium lg:leading-snug text-xl lg:text-2xl text-left  lg:w-5/6">
+            <div className="px-10 md:px-0  flex flex-1 flex-col items-center mt-5 lg:mt-0 ">
+              <p className="text-core-black font-medium text-justify text-xl lg:text-2xl lg:w-5/6">
                 Guise AI's solutions at the edge deliver feedback rapidly and
                 locally within the system. Localized processing is more
                 efficient, less expensive, and it increases the level of
@@ -175,44 +159,96 @@ export function Home() {
 
       {/*============================= Join Team =========================== */}
 
-      <section className="bg-white py-10 lg:py-20">
-        <div className="w-5/6 lg:w-4/12 mx-auto">
-          <h1 className="text-3xl lg:text-5xl font-semibold text-center text-bookmark-blue">
-            Join our Team
+      <section className="bg-bookmark-white py-10 lg:py-20">
+        <div className="">
+          <h1 className=" text-2xl lg:text-4xl font-semibold text-center text-bookmark-blue">
+            Why Choose Guise AI ?
           </h1>
-          <p className="w-5/6 lg:w-full text-gray-800  text-lg lg:text-xl  lg:text-center  container  text-center  mt-2">
+          {/* <p className="w-5/6 lg:w-full text-gray-800  text-lg lg:text-xl  lg:text-center  container  text-center  mt-2">
             Help us on our quest to make good software even better.
-          </p>
+          </p> */}
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center  md:px-44 py-20  gap-y-10">
-          <div className="w-full lg:w-1/2 px-10 md:px-0 order-2 lg:order-1">
-            <p className="font-medium text-sm uppercase lg:text-lg text-social-instagram my-2">
-              We are hiring.
-            </p>
-            <h1 className="text-core-black font-bold text-3xl lg:text-5xl lg:w-5/6 lg:leading-tight ">
-              Are you ready to share your expertise ?
-            </h1>
-            <p className="text-gray-700 text-xl lg:text-2xl font-light  mt-4 md:mt-6 lg:w-5/6">
-              We're always looking for talented, creative and passionate people
-              to join our team. If you're interested in opportunities at our
-              company, we'd love to hear from you.
-            </p>
-
-            <div>
-              <Link to="/careers">
-                <button className="btn  bg-blue-500 hover:bg-blue-600 text-white font-semibold transform hover:scale-105 hoverTransition   text-xl mt-6 rounded-full px-10 py-4">
-                  Join us
-                </button>
-              </Link>
-            </div>
-          </div>
-          <div className="w-full lg:w-1/2 order-1 lg:order-2">
-            <img
-              className=" w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl"
-              src="https://images.pexels.com/photos/4342126/pexels-photo-4342126.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              alt=""
-            />
+        <div className="md:px-44 py-20  gap-y-10 cursor:pointer h-full">
+          <div className="grid lg:grid-cols-12 gap-10">
+            {[
+              {
+                title: "Harness Untapped Data",
+                text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+                icon: (
+                  <svg
+                    className="h-24 text-color-700"
+                    fill="currentColor"
+                    viewBox="0 0 20 20">
+                    <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"></path>
+                  </svg>
+                ),
+              },
+              {
+                title: "Scalability",
+                text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+                icon: (
+                  <svg
+                    className="h-24 text-color-700"
+                    viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path
+                      fillRule="evenodd"
+                      d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 110-2h4a1 1 0 011 1v4a1 1 0 11-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 112 0v1.586l2.293-2.293a1 1 0 011.414 1.414L6.414 15H8a1 1 0 110 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 110-2h1.586l-2.293-2.293a1 1 0 011.414-1.414L15 13.586V12a1 1 0 011-1z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                ),
+              },
+              {
+                title: "Technology",
+                text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+                icon: (
+                  <svg
+                    className="h-24 text-color-700"
+                    fill="currentColor"
+                    viewBox="0 0 20 20">
+                    <path d="M13 7H7v6h6V7z" />
+                    <path
+                      fillRule="evenodd"
+                      d="M7 2a1 1 0 012 0v1h2V2a1 1 0 112 0v1h2a2 2 0 012 2v2h1a1 1 0 110 2h-1v2h1a1 1 0 110 2h-1v2a2 2 0 01-2 2h-2v1a1 1 0 11-2 0v-1H9v1a1 1 0 11-2 0v-1H5a2 2 0 01-2-2v-2H2a1 1 0 110-2h1V9H2a1 1 0 010-2h1V5a2 2 0 012-2h2V2zM5 5h10v10H5V5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                ),
+              },
+              {
+                title: "Cost Efficiency",
+                text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
+                icon: (
+                  <svg
+                    className="h-24 text-color-700"
+                    fill="currentColor"
+                    viewBox="0 0 20 20">
+                    <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z" />
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                ),
+              },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="col-span-3 md:px-10 py-10  md:h-96 flex  flex-col justify-center  items-center bg-white shadow-lg  rounded-lg">
+                <div className="mb-8">{item.icon}</div>
+                <div className="text-center text-core-black  ">
+                  <h4 className="font-extrabold text-lg md:text-xl uppercase mb-4">
+                    {item.title}
+                  </h4>
+                  <p className="font-medium text-base md:text-lg text-color-700">
+                    {item.text}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
