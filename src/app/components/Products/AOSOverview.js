@@ -1,5 +1,4 @@
 import React from "react";
-import { Tick } from "../Ticks/Tick";
 import Tab from "../TabSlider/TabSlider";
 import { DemoComponent } from "../DemoComponent";
 import ReactCompareImage from "react-compare-image";
