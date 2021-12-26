@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import BGTech from "../../assets/images/15408.jpg";
 import BGTech2 from "../../assets/images/2880645.jpg";
 
 export function Home() {
@@ -70,7 +69,7 @@ export function Home() {
       <section className="relative h-screen py-10 lg:py-0 text-white">
         <div
           style={{
-            background: `url(${BGTech}) center center / cover no-repeat`,
+            background: `url(https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) center center / cover no-repeat`,
             height: "100%",
           }}>
           <div

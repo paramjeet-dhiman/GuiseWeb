@@ -30,31 +30,31 @@ export const AOSOverview = () => {
   const tabContent = [
     {
       title: "Operations Tracking",
-      content: `Record the following operational events and track them automatically with the Guise AI airport Ground Operations Suite.`,
+      content: `Record the following operational events and track them automatically with the Guise AI Airport Ground Operations Suite.`,
       list: [
-        { title: "Aircraft check in and check out time" },
-        { title: "Baggage Offload and Onload time" },
-        { title: "JetBridge attach and detach time" },
-        { title: "Airline Detection" },
+        { title: "Aircraft arrival and departure" },
+        { title: "Time Baggage offload and onload time" },
+        { title: "Jet bridge attach and detach time" },
+        { title: "Airline detection" },
       ],
       img: `https://images.unsplash.com/photo-1482351437900-d57cf1b9cd37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
     {
-      title: "Safety Checking",
-      content: `Maintain safety standards and minimize violations with all time surveillance and alerts.`,
+      title: "Safety Checks",
+      content: `Maintain safety standards and minimize violations with constant surveillance and alerts.`,
       list: [
-        { title: "Safety Chokes detection" },
-        { title: "Safety jacket detection" },
+        { title: "Wheel chocks detection" },
+        { title: "Safety jacket/vest detection" },
         { title: "Parking Lines detection" },
       ],
       img: `https://images.unsplash.com/photo-1541707423647-46d6213e390a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
     },
     {
-      title: "Staff Management",
-      content: `Manage, count, and record the duration of ground staff, cleaning crew and other members with automated people counting and tracking.`,
+      title: "Ground Crew",
+      content: `Manage, count, and record the duration of ground crew and other staff members with automated people counting and tracking.`,
       list: [
         { title: "Ground staff monitoring" },
-        { title: "Cleaning crew detection and count" },
+        { title: "Fueling and Catering" },
       ],
       img: `https://images.pexels.com/photos/2599729/pexels-photo-2599729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
     },
@@ -77,16 +77,6 @@ export const AOSOverview = () => {
         { title: "Baggage dwell time" },
       ],
       img: `https://images.unsplash.com/photo-1569512850669-7baa648e82d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    },
-    {
-      title: "Passenger Management",
-      content: `Manage passengers through long queues and boarding processes at the airport with automated analytics through computer vision.`,
-      list: [
-        { title: "Queue wait time" },
-        { title: "Passenger counting" },
-        { title: "Dwell time at airport locations" },
-      ],
-      img: `https://images.unsplash.com/photo-1581745841536-c10790870219?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
   ];
 
@@ -129,12 +119,11 @@ export const AOSOverview = () => {
 
             <div className="text-lg lg:text-xl text-justify space-y-5 text-gray-500 lg:w-5/6">
               <p>
-                Guise Airport Ground Operations assist Airports to maximize
-                their asset utilization, catering to the needs of supporting the
-                ever-growing flying population. Our application also helps
-                Airlines to keep flights on time with better resource
-                management, reducing the number of delays and “cost-inefficient”
-                grounded flights
+                Our Airport Ground Operations software provides airport
+                operators the means to maximize their asset utilization. From
+                increasing flight turnaround efficiency to reducing delays to
+                increasing tarmac safety, Guise AI is transforming the airport
+                experience.
               </p>
             </div>
           </div>
@@ -229,7 +218,7 @@ export const AOSOverview = () => {
 
         {/* ======================  Feature #1 ================== */}
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
+        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
             <div className=" w-full lg:w-6/12 md:m-0 ">
               <div className="flex justify-center relative ">
@@ -274,7 +263,7 @@ export const AOSOverview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-16 ">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-20">
@@ -324,7 +313,7 @@ export const AOSOverview = () => {
             </div>
             <div className="flex flex-col w-full lg:w-6/12 ">
               <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-10 lg:w-5/6">
-                Experience what AI can do for you
+                Experience what our AI can do for you
               </h2>
 
               <div className="text-lg lg:text-xl space-y-10  text-gray-500">
@@ -334,8 +323,8 @@ export const AOSOverview = () => {
                   </h2>
                   <p className="font-light text-justify lg:w-5/6">
                     Our applications run continuously on the edge, converting
-                    visual data into comprehensible statistics that were not
-                    possible to record and examine before.
+                    visual data into actionable statistics unavailable prior to
+                    our technology.
                   </p>
                 </div>
                 <div className="">
@@ -343,10 +332,10 @@ export const AOSOverview = () => {
                     Plan Smarter
                   </h2>
                   <p className="font-light text-justify lg:w-5/6">
-                    Data generated can be used to plan statistically more
-                    efficient resource management decisions and flight
-                    scheduling. A more organized airport leads to lesser delays
-                    and more customer satisfaction.
+                    The data generated can be used to plan statistically more
+                    effective resource management decisions and flight
+                    scheduling. Efficient ground operations lead to greater
+                    customer satisfaction.
                   </p>
                 </div>
                 <div className="">
@@ -354,9 +343,9 @@ export const AOSOverview = () => {
                     Operate Safer
                   </h2>
                   <p className="font-light text-justify lg:w-5/6">
-                    Maintain safety standards thoroughly and get real time
-                    alerts in case of a violation. No more lives need to be lost
-                    or endangered. Operate safely and smartly.
+                    Maintain thorough safety standards thoroughly and get real
+                    time alerts if a violation occurs. Operate safely and
+                    smartly.
                   </p>
                 </div>
                 <div className="">
@@ -364,9 +353,9 @@ export const AOSOverview = () => {
                     Scale Better
                   </h2>
                   <p className="font-light text-justify lg:w-5/6">
-                    With automated and accurate statistics, optimize resource
-                    utilization and scale your operations to cater to the
-                    ever-increasing air travel.
+                    Use automated and accurate statistics to optimize resource
+                    utilization and scale your operations to capitalize on the
+                    ever-increasing growth in air travel.
                   </p>
                 </div>
               </div>
@@ -374,7 +363,7 @@ export const AOSOverview = () => {
           </div>
         </section>
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20  lg:py-20 lg:px-40 gap-10 ">
+        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20  lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between gap-10">
             <div className=" w-full lg:w-6/12 md:m-0 ">
               <div className="flex justify-center relative ">
@@ -399,38 +388,42 @@ export const AOSOverview = () => {
                   than Ever to your customers. So close, in fact, that you tell
                   them what they need well before they realize it themselves”
                 </p>
-                {/* <p className=" font-light text-justify">
+                 <p className=" font-light text-justify">
                   Guise AI algorithms generate meaningful insights from camera
                   video streams to optimize airport ground operations. The
                   untapped data-driven insights help to reduce delays on the
                   tarmac and improve turnaround efficiency. Cameras installed
                   are monitored continuously to ensure safety procedures are
                   followed and also to detect at-risk behavior.
-                </p> */}
+                </p> 
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/*Slider image*/}
         <section className="bg-bookmark-white py-10 mt-10 lg:py-20 lg:mt-20 ">
           <div className="sm:w-3/4 lg:w-5/12 mx-auto  px-12 lg:px-2">
             <h1 className="text-3xl  lg:text-5xl font-semibold text-center text-bookmark-blue">
               {/* <h1 className="text-3xl font-semibold lg:text-6xl lg:font-bold text-center text-bookmark-blue"> */}
-              Let's see in action our all in one AI solution
+              See Guise AI in action!
             </h1>
           </div>
           <div className="lg:container mt-10 shadow-xl">
             <ReactCompareImage
               leftImage={Airport1}
               rightImage={Airport2}
+              leftImageLabel="Before"
+              rightImageLabel="After"
+              rightImageCss={{ filter: "brightness(80%)" }}
+              leftImageCss={{ filter: "brightness(80%)" }}
               className=""
             />
           </div>
         </section>
 
         {/* 5 screen with bg-gray opposite of 4 screen*/}
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40  ">
+        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40  ">
           <div className="flex flex-wrap items-center pt-8  ">
             <div className="w-full md:w-6/12  md:order-2">
               <div className="justify-center flex flex-wrap relative">
@@ -519,7 +512,7 @@ export const AOSOverview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:py-20 lg:px-40 gap-16 ">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
             <div className=" w-full lg:w-6/12 md:m-0 md:order-2  ">

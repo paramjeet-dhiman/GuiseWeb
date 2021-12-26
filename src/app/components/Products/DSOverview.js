@@ -99,6 +99,12 @@ export const DSOverview = () => {
                 your customers and help you make the right decisions at all your
                 outlets.
               </p>
+              <p className="font-light">
+                Guise AI applications on the edge make your digital display
+                systems smarter where it matters most: in front of your
+                customers. Unlock your visual data to precisely gain insights
+                into your customers, from demographics to preferences.
+              </p>
             </div>
           </div>
         </div>
