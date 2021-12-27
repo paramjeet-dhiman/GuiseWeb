@@ -210,7 +210,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                   <div>
                     <NavLink
                       onClick={handleShow}
-                      to="/404"
+                      to="/videos"
                       className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-gray-200  dark-mode:bg-transparent md:mt-0 hover:text-gray-900 text-center  ">
                       Videos
                     </NavLink>

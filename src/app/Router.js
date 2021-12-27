@@ -24,6 +24,7 @@ import { ProductReview } from "./components/Products/ProductReview";
 import { DSOverview } from "./components/Products/DSOverview";
 import { ScrollButton } from "./components/ScrollButton/ScrollBtn";
 import { ComingSoon } from "./pages/ComingSoon";
+import { ProductsVideos } from "./pages/ProductsVideos";
 
 export const Router = () => {
   return (
@@ -41,6 +42,7 @@ export const Router = () => {
         <Route path="/team" element={<Team />} />
         <Route path="/research" element={<Research />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/videos" element={<ProductsVideos />} />
         <Route path="/demo" element={<BookADemo />} />
         <Route
           path="/products/airport-operations-overview"

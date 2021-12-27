@@ -126,7 +126,7 @@ export function Home() {
         <div className="sm:w-3/4 container mx-auto">
           <h1 className="px-10 text-2xl lg:text-4xl  font-semibold text-center text-bookmark-blue">
             Deliver the most dynamic and effective customer experience with
-            guise ai's realtime solutions on the edge
+            Guise AI's realtime solutions on the edge
           </h1>
 
           <p className="text-gray-800   text-lg lg:text-xl  lg:text-center w-3/4  container  text-center  lg:w-4/6 mt-2 md:mt-4"></p>
