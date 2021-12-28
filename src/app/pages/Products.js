@@ -188,7 +188,7 @@ export const Products = () => {
             {
               label: "Safety detection",
               img: `https://images.unsplash.com/photo-1593697820932-7b80b2ec386f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-              description: `Experience the next level of Noise cancellation with the new Guise  AI assisted Intelligent Audio with improved audio filtration and customizable noise cancellation.`,
+              description: `Experience the next level of noise cancellation with the new Guise  AI assisted Intelligent Audio with improved audio filtration and customizable noise cancellation.`,
             },
           ].map((item) => (
             <div
@@ -261,7 +261,7 @@ export const Products = () => {
             {
               label: "Safety detection",
               img: `https://images.unsplash.com/photo-1504735432588-ab3bf116740f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80`,
-              description: ` Revolutionize vehicle and crowd management with real-time accurate analytics for better planning and design of city routes. Smart Cities rise from smart analytics.`,
+              description: ` Revolutionize vehicle and crowd management with accurate analytics for better planning and design of city routes. Smart Cities rise from smart analytics.`,
             },
           ].map((item) => (
             <div
@@ -334,7 +334,7 @@ export const Products = () => {
             {
               label: "Safety detection",
               img: `https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-              description: `Guise AI with its real time video and data analysis is empowering the energy sector both at the downstream and upstream sectors with real time and efficient predictions.`,
+              description: `Guise AI with its video and data analysis is empowering the energy sector both at the downstream and upstream sectors with  efficient predictions.`,
             },
           ].map((item) => (
             <div

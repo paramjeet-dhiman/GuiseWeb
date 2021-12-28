@@ -360,7 +360,7 @@ export const EMOverview = () => {
               </div>
             </div>
             <div className="flex flex-col lg:pl-20 w-full lg:w-6/12 order-2">
-              <h2 className="text-3xl  lg:text-4xl font-medium mb-4 lg:mb-10 lg:w-5/6">
+              <h2 className="text-3xl  lg:text-5xl font-medium mb-4 lg:mb-10 lg:w-5/6">
                 Network Intrusion Detection for SCADA systems
               </h2>
 
@@ -397,7 +397,7 @@ export const EMOverview = () => {
               </div>
             </div>
             <div className="flex  flex-col w-full lg:w-6/12 lg:order-1">
-              <h2 className="text-3xl lg:text-4xl font-medium mb-4 lg:mb-10 lg:w-5/6">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-10 lg:w-5/6">
                 Network Intrusion Detection for SCADA systems
               </h2>
 

@@ -15,7 +15,7 @@ export const Player = ({ setShowModal }) => {
   return (
     <div className="flex items-center justify-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ease-linear transition-all duration-150">
       <div className="modal-overlay absolute w-full h-full bg-core-black opacity-95"></div>
-      <div className="relative">
+      <div className="relative ">
         <div className="border-0 rounded-lg  shadow-lg relative flex flex-col w-full  outline-none focus:outline-none ">
           <div
             onClick={() => setShowModal(false)}
@@ -37,12 +37,12 @@ export const Player = ({ setShowModal }) => {
           {/*body*/}
           <div
             style={{
-              height: "30rem",
+              height: "28rem",
               width: "50rem",
-              background: "white",
+              background: "transparent",
             }}>
             <ReactPlayer
-              url="https://youtu.be/x0Fx047Db_s"
+              url="https://vimeo.com/191476378"
               controls
               width="100%"
               height="100%"

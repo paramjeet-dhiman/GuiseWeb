@@ -26,7 +26,7 @@ export function Home() {
     },
     {
       label: "Intelligent Audio",
-      img: "https://images.unsplash.com/photo-1611680580904-7be8bb7a5e88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80",
+      img: "https://image.freepik.com/free-photo/young-woman-with-microphone-recording-voice-acting_1303-26279.jpg",
     },
   ];
 
@@ -52,8 +52,11 @@ export function Home() {
             <div className="  pb-8 bg- sm:pb-16 md:pb-20  lg:w-full lg:pb-28 ">
               <main className="mt-10 mx-auto  px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-40 ">
                 <div className="sm:text-center lg:text-left">
-                  <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                    We are AI on the edge
+                  <h1 className="text-4xl tracking-wide  font-extrabold uppercase text-core-black sm:text-5xl lg:text-7xl lg:leading-snug">
+                    We are AI
+                  </h1>
+                  <h1 className="text-4xl tracking-tight font-extrabold uppercase text-core-black sm:text-5xl lg:text-7xl ">
+                    on the edge
                   </h1>
                   <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                     Guise AI runs AI models on the edge for...
@@ -61,7 +64,7 @@ export function Home() {
                   <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                     <Link
                       to="/technology"
-                      className="  justify-center px-4 py-2 border border-transparent text-lg lg:text-xl font-medium rounded text-white bg-core-black hoverTransition hover:bg-blue-600 md:py-4 md:text-lg md:px-5">
+                      className="  justify-center px-4 py-2  border-transparent text-lg lg:text-xl font-bold rounded hover:text-white text-core-black border-2 border-core-black hoverTransition hover:bg-core-black md:py-4 md:text-lg md:px-5">
                       Read more
                     </Link>
                   </div>
@@ -84,7 +87,7 @@ export function Home() {
             </svg> */}
 
             <img
-              className=" w-full object-cover  h-full"
+              className="h-72 w-full md:w-full object-cover  md:h-full"
               // https://image.freepik.com/free-vector/ai-technology-microchip-background-vector-digital-transformation-concept_53876-112222.jpg
               src={BGTech}
               alt=""
@@ -126,8 +129,39 @@ export function Home() {
       </section> */}
 
       {/*========================== Background Image with text ==========================*/}
-      <section className="relative h-screen py-10 lg:py-0 text-white">
-        <div
+      <section
+        className="relative text-core-black"
+        style={{
+          background: `url(https://image.freepik.com/free-vector/white-abstract-background_23-2148812993.jpg) center center / cover no-repeat`,
+          height: "100%",
+        }}>
+        <div className=" lg:flex justify-between py-10 lg:py-0 lg:h-screen">
+          <div className="lg:relative lg:inset-y-0 lg:left-0 lg:w-1/2 ">
+            <img
+              className=" w-full object-cover h-full"
+              src={`https://image.freepik.com/free-vector/robotic-mind_53876-93188.jpg`}
+              alt=""
+            />
+          </div>
+          <div className="w-full flex  lg:pl-20 items-center lg:w-1/2">
+            <p className="md:text-3xl mt-5 lg:mt-0 px-10 lg:px-0 text-left w-full text-xl lg:leading-normal lg:w-5/6 font-medium ">
+              Guise AI's solutions at the edge deliver feedback rapidly and
+              locally within the system. Localized processing is more efficient,
+              less expensive, and it increases the level of security in terms of
+              data privacy while maintaining GDPR compliance.
+            </p>
+          </div>
+          {/* <div className=" testing  lg:w-1/2">
+            <p className="text-core-black font-medium  text-xl lg:text-2xl">
+              Guise AI's solutions at the edge deliver feedback rapidly and
+              locally within the system. Localized processing is more efficient,
+              less expensive, and it increases the level of security in terms of
+              data privacy while maintaining GDPR compliance.
+            </p>
+          </div> */}
+        </div>
+
+        {/* <div
           style={{
             background: `url(https://image.freepik.com/free-vector/gradient-technology-symbols-background_23-2149110134.jpg) center center / cover no-repeat`,
             height: "100%",
@@ -148,7 +182,7 @@ export function Home() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* ============================= 6 SOLUTIONS CARDS ========================== */}
