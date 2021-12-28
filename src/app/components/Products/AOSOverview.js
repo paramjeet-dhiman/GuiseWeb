@@ -408,7 +408,8 @@ export const AOSOverview = () => {
               rightImageLabel="After"
               rightImageCss={{ filter: "brightness(80%)" }}
               leftImageCss={{ filter: "brightness(80%)" }}
-              className=""
+              sliderLineColor="red"
+              sliderLineWidth={4}
             />
           </div>
         </section>
