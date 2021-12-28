@@ -141,7 +141,7 @@ export const ProductReview = () => {
             We make it Easier for you
           </h1>
           <p className="text-gray-800 font-medium text-lg lg:text-xl pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
-            Here's glimpse how these features help you
+            Here's how we help you enhance customer experience and boost ROI
           </p>
         </div>
 

@@ -127,7 +127,7 @@ export const EMOverview = () => {
             We make it Easier for you
           </h1>
           <p className="text-gray-800 font-medium text-lg lg:text-xl pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
-            Here's how these features help you
+            Here's how we help you enhance customer experience and boost ROI
           </p>
         </div>
 
@@ -170,10 +170,7 @@ export const EMOverview = () => {
                     A major portion of energy for microgrids is obtained from
                     renewable energy sources such as wind turbines and solar
                     energy panels. Microgrids play an important role in the
-                    distribution and stability of electric grids as they not
-                    only distribute energy grids into smaller self-sustaining
-                    cells but can also act as reservoirs and emergency supplies
-                    to the macro-grid.
+                    distribution and stability of electric grids.
                   </p>
                 </div>
 
@@ -195,15 +192,12 @@ export const EMOverview = () => {
                     Issues with current solutions
                   </h2>
                   <p className="font-light">
-                    Traditional forecasting for such problems has been done with
-                    skilled mathematicians and analysts studying the varying
-                    sources over weeks to find recurring patterns. Even current
-                    AI and ML techniques work on the concept of studying a large
-                    sum of data and finding useful trends in it. Both these
-                    techniques fail as they are predicting trends based on past
-                    data and not the incoming data. With data arriving in
-                    continuous streams, we need an adaptive application that can
-                    amend itself with new incoming data.
+                    Traditional forecasting were done with the help of skilled
+                    mathematicians or even simple ML solutions, studying the
+                    varying sources over weeks to find recurring patterns. But
+                    their pattern recognition is prone to being outdated
+                    extremely quickly and hence presenting with inaccurate
+                    predictions over time.
                   </p>
                 </div>
               </div>
@@ -286,10 +280,7 @@ export const EMOverview = () => {
                     A major portion of the NTLs are caused by some mode of
                     electricity theft.Referring to World Bank reports, NTL
                     represents a significant part of the total power losses in
-                    both developing and developed nations. A survey from the
-                    Northeast Group LLC shows that more than $89.3 billion is
-                    lost every year worldwide due to NTL making it a significant
-                    challenge to deal with.
+                    both developing and developed nations.
                   </p>
                 </div>
                 <div className="">
@@ -301,9 +292,7 @@ export const EMOverview = () => {
                     quickly rising as a standard norm across the globe. Majority
                     of microgrids and power grids are shifting towards the use
                     of Smart meters and sensors that produce real time data
-                    about energy flow and consumption across the grid. But even
-                    then we lack a proficient system to identify electricity
-                    anomalies and thefts on the go.
+                    about energy flow and consumption across the grid.
                   </p>
                 </div>
               </div>
@@ -312,7 +301,7 @@ export const EMOverview = () => {
         </section>
 
         {/* ==================== section #5 ========================== */}
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-16 ">
+        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-16 ">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-20">
             <div className=" w-full lg:w-6/12 md:m-0 lg:order-2">
               <div className="flex justify-center relative">
@@ -354,10 +343,10 @@ export const EMOverview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* ==================== section #6 ========================== */}
-
+        {/* 
         <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:py-20 lg:px-40 gap-16 ">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
             <div className=" w-full lg:w-6/12 md:m-0 md:order-2 order-1 ">
@@ -391,7 +380,7 @@ export const EMOverview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* ==================== section #7 ========================== */}
 
@@ -408,25 +397,20 @@ export const EMOverview = () => {
               </div>
             </div>
             <div className="flex  flex-col w-full lg:w-6/12 lg:order-1">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-10 lg:w-5/6">
-                Network Intrusion Detection
+              <h2 className="text-3xl lg:text-4xl font-medium mb-4 lg:mb-10 lg:w-5/6">
+                Network Intrusion Detection for SCADA systems
               </h2>
 
               <div className="text-lg lg:text-xl text-justify space-y-5 text-gray-500">
-                <p className=" font-light lg:w-5/6">
-                  Data over the internet is shared in the form of packets, all
-                  these packets are shared in continuous real time streams where
-                  each packet, apart from the data being shared, stores metadata
-                  of the communication happening (such as sender and receiver IP
-                  addresses etc). While the data is strictly prohibited to read
-                  as per ethical norms (or is usually encrypted) NIDS performs
-                  anomaly detection on the metadata which is open to
-                  consumption.
-                </p>
-                <p className=" font-light lg:w-5/6">
-                  With the help of our Continuous Learning AI at GuiseAI we can
-                  help the NIDS learn about the network data flow and understand
-                  trends and isolated points.
+                <h2 className="text-xl font-semibold mb-2 text-gray-700">
+                  Cybersecurity
+                </h2>
+                <p className="font-light lg:w-5/6 ">
+                  Cybersecurity is currently one of the main concerns for SCADA
+                  ICS operators, as a result of a series of recent successful
+                  cyberattacks against several targets, such as electric power
+                  substations and distribution grids, sewage processing units or
+                  even nuclear power plants.
                 </p>
               </div>
             </div>
@@ -458,12 +442,12 @@ export const EMOverview = () => {
                     Smart Meter Data
                   </h2>
                   <p className="font-light lg:w-5/6">
-                    Analyzing the data can help in understanding the users
-                    electricity consumption behavior and demands; thus, enabling
-                    better service to be provided to them. By examining the
-                    complexity, randomness, and uncertainty of the users
-                    electricity consumption behavior, Guise AI proposes
-                    Continual Learning method to analyze this behavior
+                    Analyzing smart meter data can help in understanding the
+                    users electricity consumption behavior and demands; thus,
+                    enabling better services to be provided. Guise AI proposes
+                    its Continual Learning method to constantly adapt and
+                    distinguish your customers based on their consumption
+                    habits.
                   </p>
                 </div>
               </div>

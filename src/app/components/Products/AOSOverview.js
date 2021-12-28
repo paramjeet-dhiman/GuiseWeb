@@ -29,23 +29,23 @@ export const AOSOverview = () => {
   const tabContent = [
     {
       title: "Operations Tracking",
-      content: `Record the following operational events and track them automatically with the Guise AI Airport Ground Operations Suite.`,
+      content: `Record the following operational events and track them automatically with the Guise AI Airport Ground Operations.`,
       list: [
         { title: "Airline detection" },
         { title: "Aircraft arrival and departure time" },
-        { title: "Baggage offload and onload time" },
-        { title: "Jet bridge attach and detach time" },
-        { title: "Passenger onboard duration and deboard duration" },
+        { title: "Cargo Offload and Onload duration" },
+        { title: "JetBridge connection duration" },
       ],
       img: `https://images.unsplash.com/photo-1482351437900-d57cf1b9cd37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
     {
-      title: "Safety Checks",
+      title: "Safety Monitoring",
       content: `Maintain safety standards and minimize violations with constant surveillance and alerts.`,
       list: [
         { title: "Safety cones" },
         { title: "Wheel chocks detection" },
         { title: "Safety jacket/vest detection" },
+        { title: "Violation Alerts" },
         // { title: "Parking Lines detection" },
       ],
       img: `https://images.unsplash.com/photo-1541707423647-46d6213e390a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
@@ -60,24 +60,14 @@ export const AOSOverview = () => {
       img: `https://images.pexels.com/photos/2599729/pexels-photo-2599729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
     },
     {
-      title: "Resource Management",
+      title: "Vehicle Management",
       content: `Manage airport resources efficiently by tracking usage and durations assigned to every airplane.`,
       list: [
-        { title: "Vehicle detection and tracking" },
-        { title: "Vehicle counting" },
+        { title: "Fleet count" },
+        { title: "Detection and tracking" },
+        { title: "Fuel Truck/ Cargo truck/ Belt trucks/ Pushback truck" },
       ],
       img: `https://images.unsplash.com/photo-1515941719567-48bbfc9163f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80`,
-    },
-    {
-      title: "Baggage Management",
-      content: `Manage and track baggage either in the airport for safety purposes or for operational management during segregation, unloading or offloading.`,
-      list: [
-        { title: "Baggage detection" },
-        // { title: "Baggage size and color" },
-        { title: "Baggage counting" },
-        { title: "Baggage dwell time" },
-      ],
-      img: `https://images.unsplash.com/photo-1569512850669-7baa648e82d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
   ];
 
@@ -140,7 +130,7 @@ export const AOSOverview = () => {
             We make it Easier for you
           </h1>
           <p className="text-gray-800 font-medium text-lg lg:text-xl pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
-            Here's how these features help you
+            Here's how we help you enhance customer experience and boost ROI
           </p>
         </div>
 

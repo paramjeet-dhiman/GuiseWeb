@@ -4,7 +4,7 @@ import airplaneProduct from "../../assets/images/airplane_product.jpg";
 
 export const Products = () => {
   return (
-    <div className="bg-white h-full select-none">
+    <div className="bg-white h-full">
       <section
         className="w-full bg-center bg-cover  "
         style={{
@@ -49,12 +49,14 @@ export const Products = () => {
               key={item}
               className=" text-gray-700 hover:text-bookmark-blue   ">
               <div className="flex justify-center mb-4 shadow-xl">
-                <img
-                  src={item.img}
-                  className="w-full h-full"
-                  alt="sdf"
-                  draggable="false"
-                />
+                <Link to="/products/airport-operations-overview">
+                  <img
+                    src={item.img}
+                    className="w-full h-full"
+                    alt="sdf"
+                    draggable="false"
+                  />
+                </Link>
               </div>
               <div className="flex flex-col items-center mt-10 text-center">
                 {/* <p className="font-semibold text-sm lg:text-lg text-gray-900 mb-2">
@@ -113,19 +115,21 @@ export const Products = () => {
             {
               label: "Safety detection",
               img: `https://images.unsplash.com/photo-1521989841745-2fded4328e13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-              description: `Guise AI generates meaningful insights from camera video streams to help you create the greatest impact on your customers and improve operations.`,
+              description: `Guise AI generates meaningful insights from camera streams to help you create the greatest impact on your customers and improve operations.`,
             },
           ].map((item) => (
             <div
               key={item}
               className=" text-gray-700 hover:text-bookmark-blue   ">
               <div className="flex justify-center mb-4 shadow-xl">
-                <img
-                  src={item.img}
-                  className="w-full h-full"
-                  alt="sdf"
-                  draggable="false"
-                />
+                <Link to="/products/digital-signage-overview">
+                  <img
+                    src={item.img}
+                    className="w-full h-full"
+                    alt="sdf"
+                    draggable="false"
+                  />
+                </Link>
               </div>
               <div className="flex flex-col items-center mt-10 text-center">
                 {/* <p className="font-semibold text-sm lg:text-lg text-gray-900 mb-2">
@@ -183,7 +187,7 @@ export const Products = () => {
           {[
             {
               label: "Safety detection",
-              img: `https://www.einfochips.com/blog/wp-content/uploads/2021/10/Building_Intelligent_Audio_Systems_Audio_Feature_Extraction_using_Machine_Learning_Blog_Fetaured_Image.jpg`,
+              img: `https://images.unsplash.com/photo-1593697820932-7b80b2ec386f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
               description: `Experience the next level of Noise cancellation with the new Guise  AI assisted Intelligent Audio with improved audio filtration and customizable noise cancellation.`,
             },
           ].map((item) => (
@@ -191,12 +195,14 @@ export const Products = () => {
               key={item}
               className=" text-gray-700 hover:text-bookmark-blue   ">
               <div className="flex justify-center mb-4 shadow-xl">
-                <img
-                  src={item.img}
-                  className="w-full h-full"
-                  alt="sdf"
-                  draggable="false"
-                />
+                <Link to="/products/intelligent-audio-overview">
+                  <img
+                    src={item.img}
+                    className="w-full h-full"
+                    alt="sdf"
+                    draggable="false"
+                  />
+                </Link>
               </div>
               <div className="flex flex-col items-center mt-10 text-center">
                 {/* <p className="font-semibold text-sm lg:text-lg text-gray-900 mb-2">
@@ -254,7 +260,7 @@ export const Products = () => {
           {[
             {
               label: "Safety detection",
-              img: `https://images.unsplash.com/photo-1611147533125-9ca445f32036?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+              img: `https://images.unsplash.com/photo-1504735432588-ab3bf116740f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80`,
               description: ` Revolutionize vehicle and crowd management with real-time accurate analytics for better planning and design of city routes. Smart Cities rise from smart analytics.`,
             },
           ].map((item) => (
@@ -262,12 +268,14 @@ export const Products = () => {
               key={item}
               className=" text-gray-700 hover:text-bookmark-blue   ">
               <div className="flex justify-center mb-4 shadow-xl">
-                <img
-                  src={item.img}
-                  className="w-full h-full"
-                  alt="sdf"
-                  draggable="false"
-                />
+                <Link to="/products/traffic-management-overview">
+                  <img
+                    src={item.img}
+                    className="w-full h-full"
+                    alt="sdf"
+                    draggable="false"
+                  />
+                </Link>
               </div>
               <div className="flex flex-col items-center mt-10 text-center">
                 {/* <p className="font-semibold text-sm lg:text-lg text-gray-900 mb-2">
@@ -325,7 +333,7 @@ export const Products = () => {
           {[
             {
               label: "Safety detection",
-              img: `https://cdn.pixabay.com/photo/2019/12/24/12/11/solar-panel-4716640_960_720.jpg`,
+              img: `https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
               description: `Guise AI with its real time video and data analysis is empowering the energy sector both at the downstream and upstream sectors with real time and efficient predictions.`,
             },
           ].map((item) => (
@@ -333,12 +341,14 @@ export const Products = () => {
               key={item}
               className=" text-gray-700 hover:text-bookmark-blue   ">
               <div className="flex justify-center mb-4 shadow-xl">
-                <img
-                  src={item.img}
-                  className="w-full h-full"
-                  alt="sdf"
-                  draggable="false"
-                />
+                <Link to="/products/energy-management-overview">
+                  <img
+                    src={item.img}
+                    className="w-full h-full"
+                    alt="sdf"
+                    draggable="false"
+                  />
+                </Link>
               </div>
               <div className="flex flex-col items-center mt-10 text-center">
                 {/* <p className="font-semibold text-sm lg:text-lg text-gray-900 mb-2">

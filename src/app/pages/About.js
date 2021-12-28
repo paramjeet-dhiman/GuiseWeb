@@ -19,9 +19,11 @@ export const About = () => {
                   Grow up your workflow speed.
                 </h2>
                 <p className="text-gray-400 lg:w-3/4 text-sm md:text-lg text-center lg:text-left mb-6">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Blanditiis commodi cum cupiditate ducimus, fugit harum id
-                  necessitatibus odio quam quasi, quibusdam rem tempora
+                  Guise AI solves the cost and efficiency problems endemic in AI
+                  today. Our continuous learning AI solutions on the edge allow
+                  machines to continuously learn and adapt to dynamically
+                  changing data in the real world without having to constantly
+                  retrain models.
                 </p>
               </div>
             </div>

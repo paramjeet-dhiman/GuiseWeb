@@ -5,17 +5,14 @@ export const DemoComponent = () => {
   return (
     <section className="bg-bookmark-white py-20 lg:py-36 ">
       <div className="container px-10 lg:px-10">
-        <h1 className="text-2xl lg:text-5xl text-core-black uppercase font-black lg:px-4 text-center ">
-          See what Guise AI can do for you ?
+        <h1 className="text-2xl lg:text-5xl text-core-black uppercase tracking-wide font-black lg:px-4 text-center ">
+          See what Guise AI can do for you
         </h1>
         <div className="flex justify-center items-center mt-5 lg:mt-10 ">
-          <Link
-            to="/demo"
-            // id="go_to_/technology_textHeader_index_2"
-            className="text-blue-500 group transform hover:scale-105 hoverTransition  hover:text-blue-400 flex items-center space-x-2 py-1">
-            <span className="text-base lg:text-xl uppercase  font-semibold">
+          <Link to="/demo">
+            <div className="text-blue-500 px-6 rounded-md py-2 md:py-4  text-lg lg:text-xl uppercase  font-semibold border-2 border-blue-500 hover:bg-blue-500  hover:scale-105 hoverTransition  hover:text-white ">
               Book A DEMO
-            </span>
+            </div>
             {/* <svg className="h-3 w-3" viewBox="0 0 12 12" fill="none">
               <path
                 d="M0 1.00586H11V12.0059"

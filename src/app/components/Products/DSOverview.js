@@ -27,7 +27,7 @@ export const DSOverview = () => {
       img: `https://images.unsplash.com/photo-1528406745358-6c3112259eb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80`,
     },
     {
-      title: "Customer Profiling",
+      title: "Customer Demographics",
       content: `Understand your customers better and target the right audience with AI assisted detections.`,
       list: [{ title: "Customer Age" }, { title: "Customer Gender" }],
       img: `https://images.unsplash.com/photo-1440985465094-6ac443aab454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
@@ -93,17 +93,14 @@ export const DSOverview = () => {
 
             <div className="text-lg lg:text-xl text-justify space-y-5 text-gray-500 lg:w-5/6">
               <p className="font-light">
-                Boost sales and organize resources through intelligent analytics
-                with the help of automated AI systems. Though our applications
-                on the edge, we help you get deeper insights in understanding
-                your customers and help you make the right decisions at all your
-                outlets.
+                Our applications on the edge help you gain deeper insights into
+                your customers and make the most impactful decisions at your
+                physical locations.
               </p>
               <p className="font-light">
-                Guise AI applications on the edge make your digital display
-                systems smarter where it matters most: in front of your
-                customers. Unlock your visual data to precisely gain insights
-                into your customers, from demographics to preferences.
+                With a simple application augmented to your stores, you can now
+                generate analytics and visualize your customer trends, making
+                informed executive decisions going forward.
               </p>
             </div>
           </div>
@@ -119,7 +116,7 @@ export const DSOverview = () => {
             We make it Easier for you
           </h1>
           <p className="text-gray-800 font-medium text-lg lg:text-xl pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
-            Here's how these features help you
+            Here's how we help you enhance customer experience and boost ROI
           </p>
         </div>
 

@@ -11,23 +11,23 @@ export const IAOverview = () => {
 
     title: `Lorem Ipsum`,
 
-    image1: `https://images.unsplash.com/photo-1612831455359-970e23a1e4e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80`,
-    image2: `https://images.unsplash.com/photo-1610702875227-f796c246cebf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80`,
+    image1: `https://images.unsplash.com/photo-1581368135153-a506cf13b1e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    image2: `https://images.unsplash.com/photo-1623503456285-392496a4b507?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80`,
   };
 
   const tabContent = [
     {
       title: "Noise Detection",
-      content: `Analyze audio sources and detect traces of noise for real time alerts such as fire alarms.`,
+      content: `Analyze audio sources and detect individual traces of noise for real time alerts such as fire alarms.`,
       list: [
         { title: "Real Time Alerts" },
-        { title: "Custom Noise Detection" },
+        { title: " Custom noise detection" },
       ],
-      img: `https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+      img: `https://images.unsplash.com/photo-1573495804669-ec82ad00f327?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80`,
     },
     {
       title: "Noise Cancellation",
-      content: `Filter noise and unwanted background audio from the audio source and experience clean audio.`,
+      content: `Filter noise and unwanted background audio from the source and experience clean audio.`,
       list: [{ title: "Custom Noise Filtration" }],
       img: `https://images.pexels.com/photos/3861968/pexels-photo-3861968.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
     },
@@ -95,7 +95,7 @@ export const IAOverview = () => {
             We make it Easier for you
           </h1>
           <p className="text-gray-800 font-medium text-lg lg:text-xl pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
-            Here's how these features help you
+            Here's how we help you enhance customer experience and boost ROI
           </p>
         </div>
 
@@ -177,7 +177,7 @@ export const IAOverview = () => {
                 <div
                   className="p-8 mt-8 hidden lg:block lg:h-72 object-cover bg-cover bg-center rounded-lg shadow-xl"
                   style={{
-                    background: `url(https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80) center center / cover no-repeat`,
+                    background: `url(https://images.unsplash.com/photo-1615576447223-fc9e5fae1801?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80) center center / cover no-repeat`,
                   }}></div>
               </div>
               <div className="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
@@ -190,7 +190,7 @@ export const IAOverview = () => {
                 <div
                   className="p-8 mt-8 hidden lg:block lg:h-72 object-cover bg-cover bg-center rounded-lg shadow-xl"
                   style={{
-                    background: `url(https://images.unsplash.com/photo-1573164574397-dd250bc8a598?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80) center center / cover no-repeat`,
+                    background: `url(https://images.unsplash.com/photo-1516223725307-6f76b9ec8742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80) center center / cover no-repeat`,
                   }}></div>
               </div>
             </div>

@@ -124,7 +124,7 @@ export const TMOverview = () => {
             We make it Easier for you
           </h1>
           <p className="text-gray-800 font-medium text-lg lg:text-xl pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
-            Here's how these features help you
+            Here's how we help you enhance customer experience and boost ROI
           </p>
         </div>
 
@@ -154,17 +154,17 @@ export const TMOverview = () => {
               </div>
             </div>
             <div className="flex flex-col w-full lg:pl-20 lg:w-6/12 ">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-10">
+              <h2 className="text-3xl lg:text-4xl lg:w-5/6 font-medium mb-4 lg:mb-10">
                 Build a Smarter City with the help of AI
               </h2>
 
-              <div className="text-lg  text-justify  lg:text-xl space-y-10 text-gray-500">
+              <div className="text-lg  text-justify   lg:text-xl space-y-10 text-gray-500">
                 <div className="">
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Understand traffic
                   </h2>
                   <p className="font-light lg:w-5/6">
-                    Have an automated system to help understand your city’s
+                    Have an automated system to help understand your cities
                     movement better. Get accurate numbers on vehicle density and
                     location and systematically make decisions.
                   </p>
@@ -198,7 +198,7 @@ export const TMOverview = () => {
 
         {/* ====================== Section #3  ================== */}
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
+        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
             <div className=" w-full lg:w-6/12 md:m-0 order-2">
               <div className="flex justify-center relative ">
@@ -228,10 +228,10 @@ export const TMOverview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* ====================== Section #4  ================== */}
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-16 ">
+        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-16 ">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
             <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
@@ -258,7 +258,7 @@ export const TMOverview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* ====================== Section #5  ================== */}
 
@@ -296,8 +296,8 @@ export const TMOverview = () => {
             </div>
 
             <div className="flex flex-col w-full lg:w-6/12   md:order-1 ">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-4  lg:w-5/6">
-                Explore our Suite
+              <h2 className="text-3xl lg:text-4xl font-medium mb-4  lg:w-5/6">
+                Explore our solutions for a smarter system
               </h2>
 
               <p className=" font-light text-justify lg:w-5/6 text-lg lg:text-xl  space-y-10 text-gray-500">

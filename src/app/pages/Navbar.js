@@ -165,7 +165,10 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
             <div className="relative" ref={ref2}>
               <div
                 onClick={handleShow}
-                onMouseOver={handleShow}
+                onMouseOver={() => {
+                  handleShow();
+                  setToggle(false);
+                }}
                 // onMouseEnter={handleToggle}
                 className="flex items-center  px-2 cursor-pointer  tracking-wide py-3 transition-all duration-1000 text-lg font-medium hover:text-gray-600 ">
                 Resources
@@ -276,7 +279,10 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
             <div className="relative" ref={ref}>
               <div
                 onClick={handleToggle}
-                onMouseOver={handleToggle}
+                onMouseOver={() => {
+                  handleToggle();
+                  setShow(false);
+                }}
                 // onMouseEnter={handleToggle}
                 className="flex items-center  px-2 cursor-pointer  tracking-wide py-3 transition-all duration-1000 text-lg font-medium hover:text-gray-600 ">
                 Company

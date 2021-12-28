@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import BGTech2 from "../../assets/images/2880645.jpg";
+import BGTech from "../../assets/images/BGTech.jpg";
 
 export function Home() {
   const products = [
@@ -26,14 +26,74 @@ export function Home() {
     },
     {
       label: "Intelligent Audio",
-      img: "https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      img: "https://images.unsplash.com/photo-1611680580904-7be8bb7a5e88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80",
     },
   ];
 
   return (
     <div className="">
       {/*================= Hero Section ===================*/}
-      <section className="flex items-center justify-center py-20  relative h-screen  bg-white">
+
+      <section
+        className="mt-16 relative   overflow-hidden lg:h-screen"
+        style={{
+          background: `url(https://image.freepik.com/free-vector/white-abstract-background_23-2148812993.jpg) center center / cover no-repeat`,
+          height: "100%",
+        }}
+        // https://image.freepik.com/free-vector/white-technology-background_23-2148390329.jpg
+        // https://image.freepik.com/free-vector/white-technology-background_23-2148403783.jpg
+        // https://image.freepik.com/free-vector/white-technology-background_23-2148403782.jpg
+        // https://image.freepik.com/free-vector/white-elegant-texture-background-style_23-2148432200.jpg
+        // https://image.freepik.com/free-vector/realistic-white-monochrome-background_23-2149023985.jpg
+        // https://image.freepik.com/free-vector/white-abstract-background_23-2148812993.jpg
+      >
+        <div className="">
+          <div className="lg:flex items-center lg:w-1/2 h-52 lg:h-screen">
+            <div className="  pb-8 bg- sm:pb-16 md:pb-20  lg:w-full lg:pb-28 ">
+              <main className="mt-10 mx-auto  px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-40 ">
+                <div className="sm:text-center lg:text-left">
+                  <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                    We are AI on the edge
+                  </h1>
+                  <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                    Guise AI runs AI models on the edge for...
+                  </p>
+                  <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                    <Link
+                      to="/technology"
+                      className="  justify-center px-4 py-2 border border-transparent text-lg lg:text-xl font-medium rounded text-white bg-core-black hoverTransition hover:bg-blue-600 md:py-4 md:text-lg md:px-5">
+                      Read more
+                    </Link>
+                  </div>
+                </div>
+              </main>
+            </div>
+          </div>
+
+          <div
+            className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
+            // style={{
+            //   // clipPath: `polygon(4% 0, 100% 0, 100% 50%, 100% 100%, 0 100%);`,
+            // }}
+          >
+            {/* <svg
+              className="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-white -ml-12"
+              viewBox="0 0 100 100"
+              preserveAspectRatio="none">
+              <polygon points="50,0 100,0 50,100 0,100" />
+            </svg> */}
+
+            <img
+              className=" w-full object-cover  h-full"
+              // https://image.freepik.com/free-vector/ai-technology-microchip-background-vector-digital-transformation-concept_53876-112222.jpg
+              src={BGTech}
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* <section className="flex items-center justify-center py-20  relative h-screen  bg-white">
         <div className=" lg:px-44 flex flex-col   mx-auto  md:h-128 space-y-10 gap-y-10 lg:gap-y-0 lg:space-y-0 lg:flex-row lg:items-center lg:space-x-6">
           <div className="flex flex-col items-center w-full pt-20  sm:pt-36 md:pt-48 lg:pt-0   lg:flex-row lg:w-1/2">
             <div className="px-10 lg:px-0 md:order-2 flex flex-col justify-center items-center md:items-start ">
@@ -56,35 +116,35 @@ export function Home() {
 
           <div className="flex w-full h-full lg:w-1/2">
             <img
-              src={BGTech2}
+              src={`https://image.freepik.com/free-photo/ai-technology-microchip-background-digital-transformation-concept_53876-124669.jpg`}
               className="object-cover w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl"
               alt="sdf"
               draggable="false"
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/*========================== Background Image with text ==========================*/}
       <section className="relative h-screen py-10 lg:py-0 text-white">
         <div
           style={{
-            background: `url(https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) center center / cover no-repeat`,
+            background: `url(https://image.freepik.com/free-vector/gradient-technology-symbols-background_23-2149110134.jpg) center center / cover no-repeat`,
             height: "100%",
           }}>
           <div
             className="lg:text-left py-20  flex flex-col items-center justify-center"
             style={{
-              boxShadow: `inset 0 0 0 2000px rgb(0 0 0 / 60%)`,
+              boxShadow: `inset 0 0 0 2000px rgb(0 0 0 / 40%)`,
               height: "100%",
             }}>
-            <div className="flex flex-col w-3/4  md:flex-row px-10 md:px-40 gap-20 lg:gap-40 text-center">
-              <p className="text-shadow md:text-3xl  text-justify w-full text-xl lg:leading-normal font-bold">
-                Guise AI solves the cost and efficiency problems endemic in AI
-                today. Our continuous learning AI solutions on the edge allow
-                machines to continuously learn and adapt to dynamically changing
-                data in the real world without having to constantly retrain
-                models.
+            <div className="flex flex-col lg:w-5/6 md:flex-row  w-full px-10 md:px-40  text-center">
+              <p className="md:text-3xl  text-center w-full text-xl lg:leading-normal font-bold">
+                Guise AI's solutions at the edge deliver feedback rapidly and
+                locally within the system. Localized processing is more
+                efficient, less expensive, and it increases the level of
+                security in terms of data privacy while maintaining GDPR
+                compliance.
               </p>
             </div>
           </div>
@@ -122,7 +182,7 @@ export function Home() {
 
       {/*============ 2 col right-left image and text ===========*/}
 
-      <section className="bg-white py-20 lg:py-20 mt-5 lg:mt-0 ">
+      {/* <section className="bg-white py-20 lg:py-20 mt-5 lg:mt-0 ">
         <div className="sm:w-3/4 container mx-auto">
           <h1 className="px-10 text-2xl lg:text-4xl  font-semibold text-center text-bookmark-blue">
             Deliver the most dynamic and effective customer experience with
@@ -154,7 +214,7 @@ export function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/*============================= Join Team =========================== */}
 
@@ -172,7 +232,7 @@ export function Home() {
           <div className="grid lg:grid-cols-12 gap-10">
             {[
               {
-                title: "Harness Untapped Data",
+                title: "Untap Data",
                 text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
                 icon: (
                   <svg
@@ -237,7 +297,7 @@ export function Home() {
               <div
                 key={idx}
                 className="col-span-3 md:px-10 py-10  md:h-96 flex  flex-col justify-center  items-center bg-white shadow-lg  rounded-lg">
-                <div className="mb-8">{item.icon}</div>
+                <div className="mb-8 ">{item.icon}</div>
                 <div className="text-center text-core-black  ">
                   <h4 className="font-extrabold text-lg md:text-xl uppercase mb-4">
                     {item.title}
