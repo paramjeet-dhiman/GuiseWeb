@@ -35,75 +35,85 @@ export function Home() {
     <div className="select-none">
       {/*================= Hero Section ===================*/}
 
-      <section className="mt-16 relative   overflow-hidden lg:h-screen">
-        <div className="">
-          <div className="lg:flex items-center lg:w-1/2 h-52 lg:h-screen">
-            <div className="  pb-8 bg- sm:pb-16 md:pb-20  lg:w-full lg:pb-28 ">
-              <main className="mt-10 mx-auto  px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-40 ">
-                <div className="sm:text-center lg:text-left">
-                  <h1 className="text-4xl tracking-wide  font-black  text-core-black sm:text-5xl lg:text-5xl lg:leading-snug">
-                    We are AI on the edge
-                  </h1>
+      <section className="flex items-center justify-center py-20  relative h-screen  bg-white">
+        <div className=" relative mt-20 lg:mt-36">
+          <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-24">
+            <div className="px-10 md:px-0  flex flex-1 flex-col items-center lg:items-start">
+              <h2 className="text-2xl lg:text-4xl font-semibold  uppercase text-center md:text-left  lg:leading-tight text-core-black">
+                We are AI on the edge
+              </h2>
+              <p className="mt-4 text-gray-600 text-center md:text-left  text-lg lg:text-xl lg:w-5/6">
+                Guise AI runs AI models on the edge for...
+              </p>
+            </div>
 
-                  <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                    Guise AI runs AI models on the edge for...
-                  </p>
-                  {/* <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                    <Link
-                      to="/technology"
-                      className="  justify-center px-4 py-2  border-transparent text-lg lg:text-xl font-bold rounded hover:text-white text-core-black border-2 border-core-black hoverTransition hover:bg-core-black md:py-4 md:text-lg md:px-5">
-                      Read more
-                    </Link>
-                  </div> */}
-                </div>
-              </main>
+            <div className="flex flex-1 justify-center z-40 mb-10 lg:mb-0">
+              <img
+                src={BGTech}
+                className="object-cover w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl"
+                alt="sdf"
+                draggable="false"
+              />
+            </div>
+          </div>
+        </div>
+        {/* <div className=" lg:px-40 flex flex-col   mx-auto   space-y-10 gap-y-10 lg:gap-y-0 lg:space-y-20 lg:flex-row lg:items-center lg:space-x-6">
+          <div className="flex flex-col items-center w-full pt-20  sm:pt-36 md:pt-48 lg:pt-0   lg:flex-row lg:w-1/2">
+            <div className="px-10 lg:px-0 md:order-2 flex flex-col justify-center items-center md:items-start ">
+              <h2 className="text-2xl lg:text-4xl font-semibold  uppercase text-center md:text-left  lg:leading-tight text-core-black">
+                We are AI on the edge
+              </h2>
+              <p className="mt-4 text-gray-600 text-center md:text-left  text-lg lg:text-xl lg:w-5/6">
+                Guise AI runs AI models on the edge for...
+              </p>
             </div>
           </div>
 
-          <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+          <div className="flex w-full h-full lg:w-1/2">
             <img
-              className="h-72 w-full md:w-full object-cover  bg-cover bg-center rounded-l-xl shadow-2xl  md:h-full"
               src={BGTech}
+              className="object-cover w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl"
+              alt="sdf"
               draggable="false"
-              alt="bgImg"
             />
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/*========================== Background Image with text ==========================*/}
       <section className="relative text-core-black">
-        <div className=" lg:flex justify-between py-10 lg:py-0 lg:h-screen">
-          <div className="lg:relative lg:inset-y-0 lg:left-0 lg:w-1/2 ">
-            {/* https://cdn.pixabay.com/photo/2020/06/08/00/55/earth-5272550_960_720.png
-                https://image.freepik.com/free-vector/ai-futuristic-technology-background_53876-100681.jpg
-             */}
-            <img
-              className=" w-full object-cover bg-cover bg-center shadow-2xl rounded-r-xl h-full"
-              src={BGTech2}
-              alt="bgImg"
-              draggable="false"
-            />
-          </div>
-          <div className="w-full flex  lg:pl-20 items-center lg:w-1/2">
-            <p className="md:text-3xl mt-5 lg:mt-0 px-10 lg:px-0 text-left w-full text-xl lg:leading-normal lg:w-5/6 font-medium ">
-              Guise AI's solutions at the edge deliver feedback rapidly and
-              locally within the system. Localized processing is more efficient,
-              less expensive, and it increases the level of security in terms of
-              data privacy while maintaining GDPR compliance.
-            </p>
+        <div className=" relative mt-20 lg:mt-36">
+          <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-24">
+            <div className="flex flex-1 justify-center z-40 mb-10 lg:mb-0">
+              <img
+                className="object-cover w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl"
+                src={BGTech2}
+                alt="sdf"
+                draggable="false"
+              />
+            </div>
+
+            <div className="px-10 md:px-0  flex flex-1 flex-col items-center lg:items-start">
+              <p className="text-core-black font-medium lg:leading-snug text-xl lg:text-2xl text-left  lg:w-5/6">
+                Guise AI's solutions at the edge deliver feedback rapidly and
+                locally within the system. Localized processing is more
+                efficient, less expensive, and it increases the level of
+                security in terms of data privacy while maintaining GDPR
+                compliance.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* ============================= 6 SOLUTIONS CARDS ========================== */}
-      <section className="bg-white py-10 lg:py-20 mt-10 lg:mt-10 ">
+      <section className="bg-white py-10 lg:py-20 mt-10 lg:mt-20 ">
         <div className="sm:w-3/4 container mx-auto">
-          <h1 className="px-10 text-2xl lg:text-4xl lg:leading-tight font-semibold text-center text-core-black">
+          <h2 className="text-2xl px-10 lg:text-4xl font-semibold text-center lg:leading-tight text-core-black">
             With Guise AI Continual Learning technology, our solutions are
             revolutionizing technology and making significant impact in several
             mission critical industries.
-          </h1>
+          </h2>
         </div>
         <div className=" md:px-44 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-10 py-10">
           {products.map((item, index) => (
