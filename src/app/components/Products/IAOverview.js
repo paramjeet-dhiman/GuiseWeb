@@ -12,7 +12,7 @@ export const IAOverview = () => {
     title: `Lorem Ipsum`,
 
     image1: `https://images.unsplash.com/photo-1581368135153-a506cf13b1e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    image2: `https://images.unsplash.com/photo-1623503456285-392496a4b507?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80`,
+    image2: `https://images.pexels.com/photos/4402188/pexels-photo-4402188.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
   };
 
   const tabContent = [

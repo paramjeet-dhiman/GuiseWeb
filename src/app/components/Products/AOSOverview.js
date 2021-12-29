@@ -16,8 +16,8 @@ export const AOSOverview = () => {
     customer satisfaction and operational efficiency.`,
 
     title: `Lorem Ipsum`,
-
-    image1: `https://images.unsplash.com/photo-1524592714635-d77511a4834d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    // https://images.unsplash.com/photo-1524592714635-d77511a4834d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
+    image1: `https://images.unsplash.com/photo-1638072252174-8806821a091e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     image2: `https://images.unsplash.com/photo-1578434972378-e3c393d983db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80`,
     image3: `https://images.unsplash.com/photo-1565108404384-2919e47c07c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
     image4: `https://images.unsplash.com/photo-1517400508447-f8dd518b86db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
@@ -48,7 +48,19 @@ export const AOSOverview = () => {
         { title: "Violation Alerts" },
         // { title: "Parking Lines detection" },
       ],
-      img: `https://images.unsplash.com/photo-1541707423647-46d6213e390a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+      img: `https://images.pexels.com/photos/240524/pexels-photo-240524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+    },
+    {
+      title: "Vehicle Management",
+      content: `Manage airport resources efficiently by tracking usage and durations assigned to every airplane.`,
+      list: [
+        { title: "Fleet count" },
+        { title: "Fuel truck" },
+        { title: "Cargo carriers" },
+        { title: "Cargo loaders" },
+        { title: "Pushback truck" },
+      ],
+      img: `https://images.unsplash.com/photo-1515941719567-48bbfc9163f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80`,
     },
     {
       title: "Ground Crew",
@@ -58,16 +70,6 @@ export const AOSOverview = () => {
         { title: "Fueling and Catering" },
       ],
       img: `https://images.pexels.com/photos/2599729/pexels-photo-2599729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-    },
-    {
-      title: "Vehicle Management",
-      content: `Manage airport resources efficiently by tracking usage and durations assigned to every airplane.`,
-      list: [
-        { title: "Fleet count" },
-        { title: "Detection and tracking" },
-        { title: "Fuel Truck/ Cargo truck/ Belt trucks/ Pushback truck" },
-      ],
-      img: `https://images.unsplash.com/photo-1515941719567-48bbfc9163f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80`,
     },
   ];
 
@@ -408,7 +410,7 @@ export const AOSOverview = () => {
               rightImageLabel="After"
               rightImageCss={{ filter: "brightness(80%)" }}
               leftImageCss={{ filter: "brightness(80%)" }}
-              sliderLineColor="red"
+              sliderLineColor="#8AEA92"
               sliderLineWidth={4}
             />
           </div>

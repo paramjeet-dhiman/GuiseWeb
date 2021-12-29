@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <footer className="bg-gray-800  overflow-hidden ">
-      <div className="flex flex-wrap py-10 justify-center md:justify-between px-10 gap-5 md:gap-10 lg:px-40">
-        <div className="p-5 w-64 hidden lg:block ">
+      <div className="flex flex-wrap py-10 justify-center md:justify-between px-10 sm:gap-5 md:gap-0 lg:px-40">
+        <div className="mt-6  w-64 hidden lg:block ">
           <Link className="" to="/">
             <svg
-              height="20"
+              height="32"
               viewBox="0 0 4421 724"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -34,8 +34,7 @@ export const Footer = () => {
             </svg>
           </Link>
           <p className="mt-5 text-left text-lg text-gray-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-            quisquam.
+            We are AI on the edge
           </p>
         </div>
 
