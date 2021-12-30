@@ -143,7 +143,7 @@ export const Footer = () => {
           </div>
           <Link
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
-            to="/404">
+            to="/help-and-support">
             Help Center
             <span className="text-social-facebook text-xs p-1"></span>
           </Link>

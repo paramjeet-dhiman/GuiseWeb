@@ -25,6 +25,8 @@ import { DSOverview } from "./components/Products/DSOverview";
 import { ScrollButton } from "./components/ScrollButton/ScrollBtn";
 import { ComingSoon } from "./pages/ComingSoon";
 import { ProductsVideos } from "./pages/ProductsVideos";
+import { HelpCenter } from "./pages/HelpCenter";
+import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 
 export const Router = () => {
   return (
@@ -43,6 +45,8 @@ export const Router = () => {
         <Route path="/research" element={<Research />} />
         <Route path="/products" element={<Products />} />
         <Route path="/videos" element={<ProductsVideos />} />
+        <Route path="/help-and-support" element={<HelpCenter />} />
+        <Route path="/policy" element={<PrivacyPolicy />} />
         <Route path="/demo" element={<BookADemo />} />
         <Route
           path="/products/airport-operations-overview"
