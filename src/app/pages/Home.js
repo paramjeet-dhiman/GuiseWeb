@@ -118,7 +118,7 @@ export function Home() {
           {products.map((item, index) => (
             <article
               key={index}
-              className="relative w-full h-72 bg-cover bg-center group lg:rounded-lg overflow-hidden transform hover:scale-105  shadow-lg hover:shadow-xl hoverTransition"
+              className="relative w-full h-72 bg-cover bg-center group lg:rounded-lg overflow-hidden shadow-lg hover:shadow-xl"
               style={{
                 backgroundImage: `url(${item.img})`,
               }}>
