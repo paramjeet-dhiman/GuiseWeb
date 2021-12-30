@@ -59,9 +59,9 @@ export const Products = () => {
         </div>
       </section>
 
-      <div class="lg:py-10"></div>
+      <div className="lg:py-10"></div>
       {productsInfo.map((product, index) => (
-        <section className="bg-white py-10  mt-10 ">
+        <section className="bg-white py-10  mt-10 " key={index}>
           <div className="sm:w-3/4 lg:w-5/12 mx-auto px-12 lg:px-2 ">
             <h1 className="text-3xl font-semibold lg:text-5xl lg:font-bold text-center text-bookmark-blue">
               {product.name}
@@ -115,7 +115,7 @@ export const Products = () => {
           </div>
         </section>
       ))}
-      <div class="py-10"></div>
+      <div className="py-10"></div>
     </div>
   );
 };
