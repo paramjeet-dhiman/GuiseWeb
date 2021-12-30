@@ -4,12 +4,13 @@ import airplaneProduct from "../../assets/images/airplane_product.jpg";
 import audioProduct from "../../assets/images/audio_product.jpeg";
 import signageProduct from "../../assets/images/ds_product.jpeg";
 import energyProduct from "../../assets/images/energy_product.jpeg";
+import trafficProduct from "../../assets/images/traffic_product.jpeg";
 
 export const Products = () => {
   const productsInfo = [
     {
       name: "Airport Ground Operations",
-      description: `The ability of Airports, Airlines, and Aviation Authorities to implement high-impact strategies is critical in order to increase customer satisfaction and operational efficiency.`,
+      description: `The ability of Airlines & Aviation Authorities to implement high-impact strategies is critical to increase customer satisfaction and operational efficiency.`,
       img: airplaneProduct,
       url: `/products/airport-operations-overview`,
     },
@@ -28,7 +29,7 @@ export const Products = () => {
     {
       name: "Traffic Management",
       description: `Revolutionize vehicle and crowd management with accurate analytics for better planning and design of city routes. Smart Cities rise from smart analytics.`,
-      img: `https://images.unsplash.com/photo-1612741389883-962b049a1c25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+      img: trafficProduct,
       url: `/products/traffic-management-overview`,
     },
     {
@@ -68,7 +69,7 @@ export const Products = () => {
           <div className="container  md:px-20 mt-5 lg:mt-10">
             <div className=" text-gray-700 hover:text-bookmark-blue ">
               <div
-                className="flex justify-center mb-4 "
+                className="flex justify-center mb-4 lg:h-screen/3 "
                 // style={{ height: "36rem" }}
               >
                 <Link to={product.url} className="">
@@ -81,7 +82,7 @@ export const Products = () => {
                 </Link>
               </div>
               <div className="px-5 lg:px-0 flex flex-col items-center mt-7 text-center">
-                <div className="text-lg lg:text-xl w-full">
+                <div className="text-lg lg:text-xl lg:w-5/6">
                   <p>{product.description}</p>
                 </div>
 

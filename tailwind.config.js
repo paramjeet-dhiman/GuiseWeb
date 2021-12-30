@@ -85,6 +85,10 @@ module.exports = {
         goRight: "goRight 2s infinite",
         goLeft: "goLeft 2s infinite",
       },
+
+      height: (theme) => ({
+        "screen/3": "60vh",
+      }),
     },
     fontFamily: {
       Poppins: ["Poppins, sans-serif"],
