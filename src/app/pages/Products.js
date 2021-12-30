@@ -30,7 +30,7 @@ export const Products = () => {
 
       name: "Traffic Management",
       description: `Revolutionize vehicle and crowd management with accurate analytics for better planning and design of city routes. Smart Cities rise from smart analytics.`,
-      img: `https://images.unsplash.com/photo-1563980714252-74345152712e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80`,
+      img: `https://drscdn.500px.org/photo/215165793/q%3D80_m%3D2000/v2?sig=7f8532da2cda2617c78f6e2f2a7091f29e19302b05ba1fd5b08bdc3b69cfe900`,
       url: `/products/traffic-management-overview`,
     },
     {
