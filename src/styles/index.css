@@ -158,3 +158,16 @@ a {
   background: #fff;
   -moz-background: #fff;
 }
+
+/* Hover on div inside image zoom */
+
+.img-hover-zoom {
+  overflow: hidden;
+}
+.img-hover-zoom img {
+  transition: transform 0.3s ease-in-out;
+}
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+/* ***************************** */

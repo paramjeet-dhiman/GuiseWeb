@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <footer className="bg-gray-800  overflow-hidden ">
-      <div className="flex flex-wrap py-10 justify-center md:justify-between px-10 sm:gap-5 md:gap-0 lg:px-40">
-        <div className="mt-6  w-64 hidden lg:block ">
+      <div className="flex flex-wrap py-10  justify-center md:justify-between gap-5  px-5   sm:gap-5 md:gap-0 lg:px-44 ">
+        {/* ================================Logo==================================== */}
+
+        <div className="pt-24 w-72 hidden lg:block  ">
           <Link className="" to="/">
             <svg
               height="32"
@@ -40,7 +42,7 @@ export const Footer = () => {
 
         {/* ================================HOME==================================== */}
 
-        <div className="p-5 w-48 lg:w-2/12  ">
+        <div className="pt-5 w-40  lg:w-2/12  ">
           <div className="text-lg md:text-xl uppercase   text-gray-50   mb-5 font-semibold">
             Home
           </div>
@@ -73,7 +75,7 @@ export const Footer = () => {
         </div>
 
         {/* ================================RESOURCES==================================== */}
-        <div className="p-5 w-48 lg:w-2/12 ">
+        <div className="pt-5 w-40  lg:w-2/12 ">
           <div className="text-lg md:text-xl uppercase   text-gray-50   mb-5 font-semibold">
             Resources
           </div>
@@ -101,7 +103,7 @@ export const Footer = () => {
 
         {/* ================================PRODUCTS==================================== */}
 
-        <div className="p-5 w-48 lg:w-2/12 ">
+        <div className="pt-5 w-40  lg:w-2/12  ">
           <div className="text-lg md:text-xl uppercase mb-5  text-gray-50  font-semibold">
             Product
           </div>
@@ -135,7 +137,7 @@ export const Footer = () => {
 
         {/* ================================Support==================================== */}
 
-        <div className="p-5 w-48 lg:w-2/12 ">
+        <div className="pt-5 w-40  lg:w-2/12  ">
           <div className="text-lg md:text-xl uppercase   text-gray-50   mb-5 font-semibold">
             Support
           </div>
@@ -158,23 +160,6 @@ export const Footer = () => {
             <span className="text-social-facebook text-xs p-1"></span>
           </Link>
         </div>
-        {/* <div className="p-5 w-48 lg:w-2/12 ">
-          <div className="text-base uppercase   text-gray-50   mb-5 font-semibold">
-            Contact
-          </div>
-          <a
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
-            to="/#">
-            XXX XXXX, Floor 4 San Francisco, CA{" "}
-            <span className="text-social-facebook text-xs p-1"></span>
-          </a>
-          <a
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-sm  "
-            to="/#">
-            contact@company.com{" "}
-            <span className="text-social-facebook text-xs p-1"></span>
-          </a>
-        </div> */}
       </div>
 
       <div className="bg-bookmark-blue">

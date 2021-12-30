@@ -1,5 +1,5 @@
 import BGTech from "../../assets/images/BGTech.jpg";
-import BGTech2 from "../../assets/images/BGTech2.jpg";
+import BGTech3 from "../../assets/images/BGTech3.jpg";
 
 export function Home() {
   const products = [
@@ -35,22 +35,22 @@ export function Home() {
     <div className="select-none">
       {/*================= Hero Section ===================*/}
 
-      <section className="flex items-center justify-center py-20  relative h-screen  bg-white">
-        <div className=" relative mt-20 lg:mt-36">
-          <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-24">
-            <div className="px-10 md:px-0  flex flex-1 flex-col items-center lg:items-start">
+      <section className="flex items-center justify-center py-10 lg:py-20  relative h-screen  bg-white">
+        <div className="relative mt-10 lg:mt-20  ">
+          <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-24 ">
+            <div className="px-10 py-10 lg:py-0 md:px-0  flex flex-1 flex-col items-center lg:items-start mb-10 md:mb-0">
               <h2 className="text-2xl lg:text-4xl font-semibold  uppercase text-center md:text-left  lg:leading-tight text-core-black">
                 We are AI on the edge
               </h2>
-              <p className="mt-4 text-gray-600 text-center md:text-left  text-lg lg:text-xl lg:w-5/6">
+              <p className="mt-2 lg:mt-4 text-gray-600 text-center md:text-left tracking-tight lg:tracking-normal  text-base lg:text-xl w-full lg:w-5/6">
                 Guise AI runs AI models on the edge for...
               </p>
             </div>
 
-            <div className="flex flex-1 justify-center z-40 mb-10 lg:mb-0">
+            <div className="flex flex-1 justify-center ">
               <img
                 src={BGTech}
-                className="object-cover w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl"
+                className="object-cover w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl filter drop-shadow-2xl   "
                 alt="sdf"
                 draggable="false"
               />
@@ -81,20 +81,20 @@ export function Home() {
       </section>
 
       {/*========================== Background Image with text ==========================*/}
-      <section className="relative text-core-black">
-        <div className=" relative mt-20 lg:mt-36">
+      <section className="relative text-core-black lg:py-10">
+        <div className=" relative mt-10 lg:mt-20 ">
           <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-24">
-            <div className="flex flex-1 justify-center z-40 mb-10 lg:mb-0">
+            <div className="flex flex-1 justify-center  order-2 md:order-1">
               <img
-                className="object-cover w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl"
-                src={BGTech2}
+                className="object-cover  filter drop-shadow-2xl   w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl"
+                src={BGTech3}
                 alt="sdf"
                 draggable="false"
               />
             </div>
 
-            <div className="px-10 md:px-0  flex flex-1 flex-col items-center lg:items-start">
-              <p className="text-core-black font-medium lg:leading-snug text-xl lg:text-2xl text-left  lg:w-5/6">
+            <div className=" px-10 py-10 mb-5 md:mb-0 lg:py-0 md:px-0  flex flex-1 flex-col items-center lg:items-start order-1 md:order-2">
+              <p className="text-core-black font-medium lg:leading-snug text-xl lg:text-2xl w-full text-center md:text-left  lg:w-5/6">
                 Guise AI's solutions at the edge deliver feedback rapidly and
                 locally within the system. Localized processing is more
                 efficient, less expensive, and it increases the level of
@@ -107,23 +107,22 @@ export function Home() {
       </section>
 
       {/* ============================= 6 SOLUTIONS CARDS ========================== */}
-      <section className="bg-white py-10 lg:py-20 mt-10 lg:mt-20 ">
-        <div className="sm:w-3/4 container mx-auto">
-          <h2 className="text-2xl px-10 lg:text-4xl font-semibold text-center lg:leading-tight text-core-black">
+      <section className="bg-bookmark-white py-10 lg:py-20 mt-10 lg:mt-20 ">
+        <div className="px-5 container mx-auto">
+          <h2 className="text-2xl lg:text-4xl font-semibold text-center lg:leading-tight text-core-black">
             With Guise AI Continual Learning technology, our solutions are
-            revolutionizing technology and making significant impact in several
-            mission critical industries.
+            revolutionizing several mission critical industries.
           </h2>
         </div>
-        <div className=" md:px-44 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-10 py-10">
+        <div className=" md:px-44 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-4 lg:mt-10 py-10">
           {products.map((item, index) => (
             <article
               key={index}
-              className="relative w-full h-72 bg-cover bg-center group lg:rounded-lg overflow-hidden shadow-lg hover:shadow-2xl  transition duration-300 ease-in-out"
+              className="relative w-full h-72 bg-cover bg-center group lg:rounded-lg overflow-hidden transform hover:scale-105  shadow-lg hover:shadow-xl hoverTransition"
               style={{
                 backgroundImage: `url(${item.img})`,
               }}>
-              <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-75 transition duration-300 ease-in-out"></div>
+              <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:opacity-50 transition duration-300 ease-in-out"></div>
               <div className="relative w-full h-full px-4 sm:px-6 lg:px-4 flex justify-center items-center">
                 <h4 className="text-white text-2xl font-bold text-center">
                   <span className="absolute inset-0 "></span>
@@ -137,14 +136,14 @@ export function Home() {
 
       {/*============================= WHY US ? =========================== */}
 
-      <section className="bg-bookmark-white py-10 lg:py-20">
+      <section className="bg-white py-10 lg:py-20">
         <div className="">
           <h1 className=" text-2xl lg:text-4xl font-semibold text-center text-bookmark-blue">
             Why Choose Guise AI ?
           </h1>
         </div>
 
-        <div className="md:px-44 py-20  gap-y-10 cursor:pointer h-full">
+        <div className="md:px-44 mt-10 lg:mt-0 lg:py-20 gap-y-10 cursor:pointer h-full">
           <div className="grid lg:grid-cols-12 gap-10">
             {[
               {
@@ -212,7 +211,7 @@ export function Home() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="col-span-3 md:px-10 py-10  md:h-96 flex  flex-col justify-center  items-center bg-white shadow-lg  rounded-lg">
+                className="col-span-3 mx-10 px-10 md:mx-0 md:px-10 py-10  md:h-96 flex  flex-col justify-center  items-center bg-white shadow-lg  rounded-lg">
                 <div className="mb-8 filter drop-shadow-2xl ">{item.icon}</div>
                 <div className="text-center text-core-black  ">
                   <h4 className="font-extrabold text-lg md:text-2xl uppercase mb-4">
