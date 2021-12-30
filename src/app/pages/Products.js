@@ -9,7 +9,7 @@ export const Products = () => {
   const productsInfo = [
     {
       name: "Airport Ground Operations",
-      description: `The ability of Airlines & Aviation Authorities to implement high-impact strategies is critical to increase customer satisfaction and operational efficiency.`,
+      description: `The ability of Airports, Airlines, and Aviation Authorities to implement high-impact strategies is critical in order to increase customer satisfaction and operational efficiency.`,
       img: airplaneProduct,
       url: `/products/airport-operations-overview`,
     },
@@ -57,19 +57,20 @@ export const Products = () => {
         </div>
       </section>
 
-      <div class="py-10"></div>
+      <div class="lg:py-10"></div>
       {productsInfo.map((product, index) => (
         <section className="bg-white py-10  mt-10 ">
           <div className="sm:w-3/4 lg:w-5/12 mx-auto px-12 lg:px-2 ">
-            <h1 className="text-4xl font-semibold lg:text-5xl lg:font-bold text-center text-bookmark-blue">
+            <h1 className="text-3xl font-semibold lg:text-5xl lg:font-bold text-center text-bookmark-blue">
               {product.name}
             </h1>
           </div>
-          <div className="container  px-10 md:px-20 mt-14">
-            <div className=" text-gray-700 hover:text-bookmark-blue   ">
+          <div className="container  md:px-20 mt-5 lg:mt-10">
+            <div className=" text-gray-700 hover:text-bookmark-blue ">
               <div
                 className="flex justify-center mb-4 "
-                style={{ height: "36rem" }}>
+                // style={{ height: "36rem" }}
+              >
                 <Link to={product.url} className="">
                   <img
                     src={product.img}
@@ -79,16 +80,16 @@ export const Products = () => {
                   />
                 </Link>
               </div>
-              <div className="flex flex-col items-center mt-7 text-center">
-                <div className="text-lg lg:text-xl lg:w-5/6">
+              <div className="px-5 lg:px-0 flex flex-col items-center mt-7 text-center">
+                <div className="text-lg lg:text-xl w-full">
                   <p>{product.description}</p>
                 </div>
 
-                <div className=" text-sm lg:text-lg mt-2 lg:mt-6  ">
+                <div className=" text-sm lg:text-lg mt-2 lg:mt-5  ">
                   <Link
                     className="text-blue-500 cursor-pointer hover:text-blue-400 flex items-center space-x-2 "
                     to={product.url}>
-                    <span className="text-sm lg:text-xl font-bold transform hover:scale-105 hoverTransition ">
+                    <span className="text-sm  lg:text-xl font-bold transform hover:scale-105 hoverTransition ">
                       Read more
                     </span>
                     {/* <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none">
