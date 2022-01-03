@@ -33,8 +33,8 @@ export const AOSOverview = () => {
       list: [
         { title: "Airline detection" },
         { title: "Aircraft arrival and departure time" },
-        { title: "Cargo Offload and Onload duration" },
-        { title: "JetBridge connection duration" },
+        { title: "Cargo offload and onload duration" },
+        { title: "Jet bridge connection duration" },
       ],
       img: `https://images.unsplash.com/photo-1482351437900-d57cf1b9cd37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
@@ -52,19 +52,20 @@ export const AOSOverview = () => {
     },
     {
       title: "Vehicle Management",
-      content: `Manage airport resources efficiently by tracking usage and durations assigned to every airplane.`,
+      content: `Manage airport ground vehicles efficiently by tracking type, usage and durations assigned to every airplane.`,
       list: [
-        { title: "Fleet count" },
         { title: "Fuel truck" },
-        { title: "Cargo carriers" },
+        { title: "Fleet count" },
         { title: "Cargo loaders" },
+        { title: "Cargo carriers" },
         { title: "Pushback truck" },
+        { title: "Catering truck" },
       ],
       img: `https://images.unsplash.com/photo-1515941719567-48bbfc9163f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80`,
     },
     {
       title: "Ground Crew",
-      content: `Manage, count, and record the duration of ground crew and other staff members with automated people counting and tracking.`,
+      content: `Manage ground staff, cleaning crew and other human resources with automated people counting and tracking.`,
       list: [
         { title: "Ground staff monitoring" },
         { title: "Fueling and Catering" },
@@ -292,29 +293,48 @@ export const AOSOverview = () => {
         </section> */}
 
         <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:py-20 lg:px-40 gap-16 ">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-            <div className=" w-full lg:w-6/12 md:m-0 md:order-2  ">
-              <div className="flex justify-center relative">
-                <img
-                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
-                  src={data.image5}
-                  // src={`https://images.unsplash.com/photo-1549894595-4698795b38ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80`}
-                  alt=""
-                  draggable="false"
-                />
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-10 ">
+            <div className=" w-full lg:w-6/12 md:m-0 md:order-1 ">
+              <div className="justify-center flex flex-wrap relative">
+                <div className="my-4 w-full lg:w-6/12 ">
+                  <div
+                    className=" object-cover bg-cover bg-center rounded-lg shadow-xl  h-52 lg:h-80"
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1566319280755-c66cbcf93061?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80) center center / cover no-repeat`,
+                    }}></div>
+
+                  <div
+                    className="p-8 mt-8 hidden lg:block lg:h-80 object-cover bg-cover bg-center rounded-lg shadow-xl"
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1580285198593-af9f402c676a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGFpcnBvcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60) center center / cover no-repeat`,
+                    }}></div>
+                </div>
+                <div className="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
+                  <div
+                    className=" object-cover bg-cover bg-center  shadow-lg rounded-md text-center  hidden lg:block lg:h-80 "
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1585585828599-461a0419b788?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80) center center / cover no-repeat`,
+                    }}></div>
+
+                  <div
+                    className="p-8 mt-8 hidden lg:block lg:h-80 object-cover bg-cover bg-center rounded-lg shadow-xl"
+                    style={{
+                      background: `url(https://images.unsplash.com/photo-1581745841536-c10790870219?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center center / cover no-repeat`,
+                    }}></div>
+                </div>
               </div>
             </div>
-            <div className="flex flex-col w-full lg:w-6/12 ">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-10 lg:w-5/6">
+            <div className="flex flex-col  w-full lg:w-6/12 md:order-2 md:ml-10 ">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-7 ">
                 Experience what our AI can do for you
               </h2>
 
-              <div className="text-lg lg:text-xl space-y-10  text-gray-500">
+              <div className="text-lg lg:text-xl space-y-7  text-gray-500">
                 <div className="">
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Generate statistics
                   </h2>
-                  <p className="font-light text-justify lg:w-5/6">
+                  <p className="font-light text-justify ">
                     Our applications run continuously on the edge, converting
                     visual data into actionable statistics unavailable prior to
                     our technology.
@@ -324,7 +344,7 @@ export const AOSOverview = () => {
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Plan Smarter
                   </h2>
-                  <p className="font-light text-justify lg:w-5/6">
+                  <p className="font-light text-justify ">
                     The data generated can be used to plan statistically more
                     effective resource management decisions and flight
                     scheduling. Efficient ground operations lead to greater
@@ -335,7 +355,7 @@ export const AOSOverview = () => {
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Operate Safer
                   </h2>
-                  <p className="font-light text-justify lg:w-5/6">
+                  <p className="font-light text-justify ">
                     Maintain thorough safety standards thoroughly and get real
                     time alerts if a violation occurs. Operate safely and
                     smartly.
@@ -345,7 +365,7 @@ export const AOSOverview = () => {
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Scale Better
                   </h2>
-                  <p className="font-light text-justify lg:w-5/6">
+                  <p className="font-light text-justify ">
                     Use automated and accurate statistics to optimize resource
                     utilization and scale your operations to capitalize on the
                     ever-increasing growth in air travel.
@@ -402,7 +422,9 @@ export const AOSOverview = () => {
               See Guise AI in action!
             </h1>
           </div>
-          <div className="lg:container mt-10 shadow-xl">
+          <div
+            className="lg:container mt-10 shadow-xl"
+            title="Click on the image or drag with bar to see results">
             <ReactCompareImage
               leftImage={Airport1}
               rightImage={Airport2}

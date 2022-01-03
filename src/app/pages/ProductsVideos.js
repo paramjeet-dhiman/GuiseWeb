@@ -11,7 +11,7 @@ export const ProductsVideos = () => {
         style={{
           height: "28rem",
           // boxShadow: `inset 0 0 0 2000px rgb(0 0 0 / 9%)`,
-          background: `url(https://images.unsplash.com/photo-1617540702506-89475a91c171?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80) center center / cover no-repeat`,
+          background: `url(https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center center / cover no-repeat`,
         }}>
         <div className="flex  items-center justify-center w-full h-full bg-black bg-opacity-70">
           <div className="text-center px-10 lg:px-0">
@@ -32,7 +32,7 @@ export const ProductsVideos = () => {
                 <div className="shadow-lg border-gray-800 bg-gray-100 relative">
                   <img
                     className="w-full"
-                    src="https://images.pexels.com/photos/5456314/pexels-photo-5456314.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    src="https://images.unsplash.com/photo-1530202741-e752bdc9d582?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     alt=""
                   />
                   <div className="badge absolute top-0 right-0 bg-red-500 m-1 text-gray-200 p-1 px-2 text-xs font-bold rounded">

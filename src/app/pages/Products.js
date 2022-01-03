@@ -4,6 +4,7 @@ import airplaneProduct from "../../assets/images/airplane_product.jpg";
 import audioProduct from "../../assets/images/audio_product.jpeg";
 import signageProduct from "../../assets/images/ds_product.jpeg";
 import energyProduct from "../../assets/images/energy_product.jpeg";
+import trafficProduct from "../../assets/images/traffic_product.jpeg";
 
 export const Products = () => {
   const productsInfo = [
@@ -20,19 +21,20 @@ export const Products = () => {
       url: `/products/digital-signage-overview`,
     },
     {
+      // https://images.unsplash.com/photo-1504735432588-ab3bf116740f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80
+      // https://getpaidstock.com/tmp/[GetPaidStock.com]-61ceb90061d95.jpg
+      name: "Traffic Management",
+      description: `Revolutionize vehicle and crowd management with accurate analytics for better planning and design of city routes. Smart Cities rise from smart analytics.`,
+      img: trafficProduct,
+      url: `/products/traffic-management-overview`,
+    },
+    {
       name: "Intelligent Audio",
       description: `Experience the next level of noise cancellation with the new Guise  AI assisted Intelligent Audio with improved audio filtration and noise cancellation.`,
       img: audioProduct,
       url: `/products/intelligent-audio-overview`,
     },
-    {
-      // https://images.unsplash.com/photo-1504735432588-ab3bf116740f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80
 
-      name: "Traffic Management",
-      description: `Revolutionize vehicle and crowd management with accurate analytics for better planning and design of city routes. Smart Cities rise from smart analytics.`,
-      img: `https://drscdn.500px.org/photo/215165793/q%3D80_m%3D2000/v2?sig=7f8532da2cda2617c78f6e2f2a7091f29e19302b05ba1fd5b08bdc3b69cfe900`,
-      url: `/products/traffic-management-overview`,
-    },
     {
       name: "Energy Management",
       img: energyProduct,

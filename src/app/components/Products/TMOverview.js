@@ -12,7 +12,7 @@ export const TMOverview = () => {
     title: `Lorem Ipsum`,
 
     image1: `https://images.unsplash.com/photo-1535015585980-7cb6b4de8f14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
-    image2: `https://images.pexels.com/photos/297927/pexels-photo-297927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+    image2: `https://images.unsplash.com/photo-1504735432588-ab3bf116740f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80`,
     image3: `https://images.unsplash.com/photo-1594028411108-96a5b0302a4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     image4: `https://images.unsplash.com/photo-1499351094445-76ef13077fb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80`,
     image5: `https://images.unsplash.com/photo-1596188431116-f858853f2be3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
@@ -154,7 +154,7 @@ export const TMOverview = () => {
               </div>
             </div>
             <div className="flex flex-col w-full lg:pl-20 lg:w-6/12 ">
-              <h2 className="text-3xl lg:text-4xl lg:w-5/6 font-medium mb-4 lg:mb-10">
+              <h2 className="text-3xl lg:text-4xl  font-medium mb-4 lg:mb-10">
                 Build a Smarter City with the help of AI
               </h2>
 
@@ -163,7 +163,7 @@ export const TMOverview = () => {
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Understand traffic
                   </h2>
-                  <p className="font-light lg:w-5/6">
+                  <p className="font-light ">
                     Have an automated system to help understand your cities
                     movement better. Get accurate numbers on vehicle density and
                     location and systematically make decisions.
@@ -173,7 +173,7 @@ export const TMOverview = () => {
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Be prepared
                   </h2>
-                  <p className="font-light lg:w-5/6">
+                  <p className="font-light ">
                     With analyzed data, prepare for special cases well in
                     advance with efficient roadblocks and route management.
                     Preparing for the worst has been easier.
@@ -184,7 +184,7 @@ export const TMOverview = () => {
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Maintain Safer roads
                   </h2>
-                  <p className="font-light lg:w-5/6">
+                  <p className="font-light ">
                     Violating road safety standards have led to countless
                     accidents every year that have cost human lives. With an
                     automated system, receive real time alerts and records to

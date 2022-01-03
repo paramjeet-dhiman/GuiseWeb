@@ -12,11 +12,11 @@ export const EMOverview = () => {
     title: `Lorem Ipsum`,
     image1: `https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
     image2: `https://images.unsplash.com/photo-1595437193398-f24279553f4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80`,
-    image3: `https://images.unsplash.com/photo-1607679314701-efa14aa743d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80`,
+    image3: `https://images.unsplash.com/photo-1548613053-22087dd8edb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80`,
     image4: `https://images.unsplash.com/photo-1628010055450-21f2a0863767?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     image5: `https://images.unsplash.com/photo-1620415629284-975004d37752?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     image6: `https://images.pexels.com/photos/6040783/pexels-photo-6040783.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-    image7: `https://images.pexels.com/photos/9893729/pexels-photo-9893729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+    image7: `https://images.unsplash.com/photo-1545208942-e1c9c916524b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
     image8: `https://images.unsplash.com/photo-1515614457209-3c7081d62743?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     image9: `https://images.pexels.com/photos/9800092/pexels-photo-9800092.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
   };
@@ -253,7 +253,7 @@ export const EMOverview = () => {
               </div>
             </div>
             <div className="flex lg:pl-20 flex-col w-full lg:w-6/12 ">
-              <h2 className="text-3xl  lg:text-5xl lg:w-5/6 font-medium mb-4 lg:mb-10">
+              <h2 className="text-3xl  lg:text-5xl  font-medium mb-4 lg:mb-10">
                 Anomaly Detection in Power Grids
               </h2>
 
@@ -262,7 +262,7 @@ export const EMOverview = () => {
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Non-Technical Losses
                   </h2>
-                  <p className="font-light lg:w-5/6">
+                  <p className="font-light ">
                     Non-technical losses (NTL) are one of the most major
                     problems pertaining to the power grid, and have been for
                     quite a long time. Unlike technical losses which are
@@ -276,7 +276,7 @@ export const EMOverview = () => {
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Electricity Theft
                   </h2>
-                  <p className="font-light lg:w-5/6">
+                  <p className="font-light ">
                     A major portion of the NTLs are caused by some mode of
                     electricity theft.Referring to World Bank reports, NTL
                     represents a significant part of the total power losses in
@@ -287,7 +287,7 @@ export const EMOverview = () => {
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Smart Grids
                   </h2>
-                  <p className="font-light lg:w-5/6">
+                  <p className="font-light ">
                     Thanks to the introduction of IoT, Smart Power grids are
                     quickly rising as a standard norm across the globe. Majority
                     of microgrids and power grids are shifting towards the use
@@ -432,7 +432,7 @@ export const EMOverview = () => {
               </div>
             </div>
             <div className="flex lg:pl-20 flex-col w-full  lg:w-6/12  ">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-10 lg:w-5/6">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-10 ">
                 Customer Profile and Load Balancing
               </h2>
 
@@ -441,7 +441,7 @@ export const EMOverview = () => {
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
                     Smart Meter Data
                   </h2>
-                  <p className="font-light lg:w-5/6">
+                  <p className="font-light ">
                     Analyzing smart meter data can help in understanding the
                     users electricity consumption behavior and demands; thus,
                     enabling better services to be provided. Guise AI proposes
@@ -502,7 +502,7 @@ export const EMOverview = () => {
                 recusandae laboriosam magnam rem harum!
               </p>
 
-              <div className="grid  mt-8 sm:grid-cols-2 gap-y-4 lg:w-5/6   ">
+              <div className="grid  mt-8 sm:grid-cols-2 gap-y-4 lg:w-5/6  ">
                 <div className="flex items-center space-x-2">
                   <div className="flex-shrink-0 flex items-center">
                     <Tick />

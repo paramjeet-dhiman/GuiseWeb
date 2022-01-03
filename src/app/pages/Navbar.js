@@ -4,8 +4,11 @@ import { NavLink } from "react-router-dom";
 export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
   const [toggle, setToggle] = useState(false);
   const [show, setShow] = useState(false);
+  const [showProducts, setShowProducts] = useState(false);
+
   const ref = useRef();
   const ref2 = useRef();
+  const productsRef = useRef();
 
   useEffect(() => {
     const checkIfClickedOutside = (e) => {
@@ -15,22 +18,42 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
       if (show && ref2.current && !ref2.current.contains(e.target)) {
         setShow(false);
       }
+      if (
+        showProducts &&
+        productsRef.current &&
+        !productsRef.current.contains(e.target)
+      ) {
+        setShow(false);
+      }
     };
     document.addEventListener("mousedown", checkIfClickedOutside);
     return () => {
       document.removeEventListener("mousedown", checkIfClickedOutside);
     };
-  }, [toggle, show]);
+  }, [toggle, show, showProducts]);
 
   const handleToggle = () => {
+    setShowProducts(false);
+    setShow(false);
     setToggle(!toggle);
   };
+
   const handleMouseLeave = () => {
     setToggle(false);
     setShow(false);
+    setShowProducts(false);
   };
+
   const handleShow = () => {
+    setToggle(false);
+    setShowProducts(false);
     setShow(!show);
+  };
+
+  const handleShowProduct = () => {
+    setToggle(false);
+    setShow(false);
+    setShowProducts(!showProducts);
   };
 
   return (
@@ -79,54 +102,175 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
           </div>
 
           <div className="hidden lg:flex  items-center space-x-8 ">
-            {/* <div>
+            {/*====================================PRODUCTS DROPDOWN=================================== */}
+            <div className="relative" ref={productsRef}>
               <NavLink
+                to="/products"
+                onClick={handleShowProduct}
+                onMouseEnter={handleShowProduct}
                 className={({ isActive }) =>
                   isActive
-                    ? "px-2  text-social-facebook border-b-4 text-lg border-social-facebook  tracking-wide font-bold py-5 transition-all duration-300"
-                    : "px-2 cursor-pointer  tracking-wide py-5 text-lg font-medium hover:text-gray-600 "
+                    ? " text-social-facebook flex  items-center  px-4 cursor-pointer  tracking-wide py-3   transition-colors ease-in-out  duration-500 text-lg font-bold hover:text-blue-600  "
+                    : " flex  items-center  px-4 cursor-pointer  tracking-wide py-3 transition-colors ease-in-out  duration-500 text-lg font-medium hover:text-blue-600  "
                 }
-                to="/solutions">
-                Solutions
-              </NavLink>
-            </div> */}
-
-            {/* <div>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive
-                    ? "px-2 text-social-facebook border-b-4 text-lg border-social-facebook  tracking-wide font-bold py-5 transition-all duration-300"
-                    : "px-2 cursor-pointer  tracking-wide py-5 text-lg font-medium hover:text-gray-600 "
-                }
-                to="/team">
-                Team
-              </NavLink>
-            </div> */}
-
-            {/* <div>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive
-                    ? "px-2  text-social-facebook border-b-4 text-lg border-social-facebook  tracking-wide font-bold py-5 transition-all duration-300"
-                    : "px-2 cursor-pointer  tracking-wide py-5 text-lg font-medium hover:text-gray-600 "
-                }
-                to="/product-review">
-                Review
-              </NavLink>
-            </div> */}
-
-            <div>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive
-                    ? "px-2  text-social-facebook border-b-4 text-lg border-social-facebook  tracking-wide font-bold py-5 transition-all duration-300"
-                    : "px-2 cursor-pointer  tracking-wide py-5 text-lg font-medium hover:text-gray-600 "
-                }
-                to="/products">
+                // className="flex  items-center  px-4 cursor-pointer  tracking-wide py-3 transition-colors ease-in-out  duration-500 text-lg font-medium hover:text-blue-600 "
+              >
                 Products
+                <span>
+                  {!showProducts ? (
+                    <svg
+                      className="w-7  h-7 "
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fillRule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clipRule="evenodd"></path>
+                    </svg>
+                  ) : (
+                    <svg
+                      className="w-7  h-7"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fillRule="evenodd"
+                        d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                        clipRule="evenodd"></path>
+                    </svg>
+                  )}
+                </span>
               </NavLink>
+
+              {showProducts ? (
+                <div
+                  onMouseLeave={handleMouseLeave}
+                  className="absolute -right-60 py-7 mt-2 space-y-5 bg-white px-10 flex flex-col justify-center  rounded-md shadow-xl transition-all ease-in-out duration-1000  filter drop-shadow-2xl   "
+                  style={{ width: "48rem" }}>
+                  <div className="grid grid-cols-2 gap-10">
+                    <NavLink
+                      onClick={handleShowProduct}
+                      to="/products/digital-signage-overview"
+                      className="flex space-x-3 hover:bg-core-black hover:text-white shadow hover:shadow-md filter drop-shadow-lg  py-2 px-2 mr-2 rounded-lg items-center ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-10 w-10 text-social-facebook filter drop-shadow-xl"
+                        viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                          fillRule="evenodd"
+                          d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+
+                      <h4 className="block text-lg font-medium">
+                        Digital Signage
+                      </h4>
+                    </NavLink>
+
+                    <NavLink
+                      onClick={handleShowProduct}
+                      to="/products/intelligent-audio-overview"
+                      className="flex space-x-3 hover:bg-core-black hover:text-white shadow hover:shadow-md filter drop-shadow-lg  py-2 px-2 mr-2 rounded-lg items-center ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-10 w-10 text-social-facebook filter drop-shadow-xl"
+                        viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                          fillRule="evenodd"
+                          d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+
+                      <h4 className="block text-lg font-medium">
+                        Intelligent Audio
+                      </h4>
+                    </NavLink>
+                  </div>
+                  <div className="grid grid-cols-2 gap-10">
+                    <NavLink
+                      onClick={handleShowProduct}
+                      to="/products/traffic-management-overview"
+                      className="flex space-x-3 hover:bg-core-black hover:text-white shadow hover:shadow-md filter drop-shadow-lg  py-2 px-2 mr-2 rounded-lg items-center ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-10 w-10 text-social-facebook filter drop-shadow-xl"
+                        viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                        <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z" />
+                      </svg>
+
+                      <h4 className="block text-lg font-medium">
+                        Traffic Management
+                      </h4>
+                    </NavLink>
+
+                    <NavLink
+                      onClick={handleShowProduct}
+                      to="/products/energy-management-overview"
+                      className="flex space-x-3 hover:bg-core-black hover:text-white shadow hover:shadow-md filter drop-shadow-lg  py-2 px-2 mr-2 rounded-lg items-center ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-10 w-10 text-social-facebook filter drop-shadow-xl"
+                        viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                          fillRule="evenodd"
+                          d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+
+                      <h4 className="block text-lg font-medium">
+                        Energy Management
+                      </h4>
+                    </NavLink>
+                  </div>
+                  <div className="grid grid-cols-2 gap-10">
+                    <NavLink
+                      onClick={handleShowProduct}
+                      to="/products/airport-operations-overview"
+                      className="flex space-x-3 hover:bg-core-black hover:text-white shadow hover:shadow filter drop-shadow-lg-md  py-2 px-2 mr-2 rounded-lg items-center ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-10 w-10 text-social-facebook filter drop-shadow-xl"
+                        viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                      </svg>
+
+                      <h4 className="block text-lg font-medium">
+                        Airport Ground Operations
+                      </h4>
+                    </NavLink>
+
+                    <NavLink
+                      onClick={handleShowProduct}
+                      to="/products"
+                      className="flex space-x-3 hover:bg-core-black hover:text-white shadow hover:shadow-md filter drop-shadow-lg  py-2 px-2 mr-2 rounded-lg items-center ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-10 w-10 text-social-facebook filter drop-shadow-xl"
+                        viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                      </svg>
+
+                      <h4 className="block text-lg font-medium">
+                        All Products
+                      </h4>
+                    </NavLink>
+                  </div>
+                </div>
+              ) : null}
             </div>
 
+            {/*====================================TECHNOLOGY=================================== */}
             <div>
               <NavLink
                 className={({ isActive }) =>
@@ -138,197 +282,126 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                 Technology
               </NavLink>
             </div>
-            {/* <div>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive
-                    ? "px-2 text-social-facebook border-b-4 text-lg border-social-facebook  tracking-wide font-bold py-5 transition-all duration-300"
-                    : "px-2 cursor-pointer  tracking-wide py-5 text-lg font-medium hover:text-gray-600 "
-                }
-                to="/casestudy">
-                Case Study
-              </NavLink>
-            </div> */}
 
-            {/* <div>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive
-                    ? "px-2 text-social-facebook border-b-4 text-lg border-social-facebook  tracking-wide font-bold py-5 transition-all duration-300"
-                    : "px-2 cursor-pointer  tracking-wide py-5 text-lg font-medium hover:text-gray-600 "
-                }
-                to="/research">
-                Resources
-              </NavLink>
-            </div> */}
+            {/*====================================RESOURCES DROPDOWN=================================== */}
 
             <div className="relative" ref={ref2}>
               <div
                 onClick={handleShow}
-                onMouseOver={() => {
-                  handleShow();
-                  setToggle(false);
-                }}
-                // onMouseEnter={handleToggle}
-                className="flex items-center  px-2 cursor-pointer  tracking-wide py-3 transition-all duration-1000 text-lg font-medium hover:text-gray-600 ">
+                onMouseEnter={handleShow}
+                className="flex  items-center  px-2 cursor-pointer  tracking-wide py-3 transition-all duration-1000 text-lg font-medium hover:text-gray-600 ">
                 Resources
-                {!show ? (
-                  <svg
-                    className="w-7 h-7 "
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clipRule="evenodd"></path>
-                  </svg>
-                ) : (
-                  <svg
-                    className="w-7 h-7"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      fillRule="evenodd"
-                      d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                      clipRule="evenodd"></path>
-                  </svg>
-                )}
+                <span className="">
+                  {!show ? (
+                    <svg
+                      className="w-7 h-7 "
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fillRule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clipRule="evenodd"></path>
+                    </svg>
+                  ) : (
+                    <svg
+                      className="w-7 h-7"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        fillRule="evenodd"
+                        d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                        clipRule="evenodd"></path>
+                    </svg>
+                  )}
+                </span>
               </div>
 
               {show ? (
                 <div
                   onMouseLeave={handleMouseLeave}
-                  className="absolute right-0 py-3 mt-3 space-y-5 bg-white flex flex-col justify-center  rounded-md shadow-xl  w-48  transform hover:scale-105  transition-all duration-300  origin-top-right ">
-                  <div>
-                    <NavLink
-                      onClick={handleShow}
-                      to="/404"
-                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-gray-200  dark-mode:bg-transparent md:mt-0 hover:text-gray-900 text-center  ">
-                      Blogs
-                    </NavLink>
-                  </div>
+                  className="absolute filter drop-shadow-2xl right-0 py-3 mt-2 space-y-5 bg-white flex flex-col justify-center  rounded-md shadow-xl  w-48    transition-all duration-300  origin-top-right ">
+                  <NavLink
+                    to="/404"
+                    onClick={handleShow}
+                    className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-center">
+                    Blogs
+                  </NavLink>
 
-                  <div>
-                    <NavLink
-                      onClick={handleShow}
-                      to="/videos"
-                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-gray-200  dark-mode:bg-transparent md:mt-0 hover:text-gray-900 text-center  ">
-                      Videos
-                    </NavLink>
-                  </div>
+                  <NavLink
+                    to="/videos"
+                    onClick={handleShow}
+                    className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-center">
+                    Videos
+                  </NavLink>
 
-                  <div>
-                    <NavLink
-                      onClick={handleShow}
-                      to="/404"
-                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-gray-200  dark-mode:bg-transparent md:mt-0 hover:text-gray-900 text-center  ">
-                      Research
-                    </NavLink>
-                  </div>
-                  <div>
-                    <NavLink
-                      onClick={handleShow}
-                      to="/404"
-                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-gray-200  dark-mode:bg-transparent md:mt-0 hover:text-gray-900 text-center  ">
-                      White Papers
-                    </NavLink>
-                  </div>
+                  <NavLink
+                    to="/404"
+                    onClick={handleShow}
+                    className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-center">
+                    Research
+                  </NavLink>
+
+                  <NavLink
+                    to="/404"
+                    onClick={handleShow}
+                    className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-center">
+                    White Papers
+                  </NavLink>
                 </div>
               ) : null}
             </div>
-            {/* <div>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive
-                    ? "px-2 text-social-facebook border-b-4 text-lg border-social-facebook  tracking-wide font-bold py-5 transition-all duration-300"
-                    : "px-2 cursor-pointer  tracking-wide py-5 text-lg font-medium hover:text-gray-600 "
-                }
-                to="/partners">
-                Partners
-              </NavLink>
-            </div> */}
 
-            {/* <div>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive
-                    ? "px-2 text-social-facebook border-b-4 text-lg border-social-facebook  tracking-wide font-bold py-5 transition-all duration-300"
-                    : "px-2 cursor-pointer  tracking-wide py-5 text-lg font-medium hover:text-gray-600 "
-                }
-                to="/partners">
-                Partners
-              </NavLink>
-            </div> */}
-
-            {/*    <div @click.away="open = false" className="relative" x-data="{ open: false }">
-        <button @click="open = !open" className="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-          <span>Dropdown</span>
-          <svg fill="currentColor" viewBox="0 0 20 20" :className="{'rotate-180': open, 'rotate-0': !open}" className="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-        </button>
-        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" className="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
-          <div className="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
-            <a className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Link #1</a>
-            <a className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Link #2</a>
-            <a className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Link #3</a>
-          </div>
-        </div>
-      </div>   */}
+            {/*====================================COMPANY DROPDOWN=================================== */}
 
             <div className="relative" ref={ref}>
               <div
                 onClick={handleToggle}
-                onMouseOver={() => {
-                  handleToggle();
-                  setShow(false);
-                }}
-                // onMouseEnter={handleToggle}
-                className="flex items-center  px-2 cursor-pointer  tracking-wide py-3 transition-all duration-1000 text-lg font-medium hover:text-gray-600 ">
+                onMouseEnter={handleToggle}
+                className="flex items-center  px-2 cursor-pointer   tracking-wide py-3 transition-all duration-1000 text-lg font-medium hover:text-gray-600 ">
                 Company
-                {!toggle ? (
-                  <svg
-                    className="w-7 h-7 "
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clipRule="evenodd"></path>
-                  </svg>
-                ) : (
-                  <svg
-                    className="w-7 h-7"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      fillRule="evenodd"
-                      d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                      clipRule="evenodd"></path>
-                  </svg>
-                )}
+                <span>
+                  {!toggle ? (
+                    <svg
+                      className="w-7 h-7 "
+                      fill="currentColor"
+                      viewBox="0 0 20 20">
+                      <path
+                        fillRule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clipRule="evenodd"></path>
+                    </svg>
+                  ) : (
+                    <svg
+                      className="w-7 h-7"
+                      fill="currentColor"
+                      viewBox="0 0 20 20">
+                      <path
+                        fillRule="evenodd"
+                        d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                        clipRule="evenodd"></path>
+                    </svg>
+                  )}
+                </span>
               </div>
 
               {toggle ? (
                 <div
                   onMouseLeave={handleMouseLeave}
-                  className="absolute right-0 py-3 mt-3 space-y-5 bg-white flex flex-col justify-center  rounded-md shadow-xl  w-48  transform hover:scale-105  transition-all duration-300  origin-top-right ">
-                  <div>
-                    <NavLink
-                      onClick={handleToggle}
-                      to="/careers"
-                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-gray-200  dark-mode:bg-transparent md:mt-0 hover:text-gray-900 text-center  ">
-                      Careers
-                    </NavLink>
-                  </div>
+                  className="absolute right-0 py-3 mt-2 filter drop-shadow-2xl space-y-5 bg-white flex flex-col justify-center  rounded-md shadow-xl  w-48  transition-all duration-300  origin-top-right ">
+                  <NavLink
+                    onClick={handleToggle}
+                    to="/careers"
+                    className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-center">
+                    Careers
+                  </NavLink>
 
                   <div>
                     <NavLink
                       onClick={handleToggle}
                       to="/about"
-                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-gray-200  dark-mode:bg-transparent md:mt-0 hover:text-gray-900 text-center  ">
+                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-center">
                       About Us
                     </NavLink>
                   </div>
@@ -336,13 +409,16 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                     <NavLink
                       onClick={handleToggle}
                       to="/contact"
-                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-gray-200  dark-mode:bg-transparent md:mt-0 hover:text-gray-900 text-center  ">
+                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-center">
                       Contact Us
                     </NavLink>
                   </div>
                 </div>
               ) : null}
             </div>
+
+            {/*====================================BOOK-A-DEMO BUTTON=================================== */}
+
             <div>
               <NavLink
                 className={({ isActive }) =>
@@ -356,13 +432,8 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
             </div>
           </div>
 
-          {/* <div className="hidden lg:flex  items-center  ">
-            <div>
+          {/*====================================MOBILE VIEW BUTTON=================================== */}
 
-            </div>
-          </div> */}
-
-          {/****************** Mobile View Buttons ********************/}
           <div className="lg:hidden flex items-center  ">
             {!isOpen ? (
               <button

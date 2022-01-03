@@ -17,39 +17,48 @@ export const DSOverview = () => {
 
   const tabContent = [
     {
-      title: "Footfall Analysis",
-      content: `Quantify and analyze the interaction of your retail outlets with the customers.`,
+      title: "Footfall",
+      content: `Quantify the interaction of your retail outlets with the customers with constant supervision.`,
       list: [
-        { title: "People entry count" },
-        { title: "People exit count" },
-        { title: "Person tracking" },
+        { title: "Person detection" },
+        { title: "People entry and exit count" },
       ],
       img: `https://images.unsplash.com/photo-1528406745358-6c3112259eb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80`,
     },
     {
-      title: "Customer Demographics",
+      title: "Demographics",
       content: `Understand your customers better and target the right audience with AI assisted detections.`,
-      list: [{ title: "Customer Age" }, { title: "Customer Gender" }],
+      list: [{ title: "Age" }, { title: "Gender" }],
       img: `https://images.unsplash.com/photo-1440985465094-6ac443aab454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
     {
-      title: "Apparel Analysis",
-      content: `Update with customers trends and fashion statements, and analyze the information for smarter decisions.`,
+      title: "Apparel",
+      content: `Update with customers trends and fashion statements, and access such untapped information for smarter decisions.`,
       list: [
-        { title: "Apparel Detection" },
         { title: "Apparel Type" },
         { title: "Apparel Color" },
+        { title: "Logo detection" },
+        { title: "Apparel Detection" },
       ],
       img: `https://images.unsplash.com/photo-1517732306149-e8f829eb588a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80`,
     },
     {
-      title: "Crowd Management",
+      title: "Drive-through",
+      content: `Detect, log and manage crowded areas with the help of constant supervision with Guise AI.`,
+      list: [
+        { title: "Vehicle wait time" },
+        { title: "Vehicle tracking" },
+        { title: "Vehicle logo detection" },
+      ],
+      img: `https://images.unsplash.com/photo-1564784669814-7bf9b1f587cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    },
+    {
+      title: "Crowd Engagement",
       content: `Detect, log and manage crowded areas with the help of constant supervision with Guise AI.`,
       list: [
         { title: "Dwell time" },
         { title: "Wait time" },
         { title: "Crowd counting" },
-        { title: "Queue detection and tracking" },
       ],
       img: `https://images.unsplash.com/photo-1471991750293-5fc0e377b550?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1296&q=80`,
     },
@@ -92,6 +101,13 @@ export const DSOverview = () => {
             </h2>
 
             <div className="text-lg lg:text-xl text-justify space-y-5 text-gray-500 lg:w-5/6">
+              <p className="font-light">
+                Boost sales and organize resources through intelligent analytics
+                with the help of automated AI systems. Though our applications
+                on the edge, we help you get deeper insights in understanding
+                your customers and help you make the right decisions at all your
+                outlets.
+              </p>
               <p className="font-light">
                 Our applications on the edge help you gain deeper insights into
                 your customers and make the most impactful decisions at your
@@ -218,13 +234,13 @@ export const DSOverview = () => {
                   <div
                     className="object-cover bg-cover bg-center rounded-lg shadow-xl  h-52 lg:h-72"
                     style={{
-                      background: `url(https://images.unsplash.com/photo-1532635241-17e820acc59f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80) center center / cover no-repeat`,
+                      background: `url(https://images.pexels.com/photos/1727684/pexels-photo-1727684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center center / cover no-repeat`,
                     }}></div>
 
                   <div
                     className="p-8 mt-8 hidden lg:block lg:h-72 object-cover bg-cover bg-center rounded-lg shadow-xl"
                     style={{
-                      background: `url(https://images.unsplash.com/photo-1416453072034-c8dbfa2856b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1179&q=80) center center / cover no-repeat`,
+                      background: `url(https://images.pexels.com/photos/4480984/pexels-photo-4480984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) center center / cover no-repeat`,
                     }}></div>
                 </div>
                 <div className="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
@@ -244,11 +260,11 @@ export const DSOverview = () => {
             </div>
 
             <div className="w-full lg:w-1/2 lg:pl-20">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-4  lg:w-5/6">
-                Join the revolution now
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4  ">
+                Explore our Suite of Solutions
               </h2>
 
-              <p className=" font-light text-justify lg:w-5/6 text-lg lg:text-xl  space-y-10 text-gray-500">
+              <p className=" font-light text-justify  text-lg lg:text-xl  space-y-10 text-gray-500">
                 Guise AI algorithms generate meaningful insights from camera
                 video streams to optimize airport ground operations. The
                 untapped data-driven insights help to scale your airport

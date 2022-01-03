@@ -35,8 +35,8 @@ export const Footer = () => {
               </defs>
             </svg>
           </Link>
-          <p className="mt-5 text-left text-lg text-gray-400">
-            We are AI on the edge
+          <p className="mt-5 text-left text-lg lg:text-xl uppercase font-medium text-gray-400">
+            AI at the edge
           </p>
         </div>
 

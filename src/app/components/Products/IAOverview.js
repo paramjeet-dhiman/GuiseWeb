@@ -72,14 +72,10 @@ export const IAOverview = () => {
             <div className="text-lg lg:text-xl text-justify space-y-5 text-gray-500 lg:w-5/6">
               <p>
                 Noise Cancellation is the ability to enhance a speech signal
-                plagued with unwanted noises by isolating the dominant sound.
-                Noise Cancellation techniques are becoming popular in
-                audio/video editing software, video conferencing platforms, and
-                noise-canceling headphones. Each of these use cases employs
-                different and suitable techniques in cancelling the noise based
-                on the environment of use. Hence, Noise Cancellation is still a
-                fast-evolving technology, with Artificial Intelligence bringing
-                a whole new domain of approaches to improve the task.
+                plagued with unwanted noises by isolating the dominant sound. It
+                is still a fast-evolving technology, with Guise AI bringing a
+                whole new domain of approaches with its new and improved AI
+                assisted noise cancellation to improve the task.
               </p>
             </div>
           </div>
@@ -124,7 +120,7 @@ export const IAOverview = () => {
               </div>
             </div>
             <div className="flex flex-col w-full lg:pl-20 lg:w-6/12 ">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-10 lg:w-5/6">
+              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-10 ">
                 The AI approach to effective audio
               </h2>
 
@@ -133,7 +129,7 @@ export const IAOverview = () => {
                   <h2 className="text-xl font-semibold mb-2  text-gray-700">
                     Traditional Noise Cancellation
                   </h2>
-                  <p className="font-light text-justify lg:w-5/6 ">
+                  <p className="font-light text-justify  ">
                     Most noise-cancelling techniques are an interplay of signal
                     overlaps that may lead to removal of unwanted noise. Signal
                     filters such as high pass and low pass are used to cancel
@@ -148,7 +144,7 @@ export const IAOverview = () => {
                   <h2 className="text-xl   font-semibold mb-2  text-gray-700">
                     AI assisted Intelligent Noise Cancellation
                   </h2>
-                  <p className="font-light text-justify lg:w-5/6">
+                  <p className="font-light text-justify ">
                     The need for an intelligent system that can not just do hard
                     filters but recognize and predict audio signals and
                     selectively smooth out unwanted signals is imminent. The

@@ -1,5 +1,5 @@
 import BGTech from "../../assets/images/BGTech.jpg";
-import BGTech3 from "../../assets/images/BGTech3.jpg";
+import BGTech4 from "../../assets/images/BGTech4.jpg";
 
 export function Home() {
   const products = [
@@ -39,8 +39,8 @@ export function Home() {
         <div className="relative mt-10 lg:mt-20  ">
           <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-24 ">
             <div className="px-10 py-10 lg:py-0 md:px-0  flex flex-1 flex-col items-center lg:items-start mb-10 md:mb-0">
-              <h2 className="text-2xl lg:text-4xl font-semibold  uppercase text-center md:text-left  lg:leading-tight text-core-black">
-                We are AI on the edge
+              <h2 className="text-5xl lg:text-7xl font-bold  uppercase text-center md:text-left  lg:leading-tight text-core-black">
+                AI at the edge
               </h2>
               <p className="mt-2 lg:mt-4 text-gray-600 text-center md:text-left tracking-tight lg:tracking-normal  text-base lg:text-xl w-full lg:w-5/6">
                 Guise AI runs AI models on the edge for...
@@ -87,14 +87,14 @@ export function Home() {
             <div className="flex flex-1 justify-center  order-2 md:order-1">
               <img
                 className="object-cover  filter drop-shadow-2xl   w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl"
-                src={BGTech3}
+                src={BGTech4}
                 alt="sdf"
                 draggable="false"
               />
             </div>
 
             <div className=" px-10 py-10 mb-5 md:mb-0 lg:py-0 md:px-0  flex flex-1 flex-col items-center lg:items-start order-1 md:order-2">
-              <p className="text-core-black font-medium lg:leading-snug text-xl lg:text-2xl w-full text-center md:text-left  lg:w-5/6">
+              <p className="text-core-black font-medium lg:leading-snug text-xl lg:text-2xl w-full text-center md:text-justify  ">
                 Guise AI's solutions at the edge deliver feedback rapidly and
                 locally within the system. Localized processing is more
                 efficient, less expensive, and it increases the level of
