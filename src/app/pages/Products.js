@@ -16,7 +16,7 @@ export const Products = () => {
     },
     {
       name: "Digital Signage",
-      description: `Guise AI generates meaningful insights from camera streams to help you create the greatest impact on your customers and improve operations.`,
+      description: `Guise AI generates meaningful insights from camera video streams to help you create the greatest impact on your customers.`,
       img: signageProduct,
       url: `/products/digital-signage-overview`,
     },

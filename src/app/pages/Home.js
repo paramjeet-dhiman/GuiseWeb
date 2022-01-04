@@ -143,7 +143,7 @@ export function Home() {
           </h1>
         </div>
 
-        <div className="md:px-44 mt-10 lg:mt-0 lg:py-20 gap-y-10 cursor:pointer h-full">
+        <div className="md:px-44 mt-10 lg:mt-0 lg:py-10 gap-y-10 cursor:pointer h-full">
           <div className="grid lg:grid-cols-12 gap-10">
             {[
               {

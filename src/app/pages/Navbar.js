@@ -146,126 +146,41 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               {showProducts ? (
                 <div
                   onMouseLeave={handleMouseLeave}
-                  className="absolute -right-60 py-7 mt-2 space-y-5 bg-white px-10 flex flex-col justify-center  rounded-md shadow-xl transition-all ease-in-out duration-1000  filter drop-shadow-2xl   "
-                  style={{ width: "48rem" }}>
-                  <div className="grid grid-cols-2 gap-10">
-                    <NavLink
-                      onClick={handleShowProduct}
-                      to="/products/digital-signage-overview"
-                      className="flex space-x-3 hover:bg-core-black hover:text-white shadow hover:shadow-md filter drop-shadow-lg  py-2 px-2 mr-2 rounded-lg items-center ">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-10 w-10 text-social-facebook filter drop-shadow-xl"
-                        viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path
-                          fillRule="evenodd"
-                          d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
+                  className="absolute -right-16 py-3  mt-2 space-y-5 bg-white flex flex-col justify-center  rounded-md shadow-xl transition-all ease-in-out duration-1000  filter drop-shadow-2xl   "
+                  style={{ width: "20rem" }}>
+                  <NavLink
+                    onClick={handleShowProduct}
+                    to="/products/airport-operations-overview"
+                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-center block py-2 ">
+                    Airport Ground Operations
+                  </NavLink>
+                  <NavLink
+                    onClick={handleShowProduct}
+                    to="/products/digital-signage-overview"
+                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-center block py-2 ">
+                    Digital Signage
+                  </NavLink>
 
-                      <h4 className="block text-lg font-medium">
-                        Digital Signage
-                      </h4>
-                    </NavLink>
+                  <NavLink
+                    onClick={handleShowProduct}
+                    to="/products/traffic-management-overview"
+                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-center block py-2 ">
+                    Traffic Management
+                  </NavLink>
 
-                    <NavLink
-                      onClick={handleShowProduct}
-                      to="/products/intelligent-audio-overview"
-                      className="flex space-x-3 hover:bg-core-black hover:text-white shadow hover:shadow-md filter drop-shadow-lg  py-2 px-2 mr-2 rounded-lg items-center ">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-10 w-10 text-social-facebook filter drop-shadow-xl"
-                        viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path
-                          fillRule="evenodd"
-                          d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
+                  <NavLink
+                    onClick={handleShowProduct}
+                    to="/products/intelligent-audio-overview"
+                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-center block py-2 ">
+                    Intelligent Audio
+                  </NavLink>
 
-                      <h4 className="block text-lg font-medium">
-                        Intelligent Audio
-                      </h4>
-                    </NavLink>
-                  </div>
-                  <div className="grid grid-cols-2 gap-10">
-                    <NavLink
-                      onClick={handleShowProduct}
-                      to="/products/traffic-management-overview"
-                      className="flex space-x-3 hover:bg-core-black hover:text-white shadow hover:shadow-md filter drop-shadow-lg  py-2 px-2 mr-2 rounded-lg items-center ">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-10 w-10 text-social-facebook filter drop-shadow-xl"
-                        viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-                        <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z" />
-                      </svg>
-
-                      <h4 className="block text-lg font-medium">
-                        Traffic Management
-                      </h4>
-                    </NavLink>
-
-                    <NavLink
-                      onClick={handleShowProduct}
-                      to="/products/energy-management-overview"
-                      className="flex space-x-3 hover:bg-core-black hover:text-white shadow hover:shadow-md filter drop-shadow-lg  py-2 px-2 mr-2 rounded-lg items-center ">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-10 w-10 text-social-facebook filter drop-shadow-xl"
-                        viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path
-                          fillRule="evenodd"
-                          d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-
-                      <h4 className="block text-lg font-medium">
-                        Energy Management
-                      </h4>
-                    </NavLink>
-                  </div>
-                  <div className="grid grid-cols-2 gap-10">
-                    <NavLink
-                      onClick={handleShowProduct}
-                      to="/products/airport-operations-overview"
-                      className="flex space-x-3 hover:bg-core-black hover:text-white shadow hover:shadow filter drop-shadow-lg-md  py-2 px-2 mr-2 rounded-lg items-center ">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-10 w-10 text-social-facebook filter drop-shadow-xl"
-                        viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
-                      </svg>
-
-                      <h4 className="block text-lg font-medium">
-                        Airport Ground Operations
-                      </h4>
-                    </NavLink>
-
-                    <NavLink
-                      onClick={handleShowProduct}
-                      to="/products"
-                      className="flex space-x-3 hover:bg-core-black hover:text-white shadow hover:shadow-md filter drop-shadow-lg  py-2 px-2 mr-2 rounded-lg items-center ">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-10 w-10 text-social-facebook filter drop-shadow-xl"
-                        viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                      </svg>
-
-                      <h4 className="block text-lg font-medium">
-                        All Products
-                      </h4>
-                    </NavLink>
-                  </div>
+                  <NavLink
+                    onClick={handleShowProduct}
+                    to="/products/energy-management-overview"
+                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-center block py-2 ">
+                    Energy Management
+                  </NavLink>
                 </div>
               ) : null}
             </div>
@@ -273,6 +188,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
             {/*====================================TECHNOLOGY=================================== */}
             <div>
               <NavLink
+                onMouseEnter={handleMouseLeave}
                 className={({ isActive }) =>
                   isActive
                     ? "px-2 text-social-facebook border-b-4 text-lg border-social-facebook  tracking-wide font-bold py-5 transition-all duration-300"

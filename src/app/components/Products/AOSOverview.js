@@ -21,7 +21,7 @@ export const AOSOverview = () => {
     image2: `https://images.unsplash.com/photo-1578434972378-e3c393d983db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80`,
     image3: `https://images.unsplash.com/photo-1565108404384-2919e47c07c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
     image4: `https://images.unsplash.com/photo-1517400508447-f8dd518b86db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    image5: `https://images.unsplash.com/photo-1578332243515-42f819ba0784?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80`,
+    image5: `https://images.unsplash.com/photo-1577023631454-3cc63cc63cd7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80`,
     image6: `https://images.pexels.com/photos/804463/pexels-photo-804463.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
     image7: `https://images.unsplash.com/photo-1503365194569-df4e1d04cec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80`,
   };
@@ -31,10 +31,17 @@ export const AOSOverview = () => {
       title: "Operations Tracking",
       content: `Record the following operational events and track them automatically with the Guise AI Airport Ground Operations.`,
       list: [
-        { title: "Airline detection" },
-        { title: "Aircraft arrival and departure time" },
-        { title: "Cargo offload and onload duration" },
+        { title: "Aircraft check in time" },
+        { title: "Aircraft check out time" },
+        { title: "Cargo offload time" },
+        { title: "Cargo onload time" },
+        { title: "Cargo status" },
         { title: "Jet bridge connection duration" },
+        { title: "Jet bridge status" },
+        { title: "Airline detection" },
+        { title: "Passenger counting" },
+        // { title: "Aircraft arrival and departure time" },
+        // { title: "Cargo offload and onload duration" },
       ],
       img: `https://images.unsplash.com/photo-1482351437900-d57cf1b9cd37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
@@ -149,66 +156,68 @@ export const AOSOverview = () => {
           </div>
         </section>
 
-        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
+        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
             <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
                 <img
                   className="shadow-xl w-full h-full"
-                  src={data.image2}
+                  src={data.image5}
                   alt=""
                   draggable="false"
                 />
               </div>
             </div>
             <div className="flex flex-col w-full lg:pl-20 lg:w-6/12 ">
-              <h2 className="text-3xl lg:text-5xl font-medium lg:mb-10">
-                Scale Operations
+              <h2 className="text-3xl lg:text-5xl lg:leading-tight  font-medium mb-4 lg:mb-6">
+                Experience how Guise AI can assist you
               </h2>
 
-              <div className="text-lg lg:pl-2 lg:text-xl space-y-5 text-gray-500">
-                <div className="lg:pl-2 lg:pb-10">
-                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
-                    Airports
+              <div className="text-lg  text-justify   lg:text-xl space-y-10 text-gray-500">
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
+                    Unseen Statistics
                   </h2>
-                  <p className="font-light text-justify">
-                    With every passing year, statistics show that the number of
-                    people utilizing flight services have been increasing
-                    exponentially, while the number and size of Airports remain
-                    constant. Airports are resource constrained services which
-                    can provide only for a limited number of flights in a day.
-                    But numbers show that most Airports fail to maximize asset
-                    utilization, hence do not live up to the expected number of
-                    flights serviced by a significant margin. This in turn
-                    restricts the number of flights an Airline can operate in a
-                    single day, which leads to increased costs for flight
-                    travel. There is a clear bridge between demand and supply
-                    which can be resolved with proper resource management.
+                  <p className="font-light ">
+                    Our applications run continuously on the edge, converting
+                    visual data into comprehensible statistics that were not
+                    possible to record and examine before.
                   </p>
                 </div>
-
-                <div className="lg:pl-2 lg:pb-10">
-                  <h2 className="text-xl font-semibold mb-4 text-gray-700">
-                    Airlines
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
+                    Safety Standards
                   </h2>
-                  <p className="font-light text-justify">
-                    The costing strategy of airlines includes keeping their
-                    flights in transit at all possible times. Primarily because
-                    the aircrafts are usually leased and in such a scenario time
-                    is money. But also because idle flights do not bring in
-                    money, but instead incur heavy parking charges at Airports.
-                    Careful planning and scheduling of flights are done to make
-                    sure they avoid having to stay at an airport for too long.
-                    But it is very commonly seen that flights are always delayed
-                    due to many reasons, with one being poor resource management
-                    at Airports. These delays lead to shifts in the schedule,
-                    causing the flights to remain grounded.
+                  <p className="font-light ">
+                    With constant monitoring provided by Guise AI, stay on top
+                    of safety standards that must be maintained for any aviation
+                    services.
+                  </p>
+                </div>
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
+                    Resource Utilization
+                  </h2>
+                  <p className="font-light ">
+                    Monitor and visualize fleet count, as your ground staff and
+                    vehicles that are assigned for each aircraft servicing.
+                  </p>
+                </div>
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
+                    Service Tracking
+                  </h2>
+                  <p className="font-light ">
+                    Keep a track of entry and exit times, along with durations
+                    of all your services provided to an aircraft. Maintain a
+                    record of expected versus actual time spent to perform a
+                    service.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* ======================  Feature #1 ================== */}
 
@@ -324,31 +333,30 @@ export const AOSOverview = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col  w-full lg:w-6/12 md:order-2 md:ml-10 ">
+            <div className="flex flex-col  w-full lg:w-6/12  ">
               <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-7 ">
-                Experience what our AI can do for you
+                Guise AI can help you...
               </h2>
 
-              <div className="text-lg lg:text-xl space-y-7  text-gray-500">
+              <div className="text-lg lg:text-xl space-y-7 lg:w-5/6 text-gray-500">
                 <div className="">
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Generate statistics
+                    Decrease Turnaround
                   </h2>
                   <p className="font-light text-justify ">
-                    Our applications run continuously on the edge, converting
-                    visual data into actionable statistics unavailable prior to
-                    our technology.
+                    Data generated can be used to plan statistically more
+                    efficient resource management decisions and flight
+                    scheduling.
                   </p>
                 </div>
                 <div className="">
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Plan Smarter
+                    Satisfy Customers
                   </h2>
                   <p className="font-light text-justify ">
-                    The data generated can be used to plan statistically more
-                    effective resource management decisions and flight
-                    scheduling. Efficient ground operations lead to greater
-                    customer satisfaction.
+                    A more organized airport leads to lesser delays and more
+                    customer satisfaction. With Guise AI you can now deliver the
+                    best flight experience.
                   </p>
                 </div>
                 <div className="">
@@ -366,9 +374,10 @@ export const AOSOverview = () => {
                     Scale Better
                   </h2>
                   <p className="font-light text-justify ">
-                    Use automated and accurate statistics to optimize resource
-                    utilization and scale your operations to capitalize on the
-                    ever-increasing growth in air travel.
+                    With automated and accurate statistics, optimize resource
+                    utilization and scale your operations to cater to the
+                    ever-increasing air travel with the same fixed amount of
+                    resources.
                   </p>
                 </div>
               </div>

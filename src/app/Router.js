@@ -27,6 +27,7 @@ import { ComingSoon } from "./pages/ComingSoon";
 import { ProductsVideos } from "./pages/ProductsVideos";
 import { HelpCenter } from "./pages/HelpCenter";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
+import { FAQ } from "./components/FAQ/Faq";
 
 export const Router = () => {
   return (
@@ -47,6 +48,7 @@ export const Router = () => {
         <Route path="/videos" element={<ProductsVideos />} />
         <Route path="/help-and-support" element={<HelpCenter />} />
         <Route path="/policy" element={<PrivacyPolicy />} />
+        <Route path="/faq" element={<FAQ />} />
         <Route path="/demo" element={<BookADemo />} />
         <Route
           path="/products/airport-operations-overview"

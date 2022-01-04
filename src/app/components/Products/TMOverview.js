@@ -1,5 +1,4 @@
 import React from "react";
-import { Tick } from "../Ticks/Tick";
 import { DemoComponent } from "../DemoComponent";
 import Tab from "../TabSlider/TabSlider";
 
@@ -20,34 +19,37 @@ export const TMOverview = () => {
 
   const tabContent = [
     {
-      title: "Road Violation Detection",
+      title: "License Plate Recognition",
+      content: `Track and record vehicles through license plates automatically`,
+      list: [
+        { title: "Licence plate detection" },
+        { title: "LP character recognition" },
+      ],
+      img: `https://images.unsplash.com/photo-1503470069725-dacc9110076e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    },
+    {
+      title: "Violation Detection",
       content: `Maintain road safety with real time alerts though automated AI assisted detections`,
       list: [
-        { title: "Helmet Detection" },
-        { title: "Wrong lane driving" },
-        { title: "Triple seater detection" },
-        { title: "Speed Violation detection" },
         { title: "Illegal parking detection" },
+        { title: "Speed violation detection" },
+        { title: "Red light violation detection" },
+        { title: "Stop line violation detection" },
+        { title: "Wrong lane driving" },
+        { title: "Helmet detection" },
+        { title: "Triple seater detection" },
+        { title: "Mob detection" },
       ],
       // https://images.unsplash.com/photo-1529572079217-04ffdce1059b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
       img: `https://images.pexels.com/photos/2716060/pexels-photo-2716060.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260`,
     },
     {
-      title: "License Plate Recognition",
-      content: `Track and record vehicles through license plates automatically`,
-      list: [
-        { title: "Licence plate detection" },
-        { title: "LP Character recognition" },
-      ],
-      img: `https://images.unsplash.com/photo-1503470069725-dacc9110076e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    },
-    {
       title: "Traffic Management",
       content: `Manage traffic at key junctions and areas by monitoring people and vehicles`,
       list: [
-        { title: "Mob Detection" },
         { title: "Vehicle count" },
-        { title: "Obstruction Detection" },
+        { title: "Pedestrian detection" },
+        { title: "Obstruction detection" },
       ],
       img: `https://images.unsplash.com/photo-1508798179027-a00aa5326443?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
     },
@@ -55,10 +57,9 @@ export const TMOverview = () => {
       title: "Vehicle Profiling",
       content: `Profile vehicles with advanced analysis with the help of AI`,
       list: [
-        { title: "Vehicle Type" },
-        { title: "Vehicle color" },
+        { title: "Vehicle type" },
         { title: "Vehicle count" },
-        { title: "Logo Detection" },
+        { title: "Logo detection" },
       ],
       img: `https://images.unsplash.com/photo-1521674685714-2446ff917fbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
@@ -154,7 +155,7 @@ export const TMOverview = () => {
               </div>
             </div>
             <div className="flex flex-col w-full lg:pl-20 lg:w-6/12 ">
-              <h2 className="text-3xl lg:text-4xl  font-medium mb-4 lg:mb-10">
+              <h2 className="text-3xl lg:text-4xl  font-medium mb-4 lg:mb-6">
                 Build a Smarter City with the help of AI
               </h2>
 
@@ -198,7 +199,7 @@ export const TMOverview = () => {
 
         {/* ====================== Section #3  ================== */}
 
-        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
+        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
             <div className=" w-full lg:w-6/12 md:m-0 order-2">
               <div className="flex justify-center relative ">
@@ -211,25 +212,47 @@ export const TMOverview = () => {
               </div>
             </div>
             <div className="flex flex-col w-full lg:w-6/12 order-2 md:order-1">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-10">
-                Real time traffic analysis
+              <h2 className="text-3xl lg:text-4xl font-medium mb-4 lg:mb-6">
+                What Guise AI can do for you
               </h2>
 
               <div className="text-lg lg:text-xl space-y-5 text-gray-500 order-1 md:order-2">
                 <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
+                    Track Vehicles
+                  </h2>
                   <p className="font-light text-justify lg:w-5/6">
-                    Vehicle density and analysis as per the day and time can be
-                    used to plan efficient routes and manage crowding.
-                    Uncertainty caused by special cases such as roadblocks can
-                    be diffused in real time with alternate route planning and
-                    predictions as per the density.
+                    In case of repeat offenders on the road, being able to track
+                    offenses and vehicles automatically though license plates
+                    can help maintain safer roads. Furthermore, premises can log
+                    the entry and exit of vehicles for future reference
+                  </p>
+                </div>
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
+                    Density Metrics
+                  </h2>
+                  <p className="font-light text-justify lg:w-5/6">
+                    Understand the density of vehicles at different locations at
+                    different times. Having this data can help you understand
+                    peak hours and locations and accordingly plan routes.
+                  </p>
+                </div>
+                <div className="">
+                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
+                    Classify Traffic
+                  </h2>
+                  <p className="font-light text-justify lg:w-5/6">
+                    Distinguish between the kind of vehicles that exist all over
+                    your city. Understand how different areas receive what kind
+                    of traffic at which hours of the day to organize and design
+                    better.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </section> */}
-
+        </section>
         {/* ====================== Section #4  ================== */}
         {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-16 ">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
@@ -262,7 +285,7 @@ export const TMOverview = () => {
 
         {/* ====================== Section #5  ================== */}
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40  ">
+        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40  ">
           <div className="flex flex-wrap items-center pt-8  ">
             <div className="w-full md:w-6/12  md:order-2">
               <div className="justify-center flex flex-wrap relative">
@@ -351,7 +374,7 @@ export const TMOverview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </section>
 
       {/* ====================== DEMO BUTTON  ================== */}
