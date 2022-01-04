@@ -110,8 +110,8 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                 onMouseEnter={handleShowProduct}
                 className={({ isActive }) =>
                   isActive
-                    ? " text-social-facebook flex  items-center  px-4 cursor-pointer  tracking-wide py-3   transition-colors ease-in-out  duration-500 text-lg font-bold hover:text-blue-600  "
-                    : " flex  items-center  px-4 cursor-pointer  tracking-wide py-3 transition-colors ease-in-out  duration-500 text-lg font-medium hover:text-blue-600  "
+                    ? " text-social-facebook flex  items-center  px-4 cursor-pointer  tracking-wide py-3   transition-colors ease-in-out  duration-500 text-lg font-bold"
+                    : " flex  items-center  px-4 cursor-pointer  tracking-wide py-3 transition-colors ease-in-out  duration-500 text-lg font-medium hover:text-gray-600  "
                 }
                 // className="flex  items-center  px-4 cursor-pointer  tracking-wide py-3 transition-colors ease-in-out  duration-500 text-lg font-medium hover:text-blue-600 "
               >
