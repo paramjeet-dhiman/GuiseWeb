@@ -39,7 +39,7 @@ export const AOSOverview = () => {
         { title: "Jet bridge connection duration" },
         { title: "Jet bridge status" },
         { title: "Airline detection" },
-        { title: "Passenger counting" },
+        { title: "Passenger count" },
         // { title: "Aircraft arrival and departure time" },
         // { title: "Cargo offload and onload duration" },
       ],
@@ -161,7 +161,7 @@ export const AOSOverview = () => {
             <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
                 <img
-                  className="shadow-xl w-full h-full"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
                   src={data.image5}
                   alt=""
                   draggable="false"
@@ -341,7 +341,7 @@ export const AOSOverview = () => {
               <div className="text-lg lg:text-xl space-y-7 lg:w-5/6 text-gray-500">
                 <div className="">
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Decrease Turnaround
+                    Decrease Turnaround Time
                   </h2>
                   <p className="font-light text-justify ">
                     Data generated can be used to plan statistically more
@@ -351,7 +351,7 @@ export const AOSOverview = () => {
                 </div>
                 <div className="">
                   <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Satisfy Customers
+                    Satisfy Customer Needs
                   </h2>
                   <p className="font-light text-justify ">
                     A more organized airport leads to lesser delays and more
