@@ -156,7 +156,7 @@ export const TMOverview = () => {
             </div>
             <div className="flex flex-col w-full lg:pl-20 lg:w-6/12 ">
               <h2 className="text-3xl lg:text-4xl  font-medium mb-4 lg:mb-6">
-                Build a Smarter City with the help of AI
+                Guise AI can help you…
               </h2>
 
               <div className="text-lg  text-justify   lg:text-xl space-y-10 text-gray-500">
