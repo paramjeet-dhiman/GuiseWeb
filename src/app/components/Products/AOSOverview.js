@@ -120,11 +120,11 @@ export const AOSOverview = () => {
 
             <div className="text-lg lg:text-xl text-justify space-y-5 text-gray-500 lg:w-5/6">
               <p>
-                Our Airport Ground Operations software provides airport
-                operators the means to maximize their asset utilization. From
-                increasing flight turnaround efficiency to reducing delays to
-                increasing tarmac safety, Guise AI is transforming the airport
-                experience.
+                Our algorithms generate meaningful insights from camera video
+                streams to optimize airport ground operations and enhance the
+                customer experience. From increasing flight turnaround
+                efficiency to reducing delays to increasing tarmac safety, Guise
+                AI is transforming the airport experience.
               </p>
             </div>
           </div>

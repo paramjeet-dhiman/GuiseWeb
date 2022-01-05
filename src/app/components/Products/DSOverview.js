@@ -5,19 +5,19 @@ import Tab from "../TabSlider/TabSlider";
 export const DSOverview = () => {
   let data = {
     label: "Digital Signage",
-    subText: `Guise AI generates meaningful insights from camera video streams to help you create the greatest impact on your customers and improve operations.`,
+    subText: `Guise AI generates meaningful insights from camera video streams to help you create the greatest impact on your customers`,
     bgImg: `https://images.unsplash.com/photo-1488273478515-f13bd0b73037?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80`,
     title: `Lorem Ipsum`,
     image1: `https://images.unsplash.com/photo-1471991750293-5fc0e377b550?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1296&q=80`,
     image2: `https://images.unsplash.com/photo-1554307967-24ebd6cf5b8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=460&q=80`,
     image3: `https://images.unsplash.com/photo-1592959462773-467d73e161b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80`,
-    image4: `https://images.unsplash.com/photo-1611279522012-6c3e2d2c604f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80`,
+    image4: `https://images.unsplash.com/photo-1552519837-47846308a0e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80`,
   };
 
   const tabContent = [
     {
       title: "Footfall",
-      content: `Quantify the interaction of your retail outlets with the customers with constant supervision.`,
+      content: `Quantify the interaction of your retail outlets with the customers with constant supervision`,
       list: [
         { title: "People entry and exit count" },
         { title: "Person detection" },
@@ -27,13 +27,13 @@ export const DSOverview = () => {
     },
     {
       title: "Demographics",
-      content: `Understand your customers better and target the right audience with AI assisted detections.`,
+      content: `Understand your customers better and target the right audience with AI assisted detections`,
       list: [{ title: "Age" }, { title: "Gender" }],
       img: `https://images.unsplash.com/photo-1440985465094-6ac443aab454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
     {
       title: "Apparel",
-      content: `Update with customers trends and fashion statements, and access such untapped information for smarter decisions.`,
+      content: `Update with customers trends and fashion statements, and access such untapped information for smarter decisions`,
       list: [
         { title: "Apparel detection" },
         { title: "Apparel color" },
@@ -43,7 +43,7 @@ export const DSOverview = () => {
     },
     {
       title: "Drive-through",
-      content: `Extend your supervision with metrics on vehicles as well, with Guise AI's automated monitoring.`,
+      content: `Extend your supervision with metrics on vehicles as well, with Guise AI's automated monitoring`,
       list: [
         { title: "Vehicle wait time" },
         { title: "Vehicle detection" },
@@ -54,7 +54,7 @@ export const DSOverview = () => {
     },
     {
       title: "Engagement",
-      content: `Detect, log and manage crowded areas with the help of constant supervision provide by Guise AI.`,
+      content: `Detect, log and manage crowded areas with the help of constant supervision provide by Guise AI`,
       list: [
         { title: "Dwell time" },
         { title: "Wait time" },
@@ -123,7 +123,7 @@ export const DSOverview = () => {
                 customers with a never seen before approach that utilizes
                 untapped data resources. With Guise AI's innovate solutions, we
                 help you make informed decisions and understand how your
-                customers interact with your products and services.
+                customers interact with your products and services
               </p>
             </div>
           </div>
@@ -169,48 +169,47 @@ export const DSOverview = () => {
             </div>
             <div className="flex flex-col w-full lg:pl-20 lg:w-6/12  ">
               <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:leading-tight lg:mb-10 ">
-                Experience customer engagement like never before
+                Customer engagement like never before
               </h2>
 
-              <div className="text-lg  lg:text-xl space-y-5  text-gray-500">
+              <div className="text-lg  lg:text-lg space-y-5  text-gray-500">
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Brand Engagement
+                  <h2 className="text-2xl font-medium mb-2 text-gray-700">
+                    Understand your brand engagement
                   </h2>
                   <p className="font-light text-justify">
                     Analyze customer flows at prime retail locations that helps
-                    you get instant feedback on customer engagement.
+                    you get instant feedback on customer engagement
                   </p>
                 </div>
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Target Sectors
+                  <h2 className="text-2xl font-medium mb-2 text-gray-700">
+                    Target relevant sectors
                   </h2>
                   <p className="font-light text-justify">
                     Get deeper insights about your customers and plan your
                     target sector for efficient investment in marketing and
-                    operations.
+                    operations
                   </p>
                 </div>
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Interaction Metrics
+                  <h2 className="text-2xl font-medium mb-2 text-gray-700">
+                    Accumulate interaction metrics
                   </h2>
                   <p className="font-light text-justify">
                     Accurate and untapped data on volumes and numbers help you
-                    understand what margin of customers are you are able to
-                    retain through your marketing.
+                    understand what margin of customers you are able to retain
+                    through your marketing
                   </p>
                 </div>
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Informed decisions
+                  <h2 className="text-2xl font-medium mb-2 text-gray-700">
+                    Make Informed decisions
                   </h2>
                   <p className="font-light text-justify">
                     Guise AI solutions at the edge can make your existing
-                    systems smarter, enabling you to generate analytics and
-                    visualize your customer trends, making informed executive
-                    decisions going forward.
+                    systems smarter, enabling you to make informed executive
+                    decisions going forward
                   </p>
                 </div>
               </div>
@@ -226,7 +225,7 @@ export const DSOverview = () => {
               <div className="flex justify-center relative ">
                 <img
                   className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
-                  src={data.image4}
+                  src={data.image3}
                   alt=""
                   draggable="false"
                 />
@@ -237,48 +236,41 @@ export const DSOverview = () => {
                 Guise AI can help you…
               </h2>
 
-              <div className="text-lg  lg:text-xl space-y-5  text-gray-500">
+              <div className="text-lg  lg:text-lg space-y-5  text-gray-500">
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Visualize
+                  <h2 className="text-2xl font-medium mb-2 text-gray-700">
+                    Visualize your customer behavior
                   </h2>
                   <p className="font-light text-justify lg:w-5/6">
-                    Ever thought about what the possession of an ability to
-                    retain customer-engagement data could do to your business?
-                    With Guise AI, you can now possess this ability and use it
-                    to analyze and visualize your customer's behavior.
+                    With Guise AI, you can now possess the ability and use it to
+                    analyze and visualize your customer's behavior
                   </p>
                 </div>
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Connect
+                  <h2 className="text-2xl font-medium mb-2 text-gray-700">
+                    Connect to your customers with instant feedback
                   </h2>
                   <p className="font-light text-justify lg:w-5/6">
-                    With such untapped data at your hand, connect with your
-                    customers like never before. Guise AI tech, helps you make
-                    the right choices on what you display and get instant
-                    feedback.
+                    Guise AI tech, helps you make the right choices on what you
+                    display and get instant feedback
                   </p>
                 </div>
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Improve
+                  <h2 className="text-2xl font-medium mb-2 text-gray-700">
+                    Improve your marketing efforts and user experience
                   </h2>
                   <p className="font-light text-justify lg:w-5/6">
-                    Not sure why you are not receiving the recognition you
-                    deserve? With Guise AI, you can study accurately collected
-                    metrics to enhance marketing efforts and user experience.
+                    With Guise AI, you can study accurately collected metrics to
+                    enhance marketing efforts and user experience
                   </p>
                 </div>
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Compare
+                  <h2 className="text-2xl font-medium mb-2 text-gray-700">
+                    Compare your efforts with accurate metrics
                   </h2>
                   <p className="font-light text-justify lg:w-5/6">
-                    Compare what marketing efforts are making an impression on
-                    your customers the most. Understand how product placement
-                    and location can be improved through data provided by Guise
-                    AI.
+                    Understand how product placement and location can be
+                    improved through data provided by Guise AI
                   </p>
                 </div>
               </div>
