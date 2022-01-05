@@ -5,7 +5,7 @@ import Tab from "../TabSlider/TabSlider";
 export const TMOverview = () => {
   let data = {
     label: "Traffic Management",
-    subText: `Revolutionize vehicle and crowd management with real-time accurate analytics for better planning and design of city routes. Smart Cities rise from smart analytics.`,
+    subText: `Revolutionize vehicle and crowd management with real-time accurate analytics for better planning and design of city routes. Smart Cities rise from smart analytics`,
     bgImg: `https://images.unsplash.com/photo-1488134684157-fea2d81a5ec4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80`,
 
     title: `Lorem Ipsum`,
@@ -20,7 +20,7 @@ export const TMOverview = () => {
   const tabContent = [
     {
       title: "License Plate Recognition",
-      content: `Track and record vehicles through license plates automatically`,
+      content: `Track and record vehicles through license plates automatically.`,
       list: [
         { title: "Licence plate detection" },
         { title: "LP character recognition" },
@@ -29,7 +29,7 @@ export const TMOverview = () => {
     },
     {
       title: "Violation Detection",
-      content: `Maintain road safety with real time alerts though automated AI assisted detections`,
+      content: `Maintain road safety with real time alerts though automated AI assisted detections.`,
       list: [
         { title: "Illegal parking detection" },
         { title: "Speed violation detection" },
@@ -45,7 +45,7 @@ export const TMOverview = () => {
     },
     {
       title: "Traffic Management",
-      content: `Manage traffic at key junctions and areas by monitoring people and vehicles`,
+      content: `Manage traffic at key junctions and areas by monitoring people and vehicles.`,
       list: [
         { title: "Vehicle count" },
         { title: "Pedestrian detection" },
@@ -54,13 +54,9 @@ export const TMOverview = () => {
       img: `https://images.unsplash.com/photo-1508798179027-a00aa5326443?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
     },
     {
-      title: "Vehicle Profiling",
-      content: `Profile vehicles with advanced analysis with the help of AI`,
-      list: [
-        { title: "Vehicle type" },
-        { title: "Vehicle count" },
-        { title: "Logo detection" },
-      ],
+      title: "Classification",
+      content: `Categorize vehicles with advanced analysis with the help of AI.`,
+      list: [{ title: "Vehicle type" }, { title: "Logo detection" }],
       img: `https://images.unsplash.com/photo-1521674685714-2446ff917fbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
   ];
@@ -103,13 +99,13 @@ export const TMOverview = () => {
               {data.label}
             </h2>
 
-            <div className="text-lg  text-justify lg:text-xl space-y-5 text-gray-500 lg:w-5/6">
+            <div className="text-lg lg:text-xl text-justify text-core-black md:text-justify w-full lg:w-5/6">
               <p>
                 Guise Intelligent traffic provides solutions for accurate and
                 comprehensive analyses of city traffic by comprehending visual
                 data through edge based AI assistance. The ability to plan a
                 more efficient and safe traffic management system leads to a
-                smarter city.
+                smarter city
               </p>
             </div>
           </div>
@@ -121,16 +117,16 @@ export const TMOverview = () => {
           {/* <h4 className="text-center uppercase text-sm font-semibold md:text-lg text-social-instagram mb-4">
             Features
           </h4> */}
-          <h1 className="text-3xl w-full lg:text-5xl font-bold text-center text-bookmark-blue">
+          <h1 className="text-3xl w-full lg:text-5xl font-bold text-center text-core-black">
             We make it Easier for you
           </h1>
-          <p className="text-gray-800 font-medium text-lg lg:text-xl pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
+          <p className="text-core-black  text-lg lg:text-xl lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
             Here's how we help you enhance customer experience and boost ROI
           </p>
         </div>
 
         <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:py-20 lg:px-40  ">
-          <div className="text-bookmark-blue w-full h-full">
+          <div className="text-core-black w-full h-full">
             <Tab>
               {tabContent.map((tab, idx) => (
                 <Tab.TabPane key={`Tab-${idx}`} tab={tab.title}>
@@ -154,42 +150,42 @@ export const TMOverview = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-col w-full lg:pl-20 lg:w-6/12 ">
-              <h2 className="text-3xl lg:text-4xl  font-medium mb-4 lg:mb-6">
-                Guise AI can help you…
+            <div className="flex flex-col w-full lg:pl-20 lg:w-6/12 text-core-black ">
+              <h2 className="text-3xl lg:text-4xl font-semibold mb-4 lg:mb-10">
+                What Guise AI can do for you
               </h2>
 
-              <div className="text-lg  text-justify   lg:text-xl space-y-10 text-gray-500">
+              <div className="text-justify space-y-10  order-1 md:order-2">
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Understand traffic
+                  <h2 className="text-xl font-semibold  mb-2">
+                    Track Vehicles
                   </h2>
-                  <p className="font-light ">
-                    Have an automated system to help understand your cities
-                    movement better. Get accurate numbers on vehicle density and
-                    location and systematically make decisions.
+                  <p className="text-lg">
+                    In case of repeat offenders on the road, being able to track
+                    offenses and vehicles automatically though license plates
+                    can help maintain safer roads. Furthermore, premises can log
+                    the entry and exit of vehicles for future reference
                   </p>
                 </div>
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Be prepared
+                  <h2 className="text-xl font-semibold  mb-2">
+                    Density Metrics
                   </h2>
-                  <p className="font-light ">
-                    With analyzed data, prepare for special cases well in
-                    advance with efficient roadblocks and route management.
-                    Preparing for the worst has been easier.
+                  <p className="text-lg">
+                    Understand the density of vehicles at different locations at
+                    different times. Having this data can help you understand
+                    peak hours and locations and accordingly plan routes
                   </p>
                 </div>
-
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Maintain Safer roads
+                  <h2 className="text-xl font-semibold  mb-2">
+                    Classify Traffic
                   </h2>
-                  <p className="font-light ">
-                    Violating road safety standards have led to countless
-                    accidents every year that have cost human lives. With an
-                    automated system, receive real time alerts and records to
-                    prevent harsh outcomes and penalize the responsible party.
+                  <p className="text-lg">
+                    Distinguish between the kind of vehicles that exist all over
+                    your city. Understand how different areas receive what kind
+                    of traffic at which hours of the day to organize and design
+                    better
                   </p>
                 </div>
               </div>
@@ -211,42 +207,40 @@ export const TMOverview = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-col w-full lg:w-6/12 order-2 md:order-1">
-              <h2 className="text-3xl lg:text-4xl font-medium mb-4 lg:mb-6">
-                What Guise AI can do for you
+            <div className="flex flex-col w-full lg:w-6/12 order-2 md:order-1 text-core-black">
+              <h2 className="text-3xl lg:text-4xl font-semibold mb-4 lg:mb-10">
+                Guise AI can help you…
               </h2>
 
-              <div className="text-lg lg:text-xl space-y-5 text-gray-500 order-1 md:order-2">
+              <div className="text-justify  space-y-10 lg:w-5/6">
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Track Vehicles
+                  <h2 className="text-xl font-semibold mb-2">
+                    Understand traffic
                   </h2>
-                  <p className="font-light text-justify lg:w-5/6">
-                    In case of repeat offenders on the road, being able to track
-                    offenses and vehicles automatically though license plates
-                    can help maintain safer roads. Furthermore, premises can log
-                    the entry and exit of vehicles for future reference
+                  <p className="text-lg">
+                    Have an automated system to help understand your cities
+                    movement better. Get accurate numbers on vehicle density and
+                    location and systematically make decisions
                   </p>
                 </div>
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Density Metrics
-                  </h2>
-                  <p className="font-light text-justify lg:w-5/6">
-                    Understand the density of vehicles at different locations at
-                    different times. Having this data can help you understand
-                    peak hours and locations and accordingly plan routes.
+                  <h2 className="text-xl font-semibold mb-2">Be prepared</h2>
+                  <p className="text-lg">
+                    With analyzed data, prepare for special cases well in
+                    advance with efficient roadblocks and route management.
+                    Preparing for the worst has been easier
                   </p>
                 </div>
+
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Classify Traffic
+                  <h2 className="text-xl font-semibold mb-2">
+                    Maintain Safer roads
                   </h2>
-                  <p className="font-light text-justify lg:w-5/6">
-                    Distinguish between the kind of vehicles that exist all over
-                    your city. Understand how different areas receive what kind
-                    of traffic at which hours of the day to organize and design
-                    better.
+                  <p className="text-lg">
+                    Violating road safety standards have led to countless
+                    accidents every year that have cost human lives. With an
+                    automated system, receive real time alerts and records to
+                    prevent harsh outcomes and penalize the responsible party
                   </p>
                 </div>
               </div>

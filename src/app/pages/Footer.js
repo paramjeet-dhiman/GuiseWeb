@@ -9,7 +9,7 @@ export const Footer = () => {
         <div className="pt-24 w-72 hidden lg:block  ">
           <Link className="" to="/">
             <svg
-              height="32"
+              height="26"
               viewBox="0 0 4421 724"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@ export const Footer = () => {
               </defs>
             </svg>
           </Link>
-          <p className="mt-5 text-left text-lg lg:text-xl uppercase font-medium text-gray-400">
+          <p className="mt-5 tracking-wider text-lg lg:text-xl uppercase font-medium text-gray-400">
             AI at the edge
           </p>
         </div>
@@ -97,7 +97,7 @@ export const Footer = () => {
           <Link
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
             to="/white-papers">
-            White Papers
+            Press
           </Link>
         </div>
 
@@ -144,7 +144,7 @@ export const Footer = () => {
           <Link
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
             to="/faq">
-            FAQs
+            FAQ
             <span className="text-social-facebook text-xs p-1"></span>
           </Link>
           <Link

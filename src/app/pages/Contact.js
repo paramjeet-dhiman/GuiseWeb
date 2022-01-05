@@ -120,8 +120,7 @@ export const Contact = () => {
                         Want to work with us?
                       </h4>
                       <p className="leading-relaxed mt-1 mb-4 text-gray-500">
-                        Complete this form and we will get back to you in 24
-                        hours.
+                        Complete this form and we will get back to you
                       </p>
                       <form>
                         <div className="relative w-full mb-3 mt-8">

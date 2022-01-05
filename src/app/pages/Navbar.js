@@ -58,7 +58,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
 
   return (
     <nav className="z-50 bg-white fixed top-0 left-0 right-0 shadow-md  select-none py-2 text-gray-900">
-      <div className=" mx-auto px-4  md:px-10 ">
+      <div className=" mx-auto px-4  md:px-10 " onMouseLeave={handleMouseLeave}>
         <div className="flex justify-between items-center">
           <div>
             {/* Logo */}
@@ -103,7 +103,11 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
 
           <div className="hidden lg:flex  items-center space-x-8 ">
             {/*====================================PRODUCTS DROPDOWN=================================== */}
-            <div className="relative" ref={productsRef}>
+
+            <div
+              className="relative"
+              ref={productsRef}
+              onMouseLeave={handleMouseLeave}>
               <NavLink
                 to="/products"
                 onClick={handleShowProduct}
@@ -146,39 +150,39 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               {showProducts ? (
                 <div
                   onMouseLeave={handleMouseLeave}
-                  className="absolute -right-16 py-3  mt-2 space-y-5 bg-white flex flex-col justify-center  rounded-md shadow-xl transition-all ease-in-out duration-1000  filter drop-shadow-2xl   "
-                  style={{ width: "20rem" }}>
+                  className="absolute -right-16 py-3   space-y-5 bg-white flex flex-col justify-center  rounded-md shadow-xl transition-all ease-in-out duration-1000  filter drop-shadow-2xl   "
+                  style={{ width: "18rem" }}>
                   <NavLink
                     onClick={handleShowProduct}
                     to="/products/airport-operations-overview"
-                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-center block py-2 ">
+                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-center px-5 block py-2 ">
                     Airport Ground Operations
                   </NavLink>
                   <NavLink
                     onClick={handleShowProduct}
                     to="/products/digital-signage-overview"
-                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-center block py-2 ">
+                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-center px-5 block py-2 ">
                     Digital Signage
                   </NavLink>
 
                   <NavLink
                     onClick={handleShowProduct}
                     to="/products/traffic-management-overview"
-                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-center block py-2 ">
+                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-center px-5 block py-2 ">
                     Traffic Management
                   </NavLink>
 
                   <NavLink
                     onClick={handleShowProduct}
                     to="/products/intelligent-audio-overview"
-                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-center block py-2 ">
+                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-center px-5 block py-2 ">
                     Intelligent Audio
                   </NavLink>
 
                   <NavLink
                     onClick={handleShowProduct}
                     to="/products/energy-management-overview"
-                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-center block py-2 ">
+                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-center px-5 block py-2 ">
                     Energy Management
                   </NavLink>
                 </div>
@@ -201,19 +205,21 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
 
             {/*====================================RESOURCES DROPDOWN=================================== */}
 
-            <div className="relative" ref={ref2}>
+            <div
+              className="relative"
+              ref={ref2}
+              onMouseLeave={handleMouseLeave}>
               <div
                 onClick={handleShow}
                 onMouseEnter={handleShow}
-                className="flex  items-center  px-2 cursor-pointer  tracking-wide py-3 transition-all duration-1000 text-lg font-medium hover:text-gray-600 ">
+                className="flex  items-center   px-2 cursor-pointer  tracking-wide py-3 transition-all duration-1000 text-lg font-medium hover:text-gray-600 ">
                 Resources
                 <span className="">
                   {!show ? (
                     <svg
                       className="w-7 h-7 "
                       fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
+                      viewBox="0 0 20 20">
                       <path
                         fillRule="evenodd"
                         d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -223,8 +229,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                     <svg
                       className="w-7 h-7"
                       fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
+                      viewBox="0 0 20 20">
                       <path
                         fillRule="evenodd"
                         d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
@@ -237,33 +242,33 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               {show ? (
                 <div
                   onMouseLeave={handleMouseLeave}
-                  className="absolute filter drop-shadow-2xl right-0 py-3 mt-2 space-y-5 bg-white flex flex-col justify-center  rounded-md shadow-xl  w-48    transition-all duration-300  origin-top-right ">
+                  className="absolute filter drop-shadow-2xl  -right-6 py-3   space-y-5 bg-white flex flex-col justify-center  rounded-md shadow-xl  w-48    transition-all duration-300  origin-top-right ">
                   <NavLink
                     to="/404"
                     onClick={handleShow}
-                    className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-center">
+                    className="block px-5 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-center">
                     Blogs
                   </NavLink>
 
                   <NavLink
                     to="/videos"
                     onClick={handleShow}
-                    className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-center">
+                    className="block px-5 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-center">
                     Videos
                   </NavLink>
 
                   <NavLink
                     to="/404"
                     onClick={handleShow}
-                    className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-center">
+                    className="block px-5 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-center">
                     Research
                   </NavLink>
 
                   <NavLink
                     to="/404"
                     onClick={handleShow}
-                    className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-center">
-                    White Papers
+                    className="block px-5 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-center">
+                    Press
                   </NavLink>
                 </div>
               ) : null}
@@ -271,11 +276,11 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
 
             {/*====================================COMPANY DROPDOWN=================================== */}
 
-            <div className="relative" ref={ref}>
+            <div className="relative" ref={ref} onMouseLeave={handleMouseLeave}>
               <div
                 onClick={handleToggle}
                 onMouseEnter={handleToggle}
-                className="flex items-center  px-2 cursor-pointer   tracking-wide py-3 transition-all duration-1000 text-lg font-medium hover:text-gray-600 ">
+                className="flex items-center   px-2 cursor-pointer   tracking-wide py-3 transition-all duration-1000 text-lg font-medium hover:text-gray-600 ">
                 Company
                 <span>
                   {!toggle ? (
@@ -305,30 +310,27 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               {toggle ? (
                 <div
                   onMouseLeave={handleMouseLeave}
-                  className="absolute right-0 py-3 mt-2 filter drop-shadow-2xl space-y-5 bg-white flex flex-col justify-center  rounded-md shadow-xl  w-48  transition-all duration-300  origin-top-right ">
+                  className="absolute -right-6 py-3  filter drop-shadow-2xl space-y-5 bg-white flex flex-col justify-center  rounded-md shadow-xl  w-48  transition-all duration-300  origin-top-right ">
+                  <NavLink
+                    onClick={handleToggle}
+                    to="/about"
+                    className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-center">
+                    About Us
+                  </NavLink>
+
                   <NavLink
                     onClick={handleToggle}
                     to="/careers"
-                    className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-center">
+                    className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-center">
                     Careers
                   </NavLink>
 
-                  <div>
-                    <NavLink
-                      onClick={handleToggle}
-                      to="/about"
-                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-center">
-                      About Us
-                    </NavLink>
-                  </div>
-                  <div>
-                    <NavLink
-                      onClick={handleToggle}
-                      to="/contact"
-                      className="block px-4 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-center">
-                      Contact Us
-                    </NavLink>
-                  </div>
+                  <NavLink
+                    onClick={handleToggle}
+                    to="/contact"
+                    className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-center">
+                    Contact Us
+                  </NavLink>
                 </div>
               ) : null}
             </div>

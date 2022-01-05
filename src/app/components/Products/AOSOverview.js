@@ -13,7 +13,7 @@ export const AOSOverview = () => {
 
     subText: `The ability of Airports, Airlines, and Aviation Authorities to
     implement high-impact strategies is critical in order to increase
-    customer satisfaction and operational efficiency.`,
+    customer satisfaction and operational efficiency`,
 
     title: `Lorem Ipsum`,
     // https://images.unsplash.com/photo-1524592714635-d77511a4834d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
@@ -28,28 +28,29 @@ export const AOSOverview = () => {
 
   const tabContent = [
     {
-      title: "Operations Tracking",
-      content: `Record the following operational events and track them automatically with the Guise AI Airport Ground Operations.`,
+      title: "Operations",
+      content: `Record the following operational events and track them automatically with the Guise AI airport ground operations suite.`,
       list: [
-        { title: "Aircraft check in time" },
-        { title: "Aircraft check out time" },
+        { title: "Aircraft gate arrival time" },
+        { title: "Aircraft gate departure time" },
+        { title: "Cargo status" },
         { title: "Cargo offload time" },
         { title: "Cargo onload time" },
-        { title: "Cargo status" },
-        { title: "Jet bridge connection duration" },
         { title: "Jet bridge status" },
+        { title: "Jet bridge connection duration" },
         { title: "Airline detection" },
-        { title: "Passenger count" },
         // { title: "Aircraft arrival and departure time" },
         // { title: "Cargo offload and onload duration" },
       ],
-      img: `https://images.unsplash.com/photo-1482351437900-d57cf1b9cd37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+      img: `https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
     },
     {
       title: "Safety Monitoring",
       content: `Maintain safety standards and minimize violations with constant surveillance and alerts.`,
       list: [
-        { title: "Safety cones" },
+        { title: "Safety cones detection" },
+        { title: "Safety chokes detection" },
+        { title: "Pushback truck detection" },
         { title: "Wheel chocks detection" },
         { title: "Safety jacket/vest detection" },
         { title: "Violation Alerts" },
@@ -58,27 +59,26 @@ export const AOSOverview = () => {
       img: `https://images.pexels.com/photos/240524/pexels-photo-240524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
     },
     {
-      title: "Vehicle Management",
+      title: "Asset Management",
       content: `Manage airport ground vehicles efficiently by tracking type, usage and durations assigned to every airplane.`,
       list: [
-        { title: "Fuel truck" },
-        { title: "Fleet count" },
-        { title: "Cargo loaders" },
-        { title: "Cargo carriers" },
-        { title: "Pushback truck" },
-        { title: "Catering truck" },
+        { title: "Fuel truck duration" },
+        { title: "Cargo carriers duration and count" },
+        { title: "Cargo loaders transfer duration" },
+        { title: "Pushback truck detection" },
+        { title: "Catering truck duration" },
       ],
-      img: `https://images.unsplash.com/photo-1515941719567-48bbfc9163f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80`,
+      img: `https://images.unsplash.com/photo-1542296332-2e4473faf563?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
-    {
-      title: "Ground Crew",
-      content: `Manage ground staff, cleaning crew and other human resources with automated people counting and tracking.`,
-      list: [
-        { title: "Ground staff monitoring" },
-        { title: "Fueling and Catering" },
-      ],
-      img: `https://images.pexels.com/photos/2599729/pexels-photo-2599729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-    },
+    // {
+    //   title: "Ground Crew",
+    //   content: `Manage ground staff, cleaning crew and other human resources with automated people counting and tracking.`,
+    //   list: [
+    //     { title: "Ground staff monitoring" },
+    //     { title: "Fueling and Catering" },
+    //   ],
+    //   img: `https://images.pexels.com/photos/2599729/pexels-photo-2599729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+    // },
   ];
 
   return (
@@ -113,18 +113,18 @@ export const AOSOverview = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col w-full lg:w-6/12">
-            <h2 className="text-3xl  lg:text-5xl font-medium mb-4">
+          <div className="flex flex-col text-justify w-full lg:w-6/12">
+            <h2 className="md:pl-1 text-3xl  lg:text-5xl  font-medium mb-4">
               Airport Ground Operations
             </h2>
 
-            <div className="text-lg lg:text-xl text-justify space-y-5 text-gray-500 lg:w-5/6">
+            <div className="text-lg lg:text-xl text-justify text-core-black md:text-justify w-full lg:w-5/6">
               <p>
-                Our algorithms generate meaningful insights from camera video
-                streams to optimize airport ground operations and enhance the
-                customer experience. From increasing flight turnaround
-                efficiency to reducing delays to increasing tarmac safety, Guise
-                AI is transforming the airport experience.
+                Our algorithms generate meaningful insights from camera streams
+                to optimize airport ground operations and enhance the customer
+                experience. From increasing flight turnaround efficiency to
+                reducing delays to increasing tarmac safety, Guise AI is
+                transforming the airport experience
               </p>
             </div>
           </div>
@@ -136,16 +136,16 @@ export const AOSOverview = () => {
           {/* <h4 className="text-center uppercase text-sm font-semibold md:text-lg text-social-instagram mb-4">
             Features
           </h4> */}
-          <h1 className="text-3xl w-full lg:text-5xl font-bold text-center text-bookmark-blue">
+          <h1 className="text-3xl w-full lg:text-5xl font-bold text-center text-core-black">
             We make it Easier for you
           </h1>
-          <p className="text-gray-800 font-medium text-lg lg:text-xl pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
+          <p className="text-core-black  text-lg lg:text-xl lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
             Here's how we help you enhance customer experience and boost ROI
           </p>
         </div>
 
         <section className="flex flex-col lg:flex-row px-10 py-10   bg-white lg:py-20 lg:px-40  ">
-          <div className="text-bookmark-blue w-full h-full">
+          <div className="text-core-black w-full h-full">
             <Tab>
               {tabContent.map((tab, idx) => (
                 <Tab.TabPane key={`Tab-${idx}`} tab={tab.title}>
@@ -168,50 +168,50 @@ export const AOSOverview = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-col w-full lg:pl-20 lg:w-6/12 ">
-              <h2 className="text-3xl lg:text-5xl lg:leading-tight  font-medium mb-4 lg:mb-6">
+            <div className="flex flex-col w-full lg:pl-20 lg:w-6/12 text-core-black ">
+              <h2 className="text-3xl lg:text-4xl  mb-4 lg:mb-10 font-semibold ">
                 Experience how Guise AI can assist you
               </h2>
 
-              <div className="text-lg  text-justify   lg:text-xl space-y-10 text-gray-500">
+              <div className="text-justify space-y-10">
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
+                  <h2 className="text-xl font-semibold  mb-2">
                     Unseen Statistics
                   </h2>
-                  <p className="font-light ">
+                  <p className="text-lg">
                     Our applications run continuously on the edge, converting
                     visual data into comprehensible statistics that were not
-                    possible to record and examine before.
+                    possible to record and examine before
                   </p>
                 </div>
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
+                  <h2 className="text-xl font-semibold  mb-2">
                     Safety Standards
                   </h2>
-                  <p className="font-light ">
+                  <p className="text-lg">
                     With constant monitoring provided by Guise AI, stay on top
                     of safety standards that must be maintained for any aviation
-                    services.
+                    services
                   </p>
                 </div>
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
+                  <h2 className="text-xl font-semibold  mb-2">
                     Resource Utilization
                   </h2>
-                  <p className="font-light ">
+                  <p className="text-lg">
                     Monitor and visualize fleet count, as your ground staff and
-                    vehicles that are assigned for each aircraft servicing.
+                    vehicles that are assigned for each aircraft servicing
                   </p>
                 </div>
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
+                  <h2 className="text-xl font-semibold  mb-2">
                     Service Tracking
                   </h2>
-                  <p className="font-light ">
+                  <p className="text-lg">
                     Keep a track of entry and exit times, along with durations
                     of all your services provided to an aircraft. Maintain a
                     record of expected versus actual time spent to perform a
-                    service.
+                    service
                   </p>
                 </div>
               </div>
@@ -315,7 +315,7 @@ export const AOSOverview = () => {
                   <div
                     className="p-8 mt-8 hidden lg:block lg:h-80 object-cover bg-cover bg-center rounded-lg shadow-xl"
                     style={{
-                      background: `url(https://images.unsplash.com/photo-1580285198593-af9f402c676a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGFpcnBvcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60) center center / cover no-repeat`,
+                      background: `url(https://images.unsplash.com/photo-1524592714635-d77511a4834d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center center / cover no-repeat`,
                     }}></div>
                 </div>
                 <div className="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
@@ -328,56 +328,52 @@ export const AOSOverview = () => {
                   <div
                     className="p-8 mt-8 hidden lg:block lg:h-80 object-cover bg-cover bg-center rounded-lg shadow-xl"
                     style={{
-                      background: `url(https://images.unsplash.com/photo-1581745841536-c10790870219?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center center / cover no-repeat`,
+                      background: `url(https://images.pexels.com/photos/1928064/pexels-photo-1928064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center center / cover no-repeat`,
                     }}></div>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col  w-full lg:w-6/12  ">
-              <h2 className="text-3xl lg:text-5xl font-medium mb-4 lg:mb-7 ">
+            <div className="flex flex-col  w-full lg:w-6/12  text-core-black">
+              <h2 className="text-3xl lg:text-4xl  mb-4 lg:mb-10 font-semibold">
                 Guise AI can help you...
               </h2>
 
-              <div className="text-lg lg:text-xl space-y-7 lg:w-5/6 text-gray-500">
+              <div className="text-justify space-y-10 lg:w-5/6  ">
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
+                  <h2 className="text-xl font-semibold  mb-2">
                     Decrease Turnaround Time
                   </h2>
-                  <p className="font-light text-justify ">
+                  <p className="text-lg">
                     Data generated can be used to plan statistically more
                     efficient resource management decisions and flight
-                    scheduling.
+                    scheduling
                   </p>
                 </div>
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
+                  <h2 className="text-xl font-semibold  mb-2">
                     Satisfy Customer Needs
                   </h2>
-                  <p className="font-light text-justify ">
+                  <p className="text-lg">
                     A more organized airport leads to lesser delays and more
                     customer satisfaction. With Guise AI you can now deliver the
-                    best flight experience.
+                    best flight experience
                   </p>
                 </div>
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Operate Safer
-                  </h2>
-                  <p className="font-light text-justify ">
+                  <h2 className="text-xl font-semibold  mb-2">Operate Safer</h2>
+                  <p className="text-lg">
                     Maintain thorough safety standards thoroughly and get real
                     time alerts if a violation occurs. Operate safely and
-                    smartly.
+                    smartly
                   </p>
                 </div>
                 <div className="">
-                  <h2 className="text-xl font-semibold mb-2 text-gray-700">
-                    Scale Better
-                  </h2>
-                  <p className="font-light text-justify ">
+                  <h2 className="text-xl font-semibold  mb-2">Scale Better</h2>
+                  <p className="text-lg">
                     With automated and accurate statistics, optimize resource
                     utilization and scale your operations to cater to the
                     ever-increasing air travel with the same fixed amount of
-                    resources.
+                    resources
                   </p>
                 </div>
               </div>
@@ -426,7 +422,7 @@ export const AOSOverview = () => {
         {/*Slider image*/}
         <section className="bg-bookmark-white py-10 mt-10 lg:py-20 lg:mt-20 ">
           <div className="sm:w-3/4 lg:w-5/12 mx-auto  px-12 lg:px-2">
-            <h1 className="text-3xl  lg:text-5xl font-semibold text-center text-bookmark-blue">
+            <h1 className="text-3xl  lg:text-5xl font-semibold text-center text-core-black">
               {/* <h1 className="text-3xl font-semibold lg:text-6xl lg:font-bold text-center text-bookmark-blue"> */}
               See Guise AI in action!
             </h1>
@@ -437,8 +433,8 @@ export const AOSOverview = () => {
             <ReactCompareImage
               leftImage={Airport1}
               rightImage={Airport2}
-              leftImageLabel="Before"
-              rightImageLabel="After"
+              // leftImageLabel="Before"
+              // rightImageLabel="After"
               rightImageCss={{ filter: "brightness(80%)" }}
               leftImageCss={{ filter: "brightness(80%)" }}
               sliderLineColor="#8AEA92"

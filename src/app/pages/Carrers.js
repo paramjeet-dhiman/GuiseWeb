@@ -15,7 +15,7 @@ export const Carrers = () => {
         <div className="flex items-center justify-center w-full h-full  bg-black bg-opacity-70">
           <div className="text-center container px-10 lg:px-0">
             <h1 className="text-5xl font-bold  text-white uppercase md:text-7xl mb-6 shadow-2xl">
-              Guise is Hiring!
+              Guise AI is Hiring!
             </h1>
             <p className="text-gray-200 font-medium lg:px-44 text-lg lg:text-xl mb-10">
               We are always looking for top talents with brilliant minds and
@@ -56,7 +56,7 @@ export const Carrers = () => {
             We're here to support the whole you
           </h1>
           <div className="text-gray-400 font-medium text-sm lg:text-base pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
-            Guise offers benefits that ensure you and your family feel
+            Guise AI offers benefits that ensure you and your family feel
             supported, safe, and healthy—whether working onsite or working from
             home.
           </div>
@@ -310,7 +310,7 @@ export const Carrers = () => {
                     />
                   </svg>
                 </span>
-                <p>Guise Community Groups</p>
+                <p>Guise AI Community Groups</p>
               </div>{" "}
               <div className="flex items-center mb-2 text-base space-x-4   font-medium tracking-wide text-gray-200">
                 <span className="inline-flex items-center justify-center flex-shrink-0  text-gray-200 rounded-full bg-blue-1300">
@@ -359,7 +359,7 @@ export const Carrers = () => {
       <section className="bg-bookmark-white py-10 lg:py-20 ">
         <div className="sm:w-3/4 container lg:w-4/12 mx-auto px-12  ">
           <h1 className="text-xl w-full lg:text-5xl font-bold text-center text-bookmark-blue mb-4">
-            Now is the perfect time to join Guise
+            Now is the perfect time to join Guise AI
           </h1>
         </div>
 

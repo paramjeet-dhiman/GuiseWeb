@@ -10,7 +10,7 @@ export const DemoComponent = () => {
         </h1>
         <div className="flex justify-center items-center mt-5 lg:mt-10 ">
           <Link to="/demo">
-            <div className="text-blue-500 px-6 rounded-md py-2 md:py-4  text-lg lg:text-xl uppercase  font-semibold border-2 border-blue-500 hover:bg-blue-500  hover:scale-105 hoverTransition  hover:text-white ">
+            <div className="text-blue-500 px-6 rounded-md py-2 md:py-3  text-lg lg:text-xl uppercase  font-semibold border-2 border-blue-500 hover:bg-blue-500  hover:scale-105 hoverTransition  hover:text-white ">
               Book A DEMO
             </div>
             {/* <svg className="h-3 w-3" viewBox="0 0 12 12" fill="none">

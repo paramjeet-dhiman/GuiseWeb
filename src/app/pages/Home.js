@@ -37,21 +37,21 @@ export function Home() {
 
       <section className="flex items-center justify-center py-10 lg:py-20  relative h-screen  bg-white">
         <div className="relative mt-10 lg:mt-20  ">
-          <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-24 ">
-            <div className="px-10 py-10 lg:py-0 md:px-0  flex flex-1 flex-col items-center lg:items-start mb-10 md:mb-0">
-              <h2 className="text-5xl lg:text-7xl font-bold  uppercase text-center md:text-left  lg:leading-tight text-core-black">
+          <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-16 ">
+            <div className="py-10 lg:py-0 md:px-0  flex flex-1 flex-col items-center lg:items-start  mb-10 md:mb-0">
+              <h2 className="text-5xl lg:text-7xl font-bold  uppercase text-center md:text-left tracking-tight lg:tracking-wide  lg:leading-tight text-core-black">
                 AI at the edge
               </h2>
-              <p className="mt-2 lg:mt-4 text-gray-600 text-center md:text-left tracking-tight lg:tracking-normal  text-base lg:text-xl w-full lg:w-5/6">
+              <p className="mt-2 lg:mt-4 text-core-black text-center md:text-justify  text-base lg:text-xl w-full lg:w-9/12">
                 Guise AI intelligent algorithms at the edge identify and refine
                 critical data to drive your business
               </p>
             </div>
 
-            <div className="flex flex-1 justify-center ">
+            <div className="flex flex-1 justify-center  ">
               <img
                 src={BGTech}
-                className="object-cover w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl filter drop-shadow-2xl   "
+                className="object-cover w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl  filter drop-shadow-2xl   "
                 alt="sdf"
                 draggable="false"
               />
@@ -95,7 +95,7 @@ export function Home() {
             </div>
 
             <div className=" px-10 py-10 mb-5 md:mb-0 lg:py-0 md:px-0  flex flex-1 flex-col items-center lg:items-start order-1 md:order-2">
-              <p className="text-core-black font-medium lg:leading-snug text-xl lg:text-2xl w-full text-center md:text-justify  ">
+              <p className="mt-2 lg:mt-4 text-core-black text-center md:text-justify  text-base lg:text-xl w-full">
                 Guise AI's solutions at the edge deliver feedback rapidly and
                 locally within the system. Localized processing is more
                 efficient, less expensive, and it increases the level of
@@ -109,7 +109,7 @@ export function Home() {
 
       {/* ============================= 6 SOLUTIONS CARDS ========================== */}
       <section className="bg-bookmark-white py-10 lg:py-20 mt-10 lg:mt-20 ">
-        <div className="container mx-auto">
+        <div className="md:px-48">
           <h2 className="text-2xl lg:text-4xl  font-semibold text-center lg:leading-tight text-core-black">
             Guise AI runs industry-specific AI models at the edge which provide
             the data to optimize your business and stay competitive
@@ -218,7 +218,8 @@ export function Home() {
                   <h4 className="font-bold text-lg md:text-2xl uppercase mb-4">
                     {item.title}
                   </h4>
-                  <p className="font-medium text-base md:text-lg text-color-700">
+                  {/* <p className="font-medium text-base md:text-lg text-color-700"> */}
+                  <p className="mt-2 lg:mt-4 text-core-black text-center md:text-justify  text-base lg:text-xl w-full">
                     {item.text}
                   </p>
                 </div>

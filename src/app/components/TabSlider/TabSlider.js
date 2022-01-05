@@ -21,7 +21,7 @@ const Tab = ({ children, active = 0 }) => {
     setTabsData(data);
   }, [children]);
   return (
-    <div className="w-full ">
+    <div className="w-full  ">
       <ul className="flex lg:flex-row flex-col  lg:justify-center lg:space-x-7 lg:items-center   mb-10">
         {tabsData.map(({ tab }, idx) => (
           <li className=" cursor-pointer py-2" key={idx}>
@@ -39,13 +39,13 @@ const Tab = ({ children, active = 0 }) => {
         ))}
       </ul>
 
-      <div className="gap-10 lg:gap-20 hoverTransition  grid grid-cols-1 lg:grid-cols-2  h-full  w-full  py-10 bg-white px-5 rounded-lg shadow-xl">
-        <div className="order-2 lg:order-1 lg:px-20 flex flex-col justify-center ">
+      <div className="gap-10 lg:gap-20 hoverTransition  grid grid-cols-1 lg:grid-cols-2   h-full  w-full  py-10 bg-white px-5 rounded-lg shadow-xl">
+        <div className="order-2 lg:order-1 lg:px-10 flex flex-col mt-5 ">
           <h2 className="text-3xl lg:text-4xl font-medium mb-4 lg:w-5/6 w-full ">
             {tabsData[activeTab] && tabsData[activeTab].children.title}
           </h2>
 
-          <p className="font-light lg:text-xl space-y-10 text-gray-500 text-justify lg:w-5/6 text-lg ">
+          <p className="text-justify text-core-black  md:text-justify  text-base lg:text-xl w-full">
             {tabsData[activeTab] && tabsData[activeTab].children.content}
           </p>
           <div className="mt-6 lg:mt-10 space-y-5 flex justify-center flex-col">
@@ -62,7 +62,7 @@ const Tab = ({ children, active = 0 }) => {
               ))}
           </div>
         </div>
-        <div className="order-1 lg:order-2">
+        <div className="order-1 lg:order-2 ">
           <img
             src={tabsData[activeTab] && tabsData[activeTab].children.img}
             className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"

@@ -16,7 +16,7 @@ export const Products = () => {
     },
     {
       name: "Digital Signage",
-      description: `Guise AI generates meaningful insights from camera video streams to help you create the greatest impact on your customers`,
+      description: `Guise AI generates meaningful insights from camera streams to help you create the greatest impact on your customers`,
       img: signageProduct,
       url: `/products/digital-signage-overview`,
     },
@@ -55,7 +55,7 @@ export const Products = () => {
         <div className="flex  items-center justify-center w-full h-full bg-black bg-opacity-70">
           <div className="text-center px-10 lg:px-0">
             <h1 className="text-4xl font-bold  text-white uppercase md:text-7xl mb-4">
-              Product Categories
+              Products
             </h1>
           </div>
         </div>

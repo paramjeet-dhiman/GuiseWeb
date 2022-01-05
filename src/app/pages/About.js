@@ -242,7 +242,7 @@ export const About = () => {
               <p>
                 Imagine yourself contributing to the development of one of the
                 most dynamic FinTech companies in the world. This innovative
-                company is Guise.
+                company is Guise AI.
               </p>{" "}
             </div>
             <Link to="/careers/jobs">
@@ -264,7 +264,7 @@ export const About = () => {
               Lorem ipsum
             </h4>
             <h1 className="text-4xl font-semibold lg:text-5xl lg:font-bold text-center text-bookmark-blue">
-              Guise in the community
+              Guise AI in the community
             </h1>
             <p className="text-gray-800 font-medium text-sm lg:text-base pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
@@ -286,7 +286,7 @@ export const About = () => {
       <section className="bg-bookmark-white py-10 lg:py-36  ">
         <div className="container px-10 lg:px-10">
           <h1 className="text-xl font-medium lg:text-4xl lg:font-light lg:px-4 text-center ">
-            At Guise, we are committed to engaging with the community and
+            At Guise AI, we are committed to engaging with the community and
             listening to your feedback. We encourage you to reach out to us
             anytime
           </h1>
