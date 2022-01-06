@@ -19,13 +19,13 @@ export const DSOverview = () => {
       title: "Footfall",
       content: `Quantify the interaction of your retail outlets with the customers with constant supervision.`,
       list: [{ title: "People count" }, { title: "Crowd count" }],
-      img: `https://images.unsplash.com/photo-1599467685250-43f0645dc097?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+      img: `https://cdn.pixabay.com/photo/2012/11/03/08/03/shop-63993_960_720.jpg`,
     },
     {
       title: "Demographics",
       content: `Understand your customers better and target the right audience with AI assisted detections.`,
       list: [{ title: "Age" }, { title: "Gender" }],
-      img: `https://images.unsplash.com/photo-1560255637-09eea76c9383?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80`,
+      img: `https://image.freepik.com/free-photo/young-woman-teaching-her-grandfather-how-use-tablet_1157-30566.jpg`,
     },
     {
       title: "Apparel",
@@ -35,7 +35,7 @@ export const DSOverview = () => {
         { title: "Apparel color" },
         { title: "Logo detection" },
       ],
-      img: `https://images.unsplash.com/photo-1517732306149-e8f829eb588a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80`,
+      img: `https://images.unsplash.com/photo-1567966703322-8aa782585b34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
     {
       title: "Drive-through",
@@ -52,7 +52,7 @@ export const DSOverview = () => {
       title: "Engagement",
       content: `Detect, log and manage crowded areas with the help of constant supervision provide by Guise AI.`,
       list: [{ title: "Dwell time" }, { title: "Wait time" }],
-      img: `https://images.unsplash.com/photo-1583330357508-1864f8e57785?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80`,
+      img: `https://images.unsplash.com/photo-1494424698959-eeb116f0daac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
     {
       title: "Safety",

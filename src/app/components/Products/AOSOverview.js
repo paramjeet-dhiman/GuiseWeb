@@ -49,14 +49,15 @@ export const AOSOverview = () => {
       content: `Maintain safety standards and minimize violations with constant surveillance and alerts.`,
       list: [
         { title: "Safety cones detection" },
-        { title: "Safety chokes detection" },
+        { title: "Wheel chokes detection" },
         { title: "Pushback truck detection" },
-        { title: "Wheel chocks detection" },
         { title: "Safety jacket/vest detection" },
-        { title: "Violation Alerts" },
+        { title: "Violation alerts" },
         // { title: "Parking Lines detection" },
       ],
-      img: `https://images.pexels.com/photos/240524/pexels-photo-240524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+      // https://images.pexels.com/photos/2245286/pexels-photo-2245286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+      // img: `https://images.pexels.com/photos/240524/pexels-photo-240524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+      img: `https://images.pexels.com/photos/3811676/pexels-photo-3811676.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
     },
     {
       title: "Asset Management",
@@ -120,11 +121,11 @@ export const AOSOverview = () => {
 
             <div className="text-lg lg:text-xl text-justify text-core-black md:text-justify w-full lg:w-5/6">
               <p>
-                Our algorithms generate meaningful insights from camera streams
-                to optimize airport ground operations and enhance the customer
-                experience. From increasing flight turnaround efficiency to
-                reducing delays to increasing tarmac safety, Guise AI is
-                transforming the airport experience
+                Guise AI is transforming the airport experience. From increasing
+                flight turnaround efficiency to reducing delays to increasing
+                tarmac safety. Our algorithms generate meaningful insights from
+                camera streams to optimize airport ground operations and enhance
+                the customer experience.
               </p>
             </div>
           </div>
