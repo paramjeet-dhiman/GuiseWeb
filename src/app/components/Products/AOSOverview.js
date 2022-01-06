@@ -125,7 +125,7 @@ export const AOSOverview = () => {
                 flight turnaround efficiency to reducing delays to increasing
                 tarmac safety. Our algorithms generate meaningful insights from
                 camera streams to optimize airport ground operations and enhance
-                the customer experience.
+                the customer experience
               </p>
             </div>
           </div>
