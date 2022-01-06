@@ -28,7 +28,7 @@ export const TMOverview = () => {
       img: `https://images.unsplash.com/photo-1503470069725-dacc9110076e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
     {
-      title: "Violation Detection",
+      title: "Violation",
       content: `Maintain road safety with real time alerts though automated AI assisted detections.`,
       list: [
         { title: "Illegal parking detection" },
@@ -38,7 +38,6 @@ export const TMOverview = () => {
         { title: "Wrong lane driving" },
         { title: "Helmet detection" },
         { title: "Triple seater detection" },
-        { title: "Mob detection" },
       ],
       // https://images.unsplash.com/photo-1529572079217-04ffdce1059b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
       img: `https://images.pexels.com/photos/2716060/pexels-photo-2716060.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260`,
@@ -46,11 +45,7 @@ export const TMOverview = () => {
     {
       title: "Traffic Management",
       content: `Manage traffic at key junctions and areas by monitoring people and vehicles.`,
-      list: [
-        { title: "Vehicle count" },
-        { title: "Pedestrian detection" },
-        { title: "Obstruction detection" },
-      ],
+      list: [{ title: "Vehicle count" }, { title: "Pedestrian detection" }],
       img: `https://images.unsplash.com/photo-1508798179027-a00aa5326443?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
     },
     {
@@ -87,7 +82,7 @@ export const TMOverview = () => {
           <div className=" w-full lg:w-6/12 md:m-0 md:order-2 ">
             <div className="flex justify-center relative">
               <img
-                className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
+                className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl filter drop-shadow-2xl"
                 src={data.image1}
                 alt=""
                 draggable="false"
@@ -143,7 +138,7 @@ export const TMOverview = () => {
             <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
                 <img
-                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl filter drop-shadow-2xl"
                   src={data.image2}
                   alt=""
                   draggable="false"
@@ -200,7 +195,7 @@ export const TMOverview = () => {
             <div className=" w-full lg:w-6/12 md:m-0 order-2">
               <div className="flex justify-center relative ">
                 <img
-                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl filter drop-shadow-2xl"
                   src={data.image3}
                   alt=""
                   draggable="false"

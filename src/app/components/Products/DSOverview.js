@@ -1,6 +1,8 @@
 import React from "react";
 import { DemoComponent } from "../DemoComponent";
 import Tab from "../TabSlider/TabSlider";
+import ImageDriveThru from "../../../assets/images/DS_drive_thru.jpg";
+import ImageInsideBank from "../../../assets/images/DS_inside_bank.jpg";
 
 export const DSOverview = () => {
   let data = {
@@ -19,7 +21,7 @@ export const DSOverview = () => {
       title: "Footfall",
       content: `Quantify the interaction of your retail outlets with the customers with constant supervision.`,
       list: [{ title: "People count" }, { title: "Crowd count" }],
-      img: `https://cdn.pixabay.com/photo/2012/11/03/08/03/shop-63993_960_720.jpg`,
+      img: `https://motionarray.imgix.net/preview-285230-RtvEX2Z6c1-high_0008.jpg?w=750&q=60&fit=max&auto=format`,
     },
     {
       title: "Demographics",
@@ -46,21 +48,21 @@ export const DSOverview = () => {
         { title: "Vehicle wait time" },
         { title: "Vehicle logo detection" },
       ],
-      img: `https://images.unsplash.com/photo-1564784669814-7bf9b1f587cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+      img: ImageDriveThru,
     },
     {
       title: "Engagement",
       content: `Detect, log and manage crowded areas with the help of constant supervision provide by Guise AI.`,
       list: [{ title: "Dwell time" }, { title: "Wait time" }],
-      img: `https://images.unsplash.com/photo-1494424698959-eeb116f0daac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+      img: ImageInsideBank,
     },
     {
       title: "Safety",
       content: `Lorem ipsum dolor sit amet conse, vitae excepturi neque rerum.`,
       list: [
-        { title: "Social distancing" },
         { title: "Mask detection" },
         { title: "PPE kit detection" },
+        { title: "Social distancing" },
       ],
       img: `https://images.unsplash.com/photo-1602542165989-999c53234fdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
@@ -90,7 +92,7 @@ export const DSOverview = () => {
           <div className=" w-full lg:w-6/12 md:m-0 md:order-2 ">
             <div className="flex justify-center relative">
               <img
-                className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
+                className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl filter drop-shadow-2xl"
                 src={data.image1}
                 alt=""
                 draggable="false"
@@ -144,7 +146,7 @@ export const DSOverview = () => {
             <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
                 <img
-                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl filter drop-shadow-2xl"
                   src={data.image2}
                   alt=""
                   draggable="false"
@@ -208,7 +210,7 @@ export const DSOverview = () => {
             <div className=" w-full lg:w-6/12 md:m-0 lg:order-2">
               <div className="flex justify-center relative ">
                 <img
-                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl filter drop-shadow-2xl"
                   src={data.image3}
                   alt=""
                   draggable="false"

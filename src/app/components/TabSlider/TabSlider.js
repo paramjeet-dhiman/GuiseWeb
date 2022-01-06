@@ -65,7 +65,7 @@ const Tab = ({ children, active = 0 }) => {
         <div className="order-1 lg:order-2 ">
           <img
             src={tabsData[activeTab] && tabsData[activeTab].children.img}
-            className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
+            className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl filter drop-shadow-2xl  "
             alt="sdf"
             draggable="false"
           />

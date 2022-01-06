@@ -31,16 +31,14 @@ export const AOSOverview = () => {
       title: "Operations",
       content: `Record the following operational events and track them automatically with the Guise AI airport ground operations suite.`,
       list: [
+        { title: "Airline detection" },
         { title: "Aircraft gate arrival time" },
         { title: "Aircraft gate departure time" },
         { title: "Cargo status" },
-        { title: "Cargo offload time" },
-        { title: "Cargo onload time" },
+        { title: "Cargo door status" },
         { title: "Jet bridge status" },
-        { title: "Jet bridge connection duration" },
-        { title: "Airline detection" },
-        // { title: "Aircraft arrival and departure time" },
-        // { title: "Cargo offload and onload duration" },
+        { title: "Jet bridge connected time" },
+        { title: "Jet bridge disconnected time" },
       ],
       img: `https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
     },
@@ -48,26 +46,23 @@ export const AOSOverview = () => {
       title: "Safety Monitoring",
       content: `Maintain safety standards and minimize violations with constant surveillance and alerts.`,
       list: [
-        { title: "Safety cones detection" },
-        { title: "Wheel chokes detection" },
+        { title: "Safety cone detection" },
+        { title: "Wheel chock detection" },
         { title: "Pushback truck detection" },
         { title: "Safety jacket/vest detection" },
         { title: "Violation alerts" },
-        // { title: "Parking Lines detection" },
       ],
-      // https://images.pexels.com/photos/2245286/pexels-photo-2245286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
-      // img: `https://images.pexels.com/photos/240524/pexels-photo-240524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-      img: `https://images.pexels.com/photos/3811676/pexels-photo-3811676.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+
+      img: `https://images.unsplash.com/photo-1633985483978-a86eeda59c8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
     {
       title: "Asset Management",
-      content: `Manage airport ground vehicles efficiently by tracking type, usage and durations assigned to every airplane.`,
+      content: `Manage airport ground vehicles efficiently by tracking type and durations of assigned units to every airplane.`,
       list: [
-        { title: "Fuel truck duration" },
-        { title: "Cargo carriers duration and count" },
-        { title: "Cargo loaders transfer duration" },
-        { title: "Pushback truck detection" },
-        { title: "Catering truck duration" },
+        { title: "Fleet detection" },
+        { title: "Fleet count" },
+        { title: "Fleet wait time" },
+        { title: "Fleet classification" },
       ],
       img: `https://images.unsplash.com/photo-1542296332-2e4473faf563?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
@@ -102,30 +97,29 @@ export const AOSOverview = () => {
         </div>
       </section>
 
-      <section className="flex flex-col lg:flex-row px-10 py-10 bg-bookmark-smoke lg:py-20 lg:px-40 gap-16 ">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-          <div className=" w-full lg:w-6/12 md:m-0 md:order-2 ">
-            <div className="flex justify-center relative">
+      <section className="flex flex-col lg:flex-row px-10 py-10 bg-bookmark-smoke lg:py-20 lg:px-40 ">
+        <div className="grid grid-cols-12  items-center lg:gap-10">
+          <div className=" w-full col-span-full lg:col-span-6  md:m-0 md:order-2 ">
+            <div className="">
               <img
-                className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
+                className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl filter drop-shadow-2xl  "
                 src={data.image1}
                 alt=""
                 draggable="false"
               />
             </div>
           </div>
-          <div className="flex flex-col text-justify w-full lg:w-6/12">
-            <h2 className="md:pl-1 text-3xl  lg:text-5xl  font-medium mb-4">
+          <div className="flex flex-col  w-full col-span-full mt-10 md:mt-0 lg:col-span-6 ">
+            <h2 className="text-2xl  lg:text-5xl  font-medium mb-4">
               Airport Ground Operations
             </h2>
 
-            <div className="text-lg lg:text-xl text-justify text-core-black md:text-justify w-full lg:w-5/6">
+            <div className="text-lg lg:text-xl text-justify text-core-black   w-full lg:w-10/12 ">
               <p>
-                Guise AI is transforming the airport experience. From increasing
-                flight turnaround efficiency to reducing delays to increasing
-                tarmac safety. Our algorithms generate meaningful insights from
-                camera streams to optimize airport ground operations and enhance
-                the customer experience
+                Guise AI is transforming the airport experience. Our algorithms
+                generate meaningful insights from camera streams to optimize
+                airport ground operations and enhance the customer experience -
+                Reduce turnaround time at the gate and increase tarmac safety
               </p>
             </div>
           </div>
@@ -162,7 +156,7 @@ export const AOSOverview = () => {
             <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
                 <img
-                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl filter drop-shadow-2xl  "
                   src={data.image5}
                   alt=""
                   draggable="false"
@@ -227,7 +221,7 @@ export const AOSOverview = () => {
             <div className=" w-full lg:w-6/12 md:m-0 ">
               <div className="flex justify-center relative ">
                 <img
-                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl"
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl filter drop-shadow-2xl  "
                   src={data.image3}
                   alt=""
                   draggable="false"
@@ -308,26 +302,26 @@ export const AOSOverview = () => {
               <div className="justify-center flex flex-wrap relative">
                 <div className="my-4 w-full lg:w-6/12 ">
                   <div
-                    className=" object-cover bg-cover bg-center rounded-lg shadow-xl  h-52 lg:h-80"
+                    className=" object-cover bg-cover bg-center rounded-lg shadow-xl  h-52 lg:h-80  filter drop-shadow-2xl  "
                     style={{
                       background: `url(https://images.unsplash.com/photo-1566319280755-c66cbcf93061?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80) center center / cover no-repeat`,
                     }}></div>
 
                   <div
-                    className="p-8 mt-8 hidden lg:block lg:h-80 object-cover bg-cover bg-center rounded-lg shadow-xl"
+                    className="p-8 mt-8 hidden lg:block lg:h-80 object-cover bg-cover bg-center rounded-lg shadow-xl filter drop-shadow-2xl  "
                     style={{
                       background: `url(https://images.unsplash.com/photo-1524592714635-d77511a4834d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center center / cover no-repeat`,
                     }}></div>
                 </div>
                 <div className="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
                   <div
-                    className=" object-cover bg-cover bg-center  shadow-lg rounded-md text-center  hidden lg:block lg:h-80 "
+                    className=" object-cover bg-cover bg-center  shadow-lg rounded-md text-center  hidden lg:block lg:h-80  filter drop-shadow-2xl  "
                     style={{
                       background: `url(https://images.unsplash.com/photo-1585585828599-461a0419b788?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80) center center / cover no-repeat`,
                     }}></div>
 
                   <div
-                    className="p-8 mt-8 hidden lg:block lg:h-80 object-cover bg-cover bg-center rounded-lg shadow-xl"
+                    className="p-8 mt-8 hidden lg:block lg:h-80 object-cover bg-cover bg-center rounded-lg shadow-xl filter drop-shadow-2xl  "
                     style={{
                       background: `url(https://images.pexels.com/photos/1928064/pexels-photo-1928064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center center / cover no-repeat`,
                     }}></div>
@@ -429,7 +423,7 @@ export const AOSOverview = () => {
             </h1>
           </div>
           <div
-            className="lg:container mt-10 shadow-xl"
+            className="lg:container mt-10 shadow-xl filter drop-shadow-2xl  "
             title="Slide the bar to see the difference that Guise AI can make">
             <ReactCompareImage
               leftImage={Airport1}
@@ -442,10 +436,9 @@ export const AOSOverview = () => {
               sliderLineWidth={4}
             />
           </div>
-          <div className="flex items-center justify-center space-x-1 font-light text-color-300 pt-4 ">
+          <div className="flex items-center  justify-center space-x-1 font-light text-color-300 mt-4 ">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-4 w-4 lg:h-6 lg:w-6"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor">
@@ -456,7 +449,7 @@ export const AOSOverview = () => {
                 d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            <span>
+            <span className="text-xs md:text-lg">
               Slide the bar to see the difference that Guise AI can make
             </span>
           </div>

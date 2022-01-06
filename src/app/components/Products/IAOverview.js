@@ -71,11 +71,12 @@ export const IAOverview = () => {
 
             <div className="text-lg lg:text-xl text-justify space-y-5 text-gray-500 lg:w-5/6">
               <p>
-                Noise Cancellation is the ability to enhance a speech signal
-                plagued with unwanted noises by isolating the dominant sound. It
-                is still a fast-evolving technology, with Guise AI bringing a
-                whole new domain of approaches with its new and improved AI
-                assisted noise cancellation to improve the task.
+                Guise AI with its Intelligent Sound is bringing the next
+                generation of audio processing with its smart and efficient
+                noise detection and cancellation software. Unlike hardware based
+                noise cancellations, with the new AI assisted filters, you can
+                choose the noise you would like to detect or cancel from a broad
+                range of options
               </p>
             </div>
           </div>

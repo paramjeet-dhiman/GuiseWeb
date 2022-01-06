@@ -30,7 +30,7 @@ export const Products = () => {
     },
     {
       name: "Intelligent Audio",
-      description: `Experience the next level of noise cancellation with the new Guise  AI assisted Intelligent Audio with improved audio filtration and noise cancellation`,
+      description: `Experience a new level of audio processing by Guise AI Intelligent Audio with improved and customizable AI assisted noise filtration`,
       img: audioProduct,
       url: `/products/intelligent-audio-overview`,
     },
@@ -38,7 +38,7 @@ export const Products = () => {
     {
       name: "Energy Management",
       img: energyProduct,
-      description: `Guise AI with its video and data analysis is empowering the energy sector both at the downstream and upstream sectors with  efficient predictions`,
+      description: `Guise AI with its self adaptive pattern identification is empowering the energy sector both at the downstream and upstream sectors with efficient predictions`,
       url: `/products/energy-management-overview`,
     },
   ];
