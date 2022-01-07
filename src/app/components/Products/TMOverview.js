@@ -1,5 +1,6 @@
 import React from "react";
 import { DemoComponent } from "../DemoComponent";
+import { AdvantageSection } from "../sections/AdvantageSection";
 import Tab from "../TabSlider/TabSlider";
 
 export const TMOverview = () => {
@@ -54,6 +55,25 @@ export const TMOverview = () => {
       list: [{ title: "Vehicle type" }, { title: "Logo detection" }],
       img: `https://images.unsplash.com/photo-1521674685714-2446ff917fbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
+  ];
+
+  const advantages = [
+    { title: `Enhance traffic flow and safety monitoring` },
+    {
+      title: `Accurately identify violations as they occur (speeding, red-light violations, triple riders)`,
+    },
+    {
+      title: `Traffic and pedestrian density metrics to generate better city plans`,
+    },
+    { title: `Streamlined number plate recognition` },
+    { title: `Seamlessly integrate with existing platforms` },
+  ];
+
+  const images = [
+    `https://images.unsplash.com/photo-1596188431116-f858853f2be3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    `https://images.unsplash.com/photo-1580742744464-d67b9e35ddff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmVoaWNsZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60`,
+    `https://images.unsplash.com/photo-1511814104612-47a8f022914b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    `https://images.pexels.com/photos/3289479/pexels-photo-3289479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
   ];
 
   return (
@@ -273,8 +293,8 @@ export const TMOverview = () => {
         </section> */}
 
         {/* ====================== Section #5  ================== */}
-
-        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40  ">
+        {/* 
+        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40  ">
           <div className="flex flex-wrap items-center pt-8  ">
             <div className="w-full md:w-6/12  md:order-2">
               <div className="justify-center flex flex-wrap relative">
@@ -364,6 +384,8 @@ export const TMOverview = () => {
             </div>
           </div>
         </section> */}
+
+        <AdvantageSection advantages={advantages} images={images} order={1} />
       </section>
 
       {/* ====================== DEMO BUTTON  ================== */}

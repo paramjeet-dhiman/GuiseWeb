@@ -3,6 +3,7 @@ import { DemoComponent } from "../DemoComponent";
 import Tab from "../TabSlider/TabSlider";
 import ImageDriveThru from "../../../assets/images/DS_drive_thru.jpg";
 import ImageInsideBank from "../../../assets/images/DS_inside_bank.jpg";
+import { AdvantageSection } from "../sections/AdvantageSection";
 
 export const DSOverview = () => {
   let data = {
@@ -67,6 +68,27 @@ export const DSOverview = () => {
       img: `https://images.unsplash.com/photo-1602542165989-999c53234fdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
   ];
+
+  const images = [
+    `https://images.pexels.com/photos/1727684/pexels-photo-1727684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+    `https://images.pexels.com/photos/4480984/pexels-photo-4480984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500`,
+    `https://images.unsplash.com/photo-1591085686350-798c0f9faa7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80`,
+    `https://images.unsplash.com/photo-1549057446-9f5c6ac91a04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80`,
+  ];
+
+  const advantages = [
+    { title: `Make informed decisions to improve customer experience` },
+    {
+      title: `Accurate demographics to understand who are your customers`,
+    },
+    {
+      title: `Connect with your customers`,
+    },
+    { title: `Uncover trends through accumulating the best metrics` },
+    { title: `Unlock revenue opportunities` },
+    { title: `Choose the right playlist to engage customers` },
+  ];
+
   return (
     <div className="bg-white h-full ">
       <section
@@ -350,6 +372,8 @@ export const DSOverview = () => {
             </div>
           </div>
         </section> */}
+
+        <AdvantageSection advantages={advantages} images={images} order={1} />
       </section>
 
       <DemoComponent />

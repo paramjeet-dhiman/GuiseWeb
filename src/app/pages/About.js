@@ -8,101 +8,74 @@ export const About = () => {
   return (
     <div className=" pt-10 h-full">
       <section className="relative h-screen grid place-content-center bg-bookmark-blue  ">
-        <div className="px-10 md:px-28 flex flex-col-reverse lg:flex-row items-center  lg:mt-20">
+        <div className="px-10 md:px-28 flex flex-col-reverse lg:flex-row items-center  lg:mt-10">
           <div className="flex ">
             <div className="flex items-center text-center lg:text-left w-full md:px-16 lg:w-1/2">
-              <div className="w-full ">
-                <h4 className=" uppercase text-sm font-semibold md:text-lg text-social-instagram mb-2">
-                  About
-                </h4>
-                <h2 className="text-5xl font-semibold upper text-gray-100 mb-2 md:text-7xl">
-                  Grow up your workflow speed.
+              <div className="w-full text-gray-100 ">
+                <h2 className="text-5xl lg:text-7xl font-semibold mb-4">
+                  Grow up your workflow speed
                 </h2>
-                <p className="text-gray-400 lg:w-3/4 text-sm md:text-lg text-center lg:text-left mb-6">
+                <p className="mt-2 lg:mt-4 text-gray-400 text-center md:text-justify  text-base lg:text-xl w-full lg:w-5/6">
                   Guise AI solves the cost and efficiency problems endemic in AI
                   today. Our continuous learning AI solutions on the edge allow
                   machines to continuously learn and adapt to dynamically
                   changing data in the real world without having to constantly
-                  retrain models.
+                  retrain models
                 </p>
               </div>
             </div>
             <div
-              className="hidden lg:block lg:w-1/2 "
+              className="hidden lg:block lg:w-1/2  rounded-lg"
               style={{
                 height: "750px",
               }}>
               <div
-                className="h-full object-cover "
+                className="w-full rounded-lg h-full shadow-xl filter drop-shadow-2xl"
                 style={{
                   height: "100%",
                   width: "100%",
                   background: ` url("https://images.pexels.com/photos/2422588/pexels-photo-2422588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center center / cover no-repeat`,
                 }}>
-                <div className="h-full bg-black opacity-25"></div>
+                <div className="h-full bg-black opacity-25 rounded-lg"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-10 bg-white mt-10 lg:py-20 lg:mt-10 select-none">
-        {/* cards */}
-        <div className="px-10 md:px-36 w-5/6 md:w-full grid grid-cols-1   md:grid-cols-2 lg:grid-cols-4 gap-20  mt-14">
+      <section className="py-10 bg-white lg:py-20 ">
+        <div className="px-10 md:px-36 w-full md:w-full grid grid-cols-1   md:grid-cols-2 lg:grid-cols-4 gap-20 ">
           {["Hardware", "Software", "Commercial", "University"].map((item) => (
             <div
               key={item}
-              className="text-gray-900 bg-bookmark-offWhite p-5 rounded-md w-full shadow-md hover:shadow-lg transition-all duration-300 ease-in-out  ">
-              <div className="flex flex-col space-y-5 ">
-                <h1 className="text-3xl lg:text-4xl uppercase  font-semibold  text-bookmark-blue">
-                  lorem ipsum
+              className="text-gray-900 bg-white  filter drop-shadow-xl shadow-lg  rounded-lg p-5  w-full  hover:shadow-2xl hoverTransition  ">
+              <div className="flex flex-col space-y-5 text-justify">
+                <h1 className="text-3xl lg:text-4xl font-semibold   text-bookmark-blue">
+                  Lorem ipsum
                 </h1>
                 <p className="text-lg lg:text-xl">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  veniam consequuntur nostrum repellendus eius sint, soluta
-                  recusandae rerum inventore? Deleniti natus ipsam facilis vero
-                  repudiandae saepe autem id provident asperiores!
+                  Established in 2016, Guise AI is the premier global provider
+                  of continuous learning AI solutions at the edge. We built our
+                  technology from the ground up using our patent pending
+                  Continuous Learning AI which powers the most adaptive,
+                  accurate and efficient streaming data models in the industry.
                 </p>
               </div>
             </div>
           ))}
-        </div>
-        <div className="flex justify-center items-center mt-20 ">
-          <a
-            // id="go_to_/technology_textHeader_index_2"
-            className="text-blue-500 hover:text-blue-400 flex items-center space-x-2 py-1"
-            href="/technology">
-            <span className="text-lg lg:text-xl font-medium">
-              Learn how it all works
-            </span>
-            {/* <svg className="h-3 w-3" viewBox="0 0 12 12" fill="none">
-              <path
-                d="M0 1.00586H11V12.0059"
-                stroke="currentColor"
-                strokeWidth="2"></path>
-              <line
-                x1="10.857"
-                y1="1.15437"
-                x2="0.745382"
-                y2="11.266"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeMiterlimit="2.61313"></line>
-            </svg> */}
-          </a>
         </div>
       </section>
 
       {/* ========================  MISSION  =============================*/}
       <section className="bg-bookmark-white py-10 lg:py-20  ">
         <div className="sm:w-3/4 lg:w-6/12 mx-auto px-12 lg:px-2 ">
-          <h4 className="text-center uppercase text-sm font-semibold md:text-lg text-social-instagram mb-4">
+          {/* <h4 className="text-center uppercase text-sm font-semibold md:text-lg text-social-instagram mb-4">
             Mission
-          </h4>
+          </h4> */}
           <h1 className="text-4xl uppercase font-semibold lg:text-5xl lg:font-bold text-center text-bookmark-blue">
             Mission, Vision & Values
           </h1>
-          <p className="text-gray-600 font-medium text-sm lg:text-base pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
+          <p className="mt-2 lg:mt-4 lg:text-center container  text-center  text-base lg:text-xl w-full lg:w-5/6">
             A service made with our clients in mind
           </p>
         </div>
@@ -127,7 +100,7 @@ export const About = () => {
               <h4 className="mb-4 text-xl  font-semibold text-gray-700">
                 Mission
               </h4>
-              <p className="text-lg  text-gray-500">
+              <p className="text-base lg:text-xl w-full">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
                 perspiciatis reprehenderit, fugiat dolor similique sapiente
                 dignissimos distinctio? Minus fugit magni ut nisi blanditiis
@@ -155,7 +128,7 @@ export const About = () => {
               <h4 className="mb-4 text-xl  font-semibold text-gray-700">
                 Vision
               </h4>
-              <p className="text-lg  text-gray-500">
+              <p className="text-base lg:text-xl w-full">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
                 perspiciatis reprehenderit, fugiat dolor similique sapiente
                 dignissimos distinctio? Minus fugit magni ut nisi blanditiis
@@ -185,7 +158,7 @@ export const About = () => {
               <h4 className="mb-4 text-xl  font-semibold text-gray-700">
                 Values
               </h4>
-              <p className="text-lg  text-gray-500">
+              <p className="text-base lg:text-xl w-full">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
                 perspiciatis reprehenderit, fugiat dolor similique sapiente
                 dignissimos distinctio? Minus fugit magni ut nisi blanditiis
@@ -199,21 +172,15 @@ export const About = () => {
       {/* =======================Carousel========== */}
       <section className="bg-white py-10 lg:py-28">
         <div className="sm:w-3/4 lg:w-10/12 mx-auto px-12 lg:px-2 ">
-          <h4 className="text-center  text-sm font-semibold md:text-lg text-social-instagram mb-4">
-            Company
-          </h4>
-          <h1 className="text-4xl font-semibold lg:text-5xl lg:font-bold text-center text-bookmark-blue">
+          <h1 className="text-4xl font-semibold lg:text-5xl lg:font-bold text-center text-core-black">
             Our Story - The Best Minds Meet the Best AI Models
           </h1>
-          <p className="text-gray-800 font-medium text-sm lg:text-base pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
-            Founded in 2019 by world recognized experts in AI, with an innate
-            passion for creative innovation, we forged a talented team of deep
-            learning researchers and engineers. Deci’s team is armed with
-            advanced academic degrees from prestigious universities, as well as
-            exceptional backgrounds in elite units and leading tech companies.
-            Our experts are fully dedicated to advancing the state-of-the-art
-            and have co-authored dozens of publications in top-tier machine
-            learning venues such as NeurIPS, ICML, ICLR, CVPR, and ACL.
+          <p className="mt-2 lg:mt-4    lg:text-center container  text-center  text-base lg:text-xl w-full lg:w-5/6">
+            Established in 2016, Guise AI is the premier global provider of
+            continuous learning AI solutions at the edge. We built our
+            technology from the ground up using our patent pending Continuous
+            Learning AI which powers the most adaptive, accurate and efficient
+            streaming data models in the industry
           </p>
         </div>
 
@@ -258,19 +225,19 @@ export const About = () => {
       </section>
 
       <section className="bg-white py-10 lg:py-20 ">
-        <div className="sm:w-3/4 lg:w-6/12 mx-auto px-12 lg:px-2 ">
-          <div className="sm:w-3/4 lg:w-8/12 mx-auto px-12 lg:px-2 ">
-            <h4 className="text-center  text-sm font-semibold md:text-lg text-social-instagram mb-4">
-              Lorem ipsum
-            </h4>
-            <h1 className="text-4xl font-semibold lg:text-5xl lg:font-bold text-center text-bookmark-blue">
-              Guise AI in the community
-            </h1>
-            <p className="text-gray-800 font-medium text-sm lg:text-base pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
-              voluptas deserunt quo, ipsam dicta dolorem.
-            </p>
-          </div>
+        <div className="container">
+          <h1 className="text-4xl font-semibold lg:text-5xl lg:font-bold text-center text-bookmark-blue">
+            Guise AI in the community
+          </h1>
+          <p className="mt-2 lg:mt-4 lg:text-center text-center  text-base lg:text-xl w-full lg:px-10">
+            Our technology deployed at the edge delivers feedback rapidly and
+            locally within the system. Localized processing is more efficient
+            (low latency) and it increases the level of security in terms of
+            data privacy. Clients and OEMS who require an accurate,
+            cost-efficient, and secure solution turn to Guise AI to continuously
+            extract patterns and predict from real-time and dynamically changing
+            data to create the greatest impact for end-users
+          </p>
         </div>
 
         <div className="py-20 container ">
@@ -285,33 +252,18 @@ export const About = () => {
 
       <section className="bg-bookmark-white py-10 lg:py-36  ">
         <div className="container px-10 lg:px-10">
-          <h1 className="text-xl font-medium lg:text-4xl lg:font-light lg:px-4 text-center ">
+          <h1 className="text-lg lg:text-2xl text-core-black uppercase tracking-wide font-bold  text-center ">
             At Guise AI, we are committed to engaging with the community and
             listening to your feedback. We encourage you to reach out to us
             anytime
           </h1>
           <div className="flex justify-center items-center mt-10 ">
             <a
-              // id="go_to_/technology_textHeader_index_2"
               className="text-blue-500 hover:text-blue-400 flex items-center space-x-2 py-1"
               href="/technology">
               <span className="text-base lg:text-xl font-medium">
                 community@guiseai.com
               </span>
-              {/* <svg className="h-3 w-3" viewBox="0 0 12 12" fill="none">
-                <path
-                  d="M0 1.00586H11V12.0059"
-                  stroke="currentColor"
-                  strokeWidth="2"></path>
-                <line
-                  x1="10.857"
-                  y1="1.15437"
-                  x2="0.745382"
-                  y2="11.266"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeMiterlimit="2.61313"></line>
-              </svg> */}
             </a>
           </div>
         </div>

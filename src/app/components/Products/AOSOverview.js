@@ -4,6 +4,7 @@ import { DemoComponent } from "../DemoComponent";
 import ReactCompareImage from "react-compare-image";
 import Airport1 from "../../../assets/images/airport1.jpg";
 import Airport2 from "../../../assets/images/airport2.jpg";
+import { AdvantageSection } from "../sections/AdvantageSection";
 
 export const AOSOverview = () => {
   let data = {
@@ -75,6 +76,27 @@ export const AOSOverview = () => {
     //   ],
     //   img: `https://images.pexels.com/photos/2599729/pexels-photo-2599729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
     // },
+  ];
+
+  const images = [
+    `https://images.unsplash.com/photo-1566319280755-c66cbcf93061?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+    `https://images.unsplash.com/photo-1524592714635-d77511a4834d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    `https://images.unsplash.com/photo-1585585828599-461a0419b788?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+    `https://images.pexels.com/photos/1928064/pexels-photo-1928064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+  ];
+
+  const advantages = [
+    { title: `Optimize ground operations efficiency` },
+    {
+      title: `Reduce turnaround time`,
+    },
+    {
+      title: `Improve customer experience`,
+    },
+    { title: `Mitigate risks and increase tarmac safety` },
+    { title: `Maximize asset utilization` },
+    { title: `Accurate data for better planning` },
+    { title: `Increased transparency and record keeping for safety audits` },
   ];
 
   return (
@@ -298,7 +320,17 @@ export const AOSOverview = () => {
 
         <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:py-20 lg:px-40 gap-16 ">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10 ">
-            <div className=" w-full lg:w-6/12 md:m-0 md:order-1 ">
+            <div className=" w-full lg:w-6/12 md:m-0 md:order-2  ">
+              <div className="flex justify-center relative">
+                <img
+                  className="relative z-10 rounded-md self-start shadow-xl w-full h-full"
+                  src={data.image6}
+                  alt=""
+                  draggable="false"
+                />
+              </div>
+            </div>
+            {/* <div className=" w-full lg:w-6/12 md:m-0 md:order-1 ">
               <div className="justify-center flex flex-wrap relative">
                 <div className="my-4 w-full lg:w-6/12 ">
                   <div
@@ -327,7 +359,7 @@ export const AOSOverview = () => {
                     }}></div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="flex flex-col  w-full lg:w-6/12  text-core-black">
               <h2 className="text-3xl lg:text-4xl  mb-4 lg:mb-10 font-semibold">
                 Guise AI can help you...
@@ -608,6 +640,7 @@ export const AOSOverview = () => {
           </div>
         </section> */}
       </section>
+      <AdvantageSection advantages={advantages} images={images} order={1} />
 
       <DemoComponent />
     </div>
