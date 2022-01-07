@@ -10,7 +10,17 @@ export const AdvantageSection = ({ advantages, images, order }) => {
             order ? "   " : "lg:order-1"
           } `}>
           <div className="justify-center flex flex-wrap relative">
-            <div className="my-4 w-full lg:w-6/12 ">
+            <div className=" w-full md:m-0">
+              <div className="flex justify-center relative">
+                <img
+                  className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl filter drop-shadow-2xl  "
+                  src={images[0]}
+                  alt=""
+                  draggable="false"
+                />
+              </div>
+            </div>
+            {/* <div className="my-4 w-full lg:w-6/12 ">
               <div
                 className=" object-cover bg-cover bg-center rounded-lg shadow-xl  h-52 lg:h-80  filter drop-shadow-2xl  "
                 style={{
@@ -35,7 +45,7 @@ export const AdvantageSection = ({ advantages, images, order }) => {
                 style={{
                   background: `url(${images[3]}) center center / cover no-repeat`,
                 }}></div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div

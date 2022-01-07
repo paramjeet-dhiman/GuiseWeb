@@ -3,12 +3,13 @@ import { DemoComponent } from "../DemoComponent";
 import Tab from "../TabSlider/TabSlider";
 import ImageDriveThru from "../../../assets/images/DS_drive_thru.jpg";
 import ImageInsideBank from "../../../assets/images/DS_inside_bank.jpg";
+import ImageDemographics from "../../../assets/images/DS_demographics.jpg";
 import { AdvantageSection } from "../sections/AdvantageSection";
 
 export const DSOverview = () => {
   let data = {
     label: "Digital Signage",
-    subText: `Guise AI generates meaningful insights from camera video streams to help you create the greatest impact on your customers`,
+    subText: `Guise AI generates meaningful insights from camera streams to help you create the greatest impact on your customers`,
     bgImg: `https://images.unsplash.com/photo-1602940659805-770d1b3b9911?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80`,
     title: `Lorem Ipsum`,
     image1: `https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
@@ -28,7 +29,8 @@ export const DSOverview = () => {
       title: "Demographics",
       content: `Understand your customers better and target the right audience with AI assisted detections.`,
       list: [{ title: "Age" }, { title: "Gender" }],
-      img: `https://image.freepik.com/free-photo/young-woman-teaching-her-grandfather-how-use-tablet_1157-30566.jpg`,
+      // img: `https://image.freepik.com/free-photo/young-woman-teaching-her-grandfather-how-use-tablet_1157-30566.jpg`,
+      img: ImageDemographics,
     },
     {
       title: "Apparel",
@@ -65,14 +67,16 @@ export const DSOverview = () => {
         { title: "PPE kit detection" },
         { title: "Social distancing" },
       ],
-      img: `https://images.unsplash.com/photo-1602542165989-999c53234fdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+
+      img: `https://images.unsplash.com/photo-1584309832315-39d404eecc77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80`,
     },
   ];
 
   const images = [
-    `https://images.pexels.com/photos/1727684/pexels-photo-1727684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-    `https://images.pexels.com/photos/4480984/pexels-photo-4480984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500`,
+    `https://images.pexels.com/photos/1770775/pexels-photo-1770775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
     `https://images.unsplash.com/photo-1591085686350-798c0f9faa7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80`,
+    `https://images.pexels.com/photos/4480984/pexels-photo-4480984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500`,
+    `https://images.pexels.com/photos/1727684/pexels-photo-1727684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
     `https://images.unsplash.com/photo-1549057446-9f5c6ac91a04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80`,
   ];
 
@@ -131,7 +135,7 @@ export const DSOverview = () => {
                 We help you make informed decisions and understand how your
                 customers interact with your products and services. Gain deeper
                 insights into how your brand engages with its customers with a
-                cutting edge approach that uses untapped data resources
+                cutting edge approach that uses untapped data resources.
               </p>
             </div>
           </div>
@@ -163,7 +167,7 @@ export const DSOverview = () => {
           </div>
         </section>
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
+        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
             <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
@@ -223,11 +227,11 @@ export const DSOverview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* ======================  Feature #1 ================== */}
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
+        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
             <div className=" w-full lg:w-6/12 md:m-0 lg:order-2">
               <div className="flex justify-center relative ">
@@ -284,7 +288,7 @@ export const DSOverview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white  lg:px-40  ">
           <div className="flex flex-col lg:flex-row items-center  justify-between gap-x-10">

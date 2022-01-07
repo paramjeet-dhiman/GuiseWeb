@@ -18,22 +18,23 @@ export const Contact = () => {
         </div>
       </section>
 
-      <section className="bg-white py-10 lg:py-20  ">
+      {/* <section className="bg-white py-10 lg:py-20  ">
         <div className="sm:w-3/4 lg:w-6/12 mx-auto px-12 lg:px-2 ">
           <h4 className="text-center uppercase text-sm font-semibold md:text-lg text-social-instagram mb-4">
             Get In Touch
           </h4>
-          <h1 className="text-4xl uppercase font-semibold lg:text-5xl lg:font-bold text-center text-bookmark-blue">
-            Have some questions?
-          </h1>
+
           <p className="text-gray-600 font-medium text-sm lg:text-base pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
             Lets get this conversation started. Tell us a bit about yourself,
             and we'll get in touch as soon as we can.
           </p>
         </div>
-      </section>
+      </section> */}
 
-      <section className="bg-white py-10 pb-28">
+      <section className="bg-white py-20 pb-28">
+        <h1 className="text-4xl uppercase mb-10  lg:text-5xl font-bold text-center text-bookmark-blue">
+          Get In Touch
+        </h1>
         <div className="grid md:px-32  w-full  gap-x-20 gap-y-16 ">
           {/* <div className="flex items-center px-5 lg:px-0 col-auto md:col-span-5  text-gray-800">
             <div className="w-full ">
@@ -114,16 +115,16 @@ export const Contact = () => {
             <div className="">
               <div className="flex flex-wrap justify-center  ">
                 <div className="w-full px-5 lg:px-0 ">
-                  <div className="relative bg-white rounded-md   flex flex-col min-w-0 break-words w-full  shadow-lg ">
-                    <div className="flex-auto p-5 lg:p-10">
-                      <h4 className="text-2xl font-semibold">
+                  <div className="relative bg-white rounded-md   flex flex-col min-w-0 break-words w-full  shadow-lg filter drop-shadow-xl ">
+                    <div className="flex-auto p-5 lg:p-10 ">
+                      {/* <h4 className="text-2xl font-semibold">
                         Want to work with us?
                       </h4>
                       <p className="leading-relaxed mt-1 mb-4 text-gray-500">
                         Complete this form and we will get back to you
-                      </p>
+                      </p> */}
                       <form>
-                        <div className="relative w-full mb-3 mt-8">
+                        <div className="relative w-full mb-3 ">
                           <label
                             className="block uppercase  mb-2 text-sm text-gray-600 font-semibold px-1"
                             htmlFor="full-name">

@@ -62,7 +62,6 @@ export const AOSOverview = () => {
       list: [
         { title: "Fleet detection" },
         { title: "Fleet count" },
-        { title: "Fleet wait time" },
         { title: "Fleet classification" },
       ],
       img: `https://images.unsplash.com/photo-1542296332-2e4473faf563?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
@@ -79,6 +78,7 @@ export const AOSOverview = () => {
   ];
 
   const images = [
+    `https://images.pexels.com/photos/804463/pexels-photo-804463.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
     `https://images.unsplash.com/photo-1566319280755-c66cbcf93061?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
     `https://images.unsplash.com/photo-1524592714635-d77511a4834d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     `https://images.unsplash.com/photo-1585585828599-461a0419b788?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
@@ -141,7 +141,7 @@ export const AOSOverview = () => {
                 Guise AI is transforming the airport experience. Our algorithms
                 generate meaningful insights from camera streams to optimize
                 airport ground operations and enhance the customer experience -
-                Reduce turnaround time at the gate and increase tarmac safety
+                reduce turnaround time at the gate and increase tarmac safety.
               </p>
             </div>
           </div>
@@ -173,6 +173,9 @@ export const AOSOverview = () => {
           </div>
         </section>
 
+        <AdvantageSection advantages={advantages} images={images} order={1} />
+
+        {/* 
         <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
             <div className=" w-full lg:w-6/12 md:m-0">
@@ -234,7 +237,7 @@ export const AOSOverview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* ======================  Feature #1 ================== */}
 
@@ -318,7 +321,7 @@ export const AOSOverview = () => {
           </div>
         </section> */}
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:py-20 lg:px-40 gap-16 ">
+        {/* <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:py-20 lg:px-40 gap-16 ">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10 ">
             <div className=" w-full lg:w-6/12 md:m-0 md:order-2  ">
               <div className="flex justify-center relative">
@@ -329,8 +332,8 @@ export const AOSOverview = () => {
                   draggable="false"
                 />
               </div>
-            </div>
-            {/* <div className=" w-full lg:w-6/12 md:m-0 md:order-1 ">
+            </div> */}
+        {/* <div className=" w-full lg:w-6/12 md:m-0 md:order-1 ">
               <div className="justify-center flex flex-wrap relative">
                 <div className="my-4 w-full lg:w-6/12 ">
                   <div
@@ -360,7 +363,7 @@ export const AOSOverview = () => {
                 </div>
               </div>
             </div> */}
-            <div className="flex flex-col  w-full lg:w-6/12  text-core-black">
+        {/* <div className="flex flex-col  w-full lg:w-6/12  text-core-black">
               <h2 className="text-3xl lg:text-4xl  mb-4 lg:mb-10 font-semibold">
                 Guise AI can help you...
               </h2>
@@ -406,7 +409,7 @@ export const AOSOverview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20  lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between gap-10">
@@ -640,7 +643,6 @@ export const AOSOverview = () => {
           </div>
         </section> */}
       </section>
-      <AdvantageSection advantages={advantages} images={images} order={1} />
 
       <DemoComponent />
     </div>

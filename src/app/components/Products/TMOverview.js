@@ -70,6 +70,7 @@ export const TMOverview = () => {
   ];
 
   const images = [
+    `https://images.unsplash.com/photo-1504735432588-ab3bf116740f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80`,
     `https://images.unsplash.com/photo-1596188431116-f858853f2be3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     `https://images.unsplash.com/photo-1580742744464-d67b9e35ddff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmVoaWNsZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60`,
     `https://images.unsplash.com/photo-1511814104612-47a8f022914b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
@@ -120,7 +121,7 @@ export const TMOverview = () => {
                 comprehensive analyses of city traffic by comprehending visual
                 data through edge based AI assistance. The ability to plan a
                 more efficient and safe traffic management system leads to a
-                smarter city
+                smarter city.
               </p>
             </div>
           </div>
@@ -153,7 +154,7 @@ export const TMOverview = () => {
         </section>
 
         {/* ====================== Section #2  ================== */}
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
+        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
             <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
@@ -206,11 +207,11 @@ export const TMOverview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* ====================== Section #3  ================== */}
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
+        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
             <div className=" w-full lg:w-6/12 md:m-0 order-2">
               <div className="flex justify-center relative ">
@@ -261,7 +262,7 @@ export const TMOverview = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* ====================== Section #4  ================== */}
         {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-16 ">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">

@@ -23,9 +23,9 @@ export const ProductsVideos = () => {
       </section>
 
       <section>
-        <div className="min-h-screen bg-white flex justify-center items-center py-20">
+        <div className="bg-white flex justify-center items-center py-20">
           <div className="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-10 space-y-4 md:space-y-0">
-            {[1, 2, 3, 4, 1, 2, 3, 4, 4].map((item, idx) => (
+            {[1, 2, 3].map((item, idx) => (
               <div
                 className="max-w-sm  bg-white px-5  pt-5 pb-2 rounded-xl shadow-lg transform hover:scale-105 hoverTransition"
                 key={idx}>
