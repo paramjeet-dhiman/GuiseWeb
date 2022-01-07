@@ -35,10 +35,10 @@ export const Carrers = () => {
         <div className="container px-10 lg:px-0">
           <div className="  text-sm md:text-2xl font-light space-y-10">
             <p>
-              Imagine yourself contributing to the development of one of the
-              most dynamic Blockchain FinTech companies in the world,
-              re-defining how financial services are conducted. This
-              revolutionary innovation is Nexo.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eum
+              dignissimos, obcaecati placeat in consectetur, accusamus error
+              nesciunt delectus harum repellat deleniti rerum doloribus
+              voluptatum ex ipsa! Asperiores, consequuntur dolor!
             </p>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
