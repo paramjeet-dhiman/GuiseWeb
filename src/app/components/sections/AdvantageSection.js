@@ -4,13 +4,13 @@ import { Tick } from "../Ticks/Tick";
 export const AdvantageSection = ({ advantages, images, order }) => {
   return (
     <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:py-20 lg:px-40 gap-16 ">
-      <div className="grid grid-cols-12  w-full gap-10 ">
+      <div className="grid lg:grid-cols-12  w-full gap-10 ">
         <div
           className={`col-span-full lg:col-span-6 md:m-0 ${
             order ? "   " : "lg:order-1"
           } `}>
-          <div className="justify-center flex flex-wrap relative">
-            <div className=" w-full md:m-0">
+          <div className="justify-center flex flex-wrap ">
+            <div className=" w-full">
               <div className="flex justify-center relative">
                 <img
                   className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl filter drop-shadow-2xl  "
