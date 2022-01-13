@@ -111,6 +111,8 @@ export const ProductReview = () => {
                 src={data.image1}
                 alt=""
                 draggable="false"
+                loading="lazy"
+
               />
             </div>
           </div>

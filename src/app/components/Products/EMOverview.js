@@ -93,6 +93,7 @@ export const EMOverview = () => {
                 src={data.image1}
                 alt=""
                 draggable="false"
+                loading="lazy"
               />
             </div>
           </div>
@@ -101,13 +102,13 @@ export const EMOverview = () => {
               Energy Mangement
             </h2>
 
-            <div className="text-lg lg:text-xl text-justify space-y-5 text-gray-500 lg:w-5/6">
-              <p className="font-light">
+            <div className="text-lg lg:text-xl text-justify text-core-black md:text-justify w-full lg:w-5/6">
+              <p className="">
                 The energy sector, one of our primary focuses, suffers from a
                 deficit of analytics for optimal management and faces a series
                 of challenges related to supply models, demand, and efficiency.
               </p>
-              <p className="font-light">
+              <p className="">
                 At Guise AI we aim to provide real time and self-adapting
                 analytics that can adjust to the uncertainties in real time and
                 provide accurate predictions, leading to efficient resource
@@ -123,16 +124,16 @@ export const EMOverview = () => {
           {/* <h4 className="text-center uppercase text-sm font-semibold md:text-lg text-social-instagram mb-4">
             Features
           </h4> */}
-          <h1 className="text-3xl w-full lg:text-5xl font-bold text-center text-bookmark-blue">
+          <h1 className="text-3xl w-full lg:text-5xl font-bold text-center text-core-black">
             We make it Easier for you
           </h1>
-          <p className="text-gray-800 font-medium text-lg lg:text-xl pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
+          <p className="text-core-black  text-lg lg:text-xl lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
             Here's how we help you enhance customer experience and boost ROI
           </p>
         </div>
 
         <section className="flex flex-col lg:flex-row px-10 py-10   bg-white lg:py-20 lg:px-40  ">
-          <div className="text-bookmark-blue w-full h-full">
+          <div className="text-core-black w-full h-full">
             <Tab>
               {tabContent.map((tab, idx) => (
                 <Tab.TabPane key={`Tab-${idx}`} tab={tab.title}>
@@ -153,6 +154,7 @@ export const EMOverview = () => {
                   src={data.image2}
                   alt=""
                   draggable="false"
+                  loading="lazy"
                 />
               </div>
             </div>

@@ -68,6 +68,7 @@ const Tab = ({ children, active = 0 }) => {
             className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl filter drop-shadow-2xl  "
             alt="sdf"
             draggable="false"
+            loading="lazy"
           />
         </div>
       </div>

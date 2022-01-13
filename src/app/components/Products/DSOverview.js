@@ -1,21 +1,27 @@
 import React from "react";
 import { DemoComponent } from "../DemoComponent";
 import Tab from "../TabSlider/TabSlider";
+import { AdvantageSection } from "../sections/AdvantageSection";
 import ImageDriveThru from "../../../assets/images/DS_drive_thru.jpg";
 import ImageInsideBank from "../../../assets/images/DS_inside_bank.jpg";
 import ImageDemographics from "../../../assets/images/DS_demographics.jpg";
-import { AdvantageSection } from "../sections/AdvantageSection";
+import DSHeadBrief from "../../../assets/images/DSHeadBrief.jpg";
+import BGDS from "../../../assets/images/BGDS.jpg";
+import DSAdv from "../../../assets/images/DSBenefits.jpg";
+import DSTabFootfalImg from "../../../assets/images/DS-footfal.jpg";
+import DSTabApparelImg from "../../../assets/images/DSApparel.jpg";
+import DSTabSafetyImg from "../../../assets/images/DS-Safety.jpg";
 
 export const DSOverview = () => {
   let data = {
     label: "Digital Signage",
     subText: `Guise AI generates meaningful insights from camera streams to help you create the greatest impact on your customers`,
-    bgImg: `https://images.unsplash.com/photo-1602940659805-770d1b3b9911?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80`,
+    bgImg: BGDS,
     title: `Lorem Ipsum`,
-    image1: `https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    image2: `https://images.unsplash.com/photo-1554307967-24ebd6cf5b8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=460&q=80`,
-    image3: `https://images.unsplash.com/photo-1592959462773-467d73e161b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80`,
-    image4: `https://images.unsplash.com/photo-1552519837-47846308a0e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80`,
+    image1: DSHeadBrief,
+    // image2: `https://images.unsplash.com/photo-1554307967-24ebd6cf5b8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=460&q=80`,
+    // image3: `https://images.unsplash.com/photo-1592959462773-467d73e161b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80`,
+    // image4: `https://images.unsplash.com/photo-1552519837-47846308a0e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80`,
   };
 
   const tabContent = [
@@ -23,13 +29,12 @@ export const DSOverview = () => {
       title: "Footfall",
       content: `Quantify the interaction of your retail outlets with the customers with constant supervision.`,
       list: [{ title: "People count" }, { title: "Crowd count" }],
-      img: `https://motionarray.imgix.net/preview-285230-RtvEX2Z6c1-high_0008.jpg?w=750&q=60&fit=max&auto=format`,
+      img: DSTabFootfalImg,
     },
     {
       title: "Demographics",
       content: `Understand your customers better and target the right audience with AI assisted detections.`,
       list: [{ title: "Age" }, { title: "Gender" }],
-      // img: `https://image.freepik.com/free-photo/young-woman-teaching-her-grandfather-how-use-tablet_1157-30566.jpg`,
       img: ImageDemographics,
     },
     {
@@ -40,7 +45,7 @@ export const DSOverview = () => {
         { title: "Apparel color" },
         { title: "Logo detection" },
       ],
-      img: `https://images.unsplash.com/photo-1567966703322-8aa782585b34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+      img: DSTabApparelImg,
     },
     {
       title: "Drive-through",
@@ -68,16 +73,16 @@ export const DSOverview = () => {
         { title: "Social distancing" },
       ],
 
-      img: `https://images.unsplash.com/photo-1584309832315-39d404eecc77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80`,
+      img: DSTabSafetyImg,
     },
   ];
 
   const images = [
-    `https://images.pexels.com/photos/1770775/pexels-photo-1770775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-    `https://images.unsplash.com/photo-1591085686350-798c0f9faa7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80`,
-    `https://images.pexels.com/photos/4480984/pexels-photo-4480984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500`,
-    `https://images.pexels.com/photos/1727684/pexels-photo-1727684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-    `https://images.unsplash.com/photo-1549057446-9f5c6ac91a04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80`,
+    DSAdv,
+    // `https://images.unsplash.com/photo-1591085686350-798c0f9faa7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80`,
+    // `https://images.pexels.com/photos/4480984/pexels-photo-4480984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500`,
+    // `https://images.pexels.com/photos/1727684/pexels-photo-1727684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+    // `https://images.unsplash.com/photo-1549057446-9f5c6ac91a04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80`,
   ];
 
   const advantages = [
@@ -122,6 +127,7 @@ export const DSOverview = () => {
                 src={data.image1}
                 alt=""
                 draggable="false"
+                loading="lazy"
               />
             </div>
           </div>

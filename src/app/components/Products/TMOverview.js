@@ -2,20 +2,25 @@ import React from "react";
 import { DemoComponent } from "../DemoComponent";
 import { AdvantageSection } from "../sections/AdvantageSection";
 import Tab from "../TabSlider/TabSlider";
+import BGTM from "../../../assets/images/BGTM.jpg";
+import TMAdv from "../../../assets/images/TMBenefits.jpg";
+import TMHeadBrief from "../../../assets/images/TMHeadbrief.jpg";
+import TMTabLP from "../../../assets/images/TM-TabLP.jpg";
+import TMTabViolations from "../../../assets/images/TM-TabViolations.jpeg";
+import TMTabManage from "../../../assets/images/TM-TabManagement.jpg";
+import TMTabClassification from "../../../assets/images/TM-TabClassification.jpg";
 
 export const TMOverview = () => {
   let data = {
     label: "Traffic Management",
     subText: `Revolutionize vehicle and crowd management with real-time accurate analytics for better planning and design of city routes. Smart Cities rise from smart analytics`,
-    bgImg: `https://images.unsplash.com/photo-1488134684157-fea2d81a5ec4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80`,
-
+    bgImg: BGTM,
     title: `Lorem Ipsum`,
-
-    image1: `https://images.pexels.com/photos/2962589/pexels-photo-2962589.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260`,
-    image2: `https://images.unsplash.com/photo-1504735432588-ab3bf116740f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80`,
-    image3: `https://images.unsplash.com/photo-1594028411108-96a5b0302a4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    image4: `https://images.unsplash.com/photo-1499351094445-76ef13077fb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80`,
-    image5: `https://images.unsplash.com/photo-1596188431116-f858853f2be3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    image1: TMHeadBrief,
+    // image2: `https://images.unsplash.com/photo-1504735432588-ab3bf116740f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80`,
+    // image3: `https://images.unsplash.com/photo-1594028411108-96a5b0302a4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    // image4: `https://images.unsplash.com/photo-1499351094445-76ef13077fb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80`,
+    // image5: `https://images.unsplash.com/photo-1596188431116-f858853f2be3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
   };
 
   const tabContent = [
@@ -26,7 +31,7 @@ export const TMOverview = () => {
         { title: "Licence plate detection" },
         { title: "LP character recognition" },
       ],
-      img: `https://images.unsplash.com/photo-1503470069725-dacc9110076e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+      img: TMTabLP,
     },
     {
       title: "Violation",
@@ -40,20 +45,19 @@ export const TMOverview = () => {
         { title: "Helmet detection" },
         { title: "Triple seater detection" },
       ],
-      // https://images.unsplash.com/photo-1529572079217-04ffdce1059b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
-      img: `https://images.pexels.com/photos/2716060/pexels-photo-2716060.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260`,
+      img: TMTabViolations,
     },
     {
       title: "Traffic Management",
       content: `Manage traffic at key junctions and areas by monitoring people and vehicles.`,
       list: [{ title: "Vehicle count" }, { title: "Pedestrian detection" }],
-      img: `https://images.unsplash.com/photo-1508798179027-a00aa5326443?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+      img: TMTabManage,
     },
     {
       title: "Classification",
       content: `Categorize vehicles with advanced analysis with the help of AI.`,
       list: [{ title: "Vehicle type" }, { title: "Logo detection" }],
-      img: `https://images.unsplash.com/photo-1521674685714-2446ff917fbc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+      img: TMTabClassification,
     },
   ];
 
@@ -70,11 +74,11 @@ export const TMOverview = () => {
   ];
 
   const images = [
-    `https://images.unsplash.com/photo-1504735432588-ab3bf116740f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80`,
-    `https://images.unsplash.com/photo-1596188431116-f858853f2be3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    `https://images.unsplash.com/photo-1580742744464-d67b9e35ddff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmVoaWNsZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60`,
-    `https://images.unsplash.com/photo-1511814104612-47a8f022914b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    `https://images.pexels.com/photos/3289479/pexels-photo-3289479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+    TMAdv,
+    // `https://images.unsplash.com/photo-1596188431116-f858853f2be3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    // `https://images.unsplash.com/photo-1580742744464-d67b9e35ddff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmVoaWNsZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60`,
+    // `https://images.unsplash.com/photo-1511814104612-47a8f022914b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    // `https://images.pexels.com/photos/3289479/pexels-photo-3289479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
   ];
 
   return (
@@ -107,6 +111,7 @@ export const TMOverview = () => {
                 src={data.image1}
                 alt=""
                 draggable="false"
+                loading="lazy"
               />
             </div>
           </div>

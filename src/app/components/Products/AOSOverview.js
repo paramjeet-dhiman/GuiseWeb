@@ -2,29 +2,31 @@ import React from "react";
 import Tab from "../TabSlider/TabSlider";
 import { DemoComponent } from "../DemoComponent";
 import ReactCompareImage from "react-compare-image";
+import { AdvantageSection } from "../sections/AdvantageSection";
 import Airport1 from "../../../assets/images/airport1.jpg";
 import Airport2 from "../../../assets/images/airport2.jpg";
-import { AdvantageSection } from "../sections/AdvantageSection";
+import BGAOS from "../../../assets/images/BGAOS.jpg";
+import AOSOps from "../../../assets/images/AosOps.jpg";
+import AOSSafety from "../../../assets/images/AosSafety.jpg";
+import AOSAsset from "../../../assets/images/AosAsset.jpg";
+import AOSAdv from "../../../assets/images/AosBenefits.jpg";
+import AOSHeadBrief from "../../../assets/images/AosHeadBrief.jpg";
 
 export const AOSOverview = () => {
   let data = {
-    bgImg: `https://images.pexels.com/photos/240524/pexels-photo-240524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-
+    bgImg: BGAOS,
     label: "Airport Ground Operations",
-
     subText: `The ability of Airports, Airlines, and Aviation Authorities to
     implement high-impact strategies is critical in order to increase
     customer satisfaction and operational efficiency`,
-
     title: `Lorem Ipsum`,
-    // https://images.unsplash.com/photo-1524592714635-d77511a4834d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80
-    image1: `https://images.unsplash.com/photo-1638072252174-8806821a091e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    image2: `https://images.unsplash.com/photo-1578434972378-e3c393d983db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80`,
-    image3: `https://images.unsplash.com/photo-1565108404384-2919e47c07c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
-    image4: `https://images.unsplash.com/photo-1517400508447-f8dd518b86db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    image5: `https://images.unsplash.com/photo-1577023631454-3cc63cc63cd7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80`,
-    image6: `https://images.pexels.com/photos/804463/pexels-photo-804463.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-    image7: `https://images.unsplash.com/photo-1503365194569-df4e1d04cec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80`,
+    image1: AOSHeadBrief,
+    // image2: `https://images.unsplash.com/photo-1577023631454-3cc63cc63cd7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80`,
+    // image3: `https://images.unsplash.com/photo-1578434972378-e3c393d983db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80`,
+    // image4: `https://images.unsplash.com/photo-1565108404384-2919e47c07c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+    // image5: `https://images.unsplash.com/photo-1517400508447-f8dd518b86db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    // image6: `https://images.pexels.com/photos/804463/pexels-photo-804463.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+    // image7: `https://images.unsplash.com/photo-1503365194569-df4e1d04cec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80`,
   };
 
   const tabContent = [
@@ -41,7 +43,7 @@ export const AOSOverview = () => {
         { title: "Jet bridge connected time" },
         { title: "Jet bridge disconnected time" },
       ],
-      img: `https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+      img: AOSOps,
     },
     {
       title: "Safety Monitoring",
@@ -54,7 +56,7 @@ export const AOSOverview = () => {
         { title: "Violation alerts" },
       ],
 
-      img: `https://images.unsplash.com/photo-1633985483978-a86eeda59c8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+      img: AOSSafety,
     },
     {
       title: "Asset Management",
@@ -64,7 +66,7 @@ export const AOSOverview = () => {
         { title: "Fleet count" },
         { title: "Fleet classification" },
       ],
-      img: `https://images.unsplash.com/photo-1542296332-2e4473faf563?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+      img: AOSAsset,
     },
     // {
     //   title: "Ground Crew",
@@ -78,11 +80,11 @@ export const AOSOverview = () => {
   ];
 
   const images = [
-    `https://images.pexels.com/photos/804463/pexels-photo-804463.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-    `https://images.unsplash.com/photo-1566319280755-c66cbcf93061?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
-    `https://images.unsplash.com/photo-1524592714635-d77511a4834d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    `https://images.unsplash.com/photo-1585585828599-461a0419b788?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
-    `https://images.pexels.com/photos/1928064/pexels-photo-1928064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+    AOSAdv,
+    // `https://images.unsplash.com/photo-1566319280755-c66cbcf93061?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+    // `https://images.unsplash.com/photo-1524592714635-d77511a4834d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    // `https://images.unsplash.com/photo-1585585828599-461a0419b788?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+    // `https://images.pexels.com/photos/1928064/pexels-photo-1928064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
   ];
 
   const advantages = [
@@ -127,6 +129,7 @@ export const AOSOverview = () => {
                 className="object-cover w-full h-full bg-cover bg-center rounded-lg shadow-xl filter drop-shadow-2xl  "
                 src={data.image1}
                 alt=""
+                loading="lazy"
                 draggable="false"
               />
             </div>

@@ -1,33 +1,39 @@
 import BGTech from "../../assets/images/BGTech.jpg";
 import BGTech4 from "../../assets/images/BGTech4.jpg";
+import AosImg from "../../assets/images/AOS.jpg";
+import IAImg from "../../assets/images/IA.jpg";
+import RetailImg from "../../assets/images/retail.jpg";
+import BankImg from "../../assets/images/Bank.jpg";
+import CityImg from "../../assets/images/City.jpg";
+import EMImg from "../../assets/images/EM.jpg";
 
 export function Home() {
   const products = [
     {
       label: "Airports",
-      img: "https://images.unsplash.com/photo-1542296332-2e4473faf563?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      img: AosImg,
     },
 
     {
       label: "Retail Banking",
-      img: "https://images.unsplash.com/photo-1621981932617-638ed3d5fcb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      img: BankImg,
     },
 
     {
       label: "Energy",
-      img: "https://images.unsplash.com/photo-1467533003447-e295ff1b0435?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      img: EMImg,
     },
     {
       label: "Retail",
-      img: "https://images.unsplash.com/36/yJl7OB3sSpOdEIpHhZhd_DSC_1929_1.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80",
+      img: RetailImg,
     },
     {
       label: "Cities",
-      img: "https://images.unsplash.com/photo-1551793611-5e15858c0b01?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      img: CityImg,
     },
     {
       label: "Intelligent Audio",
-      img: "https://image.freepik.com/free-photo/young-woman-with-microphone-recording-voice-acting_1303-26279.jpg",
+      img: IAImg,
     },
   ];
 
@@ -38,7 +44,7 @@ export function Home() {
       <section className="flex items-center justify-center py-10 lg:py-20  relative h-screen  bg-white">
         <div className="relative mt-10 lg:mt-20  ">
           <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-16 ">
-            <div className="py-10 lg:py-0 md:px-0  flex flex-1 flex-col items-center lg:items-start  mb-10 md:mb-0">
+            <div className="px-8 py-10 lg:py-0 md:px-0  flex flex-1 flex-col items-center lg:items-start  mb-10 md:mb-0">
               <h2 className="text-5xl lg:text-7xl font-bold  uppercase text-center md:text-left tracking-tight lg:tracking-wide  lg:leading-tight text-core-black">
                 AI at the edge
               </h2>
@@ -53,6 +59,7 @@ export function Home() {
                 src={BGTech}
                 className="object-cover w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl  filter drop-shadow-2xl   "
                 alt="sdf"
+                loading="lazy"
                 draggable="false"
               />
             </div>
@@ -83,7 +90,7 @@ export function Home() {
 
       {/*========================== Background Image with text ==========================*/}
       <section className="relative text-core-black lg:py-10">
-        <div className=" relative mt-10 lg:mt-20 ">
+        <div className=" relative lg:mt-20 ">
           <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-24">
             <div className="flex flex-1 justify-center  order-2 md:order-1">
               <img
@@ -91,17 +98,26 @@ export function Home() {
                 src={BGTech4}
                 alt="sdf"
                 draggable="false"
+                loading="lazy"
               />
             </div>
 
-            <div className=" px-10 py-10 mb-5 md:mb-0 lg:py-0 md:px-0  flex flex-1 flex-col items-center lg:items-start order-1 md:order-2">
-              <p className="mt-2 lg:mt-4 text-core-black text-center md:text-justify  text-base lg:text-xl w-full">
-                Guise AI's solutions at the edge deliver feedback rapidly and
-                locally within the system. Localized processing is more
-                efficient, less expensive, and it increases the level of
-                security in terms of data privacy while maintaining GDPR
-                compliance
-              </p>
+            <div className="px-10 pb-10 mb-5 md:mb-0 lg:py-0 md:px-0  flex flex-1 flex-col items-center lg:items-start order-1 md:order-2">
+              <h2 className="text-3xl lg:text-4xl  font-semibold mb-4 lg:mb-6">
+                Target Data Where It Lives
+              </h2>
+              <div className="space-y-5 lg:space-y-7 text-base lg:text-xl text-core-black text-justify w-full">
+                <p className="">
+                  The need to overcome latency and bandwidth issues combined
+                  with massive volumes of data is changing the topology of
+                  distributed enterprises. Computing data at the edge is rapidly
+                  growing, but how do you properly harness your untapped data?
+                </p>
+                <p className="">
+                  Guise AI at the edge leverages local compute to extract
+                  meaningful data delivering better insights for enterprises.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -109,10 +125,10 @@ export function Home() {
 
       {/* ============================= 6 SOLUTIONS CARDS ========================== */}
       <section className="bg-bookmark-white py-10 lg:py-20 mt-10 lg:mt-20 ">
-        <div className="md:px-48">
+        <div className="px-8 md:px-48">
           <h2 className="text-2xl lg:text-4xl  font-semibold text-center lg:leading-tight text-core-black">
-            Guise AI runs industry-specific AI models at the edge which provide
-            the data to optimize your business and stay competitive
+            Guise AI runs industry - specific AI models at the edge which
+            provide the data to optimize your business and stay competitive
           </h2>
         </div>
         <div className=" md:px-44 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-4 lg:mt-10 py-10">
@@ -138,8 +154,8 @@ export function Home() {
       {/*============================= WHY US ? =========================== */}
 
       <section className="bg-white py-10 lg:py-20">
-        <div className="">
-          <h1 className=" text-2xl lg:text-4xl font-semibold text-center text-bookmark-blue">
+        <div className="px-8 md:px-0">
+          <h1 className=" text-3xl lg:text-4xl font-semibold text-center text-bookmark-blue">
             Why Choose Guise AI ?
           </h1>
         </div>
@@ -219,7 +235,7 @@ export function Home() {
                     {item.title}
                   </h4>
                   {/* <p className="font-medium text-base md:text-lg text-color-700"> */}
-                  <p className="mt-2 lg:mt-4 text-core-black text-center md:text-justify  text-base lg:text-xl w-full">
+                  <p className="mt-2 lg:mt-4 text-core-black text-center   text-base lg:text-xl w-full">
                     {item.text}
                   </p>
                 </div>

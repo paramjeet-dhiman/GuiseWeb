@@ -21,8 +21,6 @@ export const Products = () => {
       url: `/products/digital-signage-overview`,
     },
     {
-      // https://images.unsplash.com/photo-1504735432588-ab3bf116740f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80
-      // https://getpaidstock.com/tmp/[GetPaidStock.com]-61ceb90061d95.jpg
       name: "Traffic Management",
       description: `Revolutionize vehicle and crowd management with accurate analytics for better planning and design of city routes. Smart Cities rise from smart analytics`,
       img: trafficProduct,
@@ -77,6 +75,7 @@ export const Products = () => {
               >
                 <Link to={product.url} className="">
                   <img
+                    loading="lazy"
                     src={product.img}
                     className="object-cover  filter drop-shadow-xl  w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl"
                     alt="sdf"

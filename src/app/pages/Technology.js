@@ -665,6 +665,7 @@ export const Technology = () => {
                 src="https://images.pexels.com/photos/925786/pexels-photo-925786.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                 alt=""
                 draggable={false}
+                loading="lazy"
               />
             </div>
           </div>

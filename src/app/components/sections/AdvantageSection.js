@@ -17,6 +17,7 @@ export const AdvantageSection = ({ advantages, images, order }) => {
                   src={images[0]}
                   alt=""
                   draggable="false"
+                  loading="lazy"
                 />
               </div>
             </div>

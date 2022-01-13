@@ -1,18 +1,20 @@
 import React from "react";
 import { DemoComponent } from "../DemoComponent";
+import { AdvantageSection } from "../sections/AdvantageSection";
 import Tab from "../TabSlider/TabSlider";
-import { Tick } from "../Ticks/Tick";
+import BGIA from "../../../assets/images/BGIA.jpg";
+import IAAdv from "../../../assets/images/IABenefits.jpg";
+import IAHeadBrief from "../../../assets/images/IAHeadBrief.jpg";
+import IATabNoise from "../../../assets/images/IATabNoise.jpg";
+import IATabCancell from "../../../assets/images/IATabNCancel.jpg";
 
 export const IAOverview = () => {
   let data = {
     label: "Intelligent Audio",
-    subText: `Experience the next level of Noise cancellation with the new Guise  AI assisted Intelligent Audio with improved audio filtration and customizable noise cancellation.`,
-    bgImg: `https://images.pexels.com/photos/1054713/pexels-photo-1054713.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
-
+    subText: `Experience the next level of Noise cancellation with the new Guise  AI assisted Intelligent Audio with improved audio filtration and customizable noise cancellation`,
+    bgImg: BGIA,
     title: `Lorem Ipsum`,
-
-    image1: `https://images.unsplash.com/photo-1581368135153-a506cf13b1e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    image2: `https://images.pexels.com/photos/4402188/pexels-photo-4402188.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+    image1: IAHeadBrief,
   };
 
   const tabContent = [
@@ -23,14 +25,25 @@ export const IAOverview = () => {
         { title: "Real Time Alerts" },
         { title: " Custom noise detection" },
       ],
-      img: `https://images.unsplash.com/photo-1573495804669-ec82ad00f327?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80`,
+      img: IATabNoise,
     },
     {
       title: "Noise Cancellation",
       content: `Filter noise and unwanted background audio from the source and experience clean audio.`,
       list: [{ title: "Custom Noise Filtration" }],
-      img: `https://images.pexels.com/photos/3861968/pexels-photo-3861968.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+      img: IATabCancell,
     },
+  ];
+
+  const images = [IAAdv];
+
+  const advantages = [
+    { title: `Lorem ipsum, dolor sit amet consectetur adipi21sicing elit.` },
+    { title: `Lorem ipsum, dolor sit amet consectetur adipis21icing elit.` },
+    { title: `Lorem ipsum, dolor sit amet consectetur ad1ipisicing elit.` },
+    { title: `Lorem ipsum, dolor sit amet consectetur adipisici2ng elit.` },
+    { title: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.` },
+    { title: `Lorem ipsum, dolor sit amet consectetur adip2isicing elit.` },
   ];
   return (
     <div className="bg-white h-full ">
@@ -61,6 +74,7 @@ export const IAOverview = () => {
                 src={data.image1}
                 alt=""
                 draggable="false"
+                loading="lazy"
               />
             </div>
           </div>
@@ -69,14 +83,14 @@ export const IAOverview = () => {
               Intelligent Audio
             </h2>
 
-            <div className="text-lg lg:text-xl text-justify space-y-5 text-gray-500 lg:w-5/6">
+            <div className="text-lg lg:text-xl text-justify text-core-black md:text-justify w-full lg:w-5/6">
               <p>
                 Guise AI with its Intelligent Sound is bringing the next
                 generation of audio processing with its smart and efficient
                 noise detection and cancellation software. Unlike hardware based
                 noise cancellations, with the new AI assisted filters, you can
                 choose the noise you would like to detect or cancel from a broad
-                range of options
+                range of options.
               </p>
             </div>
           </div>
@@ -88,16 +102,16 @@ export const IAOverview = () => {
           {/* <h4 className="text-center uppercase text-sm font-semibold md:text-lg text-social-instagram mb-4">
             Features
           </h4> */}
-          <h1 className="text-3xl w-full lg:text-5xl font-bold text-center text-bookmark-blue">
+          <h1 className="text-3xl w-full lg:text-5xl font-bold text-center text-core-black">
             We make it Easier for you
           </h1>
-          <p className="text-gray-800 font-medium text-lg lg:text-xl pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
+          <p className="text-core-black  text-lg lg:text-xl lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
             Here's how we help you enhance customer experience and boost ROI
           </p>
         </div>
 
         <section className="flex flex-col lg:flex-row px-10 py-10   bg-white lg:py-20 lg:px-40  ">
-          <div className="text-bookmark-blue w-full h-full">
+          <div className="text-core-black w-full h-full">
             <Tab>
               {tabContent.map((tab, idx) => (
                 <Tab.TabPane key={`Tab-${idx}`} tab={tab.title}>
@@ -108,7 +122,9 @@ export const IAOverview = () => {
           </div>
         </section>
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
+        <AdvantageSection advantages={advantages} images={images} order={1} />
+
+        {/* <section className="flex flex-col lg:flex-row px-10 py-10 lg:mt-20 bg-white lg:py-20 lg:px-40 gap-10 ">
           <div className=" flex flex-col lg:flex-row items-center  justify-between  gap-10">
             <div className=" w-full lg:w-6/12 md:m-0">
               <div className="flex justify-center relative">
@@ -239,7 +255,7 @@ export const IAOverview = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div>*/}
       </section>
 
       <DemoComponent />

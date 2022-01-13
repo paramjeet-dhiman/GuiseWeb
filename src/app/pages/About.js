@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BGImg from "../../assets/images/BGAbout.jpg";
+import BGJoin from "../../assets/images/AboutJoin.jpg";
 
 export const About = () => {
   return (
@@ -30,7 +32,7 @@ export const About = () => {
                 style={{
                   height: "100%",
                   width: "100%",
-                  background: ` url("https://images.pexels.com/photos/2422588/pexels-photo-2422588.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center center / cover no-repeat`,
+                  background: ` url(${BGImg}) center center / cover no-repeat`,
                 }}>
                 <div className="h-full bg-black opacity-25 rounded-lg"></div>
               </div>
@@ -98,8 +100,10 @@ export const About = () => {
           <div className="w-full lg:w-1/2 order-1 lg:order-2">
             <img
               className="object-cover w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl  filter drop-shadow-2xl  "
-              src="https://images.pexels.com/photos/4342126/pexels-photo-4342126.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              src={BGJoin}
               alt=""
+              draggable="false"
+              loading="lazy"
             />
           </div>
         </div>
