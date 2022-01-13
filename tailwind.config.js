@@ -89,6 +89,9 @@ module.exports = {
       height: (theme) => ({
         "screen/3": "60vh",
       }),
+      width: (theme) => ({
+        wt: "60%",
+      }),
     },
     fontFamily: {
       Poppins: ["Poppins, sans-serif"],

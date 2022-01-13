@@ -44,11 +44,11 @@ export function Home() {
       <section className="flex items-center justify-center py-10 lg:py-20  relative h-screen  bg-white">
         <div className="relative mt-10 lg:mt-20  ">
           <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-16 ">
-            <div className="px-8 py-10 lg:py-0 md:px-0  flex flex-1 flex-col items-center lg:items-start  mb-10 md:mb-0">
-              <h2 className="text-5xl lg:text-7xl font-bold  uppercase text-center md:text-left tracking-tight lg:tracking-wide  lg:leading-tight text-core-black">
+            <div className="px-8  py-10 lg:py-0 md:px-0  flex flex-1 flex-col items-center lg:items-start  mb-10 md:mb-0">
+              <h2 className="text-3xl  md:text-5xl lg:text-6xl font-bold uppercase text-center md:text-left tracking-tight lg:tracking-normal lg:leading-tight text-core-black">
                 AI at the edge
               </h2>
-              <p className="mt-2 lg:mt-4 text-core-black text-center md:text-justify  text-base lg:text-xl w-full lg:w-9/12">
+              <p className="mt-2  lg:mt-4 text-core-black text-center md:text-justify  text-base lg:text-xl w-full lg:w-wt">
                 Guise AI intelligent algorithms at the edge identify and refine
                 critical data to drive your business
               </p>
