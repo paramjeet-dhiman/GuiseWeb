@@ -11,7 +11,7 @@ import IATabCancell from "../../../assets/images/IATabNCancel.jpg";
 export const IAOverview = () => {
   let data = {
     label: "Intelligent Audio",
-    subText: `Experience the next level of Noise cancellation with the new Guise  AI assisted Intelligent Audio with improved audio filtration and customizable noise cancellation`,
+    subText: `Experience the next level of noise cancellation with the new Guise AI assisted intelligent audio with improved audio filtration and customizable noise cancellation`,
     bgImg: BGIA,
     title: `Lorem Ipsum`,
     image1: IAHeadBrief,
@@ -85,7 +85,7 @@ export const IAOverview = () => {
 
             <div className="text-lg lg:text-xl text-justify text-core-black md:text-justify w-full lg:w-5/6">
               <p>
-                Guise AI with its Intelligent Sound is bringing the next
+                Guise AI with its Intelligent sound is bringing the next
                 generation of audio processing with its smart and efficient
                 noise detection and cancellation software. Unlike hardware based
                 noise cancellations, with the new AI assisted filters, you can

@@ -37,19 +37,29 @@ export const Router = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/solutions" element={<Solutions />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/careers" element={<Carrers />} />
         <Route path="/technology" element={<Technology />} />
-        <Route path="/about" element={<About />} />
         <Route path="/careers/jobs" element={<Openings />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/research" element={<Research />} />
+
         <Route path="/products" element={<Products />} />
-        <Route path="/videos" element={<ProductsVideos />} />
-        <Route path="/help-and-support" element={<HelpCenter />} />
-        <Route path="/policy" element={<PrivacyPolicy />} />
-        <Route path="/faq" element={<FAQ />} />
         <Route path="/demo" element={<BookADemo />} />
+
+        <Route path="/resources/research" element={<Research />} />
+        <Route path="/resources/videos" element={<ProductsVideos />} />
+        <Route path="/resources/blogs" element={<ComingSoon />} />
+        <Route path="/resources/press" element={<ComingSoon />} />
+
+        <Route path="/company/about" element={<About />} />
+        <Route path="/company/careers" element={<Carrers />} />
+        <Route path="/company/contact" element={<Contact />} />
+
+        <Route path="/partners" element={<Partners />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/404" element={<ComingSoon />} />
+
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/policy" element={<PrivacyPolicy />} />
+        <Route path="/help-and-support" element={<HelpCenter />} />
+
         <Route
           path="/products/airport-operations-overview"
           element={<AOSOverview />}
@@ -71,8 +81,6 @@ export const Router = () => {
           path="/products/energy-management-overview"
           element={<EMOverview />}
         />
-        <Route path="/partners" element={<Partners />} />
-        <Route path="/404" element={<ComingSoon />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <ScrollButton />

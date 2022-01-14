@@ -1,22 +1,15 @@
 import React from "react";
+import { HeroHeader } from "../components/HeroHeader/HeroHeader";
 
 export const Contact = () => {
   return (
-    <div className="bg-bookmark-blue pt-10 h-full">
-      <section
-        className="w-full bg-center bg-cover "
-        style={{
-          height: "36rem",
-          background: `url(https://images.pexels.com/photos/4476606/pexels-photo-4476606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center center / cover no-repeat`,
-        }}>
-        <div className="flex items-center justify-center w-full h-full bg-bookmark-blue bg-opacity-70">
-          <div className="text-center px-10 lg:px-0">
-            <h1 className="text-4xl font-bold  text-white uppercase md:text-7xl mb-4">
-              Contact Us
-            </h1>
-          </div>
-        </div>
-      </section>
+    <div>
+      <HeroHeader
+        img={
+          "https://images.pexels.com/photos/4476606/pexels-photo-4476606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+        title="Contact Us"
+      />
 
       {/* <section className="bg-white py-10 lg:py-20  ">
         <div className="sm:w-3/4 lg:w-6/12 mx-auto px-12 lg:px-2 ">

@@ -1,37 +1,53 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Carousel } from "../components/Carousel/Carousel";
-import { Partners } from "../components/Partners/Partners";
+import BGJoin from "../../assets/images/AboutJoin.jpg";
+import { HeroHeader } from "../components/HeroHeader/HeroHeader";
 
 export const Carrers = () => {
   return (
-    <div className="bg-bookmark-blue pt-10 h-full">
-      <section
-        className="w-full bg-center bg-cover "
-        style={{
-          height: "36rem",
-          background: `url(https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80) center center / cover no-repeat`,
-        }}>
-        <div className="flex items-center justify-center w-full h-full  bg-black bg-opacity-70">
-          <div className="text-center container px-10 lg:px-0">
-            <h1 className="text-5xl font-bold  text-white uppercase md:text-7xl mb-6 shadow-2xl">
-              Guise AI is Hiring!
+    <div className="">
+      <HeroHeader
+        img={
+          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+        }
+        title={"Careers"}
+      />
+
+      <section className="bg-bookmark-white py-10 lg:py-20">
+        <div className="flex flex-col lg:flex-row items-center  md:px-40   gap-y-10">
+          <div className="w-full lg:w-1/2 px-10 md:px-0 order-2 lg:order-1">
+            <h1 className="text-core-black font-bold text-3xl lg:text-5xl lg:w-5/6 lg:leading-tight ">
+              Are you ready to share your expertise?
             </h1>
-            <p className="text-gray-200 font-medium lg:px-44 text-lg lg:text-xl mb-10">
-              We are always looking for top talents with brilliant minds and
-              diverse perspectives to join our team!
+            <p className="text-core-black lg:text-justify text-base lg:text-xl mt-4 md:mt-6 lg:w-5/6">
+              We're always looking for talented, creative and passionate people
+              to join our team. If you're interested in opportunities at our
+              company, we'd love to hear from you.
             </p>
 
-            <Link
-              to="/careers/jobs"
-              className="  btn text-lg font-bold transition duration-500 hover:bg-blue-700  ease-linear select-none text-white bg-social-facebook focus:outline-none ">
-              View Openings
-            </Link>
+            <div>
+              <a
+                href="https://www.linkedin.com/company/guise-ai/jobs/"
+                target="_blank"
+                rel="noreferrer noopener">
+                <button className="btn rounded-md  bg-blue-500 hover:bg-blue-600 text-white font-semibold transform hover:scale-105 hoverTransition   text-xl mt-8  px-10 py-4">
+                  Job openings
+                </button>
+              </a>
+            </div>
+          </div>
+          <div className="w-full lg:w-1/2 order-1 lg:order-2">
+            <img
+              className="object-cover w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl  filter drop-shadow-2xl  "
+              src={BGJoin}
+              alt=""
+              draggable="false"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="container px-10 lg:px-0">
           <div className="  text-sm md:text-2xl font-light space-y-10">
             <p>
@@ -49,8 +65,8 @@ export const Carrers = () => {
           </div>
         </div>
       </section>
-
-      <section className="bg-bookmark-blue py-10 lg:py-20 mt-10 lg:mt-10 ">
+ */}
+      {/* <section className="bg-bookmark-blue py-10 lg:py-20 mt-10 lg:mt-10 ">
         <div className="sm:w-3/4 lg:w-5/12 mx-auto px-12 lg:px-2 py-20 ">
           <h1 className="text-4xl font-semibold lg:text-5xl lg:font-bold text-center text-white">
             We're here to support the whole you
@@ -334,8 +350,9 @@ export const Carrers = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="bg-white py-10 lg:py-28 ">
+      </section> */}
+
+      {/* <section className="bg-white py-10 lg:py-28 ">
         <div className="sm:w-3/4 container lg:w-full mx-auto px-12  ">
           <h1 className="text-xl w-full lg:text-5xl font-medium text-center text-bookmark-blue mb-4">
             Different, together
@@ -354,9 +371,9 @@ export const Carrers = () => {
         <div className="pt-10 container ">
           <Carousel />
         </div>
-      </section>
+      </section> */}
 
-      <section className="bg-bookmark-white py-10 lg:py-20 ">
+      {/* <section className="bg-bookmark-white py-10 lg:py-20 ">
         <div className="sm:w-3/4 container lg:w-4/12 mx-auto px-12  ">
           <h1 className="text-xl w-full lg:text-5xl font-bold text-center text-bookmark-blue mb-4">
             Now is the perfect time to join Guise AI
@@ -429,9 +446,7 @@ export const Carrers = () => {
             </div>
           </div>
         </div>
-      </section>
-
-      <Partners />
+      </section> */}
     </div>
   );
 };

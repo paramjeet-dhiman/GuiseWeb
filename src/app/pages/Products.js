@@ -5,6 +5,7 @@ import audioProduct from "../../assets/images/audio_product.jpeg";
 import signageProduct from "../../assets/images/ds_product.jpeg";
 import energyProduct from "../../assets/images/energy_product.jpeg";
 import trafficProduct from "../../assets/images/traffic_product.jpeg";
+import { HeroHeader } from "../components/HeroHeader/HeroHeader";
 
 export const Products = () => {
   const productsInfo = [
@@ -43,21 +44,12 @@ export const Products = () => {
 
   return (
     <div className="bg-white h-full">
-      <section
-        className="w-full bg-center bg-cover"
-        style={{
-          height: "36rem",
-          // boxShadow: `inset 0 0 0 2000px rgb(0 0 0 / 9%)`,
-          background: `url(https://images.pexels.com/photos/5054213/pexels-photo-5054213.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center center / cover no-repeat`,
-        }}>
-        <div className="flex  items-center justify-center w-full h-full bg-black bg-opacity-70">
-          <div className="text-center px-10 lg:px-0">
-            <h1 className="text-4xl font-bold  text-white uppercase md:text-7xl mb-4">
-              Products
-            </h1>
-          </div>
-        </div>
-      </section>
+      <HeroHeader
+        img={
+          "https://images.pexels.com/photos/5054213/pexels-photo-5054213.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+        title="Products"
+      />
 
       <div className="lg:py-10"></div>
       {productsInfo.map((product, index) => (

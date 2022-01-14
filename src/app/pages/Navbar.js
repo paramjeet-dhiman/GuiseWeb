@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
   const [toggle, setToggle] = useState(false);
@@ -9,6 +9,8 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
   const ref = useRef();
   const ref2 = useRef();
   const productsRef = useRef();
+
+  const location = useLocation();
 
   useEffect(() => {
     const checkIfClickedOutside = (e) => {
@@ -195,7 +197,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                 onMouseEnter={handleMouseLeave}
                 className={({ isActive }) =>
                   isActive
-                    ? "px-2 text-social-facebook border-b-4 text-lg border-social-facebook  tracking-wide font-bold py-5 transition-all duration-300"
+                    ? "px-2 text-social-facebook text-lg tracking-wide font-bold py-5 transition-all duration-300"
                     : "px-2 cursor-pointer  tracking-wide py-5 text-lg font-medium hover:text-gray-600 "
                 }
                 to="/technology">
@@ -212,8 +214,12 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               <div
                 onClick={handleShow}
                 onMouseEnter={handleShow}
-                className="flex  items-center   px-4 cursor-pointer  tracking-wide py-3 transition-all duration-1000 text-lg font-medium hover:text-gray-600 ">
-                Resources
+                className={`${
+                  location.pathname.slice(0, 10) === "/resources"
+                    ? "flex items-center px-4 text-social-facebook text-lg tracking-wide font-bold py-3 transition-all duration-300"
+                    : "flex items-center  px-4 cursor-pointer  tracking-wide py-3  text-lg font-medium hover:text-gray-600 "
+                }`}>
+                <h4>Resources</h4>
                 <span className="">
                   {!show ? (
                     <svg
@@ -244,28 +250,28 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                   onMouseLeave={handleMouseLeave}
                   className="absolute -right-2   filter drop-shadow-2xl  py-3   space-y-5 bg-white flex flex-col justify-center  shadow-xl  w-40    transition-all duration-300  origin-top-right ">
                   <NavLink
-                    to="/404"
+                    to="/resources/blogs"
                     onClick={handleShow}
                     className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-left">
                     Blogs
                   </NavLink>
 
                   <NavLink
-                    to="/videos"
+                    to="/resources/videos"
                     onClick={handleShow}
                     className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-left">
                     Videos
                   </NavLink>
 
                   <NavLink
-                    to="/404"
+                    to="/resources/research"
                     onClick={handleShow}
                     className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-left">
                     Research
                   </NavLink>
 
                   <NavLink
-                    to="/404"
+                    to="/resources/press"
                     onClick={handleShow}
                     className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-left">
                     Press
@@ -280,7 +286,16 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               <div
                 onClick={handleToggle}
                 onMouseEnter={handleToggle}
-                className="flex items-center  px-4 cursor-pointer    tracking-wide py-3 transition-all duration-1000 text-lg font-medium hover:text-gray-600 ">
+                // className={({ isActive }) =>
+                //   isActive
+                //     ? " text-social-facebook flex  items-center  px-4 cursor-pointer  tracking-wide py-3   transition-colors ease-in-out  duration-500 text-lg font-bold"
+                //     : " flex  items-center  px-4 cursor-pointer  tracking-wide py-3 transition-colors ease-in-out  duration-500 text-lg font-medium hover:text-gray-600  "
+                // }
+                className={`${
+                  location.pathname.slice(0, 8) === "/company"
+                    ? "flex items-center px-4 text-social-facebook text-lg tracking-wide font-bold py-3 transition-all duration-300"
+                    : "flex items-center  px-4 cursor-pointer  tracking-wide py-3  text-lg font-medium hover:text-gray-600 "
+                }`}>
                 Company
                 <span>
                   {!toggle ? (
@@ -313,21 +328,21 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                   className="absolute  py-3  -right-3  filter drop-shadow-2xl space-y-5 bg-white flex flex-col justify-center  shadow-xl  w-40  transition-all duration-300  origin-top-right ">
                   <NavLink
                     onClick={handleToggle}
-                    to="/about"
+                    to="/company/about"
                     className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-left">
                     About Us
                   </NavLink>
 
                   <NavLink
                     onClick={handleToggle}
-                    to="/careers"
+                    to="/company/careers"
                     className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-left">
                     Careers
                   </NavLink>
 
                   <NavLink
                     onClick={handleToggle}
-                    to="/contact"
+                    to="/company/contact"
                     className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-left">
                     Contact Us
                   </NavLink>

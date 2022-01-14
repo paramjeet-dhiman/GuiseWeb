@@ -134,12 +134,12 @@ export const AOSOverview = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col  w-full col-span-full mt-10 md:mt-0 lg:col-span-6 ">
+          <div className="flex flex-col  w-full col-span-full mt-10 md:mt-0 lg:col-span-6  lg:w-10/12  ">
             <h2 className="text-2xl  lg:text-5xl  font-medium mb-4">
               Airport Ground Operations
             </h2>
 
-            <div className="text-lg lg:text-xl text-justify text-core-black   w-full lg:w-10/12 ">
+            <div className="text-lg lg:text-xl text-justify text-core-black ">
               <p>
                 Guise AI is transforming the airport experience. Our algorithms
                 generate meaningful insights from camera streams to optimize

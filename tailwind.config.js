@@ -88,9 +88,14 @@ module.exports = {
 
       height: (theme) => ({
         "screen/3": "60vh",
+        hb: "60%",
+        hm: "80%",
+        hl: "90%",
       }),
       width: (theme) => ({
-        wt: "60%",
+        wb: "60%",
+        wm: "80%",
+        wl: "94%",
       }),
     },
     fontFamily: {

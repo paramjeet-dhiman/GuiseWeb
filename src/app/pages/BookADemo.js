@@ -1,29 +1,18 @@
 import React from "react";
+import { HeroHeader } from "../components/HeroHeader/HeroHeader";
 
 export const BookADemo = () => {
   return (
     <div className="bg-white h-full select-none">
-      <section
-        className="w-full bg-center bg-cover  "
-        style={{
-          height: "36rem",
-          // boxShadow: `inset 0 0 0 2000px rgb(0 0 0 / 9%)`,
-          background: `url(https://images.pexels.com/photos/5054213/pexels-photo-5054213.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center center / cover no-repeat`,
-        }}>
-        <div className="flex  items-center justify-center w-full h-full bg-black bg-opacity-70">
-          <div className="text-center px-10 lg:px-0">
-            <h1 className="text-4xl font-bold  text-white uppercase md:text-7xl mb-4">
-              Request a DEMO
-            </h1>
-          </div>
-        </div>
-      </section>
+      <HeroHeader
+        img={
+          "https://images.pexels.com/photos/5054213/pexels-photo-5054213.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        }
+        title="Request a DEMO"
+      />
 
       <section className="bg-white py-10 lg:py-20 mt-10 lg:mt-10 ">
         <div className="sm:w-3/4 lg:w-6/12 mx-auto px-12 lg:px-2 ">
-          <h4 className="text-center text-sm font-semibold md:text-lg text-social-instagram mb-4">
-            DEMO
-          </h4>
           <h1 className="text-4xl font-semibold lg:text-5xl lg:font-bold text-center text-bookmark-blue">
             Watch our products in action & see how they can help your business
           </h1>
@@ -50,12 +39,12 @@ export const BookADemo = () => {
                 <label
                   htmlFor=""
                   className="text-sm text-gray-700 font-semibold px-1">
-                  Full name
+                  Full Name
                 </label>
                 <div className="flex">
                   <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                     <svg
-                      className="w-6 h-6 text-gray-400 text-lg"
+                      className="w-6 h-6 text-core-black text-lg"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -84,7 +73,7 @@ export const BookADemo = () => {
                 <div className="flex">
                   <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                     <svg
-                      className="w-6 h-6 text-gray-400 text-lg"
+                      className="w-6 h-6 text-core-black text-lg"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -115,7 +104,7 @@ export const BookADemo = () => {
                 <div className="flex">
                   <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                     <svg
-                      className="w-6 h-6 text-gray-400 text-lg"
+                      className="w-6 h-6 text-core-black text-lg"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -147,7 +136,7 @@ export const BookADemo = () => {
                 <div className="flex">
                   <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                     <svg
-                      className="w-6 h-6 text-gray-400 text-lg"
+                      className="w-6 h-6 text-core-black text-lg"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -171,7 +160,7 @@ export const BookADemo = () => {
                 <label
                   htmlFor=""
                   className="text-sm text-gray-700 font-semibold px-1">
-                  Select Solution
+                  Select Products
                 </label>
 
                 <div className="relative flex-1">
@@ -192,14 +181,14 @@ export const BookADemo = () => {
 
                   <select
                     // value="1"
-                    className="select w-full rounded-lg border-2 text-gray-400 border-gray-200 outline-none focus:border-gray-900  bg-white  pl-4 py-4 appearance-none flex items-center ">
+                    className="select w-full rounded-lg border-2 text-core-black border-gray-200 outline-none focus:border-gray-900  bg-white  pl-4 py-4 appearance-none flex items-center ">
                     <option defaultValue disabled>
-                      Select Solution you're looking for
+                      Select Product you're looking for
                     </option>
-                    <option value="AGO">Airport Ground Ops</option>
-                    <option value="FB">Finance Banking</option>
-                    <option value="SC">Smart Cities</option>
-                    <option value="RT">Retail</option>
+                    <option value="AGO">Airport Ground Operations</option>
+                    <option value="AGO">Digital Signage</option>
+                    <option value="FB">Traffic Management</option>
+                    <option value="FB">Intelligent Audio</option>
                   </select>
                 </div>
               </div>
@@ -230,14 +219,14 @@ export const BookADemo = () => {
 
                     <select
                       // value={"1"}
-                      className="select w-full rounded-lg border-2 text-gray-400 border-gray-200 outline-none focus:border-gray-900  bg-white  pl-4 py-4 appearance-none flex items-center">
+                      className="select w-full rounded-lg border-2 text-core-black border-gray-200 outline-none focus:border-gray-900  bg-white  pl-4 py-4 appearance-none flex items-center">
                       <option defaultValue disabled>
                         How do you hear about us?
                       </option>
                       <option value="facebook">Facebook</option>
-                      <option value="linkedin">Linkedin</option>
+                      <option value="linkedin">LinkedIn</option>
                       <option value="twitter">Twitter</option>
-                      <option value="online">Online</option>
+                      <option value="online">Other</option>
                     </select>
                   </div>
                 </div>

@@ -5,10 +5,10 @@ import { Navbar } from "./Navbar";
 const MobileNavItems = [
   { title: "Products", link: "/products" },
   { title: "Technology", link: "/technology" },
-  { title: "Research", link: "/research" },
-  { title: "Careers", link: "/careers" },
-  { title: "About Us", link: "/about" },
-  { title: "Contact Us", link: "/contact" },
+  { title: "Research", link: "/resources/research" },
+  { title: "Careers", link: "/company/careers" },
+  { title: "About Us", link: "/company/about" },
+  { title: "Contact Us", link: "/company/contact" },
   { title: "Book a Demo", link: "/demo" },
 ];
 export const Header = () => {
