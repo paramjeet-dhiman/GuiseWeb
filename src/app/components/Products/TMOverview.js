@@ -28,8 +28,8 @@ export const TMOverview = () => {
       title: "License Plate Recognition",
       content: `Track and record vehicles through license plates automatically.`,
       list: [
-        { title: "Licence plate detection" },
-        { title: "LP character recognition" },
+        { title: "License plate detection" },
+        { title: "License plate character recognition" },
       ],
       img: TMTabLP,
     },

@@ -42,27 +42,25 @@ export function Home() {
       {/*================= Hero Section ===================*/}
 
       <section className="flex items-center justify-center py-10 lg:py-20  relative h-screen  bg-white">
-        <div className="relative mt-10 lg:mt-20  ">
-          <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-16 ">
-            <div className="px-8  py-10 lg:py-0 md:px-0  flex flex-1 flex-col items-center lg:items-start  mb-10 md:mb-0">
-              <h2 className="text-3xl  md:text-5xl lg:text-6xl font-bold uppercase text-center md:text-left tracking-tight lg:tracking-normal lg:leading-tight text-core-black">
-                AI at the edge
-              </h2>
-              <p className="mt-2  lg:mt-4 text-core-black text-center md:text-justify  text-base lg:text-xl w-full lg:w-wt">
-                Guise AI intelligent algorithms at the edge identify and refine
-                critical data to drive your business
-              </p>
-            </div>
+        <div className=" mt-10 lg:mt-20  px-8  md:px-40 grid lg:grid-cols-12 gap-10 lg:gap-20  ">
+          <div className="col-span-full lg:col-span-6 flex flex-col justify-center  ">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl lg:leading-tight font-bold uppercase text-center lg:text-left text-core-black">
+              AI at the edge
+            </h2>
+            <p className="mt-2 lg:mt-4 text-center lg:text-justify text-base lg:text-xl lg:w-wt">
+              Guise AI intelligent algorithms at the edge identify and refine
+              critical data to drive your business
+            </p>
+          </div>
 
-            <div className="flex flex-1 justify-center  ">
-              <img
-                src={BGTech}
-                className="object-cover w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl  filter drop-shadow-2xl   "
-                alt="sdf"
-                loading="lazy"
-                draggable="false"
-              />
-            </div>
+          <div className="col-span-full lg:col-span-6 ">
+            <img
+              src={BGTech}
+              className="object-cover bg-cover bg-center w-full h-full  rounded-lg shadow-xl  filter drop-shadow-2xl   "
+              alt="sdf"
+              loading="lazy"
+              draggable="false"
+            />
           </div>
         </div>
         {/* <div className=" lg:px-40 flex flex-col   mx-auto   space-y-10 gap-y-10 lg:gap-y-0 lg:space-y-20 lg:flex-row lg:items-center lg:space-x-6">
@@ -90,34 +88,32 @@ export function Home() {
 
       {/*========================== Background Image with text ==========================*/}
       <section className="relative text-core-black lg:py-10">
-        <div className=" relative lg:mt-20 ">
-          <div className="md:px-44  flex flex-col lg:flex-row items-center justify-center gap-x-24">
-            <div className="flex flex-1 justify-center  order-2 md:order-1">
-              <img
-                className="object-cover  filter drop-shadow-2xl   w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl"
-                src={BGTech4}
-                alt="sdf"
-                draggable="false"
-                loading="lazy"
-              />
-            </div>
+        <div className=" lg:mt-20  px-10  md:px-40 grid lg:grid-cols-12 gap-10 lg:gap-20  ">
+          <div className="col-span-full lg:col-span-6  order-2 lg:order-1">
+            <img
+              className="object-cover bg-cover bg-center w-full h-full  rounded-lg shadow-xl  filter drop-shadow-2xl   "
+              src={BGTech4}
+              alt="sdf"
+              draggable="false"
+              loading="lazy"
+            />
+          </div>
 
-            <div className="px-10 pb-10 mb-5 md:mb-0 lg:py-0 md:px-0  flex flex-1 flex-col items-center lg:items-start order-1 md:order-2">
-              <h2 className="text-3xl lg:text-4xl  font-semibold mb-4 lg:mb-6">
-                Target Data Where It Lives
-              </h2>
-              <div className="space-y-5 lg:space-y-7 text-base lg:text-xl text-core-black text-justify w-full">
-                <p className="">
-                  The need to overcome latency and bandwidth issues combined
-                  with massive volumes of data is changing the topology of
-                  distributed enterprises. Computing data at the edge is rapidly
-                  growing, but how do you properly harness your untapped data?
-                </p>
-                <p className="">
-                  Guise AI at the edge leverages local compute to extract
-                  meaningful data delivering better insights for enterprises.
-                </p>
-              </div>
+          <div className="pb-10 col-span-full lg:col-span-6 flex flex-col justify-center  order-1 lg:order-2">
+            <h2 className="text-3xl lg:text-4xl text-center lg:text-left font-semibold mb-4 lg:mb-6">
+              Target Data Where It Lives
+            </h2>
+            <div className="space-y-5 lg:space-y-7 text-base lg:text-xl text-core-black text-center lg:text-justify ">
+              <p className="">
+                The need to overcome latency and bandwidth issues combined with
+                massive volumes of data is changing the topology of distributed
+                enterprises. Computing data at the edge is rapidly growing, but
+                how do you properly harness your untapped data?
+              </p>
+              <p className="">
+                Guise AI at the edge leverages local compute to extract
+                meaningful data delivering better insights for enterprises.
+              </p>
             </div>
           </div>
         </div>
@@ -131,7 +127,7 @@ export function Home() {
             provide the data to optimize your business and stay competitive
           </h2>
         </div>
-        <div className=" md:px-44 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-4 lg:mt-10 py-10">
+        <div className=" md:px-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-4 lg:mt-10 py-10">
           {products.map((item, index) => (
             <article
               key={index}
@@ -160,8 +156,8 @@ export function Home() {
           </h1>
         </div>
 
-        <div className="md:px-44 mt-10 lg:mt-0 lg:py-10 gap-y-10 cursor:pointer h-full">
-          <div className="grid lg:grid-cols-12 gap-10">
+        <div className="md:px-40 mt-10 lg:mt-0 lg:py-10 gap-y-10 cursor:pointer h-full">
+          <div className="grid lg:grid-cols-12 gap-10 ">
             {[
               {
                 title: "Innovative",
@@ -228,7 +224,7 @@ export function Home() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="col-span-3 mx-10 px-10 md:mx-0 md:px-10 py-10  md:h-96 flex  flex-col justify-center  items-center bg-white shadow-lg  rounded-lg">
+                className=" col-span-3 mx-10 px-10 md:mx-0 md:px-10 py-10  md:h-96 flex  flex-col justify-center  items-center bg-white shadow-lg  rounded-lg">
                 <div className="mb-8 filter drop-shadow-2xl ">{item.icon}</div>
                 <div className="text-center text-core-black  ">
                   <h4 className="font-bold text-lg md:text-2xl uppercase mb-4">

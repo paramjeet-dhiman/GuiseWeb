@@ -83,7 +83,7 @@ export const About = () => {
             <h1 className="text-core-black font-bold text-3xl lg:text-5xl lg:w-5/6 lg:leading-tight ">
               Are you ready to share your expertise ?
             </h1>
-            <p className="text-core-black lg:text-justify text-xl lg:text-2xl font-light  mt-4 md:mt-6 lg:w-5/6">
+            <p className="text-core-black lg:text-justify text-base lg:text-xl mt-4 md:mt-6 lg:w-5/6">
               We're always looking for talented, creative and passionate people
               to join our team. If you're interested in opportunities at our
               company, we'd love to hear from you.

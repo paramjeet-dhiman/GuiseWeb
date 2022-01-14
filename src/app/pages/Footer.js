@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <footer className="bg-gray-800  overflow-hidden ">
-      <div className="flex flex-wrap py-10  justify-center md:justify-between gap-5  px-5   sm:gap-5 md:gap-0 lg:px-44 ">
+      <div className="flex flex-wrap py-10  justify-center md:justify-between gap-5  px-5   sm:gap-5 md:gap-0 lg:px-40 ">
         {/* ================================Logo==================================== */}
 
         <div className="pt-24 w-72 hidden lg:block  ">
@@ -169,7 +169,7 @@ export const Footer = () => {
       </div>
 
       <div className="bg-bookmark-blue">
-        <div className="flex mx-auto md:px-12 lg:px-44  justify-between py-5  text-gray-400 text-lg flex-col items-center  md:flex-row ">
+        <div className="flex mx-auto md:px-12 lg:px-40  justify-between py-5  text-gray-400 text-lg flex-col items-center  md:flex-row ">
           <div className="pb-4 md:pb-0 font-medium">
             <p className="text-center">
               &copy; {new Date().getFullYear()} Guise AI. All Rights Reserved.
