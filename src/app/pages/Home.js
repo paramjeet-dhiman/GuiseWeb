@@ -43,11 +43,11 @@ export function Home() {
 
       <section className="flex items-center justify-center h-screen  bg-white">
         <div className=" mt-10 lg:mt-20  px-8   md:px-20  lg:px-40  grid lg:grid-cols-12 gap-10 lg:gap-20  ">
-          <div className="col-span-full lg:col-span-6 flex flex-col justify-center w-full lg:w-wb ">
-            <h2 className="text-3xl md:text-5xl lg:text-6xl lg:leading-tight font-bold uppercase text-center lg:text-left ">
+          <div className="col-span-full lg:col-span-6 flex flex-col justify-center w-full ">
+            <h2 className="text-3xl md:text-5xl font-bold uppercase text-center lg:text-left ">
               AI at the edge
             </h2>
-            <p className="mt-2 lg:mt-4 text-center lg:text-justify text-base lg:text-xl">
+            <p className="mt-2 lg:mt-4 text-center lg:text-justify text-base lg:text-xl  lg:w-wb">
               Guise AI algorithms at the edge identify and refine critical data
               to drive your business.
             </p>
@@ -78,11 +78,11 @@ export function Home() {
             />
           </div>
 
-          <div className="pb-10 col-span-full lg:col-span-6 flex flex-col justify-center   w-wl order-1 lg:order-2">
-            <h2 className="text-3xl md:text-5xl lg:leading-tight font-bold uppercase text-center lg:text-left">
+          <div className="pb-10 col-span-full lg:col-span-6 flex flex-col justify-center   order-1 lg:order-2">
+            <h2 className="text-2xl lg:text-4xl uppercase lg:leading-tight font-semibold lg:text-left">
               Target Data Where It Lives
             </h2>
-            <div className="mt-2  lg:mt-4 space-y-5 lg:space-y-7  text-base lg:text-xl text-center lg:text-justify ">
+            <div className="mt-2  lg:mt-4 space-y-5 lg:space-y-7  text-base lg:text-xl lg:w-wm  text-justify lg:text-justify ">
               <p className="">
                 The need to overcome latency and bandwidth issues combined with
                 massive volumes of data is changing the topology of distributed
@@ -106,7 +106,7 @@ export function Home() {
             the data to optimize your business and stay competitive.
           </h2>
         </div>
-        <div className="  md:px-20  lg:px-40  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-4 lg:mt-10 py-10">
+        <div className="  md:px-20  lg:px-40  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-16 mt-4 lg:mt-10 py-10">
           {products.map((item, index) => (
             <article
               key={index}
@@ -130,20 +130,20 @@ export function Home() {
 
       <section className="bg-white py-10 lg:py-20">
         <div className="px-8 md:px-0">
-          <h1 className=" text-3xl lg:text-4xl font-semibold text-center text-bookmark-blue">
+          <h1 className=" text-3xl lg:text-4xl font-semibold text-center ">
             Why Choose Guise AI ?
           </h1>
         </div>
 
         <div className="md:px-20 lg:px-40 px-10 mt-10 lg:mt-0 lg:pt-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 ">
             {[
               {
-                title: "Innovative Features",
+                title: "Innovative",
                 text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
                 icon: (
                   <svg
-                    className="h-24 text-indigo-500"
+                    className="h-20 text-indigo-500"
                     fill="currentColor"
                     viewBox="0 0 20 20">
                     <path d="M13 7H7v6h6V7z" />
@@ -160,7 +160,7 @@ export function Home() {
                 text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
                 icon: (
                   <svg
-                    className="h-24 text-bookmark-orange"
+                    className="h-20 text-bookmark-orange"
                     viewBox="0 0 20 20"
                     fill="currentColor">
                     <path
@@ -175,7 +175,7 @@ export function Home() {
                 title: "Accuracy",
                 text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
                 icon: (
-                  <svg fill="#e4405f" className="h-24" viewBox="0 0 24 24">
+                  <svg fill="#e4405f" className="h-20" viewBox="0 0 24 24">
                     <path d="M6 12c0 2.206 1.794 4 4 4 1.761 0 3.242-1.151 3.775-2.734l2.224-1.291.001.025c0 3.314-2.686 6-6 6s-6-2.686-6-6 2.686-6 6-6c1.084 0 2.098.292 2.975.794l-2.21 1.283c-.248-.048-.503-.077-.765-.077-2.206 0-4 1.794-4 4zm4-2c-1.105 0-2 .896-2 2s.895 2 2 2 2-.896 2-2l-.002-.015 3.36-1.95c.976-.565 2.704-.336 3.711.159l4.931-2.863-3.158-1.569.169-3.632-4.945 2.87c-.07 1.121-.734 2.736-1.705 3.301l-3.383 1.964c-.29-.163-.621-.265-.978-.265zm7.995 1.911l.005.089c0 4.411-3.589 8-8 8s-8-3.589-8-8 3.589-8 8-8c1.475 0 2.853.408 4.041 1.107.334-.586.428-1.544.146-2.18-1.275-.589-2.69-.927-4.187-.927-5.523 0-10 4.477-10 10s4.477 10 10 10c5.233 0 9.521-4.021 9.957-9.142-.301-.483-1.066-1.061-1.962-.947z" />
                   </svg>
                 ),
@@ -185,7 +185,7 @@ export function Home() {
                 text: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
                 icon: (
                   <svg
-                    className="h-24 text-bookmark-teal"
+                    className="h-20 text-bookmark-teal"
                     fill="currentColor"
                     viewBox="0 0 20 20">
                     <path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"></path>
@@ -195,12 +195,12 @@ export function Home() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className=" flex py-20  flex-col justify-center  items-center border border-gray-100 bg-white shadow-lg  rounded-lg">
+                className=" flex p-20  flex-col justify-center  items-center bg-white shadow-lg  rounded-lg">
                 <div className="mb-7 px-5 filter drop-shadow-2xl">
                   {item.icon}
                 </div>
                 <div className="text-center text-core-black   ">
-                  <h4 className="text-xl md:text-2xl font-bold uppercase">
+                  <h4 className="text-lg md:text-xl lg:text-xl font-bold uppercase">
                     {item.title}
                   </h4>
                 </div>

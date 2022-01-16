@@ -33,7 +33,7 @@ export const About = () => {
 
       <section className="py-20 bg-bookmark-white">
         <div className="px-10 lg:px-40">
-          <div className="font-light space-y-10 text-base lg:text-2xl">
+          <div className=" space-y-10 text-base lg:text-xl">
             <p className="text-center md:text-justify">
               Established in 2016, Guise AI is the premier global provider of
               continuous learning AI solutions at the edge. We built our
