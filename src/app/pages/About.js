@@ -7,7 +7,7 @@ export const About = () => {
       <section className="flex items-center justify-center h-screen  bg-white">
         <div className=" mt-10 lg:mt-20  px-8   md:px-20  lg:px-40  grid lg:grid-cols-12 gap-10 lg:gap-20 ">
           <div className="col-span-full lg:col-span-6 flex flex-col justify-center w-full lg:w-10/12">
-            <h2 className="text-3xl md:text-5xl lg:text-6xl lg:leading-tight font-bold uppercase text-center lg:text-left  ">
+            <h2 className="text-3xl font-bold uppercase md:text-5xl  lg:leading-tight text-center lg:text-left  ">
               About Us
             </h2>
             <p className="mt-2 text-center lg:text-justify text-base lg:text-xl ">
