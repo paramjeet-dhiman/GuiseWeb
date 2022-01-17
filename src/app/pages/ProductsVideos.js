@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Player } from "../components/Player/Player";
+// import { Player } from "../components/Player/Player";
+import ModalVideo from "react-modal-video";
 
 export const ProductsVideos = () => {
   const [showModal, setShowModal] = useState(false);
@@ -84,7 +85,16 @@ export const ProductsVideos = () => {
         </div>
       </section>
       {showModal ? (
-        <Player showModal={showModal} setShowModal={setShowModal} />
+        <ModalVideo
+          channel="vimeo"
+          vimeo={{
+            autoplay: 1,
+          }}
+          videoId="664938337"
+          end={() => console.log("ds")}
+          isOpen={showModal}
+          onClose={() => setShowModal(false)}
+        />
       ) : null}
     </div>
   );

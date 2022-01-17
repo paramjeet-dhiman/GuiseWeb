@@ -66,7 +66,7 @@ export const EMOverview = () => {
   return (
     <div className="bg-white h-full ">
       <section
-        className="w-full bg-center bg-cover  "
+        className="w-full bg-center bg-cover  mt-10"
         style={{
           height: "36rem",
           background: `url(${data.bgImg}) center center / cover no-repeat`,

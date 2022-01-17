@@ -36,6 +36,8 @@
 //   );
 // }
 
+import { HeroHeader } from "../HeroHeader/HeroHeader";
+
 // const faqs = [
 //   {
 //     question: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
@@ -177,32 +179,18 @@ const faqs = [
     question: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
     answer: ` Perferendis odio nihil pariatur cum velit vitae id, rem tempore cumque quasi culpa ad delectus. Voluptatem iure, laboriosam odio quas rerum accusantium.`,
   },
-  {
-    question: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-    answer: ` Perferendis odio nihil pariatur cum velit vitae id, rem tempore cumque quasi culpa ad delectus. Voluptatem iure, laboriosam odio quas rerum accusantium.`,
-  },
-  {
-    question: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-    answer: ` Perferendis odio nihil pariatur cum velit vitae id, rem tempore cumque quasi culpa ad delectus. Voluptatem iure, laboriosam odio quas rerum accusantium.`,
-  },
-  {
-    question: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-    answer: ` Perferendis odio nihil pariatur cum velit vitae id, rem tempore cumque quasi culpa ad delectus. Voluptatem iure, laboriosam odio quas rerum accusantium.`,
-  },
-  {
-    question: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-    answer: ` Perferendis odio nihil pariatur cum velit vitae id, rem tempore cumque quasi culpa ad delectus. Voluptatem iure, laboriosam odio quas rerum accusantium.`,
-  },
 ];
 
 export function FAQ() {
   return (
-    <div className="py-14 lg:py-20 px-10 lg:px-0  text-core-black">
+    <div className="">
+      <HeroHeader
+        img={
+          "https://images.unsplash.com/photo-1518644730709-0835105d9daa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        }
+        title="Frequently Asked Questions?"
+      />
       <section className="py-10 lg:py-20">
-        <h2 className="text-2xl lg:text-4xl  font-semibold text-center text-bookmark-blue">
-          Frequently Asked Questions ?
-        </h2>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:mx-44 mx-4 mt-5 lg:mt-16">
           {faqs.map((item) => (
             <div className="text-gray-700 dark:text-gray-50 bg-gray-100 hover:bg-gray-200 hoverTransition dark:bg-gray-700 rounded-md p-4">

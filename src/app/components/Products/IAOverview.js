@@ -22,15 +22,28 @@ export const IAOverview = () => {
       title: "Noise Detection",
       content: `Analyze audio sources and detect individual traces of noise for real time alerts such as fire alarms.`,
       list: [
-        { title: "Real Time Alerts" },
-        { title: " Custom noise detection" },
+        { title: "Fire alarm" },
+        { title: "Glass break" },
+        { title: "Gunshot" },
+        { title: "Yelling/Screaming" },
       ],
       img: IATabNoise,
     },
     {
       title: "Noise Cancellation",
       content: `Filter noise and unwanted background audio from the source and experience clean audio.`,
-      list: [{ title: "Custom Noise Filtration" }],
+      list: [
+        { title: "Air conditioner" },
+        { title: "Car horn" },
+        { title: "Children playing" },
+        { title: "Dog bark" },
+        { title: "Drilling" },
+        { title: "Engine idling" },
+        { title: "Gun shot" },
+        { title: "Jackhammer" },
+        { title: "Siren" },
+        { title: "Street music" },
+      ],
       img: IATabCancell,
     },
   ];
@@ -48,7 +61,7 @@ export const IAOverview = () => {
   return (
     <div className="bg-white h-full ">
       <section
-        className="w-full bg-center bg-cover  "
+        className="w-full bg-center bg-cover  mt-10"
         style={{
           height: "36rem",
           background: `url(${data.bgImg}) center center / cover no-repeat`,

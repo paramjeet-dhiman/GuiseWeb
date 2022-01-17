@@ -44,13 +44,23 @@ export function Home() {
       <section className="flex items-center justify-center h-screen  bg-white">
         <div className=" mt-10 lg:mt-20  px-8   md:px-20  lg:px-40  grid lg:grid-cols-12 gap-10 lg:gap-20  ">
           <div className="col-span-full lg:col-span-6 flex flex-col justify-center w-full ">
-            <h2 className="text-3xl md:text-5xl font-bold uppercase text-center lg:text-left ">
+            {/* <h2 className="text-3xl md:text-5xl font-bold uppercase text-center lg:text-left ">
               AI at the edge
             </h2>
             <p className="mt-2 lg:mt-4 text-center lg:text-justify text-base lg:text-xl  lg:w-wb">
               Guise AI algorithms at the edge identify and refine critical data
               to drive your business.
-            </p>
+            </p> */}
+
+            <div class="text-center lg:text-left w-full ">
+              <h1 class="text-4xl tracking-wide lg:tracking-wider font-bold   uppercase sm:text-5xl md:text-5xl">
+                AI at the edge
+              </h1>
+              <p class=" mt-2 lg:mt-4 text-center lg:text-justify text-base lg:text-xl sm:text-lg sm:max-w-sm sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                Guise AI algorithms at the edge identify and refine critical
+                data to drive your business.
+              </p>
+            </div>
           </div>
 
           <div className="col-span-full flex items-center justify-center lg:col-span-6 ">
@@ -78,11 +88,11 @@ export function Home() {
             />
           </div>
 
-          <div className="pb-10 col-span-full lg:col-span-6 flex flex-col justify-center   order-1 lg:order-2">
-            <h2 className="text-2xl lg:text-4xl uppercase lg:leading-tight font-semibold lg:text-left">
+          <div className="pb-10 col-span-full lg:col-span-6 flex flex-col justify-center w-full  order-1 lg:order-2 lg:w-wm">
+            <h1 class="text-3xl font-bold  uppercase md:text-4xl">
               Target Data Where It Lives
-            </h2>
-            <div className="mt-2  lg:mt-4 space-y-5 lg:space-y-7  text-base lg:text-xl lg:w-wm  text-justify lg:text-justify ">
+            </h1>
+            <div className=" mt-2 lg:mt-4 text-center lg:text-justify text-base lg:text-xl sm:text-lg  md:mt-5 md:text-xl lg:mx-0  space-y-5 lg:space-y-7 testing ">
               <p className="">
                 The need to overcome latency and bandwidth issues combined with
                 massive volumes of data is changing the topology of distributed
