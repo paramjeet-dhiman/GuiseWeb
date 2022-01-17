@@ -92,7 +92,7 @@ export function Home() {
             <h1 class="text-3xl font-bold  uppercase md:text-4xl">
               Target Data Where It Lives
             </h1>
-            <div className=" mt-2 lg:mt-4 text-center lg:text-justify text-base lg:text-xl sm:text-lg  md:mt-5 md:text-xl lg:mx-0  space-y-5 lg:space-y-7 testing ">
+            <div className=" mt-2 lg:mt-4 text-center lg:text-justify text-base lg:text-xl sm:text-lg  md:mt-5 md:text-xl lg:mx-0  space-y-5 lg:space-y-7 ">
               <p className="">
                 The need to overcome latency and bandwidth issues combined with
                 massive volumes of data is changing the topology of distributed
