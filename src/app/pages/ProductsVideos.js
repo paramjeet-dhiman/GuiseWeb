@@ -1,27 +1,19 @@
 import React, { useState } from "react";
 // import { Player } from "../components/Player/Player";
 import ModalVideo from "react-modal-video";
+import { HeroHeader } from "../components/HeroHeader/HeroHeader";
 
 export const ProductsVideos = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <div className="bg-white h-full select-none">
-      <section
-        className="w-full bg-center bg-cover  "
-        style={{
-          height: "28rem",
-          // boxShadow: `inset 0 0 0 2000px rgb(0 0 0 / 9%)`,
-          background: `url(https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center center / cover no-repeat`,
-        }}>
-        <div className="flex  items-center justify-center w-full h-full bg-black bg-opacity-70">
-          <div className="text-center px-10 lg:px-0">
-            <h1 className="text-4xl font-bold  text-white uppercase md:text-7xl mb-4">
-              Videos
-            </h1>
-          </div>
-        </div>
-      </section>
+      <HeroHeader
+        img={
+          "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        }
+        title="Videos"
+      />
 
       <section>
         <div className="bg-white flex justify-center items-center py-20">

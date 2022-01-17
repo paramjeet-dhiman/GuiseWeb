@@ -52,11 +52,11 @@ export function Home() {
               to drive your business.
             </p> */}
 
-            <div class="text-center lg:text-left w-full ">
-              <h1 class="text-4xl tracking-wide lg:tracking-wider font-bold   uppercase sm:text-5xl md:text-5xl">
+            <div className="text-center lg:text-left w-full ">
+              <h1 className="text-4xl tracking-wide lg:tracking-wider font-bold   uppercase sm:text-5xl md:text-5xl">
                 AI at the edge
               </h1>
-              <p class=" mt-2 lg:mt-4 text-center lg:text-justify text-base lg:text-xl sm:text-lg sm:max-w-sm sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className=" mt-2 lg:mt-4 text-center lg:text-justify text-base lg:text-xl sm:max-w-sm sm:mx-auto md:mt-5  lg:mx-0">
                 Guise AI algorithms at the edge identify and refine critical
                 data to drive your business.
               </p>
@@ -88,21 +88,23 @@ export function Home() {
             />
           </div>
 
-          <div className="pb-10 col-span-full lg:col-span-6 flex flex-col justify-center w-full  order-1 lg:order-2 lg:w-wm">
-            <h1 class="text-3xl font-bold  uppercase md:text-4xl">
-              Target Data Where It Lives
-            </h1>
-            <div className=" mt-2 lg:mt-4 text-center lg:text-justify text-base lg:text-xl sm:text-lg  md:mt-5 md:text-xl lg:mx-0  space-y-5 lg:space-y-7 ">
-              <p className="">
-                The need to overcome latency and bandwidth issues combined with
-                massive volumes of data is changing the topology of distributed
-                enterprises. Computing data at the edge is rapidly growing, but
-                how do you properly harness your untapped data?
-              </p>
-              <p className="">
-                Guise AI at the edge leverages local compute to extract
-                meaningful data delivering better insights for enterprises.
-              </p>
+          <div className="pb-10 col-span-full lg:col-span-6 flex flex-col justify-center w-full  order-1 lg:order-2">
+            <div className="text-center lg:text-left w-full ">
+              <h1 className="text-3xl font-bold uppercase  lg:tracking-tight lg:text-4xl">
+                Target Data Where It Lives
+              </h1>
+              <div className="mt-2 lg:mt-5 text-center lg:text-justify text-base lg:text-xl  space-y-5 ">
+                <p className="sm:max-w-lg sm:mx-auto lg:mx-0">
+                  The need to overcome latency and bandwidth issues combined
+                  with massive volumes of data is changing the topology of
+                  distributed enterprises. Computing data at the edge is rapidly
+                  growing, but how do you properly harness your untapped data?
+                </p>
+                <p className="sm:max-w-lg sm:mx-auto lg:mx-0">
+                  Guise AI at the edge leverages local compute to extract
+                  meaningful data delivering better insights for enterprises.
+                </p>
+              </div>
             </div>
           </div>
         </div>
