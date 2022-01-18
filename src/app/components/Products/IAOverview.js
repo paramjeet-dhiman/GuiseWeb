@@ -51,12 +51,18 @@ export const IAOverview = () => {
   const images = [IAAdv];
 
   const advantages = [
-    { title: `Lorem ipsum, dolor sit amet consectetur adipi21sicing elit.` },
-    { title: `Lorem ipsum, dolor sit amet consectetur adipis21icing elit.` },
-    { title: `Lorem ipsum, dolor sit amet consectetur ad1ipisicing elit.` },
-    { title: `Lorem ipsum, dolor sit amet consectetur adipisici2ng elit.` },
-    { title: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.` },
-    { title: `Lorem ipsum, dolor sit amet consectetur adip2isicing elit.` },
+    {
+      title: `State-of-the art software for next level noise cancellation and detection`,
+    },
+    { title: `Enhance the quality of of your audio` },
+    { title: `Seamless integration with existing hardware` },
+    { title: `Provide the most captivating audio experience for listeners` },
+    {
+      title: `Allow critical noises through such as emergency alarms or breaking glass`,
+    },
+    {
+      title: `Achieve studio level quality without having to compromise your audio`,
+    },
   ];
   return (
     <div className="bg-white h-full ">
