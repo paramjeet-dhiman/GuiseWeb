@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-// import { Player } from "../components/Player/Player";
-import ModalVideo from "react-modal-video";
 import { HeroHeader } from "../components/HeroHeader/HeroHeader";
+import { ModalDemo } from "../components/Modals/Modal";
+import { Player } from "../components/Player/Player";
 
 export const ProductsVideos = () => {
   const [showModal, setShowModal] = useState(false);
+  const [bookDemo, setBookDemo] = useState(false);
 
   return (
     <div className="bg-white h-full select-none">
@@ -76,18 +77,14 @@ export const ProductsVideos = () => {
           </div>
         </div>
       </section>
-      {showModal ? (
-        <ModalVideo
-          channel="vimeo"
-          vimeo={{
-            autoplay: 1,
-          }}
-          videoId="664938337"
-          end={() => console.log("ds")}
-          isOpen={showModal}
-          onClose={() => setShowModal(false)}
-        />
-      ) : null}
+
+      <Player
+        showModal={showModal}
+        setShowModal={setShowModal}
+        setBookDemo={setBookDemo}
+      />
+
+      <ModalDemo bookDemo={bookDemo} setBookDemo={setBookDemo} />
     </div>
   );
 };

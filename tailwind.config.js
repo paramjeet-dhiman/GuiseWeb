@@ -91,11 +91,13 @@ module.exports = {
         hb: "60%",
         hm: "80%",
         hl: "90%",
+        hxl: "28rem",
       }),
       width: (theme) => ({
         wb: "60%",
         wm: "80%",
         wl: "94%",
+        wxl: "50rem",
       }),
     },
     fontFamily: {
