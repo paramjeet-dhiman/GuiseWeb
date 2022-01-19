@@ -30,6 +30,8 @@ export const Player = ({ setShowModal, setBookDemo, showModal }) => {
           <ReactPlayer
             url="https://youtu.be/UwsrzCVZAb8"
             controls
+            playing
+            muted
             onEnded={() => {
               setShowModal(false);
               setBookDemo(true);
