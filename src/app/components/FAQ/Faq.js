@@ -1,166 +1,5 @@
-/* This example requires Tailwind CSS v2.0+ */
-// export function Faq() {
-//   return (
-//     <div className="bg-white testing">
-//       <div className="mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-44">
-//         <div className="lg:grid lg:grid-cols-3 lg:gap-20">
-//           <div className="testing">
-//             <h2 className="text-3xl font-extrabold text-gray-900">
-//               Frequently asked questions
-//             </h2>
-//             <p className="mt-4 text-lg text-gray-500">
-//               Can't find the answer you're looking for? Reach out to our
-//               <a
-//                 href="/"
-//                 className="font-medium text-indigo-600 hover:text-indigo-500">
-//                 customer support
-//               </a>
-//               team.
-//             </p>
-//           </div>
-//           <div className="mt-12 lg:mt-0 lg:col-span-2 testing">
-//             <dl className="space-y-12">
-//               {faqs.map((faq) => (
-//                 <div key={faq.question}>
-//                   <dt className="text-lg leading-6 font-medium text-gray-900">
-//                     {faq.question}
-//                   </dt>
-//                   <dd className="mt-2 text-base text-gray-500">{faq.answer}</dd>
-//                 </div>
-//               ))}
-//             </dl>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
+import React, { useState } from "react";
 import { HeroHeader } from "../HeroHeader/HeroHeader";
-
-// const faqs = [
-//   {
-//     question: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-//     answer: ` Perferendis odio nihil pariatur cum velit vitae id, rem tempore cumque quasi culpa ad delectus. Voluptatem iure, laboriosam odio quas rerum accusantium.`,
-//   },
-//   {
-//     question: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-//     answer: ` Perferendis odio nihil pariatur cum velit vitae id, rem tempore cumque quasi culpa ad delectus. Voluptatem iure, laboriosam odio quas rerum accusantium.`,
-//   },
-//   {
-//     question: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-//     answer: ` Perferendis odio nihil pariatur cum velit vitae id, rem tempore cumque quasi culpa ad delectus. Voluptatem iure, laboriosam odio quas rerum accusantium.`,
-//   },
-//   {
-//     question: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-//     answer: ` Perferendis odio nihil pariatur cum velit vitae id, rem tempore cumque quasi culpa ad delectus. Voluptatem iure, laboriosam odio quas rerum accusantium.`,
-//   },
-//   {
-//     question: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-//     answer: ` Perferendis odio nihil pariatur cum velit vitae id, rem tempore cumque quasi culpa ad delectus. Voluptatem iure, laboriosam odio quas rerum accusantium.`,
-//   },
-//   {
-//     question: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-//     answer: ` Perferendis odio nihil pariatur cum velit vitae id, rem tempore cumque quasi culpa ad delectus. Voluptatem iure, laboriosam odio quas rerum accusantium.`,
-//   },
-//   {
-//     question: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-//     answer: ` Perferendis odio nihil pariatur cum velit vitae id, rem tempore cumque quasi culpa ad delectus. Voluptatem iure, laboriosam odio quas rerum accusantium.`,
-//   },
-//   {
-//     question: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-//     answer: ` Perferendis odio nihil pariatur cum velit vitae id, rem tempore cumque quasi culpa ad delectus. Voluptatem iure, laboriosam odio quas rerum accusantium.`,
-//   },
-//   {
-//     question: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-//     answer: ` Perferendis odio nihil pariatur cum velit vitae id, rem tempore cumque quasi culpa ad delectus. Voluptatem iure, laboriosam odio quas rerum accusantium.`,
-//   },
-//   {
-//     question: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.`,
-//     answer: ` Perferendis odio nihil pariatur cum velit vitae id, rem tempore cumque quasi culpa ad delectus. Voluptatem iure, laboriosam odio quas rerum accusantium.`,
-//   },
-// ];
-
-// function FAQ({
-//   children,
-//   defaultOpen = [0, 1],
-//   open: openFromProps,
-//   onToggle: onToggleFromProps = () => {},
-// }) {
-//   const isControlled = () => (openFromProps ? true : false);
-//   const [open, setIsOpen] = useState(defaultOpen);
-//   const getOpen = () => (isControlled() ? openFromProps : open);
-//   const isOpen = (index) => {
-//     return getOpen().includes(index) ? true : false;
-//   };
-
-//   const onToggle = (index) => {
-//     if (isControlled()) {
-//       onToggleFromProps(index);
-//     } else {
-//       if (getOpen().includes(index)) {
-//         setIsOpen(getOpen().filter((item) => item !== index));
-//       } else {
-//         setIsOpen([...getOpen(), index]);
-//       }
-
-//       onToggleFromProps(index);
-//     }
-//   };
-
-//   return (
-//     <dl>
-//       {React.Children.map(children, (child, index) => {
-//         return React.cloneElement(child, {
-//           isOpen: isOpen(index),
-//           onToggle: () => onToggle(index),
-//         });
-//       })}
-//     </dl>
-//   );
-// }
-
-// function Question({ children, isOpen, answerId, onToggle }) {
-//   return (
-//     <dt>
-//       <button
-//         className="FAQ__question"
-//         aria-expanded={isOpen}
-//         aria-controls={answerId}
-//         onClick={onToggle}>
-//         {children(isOpen, onToggle)}
-//       </button>
-//     </dt>
-//   );
-// }
-
-// function Answer({ children, id, isOpen }) {
-//   const mergedClassname = classNames("FAQ__answer", {
-//     "FAQ__answer--hidden": !isOpen,
-//   });
-//   return (
-//     <dd>
-//       <p className={mergedClassname} id={id}>
-//         {children}
-//       </p>
-//     </dd>
-//   );
-// }
-
-// function QAItem({ children, isOpen, onToggle }) {
-//   return React.Children.map(children, (child, index) => {
-//     return React.cloneElement(child, {
-//       isOpen: isOpen,
-//       onToggle: onToggle,
-//     });
-//   });
-// }
-
-// FAQ.QAItem = QAItem;
-// FAQ.Question = Question;
-// FAQ.Answer = Answer;
-
-// export default FAQ;
 
 const faqs = [
   {
@@ -196,6 +35,14 @@ const faqs = [
 ];
 
 export function FAQ() {
+  const [clicked, setClicked] = useState(false);
+  const toggle = (index) => {
+    if (clicked === index) {
+      // if clicked question already active then close it
+      return setClicked(null);
+    }
+    setClicked(index);
+  };
   return (
     <div className="select-none">
       <HeroHeader
@@ -205,15 +52,58 @@ export function FAQ() {
         title="Frequently Asked Questions?"
       />
       <section className="py-10 lg:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:mx-40 mx-4 mt-5 lg:mt-16">
-          {faqs.map((item) => (
-            <div className="bg-white filter drop-shadow-xl hover:bg-gray-100 shadow  rounded-md p-4">
-              <h2 className="text-lg lg:text-xl font-semibold">
-                {item.question}
-              </h2>
-              <p className=" mt-4 leading-6 text-center lg:text-justify text-base lg:text-lg">
-                {item.answer}
-              </p>
+        <div className="grid grid-cols-1 px-10 lg:px-0 container mx-auto gap-y-5">
+          {faqs.map((item, index) => (
+            <div key={index}>
+              <div
+               
+                className={`filter drop-shadow-xl px-5 lg:px-10 py-4  shadow    rounded-md border ${
+                  clicked === index ? " shadow-xl bg-white" : "hover:bg-gray-50"
+                }`}
+                onClick={() => toggle(index)}>
+                <div className="flex justify-between items-center">
+                  <h2
+                    className={`text-lg lg:text-xl font-medium ${
+                      clicked === index ? "text-black font-bold lg:text-xl" : ""
+                    }`}>
+                    {item.question}
+                  </h2>
+                  <span>
+                    {clicked === index ? (
+                      <svg
+                        className="h-6 w-6 lg:w-8 lg:h-8"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fillRule="evenodd"
+                          d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    ) : (
+                      <svg
+                        className="h-6 w-6 lg:w-8 lg:h-8"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fillRule="evenodd"
+                          d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    )}
+                  </span>
+                </div>
+                {clicked === index ? (
+                  <div className={`${clicked === index ? "" : ""}`}>
+                    <p className="pt-5  text-justify text-base lg:text-lg ">
+                      {item.answer}
+                    </p>
+                  </div>
+                ) : null}
+              </div>
             </div>
           ))}
         </div>

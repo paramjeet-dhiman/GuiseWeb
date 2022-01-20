@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import airplaneProduct from "../../assets/images/airplane_product.jpg";
 import audioProduct from "../../assets/images/audio_product.jpeg";
 import signageProduct from "../../assets/images/ds_product.jpeg";
-import energyProduct from "../../assets/images/energy_product.jpeg";
 import trafficProduct from "../../assets/images/traffic_product.jpeg";
 import { HeroHeader } from "../components/HeroHeader/HeroHeader";
 
@@ -34,12 +33,12 @@ export const Products = () => {
       url: `/products/intelligent-audio-overview`,
     },
 
-    {
-      name: "Energy Management",
-      img: energyProduct,
-      description: `Guise AI with its self adaptive pattern identification is empowering the energy sector both at the downstream and upstream sectors with efficient predictions`,
-      url: `/products/energy-management-overview`,
-    },
+    // {
+    //   name: "Energy Management",
+    //   img: energyProduct,
+    //   description: `Guise AI with its self adaptive pattern identification is empowering the energy sector both at the downstream and upstream sectors with efficient predictions`,
+    //   url: `/products/energy-management-overview`,
+    // },
   ];
 
   return (

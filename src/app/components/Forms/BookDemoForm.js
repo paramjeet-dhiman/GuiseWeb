@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export const BookDemoForm = () => {
-  const [data, setData] = useState({
+  const formData = {
     name: "",
     company: "",
     email: "",
     phone: "",
     product: "",
     findus: "",
-  });
+  };
+  const [data, setData] = useState(formData);
+
+  const form = useRef();
 
   const { name, company, email, phone, product, findus } = data;
 
@@ -19,8 +23,15 @@ export const BookDemoForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      emailjs.sendForm(
+        "service_fdmliu9",
+        "template_i6egpjm",
+        form.current,
+        "user_L31JS0rQyzwpPzJTORbId"
+      );
+
       const response = await fetch(
-        "https://v1.nocodeapi.com/paramjeet/google_sheets/JthcluwWFqQIVlYb?tabId=Sheet1",
+        "https://v1.nocodeapi.com/paramjeet/google_sheets/rKeFbUSviwLcQTcg?tabId=Sheet1",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -40,10 +51,12 @@ export const BookDemoForm = () => {
       await response.json();
       setData({
         ...data,
-        fname: "",
-        lname: "",
+        name: "",
+        company: "",
         email: "",
-        message: "",
+        phone: "",
+        product: "",
+        findus: "",
       });
     } catch (err) {
       // console.log(err)
@@ -51,7 +64,7 @@ export const BookDemoForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form ref={form} onSubmit={handleSubmit}>
       <div className="flex flex-col flex-auto lg:flex-row -mx-3">
         <div className="lg:w-1/2 px-3 mb-5">
           <label

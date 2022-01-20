@@ -180,19 +180,19 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                     className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-left px-3 block py-2 ">
                     Intelligent Audio
                   </NavLink>
-
+                  {/* 
                   <NavLink
                     onClick={handleShowProduct}
                     to="/products/energy-management-overview"
                     className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-left px-3 block py-2 ">
                     Energy Management
-                  </NavLink>
+                  </NavLink> */}
                 </div>
               ) : null}
             </div>
 
             {/*====================================TECHNOLOGY=================================== */}
-            <div>
+            {/* <div>
               <NavLink
                 onMouseEnter={handleMouseLeave}
                 className={({ isActive }) =>
@@ -203,7 +203,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                 to="/technology">
                 Technology
               </NavLink>
-            </div>
+            </div> */}
 
             {/*====================================RESOURCES DROPDOWN=================================== */}
 
@@ -256,12 +256,12 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                     Blogs
                   </NavLink>
 
-                  <NavLink
+                  {/* <NavLink
                     to="/resources/videos"
                     onClick={handleShow}
                     className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-left">
                     Videos
-                  </NavLink>
+                  </NavLink> */}
 
                   <NavLink
                     to="/resources/research"

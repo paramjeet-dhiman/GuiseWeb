@@ -1,13 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import { HeroHeader } from "../components/HeroHeader/HeroHeader";
 
 export const Contact = () => {
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const { name, email, message } = data;
+
+  const handleInput = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch(
+        "https://v1.nocodeapi.com/paramjeet/google_sheets/OtWWiwylwJgBsqDe?tabId=Sheet1",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify([
+            [name, email, message, new Date().toLocaleString()],
+          ]),
+        }
+      );
+      await response.json();
+      setData({
+        ...data,
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (err) {
+      // console.log(err)
+    }
+  };
+
   return (
     <div>
       <HeroHeader
-        img={
-          "https://images.pexels.com/photos/4476606/pexels-photo-4476606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        }
+        img={`https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`}
         title="Contact Us"
       />
 
@@ -116,7 +151,7 @@ export const Contact = () => {
                       <p className="leading-relaxed mt-1 mb-4 text-gray-500">
                         Complete this form and we will get back to you
                       </p> */}
-                      <form>
+                      <form onSubmit={handleSubmit}>
                         <div className="relative w-full mb-3 ">
                           <label
                             className="block uppercase  mb-2 text-sm text-gray-600 font-semibold px-1"
@@ -126,6 +161,9 @@ export const Contact = () => {
                           <input
                             id="full-name"
                             type="text"
+                            value={name}
+                            name="name"
+                            onChange={handleInput}
                             required
                             className="px-3 py-4  placeholder-gray-300 text-gray-800 bg-white border-2 border-gray-200 outline-none font-medium text-sm lg:text-lg focus:border-gray-600 rounded-lg   shadow focus:outline-none w-full ease-linear transition-all duration-150"
                             placeholder="Full Name"
@@ -140,6 +178,9 @@ export const Contact = () => {
                           <input
                             id="email"
                             type="email"
+                            value={email}
+                            name="email"
+                            onChange={handleInput}
                             required
                             className="px-3 py-4  placeholder-gray-300 text-gray-800 bg-white border-2 border-gray-200 outline-none font-medium text-sm lg:text-lg focus:border-gray-600 rounded-lg   shadow focus:outline-none w-full ease-linear transition-all duration-150"
                             placeholder="Email"
@@ -155,6 +196,9 @@ export const Contact = () => {
                             id="message"
                             rows="4"
                             cols="80"
+                            value={message}
+                            name="message"
+                            onChange={handleInput}
                             required
                             className="px-3 py-4  placeholder-gray-300 text-gray-800 bg-white border-2 border-gray-200 outline-none font-medium text-sm lg:text-lg focus:border-gray-600 rounded-lg   shadow focus:outline-none w-full"
                             placeholder="Type a message..."></textarea>

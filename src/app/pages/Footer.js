@@ -66,11 +66,11 @@ export const Footer = () => {
             </span> */}
           </Link>
 
-          <Link
+          {/* <Link
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
             to="/technology">
             Technology
-          </Link>
+          </Link> */}
         </div>
 
         {/* ================================PRODUCTS==================================== */}
@@ -99,11 +99,11 @@ export const Footer = () => {
             to="/products/intelligent-audio-overview">
             Intelligent Audio
           </Link>
-          <Link
+          {/* <Link
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
             to="/products/energy-management-overview">
             Energy Management
-          </Link>
+          </Link> */}
         </div>
 
         {/* ================================RESOURCES==================================== */}
@@ -116,11 +116,11 @@ export const Footer = () => {
             to="/resources/blogs">
             Blogs
           </Link>
-          <Link
+          {/* <Link
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
             to="/resources/videos">
             Videos
-          </Link>
+          </Link> */}
           <Link
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
             to="/resources/research">
