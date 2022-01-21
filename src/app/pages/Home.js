@@ -1,7 +1,7 @@
 import BGTech from "../../assets/images/BGTech.jpg";
 import BGTech4 from "../../assets/images/BGTech4.jpg";
 import AosImg from "../../assets/images/AOS.jpg";
-import IAImg from "../../assets/images/IA.jpg";
+import IAImg from "../../assets/images/IA_Img.jpg";
 import RetailImg from "../../assets/images/retail.jpg";
 import BankImg from "../../assets/images/Bank.jpg";
 import CityImg from "../../assets/images/City.jpg";
@@ -32,7 +32,7 @@ export function Home() {
       img: CityImg,
     },
     {
-      label: "Intelligent Audio",
+      label: "Audio Visual",
       img: IAImg,
     },
   ];
@@ -57,8 +57,8 @@ export function Home() {
                 AI at the edge
               </h1>
               <p className=" mt-2 lg:mt-4 text-center lg:text-justify text-base lg:text-xl sm:max-w-sm sm:mx-auto md:mt-5  lg:mx-0">
-                Guise AI algorithms at the edge identify and refine critical
-                data to drive your business.
+                Guise AI at the edge leverages local compute to extract
+                meaningful data, delivering better insights for enterprises.
               </p>
             </div>
           </div>
@@ -99,10 +99,6 @@ export function Home() {
                   with massive volumes of data is changing the topology of
                   distributed enterprises. Computing data at the edge is rapidly
                   growing, but how do you properly harness your untapped data?
-                </p>
-                <p className="sm:max-w-lg sm:mx-auto lg:mx-0">
-                  Guise AI at the edge leverages local compute to extract
-                  meaningful data delivering better insights for enterprises.
                 </p>
               </div>
             </div>
