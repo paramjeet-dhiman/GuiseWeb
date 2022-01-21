@@ -1,5 +1,4 @@
 import BGTech from "../../assets/images/BGTech.jpg";
-import BGTech4 from "../../assets/images/BGTech4.jpg";
 import AosImg from "../../assets/images/AOS.jpg";
 import IAImg from "../../assets/images/IA_Img.jpg";
 import RetailImg from "../../assets/images/retail.jpg";
@@ -32,7 +31,7 @@ export function Home() {
       img: CityImg,
     },
     {
-      label: "Audio Visual",
+      label: "Audiovisual",
       img: IAImg,
     },
   ];
@@ -42,7 +41,7 @@ export function Home() {
       {/*================= Hero Section ===================*/}
 
       <section className="flex items-center justify-center h-screen  bg-white">
-        <div className=" mt-10 lg:mt-20  px-8   md:px-20  lg:px-40  grid lg:grid-cols-12 gap-10 lg:gap-20  ">
+        <div className=" mt-10 lg:mt-20  px-8   md:px-20  lg:px-40  grid lg:grid-cols-12 gap-10 lg:gap-10  ">
           <div className="col-span-full lg:col-span-6 flex flex-col justify-center w-full ">
             {/* <h2 className="text-3xl md:text-5xl font-bold uppercase text-center lg:text-left ">
               AI at the edge
@@ -52,11 +51,11 @@ export function Home() {
               to drive your business.
             </p> */}
 
-            <div className="text-center lg:text-left w-full ">
-              <h1 className="text-4xl tracking-wide lg:tracking-wider font-bold   uppercase sm:text-5xl md:text-5xl">
+            <div className="text-center  lg:text-left w-full lg:max-w-xl">
+              <h1 className="text-4xl lg:text-center tracking-wide lg:tracking-wider font-bold  uppercase sm:text-4xl md:text-5xl">
                 AI at the edge
               </h1>
-              <p className=" mt-2 lg:mt-4 text-center lg:text-justify text-base lg:text-xl sm:max-w-sm sm:mx-auto md:mt-5  lg:mx-0">
+              <p className=" mt-2 lg:mt-5   lg:text-center text-base  w-full  lg:max-w-xl  lg:text-lg">
                 Guise AI at the edge leverages local compute to extract
                 meaningful data, delivering better insights for enterprises.
               </p>
@@ -66,7 +65,7 @@ export function Home() {
           <div className="col-span-full flex items-center justify-center lg:col-span-6 ">
             <img
               src={BGTech}
-              className="object-cover bg-cover bg-center  lg:w-full lg:h-full  rounded-lg shadow-xl  filter drop-shadow-2xl   "
+              className="object-cover bg-cover bg-center md:h-hm md:w-wm lg:w-wl lg:h-hl rounded-lg shadow-xl  filter drop-shadow-2xl   "
               alt="sdf"
               loading="lazy"
               draggable="false"
@@ -76,7 +75,7 @@ export function Home() {
       </section>
 
       {/*========================== Background Image with text ==========================*/}
-      <section className="lg:py-10">
+      {/* <section className="lg:py-10">
         <div className=" lg:mt-20  px-10   md:px-20  lg:px-40  grid lg:grid-cols-12 gap-10 lg:gap-20  ">
           <div className="col-span-full lg:col-span-6  order-2 lg:order-1">
             <img
@@ -104,7 +103,7 @@ export function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ============================= 6 SOLUTIONS CARDS ========================== */}
       <section className="bg-bookmark-white py-10 lg:py-20 mt-10 lg:mt-20 ">
