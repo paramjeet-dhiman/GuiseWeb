@@ -8,7 +8,7 @@ export const ResearchData = [
     of the selected iCVI, the vigilance of iCVI-TopoARTMAP is changed until the iCVI value restarts to improve. At the end of each learning step, if enabled, any combination of the following operations can be performed: swap of categories, merge of clusters, split of clusters, prune-and-reassignment of categories, and compression of clusters. The iCVI-TopoARTMAP maintains useful properties shared by ARTMAP
     models, such as stability, immunity to catastrophic forgetting, and the many-to-one mapping capability via the map field module. On unsupervised learning experiments with a synthetic data set and deep embeddings of a real-world face image data set, iCVI-TopoARTMAP outperformed several state-ofthe-art ART-based models and another iCVI-based online clustering algorithm. Moreover, while some methods showed drastic performance changes upon different orderings, the iCVI-TopoARTMAP yielded consistent performance in all experiments, which was either superior or comparable to performances of the other methods. Similarly, in our experiments, iCVI-TopoARTMAP in semi-supervised learning mode yielded results that were either superior or comparable to a supervised nearest neighbor classifier in prediction mode.`,
 
-    link: `/`,
+    link: `https://arxiv.org/abs/2108.07743`,
   },
   {
     title: `Accelerating and improving clustering using adaptive resonance theory predictive mapping and incremental cluster validity indices`,
@@ -32,6 +32,6 @@ export const ResearchData = [
     sets. Naturally, the performance of iCVI-ARTMAP is subject to the selected iCVI and its suitability to
     the data at hand; fortunately, it is a general model wherein other iCVIs can be easily embedded.`,
 
-    link: `/`,
+    link: `https://arxiv.org/abs/2008.09903`,
   },
 ];

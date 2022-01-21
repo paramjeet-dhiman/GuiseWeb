@@ -8,19 +8,19 @@ const faqs = [
   },
 
   {
-    question: `How is shifting AI to the edge cost-effective for my organization?`,
-    answer: `With our constant research and breakthroughs at Guise AI, we are able to push the limit of AI on edge and provide a solution that can run on extremely low cost compute modules such as the Raspberry Pi. You can now run AI applications on edge devices without the need to purchase sophisticated and expensive hardware. These independent edge devices are several times cheaper than any sophisticated hardware. The edge-based compute devices paired with our application act as small, low cost and easy to install independent modules with a one time configuration.`,
+    question: `Why is shifting AI to the edge cost-effective for my organization?`,
+    answer: `With our constant research and breakthroughs at Guise AI, we are able to push the limit of AI on edge and provide a solution that can run on extremely low cost compute modules such as the Raspberry Pi. You can now run AI applications on edge devices without the need to purchase sophisticated and expensive hardware through these independent edge devices that are several times cheaper. The edge-based compute devices paired with our application act as small, low cost and easy to install independent modules with a one time configuration.`,
   },
   {
-    question: `How do I approach Guise AI for a solution?`,
-    answer: `Please visit our Contact Us or Book a Demo page to get in touch with us from the website itself. Additionally, you can visit our social links and reach out to us there as well. (maybe provide some links here?)`,
+    question: ` How do I contact Guise AI for a solution or demo?`,
+    answer: `Please visit our Contact Us or Book a Demo page to get in touch with us from the website itself. Additionally, you can visit our social links and reach out to us there as well.`,
   },
   {
     question: `Will the edge approach meet my organization's privacy and security needs?`,
     answer: `Guise AI Vision Kit at the edge delivers feedback rapidly and locally within the system. Localized processing is more efficient, less expensive, and it increases the level of security in terms of data privacy while maintaining GDPR compliance.    `,
   },
   {
-    question: `I have spent money setting up a distributed surveillance/video camera/signage system. Is it possible to use Guise AI to upgrade this system to be able to use AI based analytics?`,
+    question: `I have invested in a distributed surveillance/video camera/signage system. Is it possible to use Guise AI to upgrade this system to enable AI based analytics?`,
     answer: `Guise AI turns the connected camera into a smart camera to boost statistical analysis and help develop more robust systems. Our algorithms generate meaningful insights from data streams to help you create the greatest impact on your customers and improve operations. Our applications are extremely modular in nature and extend support to many already existing setups. With the help of cost-effective edge based devices, we are able to augment pre-installed devices such as CCTV/USB cameras. Installation in various locations are extremely easy and discrete.`,
   },
   {
@@ -56,7 +56,6 @@ export function FAQ() {
           {faqs.map((item, index) => (
             <div key={index}>
               <div
-               
                 className={`filter drop-shadow-xl px-5 lg:px-10 py-4  shadow    rounded-md border ${
                   clicked === index ? " shadow-xl bg-white" : "hover:bg-gray-50"
                 }`}

@@ -4,6 +4,7 @@ import airplaneProduct from "../../assets/images/airplane_product.jpg";
 import audioProduct from "../../assets/images/audio_product.jpeg";
 import signageProduct from "../../assets/images/ds_product.jpeg";
 import trafficProduct from "../../assets/images/traffic_product.jpeg";
+import ProductBgImg from "../../assets/images/product_bg.jpg";
 import { HeroHeader } from "../components/HeroHeader/HeroHeader";
 
 export const Products = () => {
@@ -43,12 +44,7 @@ export const Products = () => {
 
   return (
     <div className="bg-white h-full">
-      <HeroHeader
-        img={
-          "https://images.pexels.com/photos/5054213/pexels-photo-5054213.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        }
-        title="Products"
-      />
+      <HeroHeader img={ProductBgImg} title="Products" />
 
       <div className="lg:py-10"></div>
       {productsInfo.map((product, index) => (

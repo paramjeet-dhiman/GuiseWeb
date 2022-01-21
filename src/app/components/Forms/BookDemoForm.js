@@ -7,8 +7,8 @@ export const BookDemoForm = () => {
     company: "",
     email: "",
     phone: "",
-    product: "",
-    findus: "",
+    product: "Airport Ground Operations",
+    findus: "Facebook",
   };
   const [data, setData] = useState(formData);
 
@@ -226,6 +226,7 @@ export const BookDemoForm = () => {
               // value="1"
               value={product}
               name="product"
+              required
               onChange={handleInput}
               className="select w-full rounded-lg border-2 text-core-black border-gray-200 outline-none focus:border-gray-900  bg-white  pl-4 py-4 appearance-none flex items-center ">
               <option defaultValue disabled>
@@ -267,7 +268,7 @@ export const BookDemoForm = () => {
 
               <select
                 // value={"1"}
-
+                required
                 value={findus}
                 name="findus"
                 onChange={handleInput}
@@ -275,10 +276,10 @@ export const BookDemoForm = () => {
                 <option defaultValue disabled>
                   How do you hear about us?
                 </option>
-                <option value="facebook">Facebook</option>
-                <option value="linkedin">LinkedIn</option>
-                <option value="twitter">Twitter</option>
-                <option value="online">Other</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Linkedin">LinkedIn</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Other">Other</option>
               </select>
             </div>
           </div>

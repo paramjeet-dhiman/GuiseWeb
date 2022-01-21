@@ -212,7 +212,7 @@ export function Home() {
                   {item.icon}
                 </div>
                 <div className="text-center text-core-black   ">
-                  <h4 className="text-lg md:text-xl lg:text-xl font-bold uppercase">
+                  <h4 className="text-lg md:text-xl lg:text-2xl font-bold uppercase">
                     {item.title}
                   </h4>
                 </div>
