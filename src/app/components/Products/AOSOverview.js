@@ -11,6 +11,7 @@ import AOSSafety from "../../../assets/images/AosSafety.jpg";
 import AOSAsset from "../../../assets/images/AosAsset.jpg";
 import AOSAdv from "../../../assets/images/AosBenefits.jpg";
 import AOSHeadBrief from "../../../assets/images/AosHeadBrief.jpg";
+import { MarqueeComponent } from "../Marquee/MarqueeComponent";
 
 export const AOSOverview = () => {
   let data = {
@@ -99,6 +100,59 @@ export const AOSOverview = () => {
     { title: `Maximize asset utilization` },
     { title: `Accurate data for better planning` },
     { title: `Increased transparency and record keeping for safety audits` },
+  ];
+
+  const marqueeData = [
+    {
+      title: "Safety Code",
+      bio: "With safety equipment and uniform detection",
+      img: `https://images.unsplash.com/photo-1547447175-a68d11e30d6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=817&q=80`,
+    },
+    {
+      title: "Vehicle Management",
+      bio: "With vehicle detection and tracking",
+      img: `https://images.unsplash.com/photo-1523359501256-962c803a361b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80`,
+    },
+    {
+      title: "Demographic Analysis",
+      bio: "With Age and Gender",
+      img: `https://images.unsplash.com/photo-1541848756149-e3843fcbbde0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1785&q=80`,
+    },
+    {
+      title: "Traffic Violations",
+      bio: "With signal jumping and line crossing detections",
+      img: `https://images.unsplash.com/photo-1613314188851-2c04697535ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80`,
+    },
+    {
+      title: "Vehicle Tracking",
+      bio: "With automatic license plate recognition",
+      img: `https://images.unsplash.com/photo-1590417328119-564c9a26bade?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    },
+    {
+      title: "Noise Cancellation",
+      bio: "With AI powered noise detection and filtration",
+      img: `https://images.unsplash.com/photo-1572119244337-bcb4aae995af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    },
+    {
+      title: "Health Safety",
+      bio: "With PPE kit and mask  detections",
+      img: `https://images.unsplash.com/photo-1604573259181-e71b6f7a27de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+    },
+    {
+      title: "Vehicle Tracking",
+      bio: "With automatic license plate recognition",
+      img: `https://images.unsplash.com/photo-1590417328119-564c9a26bade?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    },
+    {
+      title: "Person Engagement",
+      bio: "With dwell and wait times",
+      img: `https://images.unsplash.com/photo-1533655206261-d897966d6ed7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    },
+    {
+      title: "Road Safety Violations",
+      bio: "With helmet detections, illegal parking and more",
+      img: `https://images.unsplash.com/photo-1471005079120-48d06d620b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80`,
+    },
   ];
 
   return (
@@ -645,6 +699,17 @@ export const AOSOverview = () => {
             </div>
           </div>
         </section> */}
+      </section>
+
+      <section className="py-10 bg-white lg:py-20 ">
+        <h2 className="text-3xl lg:text-5xl text-center font-medium mb-8">
+          Guise AI solutions for all of your use cases
+          <span className="text-blue-500 font-bold"> </span>
+        </h2>
+        <div>
+          <MarqueeComponent direction="left" data={marqueeData.slice(0, 5)} />
+          <MarqueeComponent direction="right" data={marqueeData.slice(5)} />
+        </div>
       </section>
 
       <DemoComponent />

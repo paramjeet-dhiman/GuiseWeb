@@ -66,7 +66,7 @@ export const DSOverview = () => {
     },
     {
       title: "Safety",
-      content: `Lorem ipsum dolor sit amet conse, vitae excepturi neque rerum.`,
+      content: `Ensure safe norms among your customers.`,
       list: [
         { title: "Mask detection" },
         { title: "PPE kit detection" },

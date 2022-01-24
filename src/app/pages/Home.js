@@ -5,6 +5,8 @@ import RetailImg from "../../assets/images/retail.jpg";
 import BankImg from "../../assets/images/Bank.jpg";
 import CityImg from "../../assets/images/City.jpg";
 import EMImg from "../../assets/images/EM.jpg";
+import { MarqueeComponent } from "../components/Marquee/MarqueeComponent";
+import { Link } from "react-router-dom";
 
 export function Home() {
   const products = [
@@ -36,6 +38,59 @@ export function Home() {
     },
   ];
 
+  const marqueeData = [
+    {
+      title: "Safety Code",
+      bio: "With safety equipment and uniform detection",
+      img: `https://images.unsplash.com/photo-1547447175-a68d11e30d6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=817&q=80`,
+    },
+    {
+      title: "Vehicle Management",
+      bio: "With vehicle detection and tracking",
+      img: `https://images.unsplash.com/photo-1523359501256-962c803a361b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80`,
+    },
+    {
+      title: "Demographic Analysis",
+      bio: "With Age and Gender",
+      img: `https://images.unsplash.com/photo-1541848756149-e3843fcbbde0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1785&q=80`,
+    },
+    {
+      title: "Traffic Violations",
+      bio: "With signal jumping and line crossing detections",
+      img: `https://images.unsplash.com/photo-1613314188851-2c04697535ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80`,
+    },
+    {
+      title: "Vehicle Tracking",
+      bio: "With automatic license plate recognition",
+      img: `https://images.unsplash.com/photo-1590417328119-564c9a26bade?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    },
+    {
+      title: "Noise Cancellation",
+      bio: "With AI powered noise detection and filtration",
+      img: `https://images.unsplash.com/photo-1572119244337-bcb4aae995af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    },
+    {
+      title: "Health Safety",
+      bio: "With PPE kit and mask  detections",
+      img: `https://images.unsplash.com/photo-1604573259181-e71b6f7a27de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+    },
+    {
+      title: "Vehicle Tracking",
+      bio: "With automatic license plate recognition",
+      img: `https://images.unsplash.com/photo-1590417328119-564c9a26bade?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    },
+    {
+      title: "Person Engagement",
+      bio: "With dwell and wait times",
+      img: `https://images.unsplash.com/photo-1533655206261-d897966d6ed7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+    },
+    {
+      title: "Road Safety Violations",
+      bio: "With helmet detections, illegal parking and more",
+      img: `https://images.unsplash.com/photo-1471005079120-48d06d620b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80`,
+    },
+  ];
+
   return (
     <div className="select-none">
       {/*================= Hero Section ===================*/}
@@ -52,7 +107,7 @@ export function Home() {
             </p> */}
 
             <div className="text-center  lg:text-left w-full lg:max-w-xl">
-              <h1 className="text-4xl lg:text-center tracking-wide lg:tracking-wider font-bold  uppercase sm:text-4xl md:text-5xl">
+              <h1 className="text-4xl lg:text-center tracking-wide lg:tracking-wider font-bold  uppercase  md:text-6xl">
                 AI at the edge
               </h1>
               <p className=" mt-2 lg:mt-5   lg:text-center text-base  w-full  lg:max-w-xl  lg:text-lg">
@@ -106,7 +161,34 @@ export function Home() {
       </section> */}
 
       {/* ============================= 6 SOLUTIONS CARDS ========================== */}
-      <section className="bg-bookmark-white py-10 lg:py-20 mt-10 lg:mt-20 ">
+
+      <section className="bg-bookmark-blue h-full py-10 lg:py-20  ">
+        <div className="px-10  lg:px-20">
+          <div className="text-white">
+            <h2 className="text-3xl lg:text-5xl font-bold lg:leading-tight">
+              Seamlessly integrate with the Edge APIs of
+              <span className="text-blue-500"> Guise AI</span>
+            </h2>
+            <p className="mt-2 lg:mt-5 text-gray-400  text-lg lg:text-xl">
+              Modernize your business operations at the edge with Guise AI
+            </p>
+          </div>
+
+          {/* <div className="grid grid-cols-1  lg:grid-cols-3 gap-20 py-10 mt-10 ">
+            {new Array(3).fill(1).map((item) => (
+              <div
+                className="p-20 rounded-lg shadow-xl filter drop-shadow-2xl"
+                style={{
+                  backgroundImage: `url(https://images.unsplash.com/photo-1642775588674-3ad7225d3f10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80) `,
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}></div>
+            ))}
+          </div> */}
+        </div>
+      </section>
+
+      <section className="bg-bookmark-white py-10 lg:py-20 ">
         <div className="px-8 md:px-48">
           <h2 className="text-2xl lg:text-4xl  font-semibold text-center lg:leading-tight ">
             Guise AI runs industry-specific AI models at the edge which provide
@@ -135,9 +217,9 @@ export function Home() {
 
       {/*============================= WHY US ? =========================== */}
 
-      <section className="bg-white py-10 lg:py-20">
+      <section className="bg-bookmark-blue py-10 lg:py-20">
         <div className="px-8 md:px-0">
-          <h1 className=" text-3xl lg:text-4xl font-semibold text-center ">
+          <h1 className="text-3xl lg:text-5xl text-center text-white font-bold  ">
             Why Choose Guise AI ?
           </h1>
         </div>
@@ -214,6 +296,30 @@ export function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className=" py-10 lg:py-20">
+        <h1 className="text-3xl  lg:text-5xl text-center  font-bold lg:leading-tight">
+          Guise AI at the edge for all of your use cases
+        </h1>
+        <div className="py-10">
+          <MarqueeComponent direction="left" data={marqueeData.slice(0, 5)} />
+          <MarqueeComponent direction="right" data={marqueeData.slice(5)} />
+        </div>
+      </section>
+
+      <section className="bg-bookmark-blue py-10 lg:py-20">
+        <div className="flex px-10 lg:px-8 space-y-16  text-white flex-col justify-center items-center">
+          <h2 className="text-2xl  lg:text-4xl  font-bold lg:leading-tight">
+            Contact us to get started with the high performance AI engine at the
+            Edge
+          </h2>
+          <Link to="/demo" className="">
+            <span className="text-white px-4 py-2 md:py-3  text-lg lg:text-xl uppercase  font-semibold border-2 border-white hover:border-blue-500 hover:bg-blue-500  hover:scale-105 hoverTransition  hover:text-white ">
+              Book a Demo
+            </span>
+          </Link>
         </div>
       </section>
     </div>
