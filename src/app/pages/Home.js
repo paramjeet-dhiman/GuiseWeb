@@ -40,54 +40,62 @@ export function Home() {
 
   const marqueeData = [
     {
-      title: "Safety Code",
-      bio: "With safety equipment and uniform detection",
-      img: `https://images.unsplash.com/photo-1547447175-a68d11e30d6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=817&q=80`,
-    },
-    {
-      title: "Vehicle Management",
-      bio: "With vehicle detection and tracking",
-      img: `https://images.unsplash.com/photo-1523359501256-962c803a361b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80`,
-    },
-    {
       title: "Demographic Analysis",
       bio: "With Age and Gender",
-      img: `https://images.unsplash.com/photo-1541848756149-e3843fcbbde0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1785&q=80`,
+      img: `https://images.unsplash.com/photo-1577721174006-98a67a796931?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60`,
     },
     {
-      title: "Traffic Violations",
-      bio: "With signal jumping and line crossing detections",
-      img: `https://images.unsplash.com/photo-1613314188851-2c04697535ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80`,
+      title: "Person Engagement",
+      bio: "With dwell and wait times",
+      img: `https://images.pexels.com/photos/5225266/pexels-photo-5225266.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
     },
     {
-      title: "Vehicle Tracking",
-      bio: "With automatic license plate recognition",
+      title: "Footfall Analysis",
+      bio: "With people count",
+      img: `https://images.unsplash.com/photo-1484353371297-d8cfd2895020?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1479&q=80`,
+    },
+    {
+      title: "Safety Compliance",
+      bio: "With HardHat, and Safety Jacket",
+      img: `https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+    },
+    {
+      title: "License Plate Recognition",
+      // bio: "With automatic license plate recognition",
       img: `https://images.unsplash.com/photo-1590417328119-564c9a26bade?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
+    {
+      title: "Traffic Analysis",
+      bio: "With vehicle count and pedestrian detection",
+      img: `https://images.unsplash.com/photo-1523359501256-962c803a361b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80`,
+    },
+
+    {
+      title: "Traffic Violations",
+      bio: "With Illegal parking, Speed violation, Red light violation, Wrong lane, and Stop Line violation detection",
+      img: `https://images.unsplash.com/photo-1515543582370-4cff31e54e8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80`,
+    },
+
     {
       title: "Noise Cancellation",
       bio: "With AI powered noise detection and filtration",
       img: `https://images.unsplash.com/photo-1572119244337-bcb4aae995af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
     },
     {
-      title: "Health Safety",
-      bio: "With PPE kit and mask  detections",
-      img: `https://images.unsplash.com/photo-1604573259181-e71b6f7a27de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80`,
+      title: "Noise Detection",
+      bio: "With AI powered noise detection and filtration",
+      img: `https://images.unsplash.com/photo-1574064565163-af7a987a1490?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80`,
+    },
+
+    {
+      title: "Logo Detection",
+      // bio: "With AI powered noise detection and filtration",
+      img: `https://images.unsplash.com/photo-1541797873665-6d4cc148885f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGxvZ29zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60`,
     },
     {
-      title: "Vehicle Tracking",
-      bio: "With automatic license plate recognition",
-      img: `https://images.unsplash.com/photo-1590417328119-564c9a26bade?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    },
-    {
-      title: "Person Engagement",
-      bio: "With dwell and wait times",
-      img: `https://images.unsplash.com/photo-1533655206261-d897966d6ed7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
-    },
-    {
-      title: "Road Safety Violations",
-      bio: "With helmet detections, illegal parking and more",
-      img: `https://images.unsplash.com/photo-1471005079120-48d06d620b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80`,
+      title: "Color Detection",
+      // bio: "With AI powered noise detection and filtration",
+      img: `https://images.pexels.com/photos/1585325/pexels-photo-1585325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
     },
   ];
 
@@ -165,12 +173,12 @@ export function Home() {
       <section className="bg-bookmark-blue h-full py-10 lg:py-20  ">
         <div className="px-10  lg:px-20">
           <div className="text-white">
-            <h2 className="text-3xl lg:text-5xl font-bold lg:leading-tight">
+            <h2 className="text-3xl lg:text-5xl text-center font-bold lg:leading-tight">
               Seamlessly integrate with the Edge APIs of
               <span className="text-blue-500"> Guise AI</span>
             </h2>
-            <p className="mt-2 lg:mt-5 text-gray-400  text-lg lg:text-xl">
-              Modernize your business operations at the edge with Guise AI
+            <p className="mt-2 lg:mt-5 text-gray-400 text-center  text-lg lg:text-3xl">
+              We are hardware agnostic
             </p>
           </div>
 
@@ -304,8 +312,8 @@ export function Home() {
           Guise AI at the edge for all of your use cases
         </h1>
         <div className="py-10">
-          <MarqueeComponent direction="left" data={marqueeData.slice(0, 5)} />
-          <MarqueeComponent direction="right" data={marqueeData.slice(5)} />
+          <MarqueeComponent direction="left" data={marqueeData.slice(0, 6)} />
+          <MarqueeComponent direction="right" data={marqueeData.slice(6)} />
         </div>
       </section>
 
