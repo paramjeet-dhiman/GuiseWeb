@@ -7,7 +7,7 @@ export const Research = () => {
     <div className="bg-white">
       <HeroHeader
         img={
-          "https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          "https://images.pexels.com/photos/3109168/pexels-photo-3109168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         }
         title="Research"
       />
@@ -23,6 +23,12 @@ export const Research = () => {
           </a>
           <p className=" mt-2 lg:mt-4 text-justify text-lg lg:text-xl">
             {item.description}
+
+            <span className="italic font-semibold text-core-guise hover:underline">
+              <a href={item.link} target="_blank" rel="noreferrer noopener">
+                Read more
+              </a>
+            </span>
           </p>
         </section>
       ))}

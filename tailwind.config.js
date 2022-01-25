@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         "core-black": "#23282F",
+        "core-guise": "#007eff",
         "bookmark-purple": "#5267DF",
         "bookmark-red": "#FA5959",
         "bookmark-teal": "#00c7bc",
@@ -92,6 +93,7 @@ module.exports = {
         hm: "80%",
         hl: "90%",
         hxl: "28rem",
+        hlg: "24rem",
       }),
       width: (theme) => ({
         wb: "60%",

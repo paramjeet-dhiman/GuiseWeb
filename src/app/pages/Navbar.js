@@ -356,8 +356,8 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "px-3 py-2 bg-core-black border-2 border-core-black uppercase text-white text-lg font-bold"
-                    : "px-3 py-2 text-lg font-semibold border-2 uppercase hover:border-gray-500 hover:text-gray-700  border-core-black "
+                    ? "px-3 py-2 bg-core-black rounded-md border-2 border-core-black uppercase text-white text-lg font-bold"
+                    : "px-3 rounded-md py-2 text-lg font-semibold border-2 uppercase hover:border-gray-500 hover:text-gray-700  border-core-black "
                 }
                 to="/demo">
                 Book a Demo

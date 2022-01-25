@@ -12,7 +12,7 @@ export const MarqueeComponent = ({ direction, data }) => {
         {data.map((item, idx) => (
           <div
             key={`marquee-example-review-${idx}`}
-            className="bg-white filter hoverTransition  drop-shadow-lg hover:shadow-lg    rounded-lg mx-5 lg:mx-10">
+            className="bg-white filter hoverTransition  drop-shadow-lg hover:shadow-lg    rounded-lg mx-5 lg:mx-20">
             <article
               key={idx}
               className="relative w-48 h-48 lg:w-64 lg:h-64 bg-cover bg-center group rounded-lg overflow-hidden shadow-lg filter drop-shadow-lg"

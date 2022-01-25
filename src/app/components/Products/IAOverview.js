@@ -5,8 +5,6 @@ import Tab from "../TabSlider/TabSlider";
 import BGIA from "../../../assets/images/BGIA.jpg";
 import IAAdv from "../../../assets/images/IABenefits.jpg";
 import IAHeadBrief from "../../../assets/images/IAHeadBrief.jpg";
-import IATabNoise from "../../../assets/images/IATabNoise.jpg";
-import IATabCancell from "../../../assets/images/IATabNCancel.jpg";
 
 export const IAOverview = () => {
   let data = {
@@ -27,7 +25,7 @@ export const IAOverview = () => {
         { title: "Gunshot" },
         { title: "Yelling/Screaming" },
       ],
-      img: IATabNoise,
+      img: `https://images.pexels.com/photos/266509/pexels-photo-266509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`,
     },
     {
       title: "Noise Cancellation",
@@ -44,7 +42,7 @@ export const IAOverview = () => {
         { title: "Siren" },
         { title: "Street music" },
       ],
-      img: IATabCancell,
+      img: `https://images.unsplash.com/photo-1629203805267-de9c6225e6de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80`,
     },
   ];
 
@@ -52,9 +50,9 @@ export const IAOverview = () => {
 
   const advantages = [
     {
-      title: `State-of-the art software for next level noise cancellation and detection`,
+      title: `State-of-the-art software for next level noise cancellation and detection`,
     },
-    { title: `Enhance the quality of of your audio` },
+    { title: `Enhance the quality of your audio` },
     { title: `Seamless integration with existing hardware` },
     { title: `Provide the most captivating audio experience for listeners` },
     {

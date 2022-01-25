@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <footer className="bg-gray-800  overflow-hidden ">
-      <div className="flex flex-wrap py-10  justify-center md:justify-between gap-5  px-5   sm:gap-5 md:gap-0 lg:px-40 ">
+      <div className="flex flex-wrap py-28  justify-center md:justify-between gap-5  px-5   sm:gap-5 md:gap-0 lg:px-40 ">
         {/* ================================Logo==================================== */}
 
         <div className="pt-24 w-72 lg:w-2/12 hidden lg:block   ">
@@ -144,12 +144,12 @@ export const Footer = () => {
             FAQ
             <span className="text-social-facebook text-xs p-1"></span>
           </Link>
-          <Link
+          {/* <Link
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
             to="/help-and-support">
             Help Center
             <span className="text-social-facebook text-xs p-1"></span>
-          </Link>
+          </Link> */}
           <Link
             className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
             to="/policy">
