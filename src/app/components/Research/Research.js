@@ -26,6 +26,7 @@ export const Research = () => {
 
             <span className="italic font-semibold text-core-guise hover:underline">
               <a href={item.link} target="_blank" rel="noreferrer noopener">
+                {" "}
                 Read more
               </a>
             </span>
