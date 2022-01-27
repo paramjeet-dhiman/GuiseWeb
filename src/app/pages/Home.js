@@ -1,66 +1,77 @@
 import BGTech from "../../assets/images/BGTech.jpg";
 import { Link } from "react-router-dom";
 import { AutoPlaySlide } from "../components/Marquee/AutoPlaySlide";
+import demographic_slide_img from "../../assets/images/demographics_slide.jpg";
+import pe_slide_img from "../../assets/images/pengage_slide.jpg";
+import footfall_slide_img from "../../assets/images/footfall_slide.jpg";
+import safety_slide_img from "../../assets/images/safety_compliance_slide.jpg";
+import lpr_slide_img from "../../assets/images/lpr_slide.jpg";
+import traffic_slide_img from "../../assets/images/traffic_analysis_slide.jpg";
+import trafficViolations_slide_img from "../../assets/images/traffic_violations_slide.jpg";
+import noiseCancel_slide_img from "../../assets/images/noise_cancel_slide.jpg";
+import noisedetect_slide_img from "../../assets/images/noise_detect_slide.jpg";
+import logodetect_slide_img from "../../assets/images/logo_detect_slide.jpg";
+import colordetect_slide_img from "../../assets/images/color_detect_slide.jpg";
 
 export function Home() {
   const marqueeData = [
     {
       title: "Demographic Analysis",
       bio: "With Age and Gender",
-      img: `https://images.unsplash.com/photo-1577721174006-98a67a796931?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGFnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60`,
+      img: demographic_slide_img,
     },
     {
       title: "Person Engagement",
       bio: "With dwell and wait times",
-      img: `https://images.pexels.com/photos/5225266/pexels-photo-5225266.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+      img: pe_slide_img,
     },
     {
       title: "Footfall Analysis",
       bio: "With people count",
-      img: `https://images.unsplash.com/photo-1484353371297-d8cfd2895020?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1479&q=80`,
+      img: footfall_slide_img,
     },
     {
       title: "Safety Compliance",
       bio: "With HardHat, and Safety Jacket",
-      img: `https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+      img: safety_slide_img,
     },
     {
       title: "License Plate Recognition",
       // bio: "With automatic license plate recognition",
-      img: `https://images.unsplash.com/photo-1590417328119-564c9a26bade?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+      img: lpr_slide_img,
     },
     {
       title: "Traffic Analysis",
       bio: "With vehicle count and pedestrian detection",
-      img: `https://images.unsplash.com/photo-1523359501256-962c803a361b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80`,
+      img: traffic_slide_img,
     },
 
     {
       title: "Traffic Violations",
       bio: "With Illegal parking, Speed violation, Red light violation, Wrong lane, and Stop Line violation detection",
-      img: `https://images.unsplash.com/photo-1515543582370-4cff31e54e8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80`,
+      img: trafficViolations_slide_img,
     },
 
     {
       title: "Noise Cancellation",
       bio: "With AI powered noise detection and filtration",
-      img: `https://images.unsplash.com/photo-1572119244337-bcb4aae995af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80`,
+      img: noiseCancel_slide_img,
     },
     {
       title: "Noise Detection",
       bio: "With AI powered noise detection and filtration",
-      img: `https://images.unsplash.com/photo-1574064565163-af7a987a1490?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80`,
+      img: noisedetect_slide_img,
     },
 
     {
       title: "Logo Detection",
       // bio: "With AI powered noise detection and filtration",
-      img: `https://images.unsplash.com/photo-1541797873665-6d4cc148885f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGxvZ29zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60`,
+      img: logodetect_slide_img,
     },
     {
       title: "Color Detection",
       // bio: "With AI powered noise detection and filtration",
-      img: `https://images.pexels.com/photos/1585325/pexels-photo-1585325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940`,
+      img: colordetect_slide_img,
     },
   ];
 
