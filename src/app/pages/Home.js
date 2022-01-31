@@ -155,8 +155,8 @@ export function Home() {
               <p className="mt-2 lg:mt-10 text-gray-400 text-center max-w-screen-lg  text-lg lg:text-2xl">
                 Guise AI at the Edge is built to make AI easier to use with low
                 latency and at less bandwidth, while still maintaining expert
-                levels of accuracy, speed, and privacy. It is hardware agnostic
-                and brings out insights from your unstructured data.
+                levels of accuracy, speed, and privacy. It is hardware agnostic,
+                allowing you to scale up with the existing infrastructure.
               </p>
             </div>
             <Link to="/products">
@@ -318,7 +318,7 @@ export function Home() {
 
       <section className="bg-bookmark-blue py-10 lg:py-28">
         <div className="flex px-10 lg:px-8 space-y-16  text-white flex-col justify-center items-center">
-          <h2 className="text-2xl  lg:text-5xl  font-bold lg:leading-tight">
+          <h2 className="text-2xl  text-center lg:text-5xl  font-bold lg:leading-tight">
             Get started with{" "}
             <span className="text-core-guise  ">Guise AI </span> at the Edge
           </h2>

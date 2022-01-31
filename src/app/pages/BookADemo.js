@@ -1,17 +1,11 @@
 import React from "react";
 import { HeroHeader } from "../components/HeroHeader/HeroHeader";
-
 import { BookDemoForm } from "../components/Forms/BookDemoForm";
-
+import HeaderIMG from "../../assets/images/HeaderBookDemo.jpg";
 export const BookADemo = () => {
   return (
     <div className="bg-white h-full select-none">
-      <HeroHeader
-        img={
-          "https://images.pexels.com/photos/5054213/pexels-photo-5054213.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        }
-        title="Request a DEMO"
-      />
+      <HeroHeader img={HeaderIMG} title="Request a DEMO" />
 
       <section className="bg-white py-10 lg:py-20 mt-10 lg:mt-10 ">
         <div className="sm:w-3/4 lg:w-6/12 mx-auto px-12 lg:px-2 ">

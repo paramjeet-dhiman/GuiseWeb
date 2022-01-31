@@ -24,10 +24,10 @@ export const BookDemoForm = () => {
     e.preventDefault();
     try {
       emailjs.sendForm(
-        "service_fdmliu9",
-        "template_i6egpjm",
+        "service_cz0zrl2",
+        "template_4tw6vvy",
         form.current,
-        "user_L31JS0rQyzwpPzJTORbId"
+        "user_fDYUY29OPKkusPwKGheJL"
       );
 
       const response = await fetch(

@@ -4,7 +4,6 @@ import { Navbar } from "./Navbar";
 
 const MobileNavItems = [
   { title: "Products", link: "/products" },
-  { title: "Technology", link: "/technology" },
   { title: "Research", link: "/resources/research" },
   { title: "Careers", link: "/company/careers" },
   { title: "About Us", link: "/company/about" },

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { HeroHeader } from "../components/HeroHeader/HeroHeader";
+import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
   const [data, setData] = useState({
@@ -14,9 +15,18 @@ export const Contact = () => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
 
+  const form = useRef();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      emailjs.sendForm(
+        "service_cz0zrl2",
+        "template_c64sz48",
+        form.current,
+        "user_fDYUY29OPKkusPwKGheJL"
+      );
+
       const response = await fetch(
         "https://v1.nocodeapi.com/paramjeet/google_sheets/OtWWiwylwJgBsqDe?tabId=Sheet1",
         {
@@ -151,7 +161,7 @@ export const Contact = () => {
                       <p className="leading-relaxed mt-1 mb-4 text-gray-500">
                         Complete this form and we will get back to you
                       </p> */}
-                      <form onSubmit={handleSubmit}>
+                      <form ref={form} onSubmit={handleSubmit}>
                         <div className="relative w-full mb-3 ">
                           <label
                             className="block uppercase  mb-2 text-sm text-gray-600 font-semibold px-1"

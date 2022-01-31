@@ -1,16 +1,12 @@
 import React from "react";
 import BGJoin from "../../assets/images/AboutJoin.jpg";
+import BGCareers from "../../assets/images/BGcareers.jpg";
 import { HeroHeader } from "../components/HeroHeader/HeroHeader";
 
 export const Carrers = () => {
   return (
     <div className="">
-      <HeroHeader
-        img={
-          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
-        }
-        title={"Careers"}
-      />
+      <HeroHeader img={BGCareers} title={"Careers"} />
 
       <section className="bg-bookmark-white py-10 lg:py-20">
         <div className="flex flex-col lg:flex-row items-center  md:px-40   gap-y-10">

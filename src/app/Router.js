@@ -5,7 +5,6 @@ import { Home } from "./pages/Home";
 import { Header } from "./pages/Header";
 import { Footer } from "./pages/Footer";
 import { About } from "./pages/About";
-import { Technology } from "./pages/Technology";
 import { Carrers } from "./pages/Carrers";
 import { ScrollToTop } from "./pages/ScrollTop";
 import { NotFound } from "./pages/NotFound";
@@ -19,7 +18,6 @@ import { ProductReview } from "./components/Products/ProductReview";
 import { DSOverview } from "./components/Products/DSOverview";
 import { ScrollButton } from "./components/ScrollButton/ScrollBtn";
 import { ComingSoon } from "./pages/ComingSoon";
-import { HelpCenter } from "./pages/HelpCenter";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { FAQ } from "./components/FAQ/Faq";
 
@@ -31,7 +29,7 @@ export const Router = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         {/* <Route path="/solutions" element={<Solutions />} /> */}
-        <Route path="/technology" element={<Technology />} />
+        {/* <Route path="/technology" element={<Technology />} /> */}
         {/* <Route path="/careers/jobs" element={<Openings />} /> */}
 
         <Route path="/products" element={<Products />} />
@@ -52,7 +50,6 @@ export const Router = () => {
 
         <Route path="/faq" element={<FAQ />} />
         <Route path="/policy" element={<PrivacyPolicy />} />
-        <Route path="/help-and-support" element={<HelpCenter />} />
 
         <Route
           path="/products/airport-operations-overview"

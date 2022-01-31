@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HeroHeader } from "../HeroHeader/HeroHeader";
-
+import FaqImgHeader from "../../../assets/images/FAQIMGHeader.jpg";
 const faqs = [
   {
     question: `What are the advantages of AI at the Edge?`,
-    answer: `Guise AI delivers high quality AI solutions which are capable of running on cost-effective Edge devices. With our specialized research, we are able to push compute resource dependent AI application to the Edge. Furthermore, With our Edge based solutions, we are able to process high bandwidth data locally without having to transfer data over the internet, hence maintaining privacy of the data as well.`,
+    answer: `Guise AI delivers high quality AI solutions which are capable of running on cost-effective edge devices. Furthermore, with our edge based solutions, we are able to process high bandwidth data locally without having to transfer data over the internet, hence maintaining privacy of the data as well.`,
   },
   {
     question: `Can Guise AI run on low cost compute modules?`,
@@ -30,7 +30,7 @@ const faqs = [
 
   {
     question: `How do you preserve accuracy for AI detections on the Edge?`,
-    answer: `Research at Guise AI is focused on pushing AI to the Edge. With several state-of-the-art optimization techniques, we are able to reduce application size by making much more lightweight and robust AI models that are more efficient. For more information, please stay tuned to see our latest news on the resources section.`,
+    answer: `With several state-of-the-art optimization techniques, we are able to reduce the application's size by making much more lightweight and robust AI models that replicate cloud based accuracies on the edge. We are able to customize the models to efficiently utilize resources on any given hardware, in turn providing the best accuracy. For more information, please stay tuned to see our latest news on the resources section.`,
   },
 
   {
@@ -67,12 +67,7 @@ export function FAQ() {
   };
   return (
     <div className="select-none">
-      <HeroHeader
-        img={
-          "https://images.unsplash.com/photo-1518644730709-0835105d9daa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-        }
-        title="Frequently Asked Questions?"
-      />
+      <HeroHeader img={FaqImgHeader} title="Frequently Asked Questions?" />
       <section className="py-10 lg:py-20">
         <div className="grid grid-cols-1 px-10 lg:px-0 container mx-auto gap-y-5">
           {faqs.map((item, index) => (
