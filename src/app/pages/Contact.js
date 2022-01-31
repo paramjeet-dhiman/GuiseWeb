@@ -70,7 +70,7 @@ export const Contact = () => {
       </section> */}
 
       <section className="bg-white py-20 pb-28">
-        <h1 className="text-4xl uppercase mb-10  lg:text-5xl font-bold text-center text-bookmark-blue">
+        <h1 className="text-4xl uppercase mb-10  lg:text-4xl font-bold text-center">
           Get In Touch
         </h1>
         <div className="grid md:px-32  w-full  gap-x-20 gap-y-16 ">
@@ -215,7 +215,7 @@ export const Contact = () => {
                         </div>
                         <div className="text-center mt-6">
                           <button
-                            className="btn btn-black  active:bg-gray-600 text-lg font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                            className="btn btn-black  active:bg-gray-600 xl:text-lg font-bold uppercase px-6 py-3 rounded-sm shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                             type="submit">
                             Send Message
                           </button>

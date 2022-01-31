@@ -3,11 +3,13 @@ import ReactCompareImage from "react-compare-image";
 import Tab from "../TabSlider/TabSlider";
 import { Tick } from "../Ticks/Tick";
 import { DemoComponent } from "../DemoComponent";
+import { ProductHeader } from "./ProductHeader";
+import { ProductHero } from "./ProductHero";
 
 export const ProductReview = () => {
   let data = {
     label: "Traffic Management",
-    subText: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod doloribus at adipisci earum aspernatur veritatis, ad quia reprehenderit repudiandae laudantium`,
+    bio: `Guise Intelligent traffic provides solutions for accurate and comprehensive analyses of city traffic by comprehending visual data through edge based AI assistance. The ability to plan a more efficient and safe traffic management system leads to a smarter city.`,
     bgImg: `https://images.unsplash.com/photo-1488134684157-fea2d81a5ec4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80`,
 
     title: `Lorem Ipsum`,
@@ -83,56 +85,10 @@ export const ProductReview = () => {
   ];
   return (
     <div className="bg-white h-full  select-none">
-      <section
-        className="w-full bg-center bg-cover  "
-        style={{
-          height: "36rem",
-          background: `url(${data.bgImg}) center center / cover no-repeat`,
-        }}>
-        <div className="flex  items-center justify-center w-full h-full bg-black bg-opacity-80">
-          <div className="text-center px-10 lg:px-0">
-            <h1 className="text-4xl font-bold  text-white uppercase md:text-7xl mb-4">
-              {data.label}
-            </h1>
-            <p className="text-bookmark-white text-lg lg:text-xl lg:container lg:px-20">
-              {data.subText}
-            </p>
-          </div>
-        </div>
-      </section>
+      <ProductHeader img={data.bgImg} title={data.label} bio={data.subText} />
 
+      <ProductHero img={data.image1} title={data.label} bio={data.subText} />
       {/* ====================== Section #1  ================== */}
-      <section className="flex flex-col lg:flex-row px-10 py-10 bg-bookmark-smoke lg:py-20 lg:px-40 gap-16 ">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
-          <div className=" w-full lg:w-6/12 md:m-0 md:order-2 ">
-            <div className="flex justify-center relative">
-              <img
-                className="relative z-10  self-start rounded-md shadow-xl w-full h-full"
-                src={data.image1}
-                alt=""
-                draggable="false"
-                loading="lazy"
-
-              />
-            </div>
-          </div>
-          <div className="flex flex-col w-full lg:w-6/12">
-            <h2 className="text-3xl lg:text-5xl font-medium mb-4 ">
-              {data.label}
-            </h2>
-
-            <div className="text-lg lg:text-xl space-y-5  text-gray-500 w-5/6">
-              <p>
-                Guise Intelligent traffic provides solutions for accurate and
-                comprehensive analyses of city traffic by comprehending visual
-                data through edge based AI assistance. The ability to plan a
-                more efficient and safe traffic management system leads to a
-                smarter city.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="bg-white py-10 lg:py-28">
         <div className="sm:w-3/4 container lg:w-6/12 mx-auto px-12 ">

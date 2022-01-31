@@ -50,16 +50,13 @@ export const Products = () => {
       {productsInfo.map((product, index) => (
         <section className="bg-white py-10  mt-10 " key={index}>
           <div className="sm:w-3/4 lg:w-5/12 mx-auto px-12 lg:px-2 ">
-            <h1 className="text-3xl font-semibold lg:text-5xl lg:font-bold text-center text-bookmark-blue">
+            <h1 className="text-3xl font-semibold lg:text-4xl lg:font-bold text-center text-bookmark-blue">
               {product.name}
             </h1>
           </div>
-          <div className="container  md:px-20 mt-5 lg:mt-10">
+          <div className="container  md:px-52  mt-5 lg:mt-5">
             <div className=" text-gray-700 hover:text-bookmark-blue ">
-              <div
-                className="flex justify-center mb-4 lg:h-screen/3 "
-                // style={{ height: "36rem" }}
-              >
+              <div className="flex justify-center mb-4 lg:h-screen/3 ">
                 <Link to={product.url} className="">
                   <img
                     loading="lazy"
@@ -71,7 +68,7 @@ export const Products = () => {
                 </Link>
               </div>
               <div className="px-5 lg:px-0 flex flex-col items-center mt-7 text-center">
-                <div className="text-lg lg:text-xl lg:w-5/6">
+                <div className="text-lg lg:text-xl lg:max-w-3xl">
                   <p>{product.description}</p>
                 </div>
 
@@ -82,20 +79,6 @@ export const Products = () => {
                     <span className="text-sm  lg:text-xl font-bold transform hover:scale-105 hoverTransition ">
                       Read more
                     </span>
-                    {/* <svg className="w-3 h-3" viewBox="0 0 12 12" fill="none">
-                      <path
-                        d="M0 1.00586H11V12.0059"
-                        stroke="currentColor"
-                        strokeWidth="2"></path>
-                      <line
-                        x1="10.857"
-                        y1="1.15437"
-                        x2="0.745382"
-                        y2="11.266"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeMiterlimit="2.61313"></line>
-                    </svg> */}
                   </Link>
                 </div>
               </div>

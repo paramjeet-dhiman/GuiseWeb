@@ -41,11 +41,11 @@ const Tab = ({ children, active = 0 }) => {
 
       <div className="gap-10 lg:gap-20 hoverTransition  grid grid-cols-1 lg:grid-cols-2   h-full  w-full  py-10 bg-white px-5 rounded-lg shadow-xl">
         <div className="order-2 lg:order-1 lg:px-10 flex flex-col mt-5 ">
-          <h2 className="text-3xl lg:text-4xl font-medium mb-4 lg:w-5/6 w-full ">
+          <h2 className="text-3xl lg:text-3xl font-semibold mb-4 lg:w-5/6 w-full ">
             {tabsData[activeTab] && tabsData[activeTab].children.title}
           </h2>
 
-          <p className="text-justify text-core-black  md:text-justify  text-base lg:text-xl w-full">
+          <p className="text-left text-core-black  text-base lg:text-lg xl:text-xl w-full">
             {tabsData[activeTab] && tabsData[activeTab].children.content}
           </p>
           <div className="mt-6 lg:mt-10 space-y-5 flex justify-center flex-col">
@@ -55,9 +55,7 @@ const Tab = ({ children, active = 0 }) => {
                   <div className="flex-shrink-0 flex items-center">
                     <Tick />
                   </div>
-                  <div className="font-medium text-lg lg:text-xl text-gray-700">
-                    {item.title}
-                  </div>
+                  <div className="font-medium text-base xl:text-lg">{item.title}</div>
                 </div>
               ))}
           </div>

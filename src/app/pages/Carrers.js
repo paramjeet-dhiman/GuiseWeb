@@ -9,9 +9,9 @@ export const Carrers = () => {
       <HeroHeader img={BGCareers} title={"Careers"} />
 
       <section className="bg-bookmark-white py-10 lg:py-20">
-        <div className="flex flex-col lg:flex-row items-center  md:px-40   gap-y-10">
+        <div className="flex flex-col lg:flex-row items-center  md:px-20   gap-y-10">
           <div className="w-full lg:w-1/2 px-10 md:px-0 order-2 lg:order-1">
-            <h1 className="text-core-black font-bold text-3xl lg:text-5xl lg:w-5/6 lg:leading-tight ">
+            <h1 className="text-core-black font-semibold text-3xl lg:text-5xl lg:w-5/6 lg:leading-tight ">
               Are you ready to share your expertise?
             </h1>
             <p className="text-core-black lg:text-justify text-base lg:text-xl mt-4 md:mt-6 lg:w-5/6">
@@ -25,7 +25,7 @@ export const Carrers = () => {
                 href="https://www.linkedin.com/company/guise-ai/jobs/"
                 target="_blank"
                 rel="noreferrer noopener">
-                <button className="btn rounded-md  bg-blue-500 hover:bg-blue-600 text-white font-semibold transform hover:scale-105 hoverTransition   text-xl mt-8  px-10 py-4">
+                <button className="btn rounded-sm  bg-blue-500 hover:bg-blue-600 text-white font-semibold transform hover:scale-105 hoverTransition   text-xl mt-8  px-10 py-4">
                   Job openings
                 </button>
               </a>

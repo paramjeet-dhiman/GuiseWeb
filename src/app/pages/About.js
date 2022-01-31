@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <div>
       <section className="flex items-center justify-center h-screen  bg-white">
-        <div className=" mt-10 lg:mt-20  px-8   md:px-20  lg:px-40  grid lg:grid-cols-12 gap-10 lg:gap-20 ">
+        <div className=" mt-10 lg:mt-20  px-8   md:px-20  lg:px-20  grid lg:grid-cols-12 gap-10 lg:gap-20 ">
           <div className="col-span-full lg:col-span-6 flex flex-col justify-center w-full lg:w-10/12">
             <h2 className="text-3xl font-bold uppercase md:text-5xl  lg:leading-tight text-center lg:text-left  ">
               About Us
@@ -32,7 +32,7 @@ export const About = () => {
       </section>
 
       <section className="py-20 bg-bookmark-white">
-        <div className="px-10 lg:px-40">
+        <div className="px-10 lg:px-20">
           <div className=" space-y-10 text-base lg:text-xl">
             <p className="text-center md:text-justify">
               Established in 2016, Guise AI is the premier global provider of

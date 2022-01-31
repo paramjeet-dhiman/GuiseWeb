@@ -287,7 +287,7 @@ export const BookDemoForm = () => {
       </div>
       <div className="flex">
         <div className="w-full mb-5">
-          <button className="btn btn-black border-2 rounded-md border-core-black hover:bg-core-black hover:text-gray-100   transform hover:scale-105 hoverTransition  text-lg md:text-xl  md:inline font-semibold">
+          <button className="btn btn-black border-2 rounded-sm border-core-black hover:bg-core-black hover:text-gray-100   transform hover:scale-105 hoverTransition  xl:text-xl  md:inline font-semibold">
             Submit
           </button>
         </div>

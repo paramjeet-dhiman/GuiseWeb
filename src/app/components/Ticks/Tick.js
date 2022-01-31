@@ -5,7 +5,7 @@ export const Tick = () => {
     // <div className="bg-blue-400 w-8 h-8 flex items-center justify-center rounded-full">
     //       className="w-8 h-8 text-core-black"
     <svg
-      className="w-6 h-6 lg:w-8 lg:h-8 text-core-black"
+      className="w-6 h-6 lg:w-7 lg:h-7 text-core-black"
       fill="currentColor"
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg">

@@ -60,7 +60,9 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
 
   return (
     <nav className="z-50 bg-white fixed top-0 left-0 right-0 shadow-md  select-none py-2 text-gray-900">
-      <div className=" mx-auto px-4  md:px-10 " onMouseLeave={handleMouseLeave}>
+      <div
+        className="mx-auto px-4  md:px-10 lg:px-14 xl:px-20 "
+        onMouseLeave={handleMouseLeave}>
         <div className="flex justify-between items-center">
           <div>
             {/* Logo */}
@@ -74,7 +76,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                 to="/"
                 onClick={closeMobileMenu}>
                 <svg
-                  className="cursor-pointer h-5 lg:h-6 "
+                  className="cursor-pointer h-5 lg:h-5 "
                   viewBox="0 0 5749 947"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -116,16 +118,16 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                 onMouseEnter={handleShowProduct}
                 className={({ isActive }) =>
                   isActive
-                    ? " text-social-facebook flex  items-center  px-4 cursor-pointer  tracking-wide py-3   transition-colors ease-in-out  duration-500 text-lg font-bold"
-                    : " flex  items-center  px-4 cursor-pointer  tracking-wide py-3 transition-colors ease-in-out  duration-500 text-lg font-medium hover:text-gray-600  "
+                    ? " text-social-facebook flex  items-center  px-4 cursor-pointer  tracking-wide py-3   transition-colors ease-in-out  duration-500 text-base xl:text-base xl:text-lg font-bold"
+                    : " flex  items-center  px-4 cursor-pointer  tracking-wide py-3 transition-colors ease-in-out  duration-500 text-base xl:text-base xl:text-lg font-medium hover:text-gray-600  "
                 }
-                // className="flex  items-center  px-4 cursor-pointer  tracking-wide py-3 transition-colors ease-in-out  duration-500 text-lg font-medium hover:text-blue-600 "
+                // className="flex  items-center  px-4 cursor-pointer  tracking-wide py-3 transition-colors ease-in-out  duration-500 text-base xl:text-lg font-medium hover:text-blue-600 "
               >
                 Products
                 <span>
                   {!showProducts ? (
                     <svg
-                      className="w-7  h-7 "
+                      className="w-5  h-5 "
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg">
@@ -136,7 +138,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                     </svg>
                   ) : (
                     <svg
-                      className="w-7  h-7"
+                      className="w-5  h-5"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                       xmlns="http://www.w3.org/2000/svg">
@@ -152,39 +154,39 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               {showProducts ? (
                 <div
                   onMouseLeave={handleMouseLeave}
-                  className="absolute -right-34 py-3   space-y-5 bg-white flex flex-col justify-center  shadow-xl transition-all ease-in-out duration-1000  filter drop-shadow-2xl   "
+                  className="absolute -right-36 py-3   space-y-3 bg-white flex flex-col justify-center  shadow-xl transition-all ease-in-out duration-1000  filter drop-shadow-2xl   "
                   style={{ width: "17rem" }}>
                   <NavLink
                     onClick={handleShowProduct}
                     to="/products/airport-operations-overview"
-                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-left px-3 block py-2 ">
+                    className="hover:bg-core-black text-sm xl:text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-left px-3 block py-2 ">
                     Airport Ground Operations
                   </NavLink>
                   <NavLink
                     onClick={handleShowProduct}
                     to="/products/digital-signage-overview"
-                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-left px-3 block py-2 ">
+                    className="hover:bg-core-black text-sm xl:text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-left px-3 block py-2 ">
                     Digital Signage
                   </NavLink>
 
                   <NavLink
                     onClick={handleShowProduct}
                     to="/products/traffic-management-overview"
-                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-left px-3 block py-2 ">
+                    className="hover:bg-core-black text-sm xl:text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-left px-3 block py-2 ">
                     Traffic Management
                   </NavLink>
 
                   <NavLink
                     onClick={handleShowProduct}
                     to="/products/intelligent-audio-overview"
-                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-left px-3 block py-2 ">
+                    className="hover:bg-core-black text-sm xl:text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-left px-3 block py-2 ">
                     Intelligent Audio
                   </NavLink>
                   {/* 
                   <NavLink
                     onClick={handleShowProduct}
                     to="/products/energy-management-overview"
-                    className="hover:bg-core-black text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-left px-3 block py-2 ">
+                    className="hover:bg-core-black text-base xl:text-lg hover:text-white font-medium bg-transparent hover:shadow-md text-left px-3 block py-2 ">
                     Energy Management
                   </NavLink> */}
                 </div>
@@ -197,8 +199,8 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                 onMouseEnter={handleMouseLeave}
                 className={({ isActive }) =>
                   isActive
-                    ? "px-2 text-social-facebook text-lg tracking-wide font-bold py-5 transition-all duration-300"
-                    : "px-2 cursor-pointer  tracking-wide py-5 text-lg font-medium hover:text-gray-600 "
+                    ? "px-2 text-social-facebook text-base xl:text-lg tracking-wide font-bold py-5 transition-all duration-300"
+                    : "px-2 cursor-pointer  tracking-wide py-5 text-base xl:text-lg font-medium hover:text-gray-600 "
                 }
                 to="/technology">
                 Technology
@@ -216,14 +218,14 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                 onMouseEnter={handleShow}
                 className={`${
                   location.pathname.slice(0, 10) === "/resources"
-                    ? "flex items-center px-4 text-social-facebook text-lg tracking-wide font-bold py-3 transition-all duration-300"
-                    : "flex items-center  px-4 cursor-pointer  tracking-wide py-3  text-lg font-medium hover:text-gray-600 "
+                    ? "flex items-center px-4 text-social-facebook text-base xl:text-lg tracking-wide font-bold py-3 transition-all duration-300"
+                    : "flex items-center  px-4 cursor-pointer  tracking-wide py-3  text-base xl:text-lg font-medium hover:text-gray-600 "
                 }`}>
                 <h4>Resources</h4>
                 <span className="">
                   {!show ? (
                     <svg
-                      className="w-7 h-7 "
+                      className="w-5 h-5 "
                       fill="currentColor"
                       viewBox="0 0 20 20">
                       <path
@@ -233,7 +235,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                     </svg>
                   ) : (
                     <svg
-                      className="w-7 h-7"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 20 20">
                       <path
@@ -248,32 +250,32 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               {show ? (
                 <div
                   onMouseLeave={handleMouseLeave}
-                  className="absolute -right-2   filter drop-shadow-2xl  py-3   space-y-5 bg-white flex flex-col justify-center  shadow-xl  w-40    transition-all duration-300  origin-top-right ">
+                  className="absolute -right-6   filter drop-shadow-2xl  py-3   space-y-3 bg-white flex flex-col justify-center  shadow-xl  w-40    transition-all duration-300  origin-top-right ">
                   <NavLink
                     to="/resources/blogs"
                     onClick={handleShow}
-                    className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-left">
+                    className="block px-3 py-2 mt-2 text-sm xl:text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-left">
                     Blogs
                   </NavLink>
 
                   {/* <NavLink
                     to="/resources/videos"
                     onClick={handleShow}
-                    className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-left">
+                    className="block px-3 py-2 mt-2 text-sm xl:text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-left">
                     Videos
                   </NavLink> */}
 
                   <NavLink
                     to="/resources/research"
                     onClick={handleShow}
-                    className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-left">
+                    className="block px-3 py-2 mt-2 text-sm xl:text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-left">
                     Research
                   </NavLink>
 
                   <NavLink
                     to="/resources/press"
                     onClick={handleShow}
-                    className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-left">
+                    className="block px-3 py-2 mt-2 text-sm xl:text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0  text-left">
                     Press
                   </NavLink>
                 </div>
@@ -288,19 +290,19 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                 onMouseEnter={handleToggle}
                 // className={({ isActive }) =>
                 //   isActive
-                //     ? " text-social-facebook flex  items-center  px-4 cursor-pointer  tracking-wide py-3   transition-colors ease-in-out  duration-500 text-lg font-bold"
-                //     : " flex  items-center  px-4 cursor-pointer  tracking-wide py-3 transition-colors ease-in-out  duration-500 text-lg font-medium hover:text-gray-600  "
+                //     ? " text-social-facebook flex  items-center  px-4 cursor-pointer  tracking-wide py-3   transition-colors ease-in-out  duration-500 text-base xl:text-lg font-bold"
+                //     : " flex  items-center  px-4 cursor-pointer  tracking-wide py-3 transition-colors ease-in-out  duration-500 text-base xl:text-lg font-medium hover:text-gray-600  "
                 // }
                 className={`${
                   location.pathname.slice(0, 8) === "/company"
-                    ? "flex items-center px-4 text-social-facebook text-lg tracking-wide font-bold py-3 transition-all duration-300"
-                    : "flex items-center  px-4 cursor-pointer  tracking-wide py-3  text-lg font-medium hover:text-gray-600 "
+                    ? "flex items-center px-4 text-social-facebook text-base xl:text-lg tracking-wide font-bold py-3 transition-all duration-300"
+                    : "flex items-center  px-4 cursor-pointer  tracking-wide py-3  text-base xl:text-lg font-medium hover:text-gray-600 "
                 }`}>
                 Company
                 <span>
                   {!toggle ? (
                     <svg
-                      className="w-7 h-7 "
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 20 20">
                       <path
@@ -310,7 +312,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                     </svg>
                   ) : (
                     <svg
-                      className="w-7 h-7"
+                      className="w-5 h-5"
                       fill="currentColor"
                       viewBox="0 0 20 20">
                       <path
@@ -325,25 +327,25 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               {toggle ? (
                 <div
                   onMouseLeave={handleMouseLeave}
-                  className="absolute  py-3  -right-3  filter drop-shadow-2xl space-y-5 bg-white flex flex-col justify-center  shadow-xl  w-40  transition-all duration-300  origin-top-right ">
+                  className="absolute  py-3 -right-7  filter drop-shadow-2xl space-y-3 bg-white flex flex-col justify-center  shadow-xl  w-40  transition-all duration-300  origin-top-right ">
                   <NavLink
                     onClick={handleToggle}
                     to="/company/about"
-                    className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-left">
+                    className="block px-3 py-2 mt-2 text-sm xl:text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-left">
                     About Us
                   </NavLink>
 
                   <NavLink
                     onClick={handleToggle}
                     to="/company/careers"
-                    className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-left">
+                    className="block px-3 py-2 mt-2 text-sm xl:text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-left">
                     Careers
                   </NavLink>
 
                   <NavLink
                     onClick={handleToggle}
                     to="/company/contact"
-                    className="block px-3 py-2 mt-2 text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-left">
+                    className="block px-3 py-2 mt-2 text-sm xl:text-lg font-medium bg-transparent hover:bg-core-black hover:text-white  dark-mode:bg-transparent md:mt-0 text-left">
                     Contact Us
                   </NavLink>
                 </div>
@@ -356,8 +358,8 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "px-3 py-2 bg-core-black rounded-md border-2 border-core-black uppercase text-white text-lg font-bold"
-                    : "px-3 rounded-md py-2 text-lg font-semibold border-2 uppercase hover:border-gray-500 hover:text-gray-700  border-core-black "
+                    ? "px-3 py-2 bg-core-black rounded-sm border-2 border-core-black uppercase text-white text-base xl:text-lg font-bold"
+                    : "px-3 rounded-sm py-2 text-base xl:text-lg font-semibold border-2 uppercase hover:border-gray-500 hover:text-gray-700  border-core-black "
                 }
                 to="/demo">
                 Book a Demo

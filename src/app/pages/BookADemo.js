@@ -8,16 +8,17 @@ export const BookADemo = () => {
       <HeroHeader img={HeaderIMG} title="Request a DEMO" />
 
       <section className="bg-white py-10 lg:py-20 mt-10 lg:mt-10 ">
-        <div className="sm:w-3/4 lg:w-6/12 mx-auto px-12 lg:px-2 ">
-          <h1 className="text-4xl font-semibold lg:text-5xl lg:font-bold text-center text-bookmark-blue">
+        <div className=" container mx-auto px-10 lg:px-28 ">
+          <h1 className="text-2xl w-full lg:text-4xl font-bold text-center text-core-black">
             Watch our products in action & see how they can help your business
           </h1>
-          <p className="text-gray-600 font-medium text-sm lg:text-base pl-2 lg:text-center sm:w-3/4  container  text-center  lg:w-11/12 mt-2 md:mt-4">
+          <p className="text-core-black  text-base lg:text-lg   text-center  mt-2 md:mt-4">
             Just answer a few simple questions so we can personalize the right
             experience for you.
           </p>
         </div>
       </section>
+
       <section className=" py-10 lg:py-20 mt-10 lg:mt-10 container bg-white border border-gray-100 relative mb-8 rounded-lg shadow-xl">
         <div className="px-10 md:px-20 flex flex-col justify-center ">
           <div className="container mb-8">

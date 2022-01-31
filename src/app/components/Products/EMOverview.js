@@ -1,7 +1,7 @@
-import React from "react";
 import { Tick } from "../Ticks/Tick";
 import { DemoComponent } from "../DemoComponent";
 import Tab from "../TabSlider/TabSlider";
+import { ProductHeader } from "./ProductHeader";
 
 export const EMOverview = () => {
   let data = {
@@ -65,23 +65,7 @@ export const EMOverview = () => {
   ];
   return (
     <div className="bg-white h-full ">
-      <section
-        className="w-full bg-center bg-cover  mt-10"
-        style={{
-          height: "36rem",
-          background: `url(${data.bgImg}) center center / cover no-repeat`,
-        }}>
-        <div className="flex  items-center justify-center w-full h-full bg-black bg-opacity-80">
-          <div className="text-center px-10 lg:px-0 lg:w-5/6">
-            <h1 className="text-4xl font-bold  text-white uppercase md:text-7xl mb-4">
-              {data.label}
-            </h1>
-            <p className="text-bookmark-white text-lg lg:text-xl lg:container lg:px-20">
-              {data.subText}
-            </p>
-          </div>
-        </div>
-      </section>
+      <ProductHeader img={data.bgImg} title={data.label} bio={data.subText} />
 
       {/* ==================== section #1 ========================== */}
       <section className="flex flex-col lg:flex-row px-10 py-10 bg-bookmark-smoke lg:py-20 lg:px-40 gap-16 ">

@@ -14,7 +14,7 @@ export const Research = () => {
 
       {ResearchData.map((item, index) => (
         <section
-          className=" bg-white py-10 lg:py-10 mt-10 px-10 lg:px-0 container w-full "
+          className=" bg-white py-10 lg:py-10 mt-10 px-10 lg:px-20  w-full "
           key={index}>
           <a href={item.link} target="_blank" rel="noreferrer noopener">
             <h1 className="text-xl lg:text-3xl  font-semibold  lg:leading-tight hover:underline   hover:text-blue-500 ">

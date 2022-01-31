@@ -110,8 +110,6 @@ module.exports = {
       sm: "640px",
       md: "768px",
       lg: "1124px",
-      xl: "1124px",
-      "2xl": "1124px",
     },
   },
   variants: {

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <footer className="bg-gray-800  overflow-hidden select-none">
-      <div className="flex flex-wrap py-10 lg:py-24 justify-center md:justify-between gap-5  px-5   sm:gap-5 md:gap-0 lg:px-40 ">
+      <div className="flex flex-wrap py-10 lg:py-24 justify-center md:justify-between gap-5  px-5   sm:gap-5 md:gap-0 lg:px-20 ">
         {/* ================================Logo==================================== */}
 
         <div className="pt-24 w-72 lg:w-2/12 hidden lg:block   ">
@@ -165,9 +165,9 @@ export const Footer = () => {
       </div>
 
       <div className="bg-bookmark-blue">
-        <div className="flex mx-auto md:px-12 lg:px-40  justify-between py-5  text-gray-400 text-lg flex-col items-center  md:flex-row ">
+        <div className="flex mx-auto md:px-12 lg:px-20  justify-between py-5  text-gray-400 text-lg flex-col items-center  md:flex-row ">
           <div className="pb-4 md:pb-0 font-medium">
-            <p className="text-center">
+            <p className="text-center text-sm xl:text-base">
               &copy; {new Date().getFullYear()} Guise AI. All Rights Reserved.
             </p>
           </div>
@@ -177,7 +177,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GuiseAi on Facebook "
-              className="inline-flex items-center shadow-md hover:shadow-inner justify-center w-9 h-9  rounded-md  bg-color-50 text-color-500 hover:bg-social-facebook   hover:text-gray-50   transform hover:scale-110 transition-all ease-in-out duration-300 ">
+              className="inline-flex items-center shadow-md hover:shadow-inner justify-center w-8 h-8  rounded-md  bg-color-50 text-color-500 hover:bg-social-facebook   hover:text-gray-50   transform hover:scale-110 transition-all ease-in-out duration-300 ">
               <svg
                 className="w-5 cursor-pointer fill-current"
                 role="img"
@@ -194,7 +194,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GuiseAi on Instagram"
-              className="inline-flex items-center shadow-md hover:shadow-inner justify-center w-9 h-9  rounded-md  bg-color-50 text-color-500 hover:bg-social-instagram   hover:text-gray-50   transform hover:scale-110 transition-all ease-in-out duration-300 ">
+              className="inline-flex items-center shadow-md hover:shadow-inner justify-center w-8 h-8  rounded-md  bg-color-50 text-color-500 hover:bg-social-instagram   hover:text-gray-50   transform hover:scale-110 transition-all ease-in-out duration-300 ">
               <svg
                 className="w-5 cursor-pointer fill-current"
                 role="img"
@@ -210,7 +210,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GuiseAi on Twitter "
-              className="inline-flex items-center shadow-md hover:shadow-inner justify-center w-9 h-9  rounded-md  bg-color-50 text-color-500 hover:bg-social-twitter   hover:text-gray-50   transform hover:scale-110 transition-all ease-in-out duration-300 ">
+              className="inline-flex items-center shadow-md hover:shadow-inner justify-center w-8 h-8  rounded-md  bg-color-50 text-color-500 hover:bg-social-twitter   hover:text-gray-50   transform hover:scale-110 transition-all ease-in-out duration-300 ">
               <svg
                 className="w-5 cursor-pointer fill-current"
                 fill="#fff"
@@ -226,7 +226,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GuiseAi on YouTube "
-              className="inline-flex items-center shadow-md hover:shadow-inner justify-center w-9 h-9  rounded-md  bg-color-50 text-color-500 hover:bg-social-youtube   hover:text-gray-50   transform hover:scale-110 transition-all ease-in-out duration-300 ">
+              className="inline-flex items-center shadow-md hover:shadow-inner justify-center w-8 h-8  rounded-md  bg-color-50 text-color-500 hover:bg-social-youtube   hover:text-gray-50   transform hover:scale-110 transition-all ease-in-out duration-300 ">
               <svg
                 className="w-5 cursor-pointer fill-current"
                 role="img"
@@ -242,7 +242,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GuiseAi on LinkedIn "
-              className="inline-flex items-center shadow-md hover:shadow-inner justify-center w-9 h-9  rounded-md  bg-color-50 text-color-500 hover:bg-social-linkedin   hover:text-gray-50   transform hover:scale-110 transition-all ease-in-out duration-300 ">
+              className="inline-flex items-center shadow-md hover:shadow-inner justify-center w-8 h-8  rounded-md  bg-color-50 text-color-500 hover:bg-social-linkedin   hover:text-gray-50   transform hover:scale-110 transition-all ease-in-out duration-300 ">
               <svg
                 className="w-5 cursor-pointer fill-current"
                 role="img"
