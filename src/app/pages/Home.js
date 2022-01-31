@@ -143,7 +143,7 @@ export function Home() {
               <h2 className="text-3xl lg:text-5xl xl:text-6xl text-center font-semibold lg:leading-tight">
                 Guise AI Capabilities
               </h2>
-              <p className="mt-2 lg:mt-5 text-gray-400 text-center max-w-screen-md text-lg lg:text-xl">
+              <p className="mt-2 lg:mt-5 text-gray-400 text-center max-w-screen-lg text-lg lg:text-xl">
                 Guise AI at the Edge is built to make AI easier to use with low
                 latency and at less bandwidth, while still maintaining expert
                 levels of accuracy, speed, and privacy. Our hardware agnostic

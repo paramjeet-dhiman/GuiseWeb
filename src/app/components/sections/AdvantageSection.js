@@ -25,7 +25,7 @@ export const AdvantageSection = ({ advantages, images, order }) => {
         </div>
         <div
           className={`flex flex-col col-span-full lg:col-span-6 justify-center text-core-black w-full ${
-            order ? "lg:pl-0" : "lg:w-5/6"
+            order ? "lg:pl-20" : "lg:w-5/6"
           }`}>
           <h2 className="text-3xl lg:text-4xl  mb-4 lg:mb-7 font-semibold">
             Advantages
@@ -38,7 +38,9 @@ export const AdvantageSection = ({ advantages, images, order }) => {
                   <Tick />
                 </div>
 
-                <div className="text-base xl:text-xl        font-medium ">{item.title}</div>
+                <div className="text-base xl:text-xl font-medium ">
+                  {item.title}
+                </div>
               </div>
             ))}
           </div>

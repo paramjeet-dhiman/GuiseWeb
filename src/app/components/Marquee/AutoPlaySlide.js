@@ -5,16 +5,15 @@ import "slick-carousel/slick/slick-theme.css";
 
 export const AutoPlaySlide = ({ data }) => {
   var settings = {
-    className: "slider",
     dots: false,
     infinite: true,
-    slidesToShow: 4,
-    padding: 0,
+    slidesToShow: 3,
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 2000,
+    cssEase: "linear",
+    padding: 0,
     swipeToSlide: true,
-    cssEase: "ease-in-out",
     pauseOnHover: true,
     responsive: [
       {
@@ -36,7 +35,7 @@ export const AutoPlaySlide = ({ data }) => {
             key={`marquee-example-review-${idx}`}
             className=" shadow  hover:bg-color-50  rounded-t-lg group">
             <div className="relative ">
-              <div className="absolute inset-0  rounded-t-lg bg-black bg-opacity-50 group-hover:opacity-0 transition duration-300 ease-in-out"></div>
+              <div className="absolute inset-0  rounded-t-lg bg-black bg-opacity-30 group-hover:opacity-0 transition duration-300 ease-in-out"></div>
               <img
                 src={item.img}
                 alt=""
