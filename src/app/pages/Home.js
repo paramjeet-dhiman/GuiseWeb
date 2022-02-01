@@ -161,7 +161,8 @@ export function Home() {
         <div className="px-10 lg:px-20">
           <div className="text-white">
             <h2 className="text-3xl lg:text-4xl text-center font-semibold lg:leading-tight">
-              Seamlessly integrate with our Edge APIs
+              Seamlessly integrate with our
+              <span className="text-core-guise  "> Edge APIs </span>
             </h2>
           </div>
         </div>

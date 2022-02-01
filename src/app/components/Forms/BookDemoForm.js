@@ -91,6 +91,7 @@ export const BookDemoForm = () => {
             </div>
             <input
               type="text"
+              autoFocus
               required
               value={name}
               name="name"
@@ -192,11 +193,16 @@ export const BookDemoForm = () => {
             {/* </div> */}
 
             <PhoneInput
-              style={{
-                borderRadius: `0.5rem`,
-                width: `100%`,
+              inputProps={{
+                required: true,
+                autoFocus: false,
               }}
               country="in"
+              containerStyle={{
+                padding: "0.6rem 0.3rem",
+                borderRadius: `0.5rem`,
+              }}
+              containerClass="border-2  border-gray-200 outline-none focus:border-gray-900 hover:border-gray-900"
               inputStyle={{
                 width: "100%",
                 fontSize: "1rem",
@@ -205,11 +211,6 @@ export const BookDemoForm = () => {
               searchStyle={{
                 border: "0",
                 outline: "none",
-              }}
-              inputProps={{
-                name: "phone",
-                required: true,
-                autoFocus: true,
               }}
               buttonStyle={{
                 borderRadius: "0px",
