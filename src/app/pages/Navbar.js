@@ -358,8 +358,8 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "px-3 py-2 bg-core-black rounded-sm border-2 border-core-black uppercase text-white text-base xl:text-lg font-bold"
-                    : "px-3 rounded-sm py-2 text-base xl:text-lg font-semibold border-2 uppercase hover:border-gray-500 hover:text-gray-700  border-core-black "
+                    ? "px-3 py-2 bg-core-black rounded-sm border-2 border-core-black uppercase text-white text-base xl:text-lg font-semibold"
+                    : "px-3 rounded-sm py-2 text-base xl:text-lg hover:bg-core-black font-semibold border-2 uppercase hover:border-core-black hover:text-white  border-core-black "
                 }
                 to="/demo">
                 Book a Demo

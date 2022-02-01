@@ -203,3 +203,30 @@ input[type="number"] {
 .slick-slide {
   padding: 5px 5px;
 }
+
+/* .PhoneInputInput {
+  outline: none;
+}
+
+.PhoneInput {
+  border: 2px solid #e5e7eb;
+}
+
+.PhoneInput:focus {
+  border: 2px solid red;
+} */
+
+.react-tel-input {
+  border: 2px solid #e5e7eb;
+  padding: 10px 10px;
+  width: 100%;
+}
+
+.react-tel-input .form-control {
+  outline: none;
+  border: 0;
+}
+.react-tel-input .flag-dropdown {
+  background: none;
+  border: 0;
+}

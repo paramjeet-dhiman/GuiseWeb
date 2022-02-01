@@ -1,10 +1,7 @@
 import BGTech from "../../assets/images/BGTech.jpg";
 import { Link } from "react-router-dom";
 import { AutoPlaySlide } from "../components/Marquee/AutoPlaySlide";
-import demographic_slide_img from "../../assets/images/demographics_slide.jpg";
 import pe_slide_img from "../../assets/images/pengage_slide.jpg";
-import footfall_slide_img from "../../assets/images/footfall_slide.jpg";
-import safety_slide_img from "../../assets/images/safety_compliance_slide.jpg";
 import lpr_slide_img from "../../assets/images/lpr_slide.jpg";
 import traffic_slide_img from "../../assets/images/traffic_analysis_slide.jpg";
 import trafficViolations_slide_img from "../../assets/images/traffic_violations_slide.jpg";
@@ -18,7 +15,7 @@ export function Home() {
     {
       title: "Demographic Analysis",
       bio: "With Age and Gender",
-      img: demographic_slide_img,
+      img: `https://images.unsplash.com/photo-1545603343-8356d34ed7bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM3fHxkaXZlcnNpdHklMjBhZ2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60`,
     },
     {
       title: "Person Engagement",
@@ -28,12 +25,12 @@ export function Home() {
     {
       title: "Footfall Analysis",
       bio: "With people count",
-      img: footfall_slide_img,
+      img: `https://images.unsplash.com/photo-1522669830117-58a450cc6077?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnVzeSUyMHN0cmVldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60`,
     },
     {
       title: "Safety Compliance",
       bio: "With HardHat, and Safety Jacket",
-      img: safety_slide_img,
+      img: `https://images.unsplash.com/photo-1547447175-a68d11e30d6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=517&q=80`,
     },
     {
       title: "License Plate Recognition",
@@ -138,12 +135,12 @@ export function Home() {
       {/* ============================= 6 SOLUTIONS CARDS ========================== */}
       <section className="bg-bookmark-blue h-full py-10 lg:py-20  ">
         <div className="px-10 lg:px-0">
-          <div className="text-white flex flex-col justify-center space-y-7 lg:space-y-14 items-center">
-            <div>
-              <h2 className="text-3xl lg:text-5xl xl:text-6xl text-center font-semibold lg:leading-tight">
-                Guise AI Capabilities
+          <div className="text-white flex  flex-col justify-center space-y-7 lg:space-y-14 items-center">
+            <div className="flex justify-center flex-col items-center ">
+              <h2 className="text-3xl lg:text-4xl xl:text-6xl text-center font-semibold lg:leading-tight">
+                What we do?
               </h2>
-              <p className="mt-2 lg:mt-5 text-gray-400 text-center max-w-screen-lg text-lg lg:text-xl">
+              <p className="mt-4 lg:mt-8 text-gray-400 text-center lg:w-8/12 text-lg lg:text-xl">
                 Guise AI at the Edge is built to make AI easier to use with low
                 latency and at less bandwidth, while still maintaining expert
                 levels of accuracy, speed, and privacy. Our hardware agnostic
@@ -152,7 +149,7 @@ export function Home() {
               </p>
             </div>
             <Link to="/products">
-              <div className="text-blue-500  px-4 rounded-sm py-2 md:py-3  text-lg lg:text-xl uppercase  font-semibold border-2 border-blue-500 hover:bg-blue-500  hover:scale-105 hoverTransition  hover:text-white ">
+              <div className="text-blue-500 px-4 rounded-sm py-2 md:py-2  text-lg uppercase font-semibold border-2 border-blue-500 hover:bg-blue-500  hover:scale-105 hoverTransition  hover:text-white ">
                 Learn more
               </div>
             </Link>
@@ -164,15 +161,14 @@ export function Home() {
         <div className="px-10 lg:px-20">
           <div className="text-white">
             <h2 className="text-3xl lg:text-4xl text-center font-semibold lg:leading-tight">
-              Seamlessly integrate with{" "}
-              <span className="text-core-guise  ">Guise AI </span> Edge APIs
+              Seamlessly integrate with our Edge APIs
             </h2>
           </div>
         </div>
       </section>
 
       <section className=" py-10 lg:py-20 overflow-hidden">
-        <h1 className="text-3xl  lg:text-4xl text-center  font-semibold lg:leading-tight">
+        <h1 className="text-3xl lg:text-4xl text-center  font-semibold lg:leading-tight">
           <span className="text-core-guise  ">Guise AI </span> runs
           industry-specific models at the Edge for your use cases
         </h1>
@@ -181,14 +177,14 @@ export function Home() {
         </div>
       </section>
 
-      <section className="bg-bookmark-blue py-10 lg:py-28">
-        <div className="flex px-10 lg:px-8 space-y-16  text-white flex-col justify-center items-center">
-          <h2 className="text-2xl  text-center lg:text-5xl   font-semibold lg:leading-tight">
+      <section className="bg-bookmark-white py-10 lg:py-28">
+        <div className="flex px-10 lg:px-8 space-y-16   flex-col justify-center items-center">
+          <h2 className="text-2xl  text-center lg:text-4xl   font-semibold lg:leading-tight">
             Get started with{" "}
             <span className="text-core-guise  ">Guise AI </span> at the Edge
           </h2>
           <Link to="/demo" className="">
-            <div className="text-blue-500 px-4 rounded-sm py-2 md:py-3  text-lg lg:text-xl uppercase  font-semibold border-2 border-blue-500 hover:bg-blue-500  hover:scale-105 hoverTransition  hover:text-white ">
+            <div className="text-blue-500 px-4 rounded-sm py-2  text-lg uppercase  font-semibold border-2 border-blue-500 hover:bg-blue-500  hover:scale-105 hoverTransition  hover:text-white ">
               Book A DEMO
             </div>
           </Link>

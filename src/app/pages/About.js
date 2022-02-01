@@ -7,10 +7,10 @@ export const About = () => {
       <section className="flex items-center justify-center h-screen  bg-white">
         <div className=" mt-10 lg:mt-20  px-8   md:px-20  lg:px-20  grid lg:grid-cols-12 gap-10 lg:gap-20 ">
           <div className="col-span-full lg:col-span-6 flex flex-col justify-center w-full lg:w-10/12">
-            <h2 className="text-3xl font-bold uppercase md:text-5xl  lg:leading-tight text-center lg:text-left  ">
+            <h2 className="text-3xl font-semibold uppercase md:text-4xl  lg:leading-tight text-center lg:text-left  ">
               About Us
             </h2>
-            <p className="mt-2 text-center lg:text-justify text-base lg:text-xl ">
+            <p className="mt-2 lg:mt-5 text-center lg:text-justify  text-base lg:text-lg">
               Guise AI solves the cost and efficiency problems endemic in AI
               today. Our continuous learning AI solutions on the edge allow
               machines to continuously learn and adapt to dynamically changing

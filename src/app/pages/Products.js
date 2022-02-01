@@ -11,7 +11,7 @@ export const Products = () => {
   const productsInfo = [
     {
       name: "Airport Ground Operations",
-      description: `The ability of Airlines & Aviation Authorities to implement high-impact strategies is critical to increase customer satisfaction and operational efficiency`,
+      description: `Guise AI helps Airlines & Aviation Authorities implement high-impact strategies to increase customer satisfaction and operational efficiency`,
       img: airplaneProduct,
       url: `/products/airport-operations-overview`,
     },
@@ -23,7 +23,7 @@ export const Products = () => {
     },
     {
       name: "Traffic Management",
-      description: `Revolutionize vehicle and crowd management with accurate analytics for better planning and design of city routes. Smart Cities rise from smart analytics`,
+      description: `Revolutionize vehicle and crowd management with accurate analytics for better planning of city routes. Smart Cities rise from smart analytics`,
       img: trafficProduct,
       url: `/products/traffic-management-overview`,
     },
@@ -48,14 +48,14 @@ export const Products = () => {
 
       <div className="lg:py-10"></div>
       {productsInfo.map((product, index) => (
-        <section className="bg-white py-10  mt-10 " key={index}>
+        <section className="bg-white py-10 " key={index}>
           <div className="sm:w-3/4 lg:w-5/12 mx-auto px-12 lg:px-2 ">
             <h1 className="text-3xl font-semibold lg:text-4xl lg:font-bold text-center text-bookmark-blue">
               {product.name}
             </h1>
           </div>
-          <div className="container  md:px-52  mt-5 lg:mt-5">
-            <div className=" text-gray-700 hover:text-bookmark-blue ">
+          <div className="container    mt-5 lg:mt-5">
+            <div className="">
               <div className="flex justify-center mb-4 lg:h-screen/3 ">
                 <Link to={product.url} className="">
                   <img
@@ -67,12 +67,12 @@ export const Products = () => {
                   />
                 </Link>
               </div>
-              <div className="px-5 lg:px-0 flex flex-col items-center mt-7 text-center">
-                <div className="text-lg lg:text-xl lg:max-w-3xl">
+              <div className="px-5 lg:mx-52 flex flex-col items-center mt-7 text-center">
+                <div className="text-lg xl:text-xl">
                   <p>{product.description}</p>
                 </div>
 
-                <div className=" text-sm lg:text-lg mt-2 lg:mt-5  ">
+                <div className=" text-sm lg:text-lg mt-2 lg:mt-4  ">
                   <Link
                     className="text-blue-500 cursor-pointer hover:text-blue-400 flex items-center space-x-2 "
                     to={product.url}>

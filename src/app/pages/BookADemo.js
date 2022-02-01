@@ -7,10 +7,11 @@ export const BookADemo = () => {
     <div className="bg-white h-full select-none">
       <HeroHeader img={HeaderIMG} title="Request a DEMO" />
 
-      <section className="bg-white py-10 lg:py-20 mt-10 lg:mt-10 ">
+      <section className="bg-white py-10 lg:py-20  ">
         <div className=" container mx-auto px-10 lg:px-28 ">
           <h1 className="text-2xl w-full lg:text-4xl font-bold text-center text-core-black">
-            Watch our products in action & see how they can help your business
+            Watch our products in action & see how they can help your
+            organization
           </h1>
           <p className="text-core-black  text-base lg:text-lg   text-center  mt-2 md:mt-4">
             Just answer a few simple questions so we can personalize the right
@@ -19,7 +20,7 @@ export const BookADemo = () => {
         </div>
       </section>
 
-      <section className=" py-10 lg:py-20 mt-10 lg:mt-10 container bg-white border border-gray-100 relative mb-8 rounded-lg shadow-xl">
+      <section className=" py-10 lg:py-10  container bg-white border border-gray-100 relative mb-8 rounded-lg shadow-xl">
         <div className="px-10 md:px-20 flex flex-col justify-center ">
           <div className="container mb-8">
             <h1 className="text-xl lg:text-3xl font-semibold text-gray-900">

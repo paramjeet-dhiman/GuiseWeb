@@ -7,8 +7,8 @@ export const AutoPlaySlide = ({ data }) => {
   var settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToShow: 4,
+    slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 2000,
     cssEase: "linear",
@@ -28,7 +28,7 @@ export const AutoPlaySlide = ({ data }) => {
   };
 
   return (
-    <div className="py-10">
+    <div className="mt-10">
       <Slider {...settings} className="">
         {data.map((item, idx) => (
           <div
@@ -39,7 +39,7 @@ export const AutoPlaySlide = ({ data }) => {
               <img
                 src={item.img}
                 alt=""
-                className=" w-full h-hxl bg-cover bg-center rounded-t-lg hover:opacity-0"
+                className=" w-full h-hxl  rounded-t-lg hover:opacity-0"
               />
             </div>
             <div className="py-4 flex justify-center items-center filter drop-shadow-2xl">

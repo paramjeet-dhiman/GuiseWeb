@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <footer className="bg-gray-800  overflow-hidden select-none">
-      <div className="flex flex-wrap py-10 lg:py-24 justify-center md:justify-between gap-5  px-5   sm:gap-5 md:gap-0 lg:px-20 ">
+      <div className="flex flex-wrap py-10 lg:py-10 justify-center md:justify-between gap-5  px-5   sm:gap-5 md:gap-0 lg:px-20 ">
         {/* ================================Logo==================================== */}
 
-        <div className="pt-24 w-72 lg:w-2/12 hidden lg:block   ">
+        <div className="pt-20 w-72 lg:w-2/12 hidden lg:block">
           <svg
             height="26"
             viewBox="0 0 4421 724"
@@ -41,23 +41,23 @@ export const Footer = () => {
 
         {/* ================================HOME==================================== */}
         <div className="pt-5 w-40  lg:w-2/12   ">
-          <div className="text-lg md:text-xl uppercase   text-gray-50   mb-5 font-semibold">
+          <div className="text-lg xl:text-xl uppercase   text-gray-50   mb-5 font-semibold">
             Home
           </div>
           <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/products">
             Products
           </Link>
 
           <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/company/about">
             About Us
           </Link>
 
           <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/company/careers">
             Careers
             {/* <span className="text-social-facebook text-xs p-1">
@@ -66,7 +66,7 @@ export const Footer = () => {
           </Link>
 
           {/* <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/technology">
             Technology
           </Link> */}
@@ -74,32 +74,32 @@ export const Footer = () => {
 
         {/* ================================PRODUCTS==================================== */}
         <div className="pt-5 w-40  lg:w-2/12   ">
-          <div className="text-lg md:text-xl uppercase mb-5  text-gray-50  font-semibold">
+          <div className="text-lg xl:text-xl uppercase mb-5  text-gray-50  font-semibold">
             Products
           </div>
           <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/products/airport-operations-overview">
             Airport Ground Operations
             {/* <span className="text-social-facebook text-xs p-1">New</span> */}
           </Link>
           <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/products/digital-signage-overview">
             Digital Signage
           </Link>
           <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/products/traffic-management-overview">
             Traffic Management
           </Link>
           <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/products/intelligent-audio-overview">
             Intelligent Audio
           </Link>
           {/* <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/products/energy-management-overview">
             Energy Management
           </Link> */}
@@ -107,26 +107,26 @@ export const Footer = () => {
 
         {/* ================================RESOURCES==================================== */}
         <div className="pt-5 w-40  lg:w-2/12  ">
-          <div className="text-lg md:text-xl uppercase   text-gray-50   mb-5 font-semibold">
+          <div className="text-lg xl:text-xl uppercase   text-gray-50   mb-5 font-semibold">
             Resources
           </div>
           <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/resources/blogs">
             Blogs
           </Link>
           {/* <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/resources/videos">
             Videos
           </Link> */}
           <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/resources/research">
             Research
           </Link>
           <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/resources/press">
             Press
           </Link>
@@ -134,29 +134,29 @@ export const Footer = () => {
 
         {/* ================================Support==================================== */}
         <div className="pt-5 w-40  lg:w-2/12   ">
-          <div className="text-lg md:text-xl uppercase   text-gray-50   mb-5 font-semibold">
+          <div className="text-lg xl:text-xl uppercase   text-gray-50   mb-5 font-semibold">
             Support
           </div>
           <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/faq">
             FAQ
             <span className="text-social-facebook text-xs p-1"></span>
           </Link>
           {/* <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/help-and-support">
             Help Center
             <span className="text-social-facebook text-xs p-1"></span>
           </Link> */}
           <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/policy">
             Privacy Policy{" "}
             <span className="text-social-facebook text-xs p-1"></span>
           </Link>
           <Link
-            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base md:text-lg"
+            className="my-3 block text-gray-400 hover:text-gray-100 font-medium duration-500 text-base xl:text-lg"
             to="/company/contact">
             Contact Us
             <span className="text-social-facebook text-xs p-1"></span>

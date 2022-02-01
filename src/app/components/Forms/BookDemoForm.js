@@ -1,5 +1,7 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 export const BookDemoForm = () => {
   const formData = {
@@ -126,7 +128,7 @@ export const BookDemoForm = () => {
               name="company"
               onChange={handleInput}
               className="w-full -ml-10 pl-10 pr-3 py-4 rounded-lg border-2 border-gray-200 outline-none focus:border-gray-900"
-              placeholder="Company Name"
+              placeholder="Company Website"
             />
           </div>
         </div>
@@ -174,8 +176,8 @@ export const BookDemoForm = () => {
             Phone
           </label>
           <div className="flex">
-            <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
-              <svg
+            {/* <div className="w-10  focus:border-gray-900 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"> */}
+            {/* <svg
                 className="w-6 h-6 text-core-black text-lg"
                 fill="none"
                 stroke="currentColor"
@@ -186,17 +188,55 @@ export const BookDemoForm = () => {
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-              </svg>
-            </div>
-            <input
+              </svg> */}
+            {/* </div> */}
+
+            <PhoneInput
+              style={{
+                borderRadius: `0.5rem`,
+                width: `100%`,
+              }}
+              country="in"
+              inputStyle={{
+                width: "100%",
+                fontSize: "1rem",
+                border: "0",
+              }}
+              searchStyle={{
+                border: "0",
+                outline: "none",
+              }}
+              inputProps={{
+                name: "phone",
+                required: true,
+                autoFocus: true,
+              }}
+              buttonStyle={{
+                borderRadius: "0px",
+                padding: "0",
+                backgroundColor: "transparent",
+                border: "0",
+              }}
+              placeholder="Contact Number"
+              autoFormat
+              value={phone}
+              onChange={(value) => {
+                setData({ ...data, phone: value });
+              }}
+              // className="w-full -ml-10 pr-3 py-4 rounded-lg focus:border-gray-900"
+              // className="w-full border-0 rounded-lg  outline-none focus:border-gray-900"
+            />
+
+            {/* <input
               type="number"
               value={phone}
               name="phone"
               onChange={handleInput}
+              min="12"
               required
               className="w-full -ml-10 pl-10 pr-3 py-4 rounded-lg border-2 border-gray-200 outline-none focus:border-gray-900"
               placeholder="Contact Number"
-            />
+            /> */}
           </div>
         </div>
         <div className="lg:w-1/2 px-3 mb-5">

@@ -17,11 +17,11 @@ export const Research = () => {
           className=" bg-white py-10 lg:py-10 mt-10 px-10 lg:px-20  w-full "
           key={index}>
           <a href={item.link} target="_blank" rel="noreferrer noopener">
-            <h1 className="text-xl lg:text-3xl  font-semibold  lg:leading-tight hover:underline   hover:text-blue-500 ">
+            <h1 className="text-xl lg:text-2xl  font-semibold  lg:leading-tight hover:underline   hover:text-blue-500 ">
               {item.title}
             </h1>
           </a>
-          <p className=" mt-2 lg:mt-4 text-justify text-lg lg:text-xl">
+          <p className=" mt-2 lg:mt-4 text-justify text-lg xl:text-xl">
             {item.description}
 
             <span className="italic font-semibold text-core-guise hover:underline">
