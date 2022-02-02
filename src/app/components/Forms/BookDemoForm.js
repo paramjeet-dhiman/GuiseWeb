@@ -198,16 +198,23 @@ export const BookDemoForm = () => {
                 autoFocus: false,
               }}
               country="in"
-              containerStyle={{
-                padding: "0.6rem 0.3rem",
-                borderRadius: `0.5rem`,
-              }}
-              containerClass="border-2  border-gray-200 outline-none focus:border-gray-900 hover:border-gray-900"
+              // containerStyle={{
+              //   padding: "0.6rem 0.3rem",
+              //   borderRadius: `0.5rem`,
+              //   "&:focus": {
+              //     border: `2px solid red`,
+              //   },
+              // }}
+              // containerClass="border-2  border-gray-200 outline-none focus:border-gray-900 hover:border-gray-900"
               inputStyle={{
                 width: "100%",
                 fontSize: "1rem",
-                border: "0",
+                borderWidth: "2px",
+                // borderColor: "#e5e7eb",
+                // border: `2px solid #e5e7eb`,
+                padding: "1.7rem 2.5rem",
               }}
+              // searchClass="border-2  border-gray-200 outline-none focus:border-gray-900 hover:border-gray-900"
               searchStyle={{
                 border: "0",
                 outline: "none",
