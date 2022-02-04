@@ -17,6 +17,22 @@ export const AutoPlaySlide = ({ data }) => {
     pauseOnHover: true,
     responsive: [
       {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 1,
+        },
+      },
+      {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
