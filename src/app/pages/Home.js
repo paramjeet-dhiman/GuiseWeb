@@ -177,14 +177,14 @@ export function Home() {
         </div>
       </section>
 
-      <section className="bg-bookmark-white py-10 lg:py-20">
-        <div className="flex px-10 lg:px-8 space-y-10   flex-col justify-center items-center">
-          <h2 className="text-2xl  text-center lg:text-4xl   font-semibold lg:leading-tight">
+      <section className="bg-bookmark-blue py-10 lg:py-28">
+        <div className="flex px-10 lg:px-8 space-y-12   flex-col justify-center items-center">
+          <h2 className="text-2xl  text-center lg:text-4xl text-white  font-semibold lg:leading-tight">
             Get started with{" "}
             <span className="text-core-guise  ">Guise AI </span> at the Edge
           </h2>
           <Link to="/demo" className="">
-            <div className="text-black px-4 rounded-sm py-2  text-lg uppercase  font-semibold border-2 border-black hover:bg-black  transform hover:scale-105 hoverTransition   hover:text-white ">
+            <div className="text-gray-100 px-4 rounded-sm py-2  text-lg uppercase  font-semibold border-2 border-gray-100 hover:bg-gray-100  transform hover:scale-105 hoverTransition   hover:text-black ">
               Book A DEMO
             </div>
           </Link>
