@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { HeroHeader } from "../HeroHeader/HeroHeader";
 import FaqImgHeader from "../../../assets/images/FAQIMGHeader.jpg";
@@ -69,14 +69,17 @@ export function FAQ() {
     <div className="select-none">
       <HeroHeader img={FaqImgHeader} title="Frequently Asked Questions?" />
       <section className="py-10 lg:py-20">
-        <div className="grid grid-cols-1 px-10 lg:px-0 container mx-auto gap-y-5">
+        <div className="grid grid-cols-1 container gap-y-5">
           {faqs.map((item, index) => (
             <div key={index}>
               <div
                 className={`filter drop-shadow-xl px-5 lg:px-10 py-4  shadow    rounded-md border ${
                   clicked === index ? " shadow-xl bg-white" : "hover:bg-gray-50"
                 }`}
-                onClick={() => toggle(index)}>
+                role="button"
+                tabIndex="0"
+                onClick={() => toggle(index)}
+                onKeyPress={() => toggle(index)}>
                 <div className="flex justify-between items-center">
                   <h2
                     className={`text-lg lg:text-xl font-medium ${
@@ -114,7 +117,7 @@ export function FAQ() {
                 </div>
                 {clicked === index ? (
                   <div className={`${clicked === index ? "" : ""}`}>
-                    <div className="pt-5  text-base lg:text-lg ">
+                    <div className="mt-5 text-base md:text-lg lg:text-xl text-core-black  ">
                       {item.answer}
                     </div>
                   </div>

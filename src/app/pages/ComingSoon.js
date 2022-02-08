@@ -1,5 +1,3 @@
-import React from "react";
-
 export const ComingSoon = () => {
   return (
     <div className="h-screen py-16">

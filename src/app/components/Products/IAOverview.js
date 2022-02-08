@@ -75,7 +75,7 @@ export const IAOverview = () => {
       <section className="bg-white py-10 lg:py-20">
         <SectionsHeader />
 
-        <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:px-20  ">
+        <section className="flex flex-col lg:flex-row  py-10 bg-white">
           <div className="text-core-black w-full h-full">
             <Tab>
               {tabContent.map((tab, idx) => (

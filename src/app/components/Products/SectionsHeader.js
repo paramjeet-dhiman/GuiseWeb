@@ -1,10 +1,10 @@
 export const SectionsHeader = () => {
   return (
-    <div className=" container mx-auto px-10 ">
-      <h1 className="text-2xl w-full lg:text-4xl font-bold text-center text-core-black">
+    <div className=" container text-center text-core-black">
+      <h1 className="text-2xl w-full lg:text-4xl font-bold ">
         We make it Easier for you
       </h1>
-      <p className="text-core-black  text-base lg:text-lg   text-center  mt-2 md:mt-4">
+      <p className="mt-5 text-base md:text-lg">
         Here's how we help you enhance customer experience and boost ROI
       </p>
     </div>

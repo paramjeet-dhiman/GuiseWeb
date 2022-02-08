@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export const ScrollButton = () => {
   const [visible, setVisible] = useState(false);
@@ -31,6 +31,9 @@ export const ScrollButton = () => {
     <div
       className="right-2 fixed   z-10 cursor-pointer "
       onClick={scrollToTop}
+      onKeyPress={scrollToTop}
+      tabIndex="0"
+      role="button"
       style={{ display: visible ? "inline" : "none" }}>
       <div className=" fixed shadow-md lg:p-2 bottom-20 bg-white right-5  lg:right-10 animate-bounce  hidden md:flex items-center justify-center   hover:bg-blue-500 text-gray-400  hover:text-white my-auto  rounded-full  hover:shadow-xl hoverTransition">
         <svg

@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import airplaneProduct from "../../assets/images/airplane_product.jpg";
 import audioProduct from "../../assets/images/audio_product.jpeg";
@@ -46,47 +45,57 @@ export const Products = () => {
     <div className="bg-white h-full">
       <HeroHeader img={ProductBgImg} title="Products" />
 
-      <div className="lg:py-10"></div>
+      <div className="py-5 lg:py-10"></div>
+
       {productsInfo.map((product, index) => (
-        <section className="bg-white py-10 " key={index}>
-          <div className="sm:w-3/4 lg:w-5/12 mx-auto px-12 lg:px-2 ">
-            <h1 className="text-3xl font-semibold lg:text-4xl lg:font-bold text-center text-bookmark-blue">
-              {product.name}
-            </h1>
-          </div>
-          <div className="container    mt-5 lg:mt-5">
+        <section
+          className="flex flex-col py-10 items-center justify-center"
+          key={index}>
+          <div className="container  space-y-7 bg-white text-core-black rounded-lg   md:w-full">
             <div className="">
+              <h1 className="text-2xl tracking-tight sm:text-3xl  lg:text-4xl font-bold text-center">
+                {product.name}
+              </h1>
+            </div>
+
+            <div>
               <div className="flex justify-center mb-4 lg:h-screen/3 ">
                 <Link to={product.url} className="">
                   <img
                     loading="lazy"
                     src={product.img}
-                    className="object-cover  filter drop-shadow-xl  w-full h-full bg-cover bg-center lg:rounded-lg shadow-xl"
-                    alt="sdf"
+                    className="object-cover bg-contain  filter drop-shadow-xl  w-full h-full  bg-center rounded-lg shadow-xl hover:shadow-sm hoverTransition"
+                    alt={product.img}
                     draggable="false"
                   />
                 </Link>
               </div>
-              <div className="px-5 lg:mx-52 flex flex-col items-center mt-7 text-center">
-                <div className="text-lg xl:text-xl">
-                  <p>{product.description}</p>
-                </div>
+            </div>
 
-                <div className=" text-sm lg:text-lg mt-2 lg:mt-4  ">
-                  <Link
-                    className="text-blue-500 cursor-pointer hover:text-blue-400 flex items-center space-x-2 "
-                    to={product.url}>
-                    <span className="text-sm  lg:text-xl font-bold transform hover:scale-105 hoverTransition ">
-                      Read more
-                    </span>
-                  </Link>
-                </div>
-              </div>
+            <div className="max-w-screen-sm mx-auto space-y-3 text-center">
+              <p className="mb-3 text-base md:text-lg">{product.description}</p>
+
+              <Link
+                to={product.url}
+                className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-core-guise border-2 border-core-guise rounded-sm hoverTransition hover:text-white hover:bg-core-guise ">
+                Read more
+                <svg
+                  className="ml-2 -mr-1 w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"></path>
+                </svg>
+              </Link>
             </div>
           </div>
         </section>
       ))}
-      <div className="py-10"></div>
+
+      <div className="py-5 lg:py-10"></div>
     </div>
   );
 };

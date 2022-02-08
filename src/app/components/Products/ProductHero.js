@@ -1,9 +1,7 @@
-import React from "react";
-
 export const ProductHero = ({ img, title, bio }) => {
   return (
-    <section className="flex flex-col lg:flex-row px-10 py-10 bg-bookmark-smoke lg:py-20 lg:px-20 ">
-      <div className="grid grid-cols-12  items-center lg:gap-10">
+    <section className="flex flex-col lg:flex-row  py-10 bg-bookmark-smoke lg:py-20  ">
+      <div className="grid grid-cols-12  items-center lg:gap-10 container">
         <div className=" w-full col-span-full lg:col-span-6  md:m-0 md:order-2 ">
           <div className="">
             <img
@@ -15,9 +13,11 @@ export const ProductHero = ({ img, title, bio }) => {
             />
           </div>
         </div>
-        <div className="flex flex-col  w-full col-span-full mt-10 md:mt-0 lg:col-span-6 ">
-          <h2 className="text-2xl lg:text-4xl  font-medium mb-4">{title}</h2>
-          <div className="text-lg lg:text-xl text-core-black text-justify  lg:max-w-xl">
+        <div className="flex flex-col col-span-full mt-10 md:mt-0 lg:col-span-6 text-core-black">
+          <h2 className="text-2xl text-left lg:text-4xl font-semibold ">
+            {title}
+          </h2>
+          <div className=" mt-5 lg:mt-7 text-base md:text-lg lg:text-xl  lg:max-w-xl">
             <p>{bio}</p>
           </div>
         </div>

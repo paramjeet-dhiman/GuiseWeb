@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -47,19 +46,16 @@ export const AutoPlaySlide = ({ data }) => {
     <div className="mt-10">
       <Slider {...settings} className="">
         {data.map((item, idx) => (
-          <div
-            key={`marquee-example-review-${idx}`}
-            className=" shadow  hover:bg-color-50  rounded-t-lg group">
+          <div key={`marquee-example-review-${idx}`} className="group">
             <div className="relative ">
-              <div className="absolute inset-0  rounded-t-lg bg-black bg-opacity-30 group-hover:opacity-0 transition duration-300 ease-in-out"></div>
               <img
                 src={item.img}
                 alt=""
-                className=" w-full h-hxl  rounded-t-lg hover:opacity-0"
+                className="bg-cover bg-center rounded-sm w-full h-[350px]"
               />
             </div>
-            <div className="py-4 flex justify-center items-center filter drop-shadow-2xl">
-              <h4 className="text-lg lg:text-xl  rounded-xl font-medium ">
+            <div className="py-4 flex bg-black text-white justify-center items-center shadow">
+              <h4 className="text-base sm:text-lg md:text-lg lg:text-xl  rounded-xl font-medium ">
                 {item.title}
               </h4>
             </div>

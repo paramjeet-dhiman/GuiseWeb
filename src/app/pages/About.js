@@ -1,14 +1,40 @@
-import React from "react";
 import BGImg from "../../assets/images/BGAbout.jpg";
 
 export const About = () => {
   return (
     <div>
-      <section className="flex items-center justify-center h-screen  bg-white">
-        <div className=" mt-10 lg:mt-20  px-8   md:px-20  lg:px-20  grid lg:grid-cols-12 gap-10 lg:gap-20 ">
+      <section className="flex  justify-center items-center bg-white ">
+        <div className="grid lg:grid-cols-12 container py-12 sm:py-24 gap-10 lg:gap-20">
+          <div className="col-span-full lg:col-span-6 items-center flex flex-col justify-center  w-full ">
+            <div className="text-center pt-10 my-10 md:mt-0  lg:text-left w-full">
+              {/* <h1 className="text-4xl lg:text-left tracking-wide lg:tracking-wide  font-bold   lg:text-5xl  xl:text-6xl"> */}
+              <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl  text-gray-800 font-bold leading-7 md:leading-10">
+                About Us
+              </h1>
+              <p className="lg:text-left mt-5 lg:mt-7  text-core-black  text-sm sm:text-lg lg:max-w-lg lg:text-xl">
+                Guise AI solves the cost and efficiency problems endemic in AI
+                today. Our continuous learning AI solutions on the edge allow
+                machines to continuously learn and adapt to dynamically changing
+                data in the real world without having to constantly retrain
+                models.
+              </p>
+            </div>
+          </div>
+          <div className="col-span-full flex items-center justify-center lg:col-span-6 ">
+            <img
+              src={BGImg}
+              className="object-cover bg-cover bg-center h-80 w-80 sm:h-96 sm:w-wl lg:w-full lg:h-hl rounded-lg shadow-xl  filter drop-shadow-2xl   "
+              alt="sdf"
+              draggable="false"
+            />
+          </div>
+        </div>
+      </section>
+      {/* <section className="flex items-center justify-center   bg-white">
+        <div className=" mt-10 lg:mt-20  px-8   container grid lg:grid-cols-12 gap-10 lg:gap-20 ">
           <div className="col-span-full lg:col-span-6 flex flex-col justify-center w-full lg:w-10/12">
             <h2 className="text-3xl font-semibold uppercase md:text-4xl  lg:leading-tight text-center lg:text-left  ">
-              About Us
+              
             </h2>
             <p className="mt-2 lg:mt-5 text-center lg:text-justify  text-base lg:text-lg">
               Guise AI solves the cost and efficiency problems endemic in AI
@@ -29,11 +55,11 @@ export const About = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-20 bg-bookmark-white">
-        <div className="px-10 lg:px-20">
-          <div className=" space-y-10 text-base lg:text-xl">
+        <div className="container">
+          <div className=" space-y-10 text-base md:text-lg lg:text-xl">
             <p className="text-center md:text-justify">
               Established in 2016, Guise AI is the premier global provider of
               continuous learning AI solutions at the edge. We built our

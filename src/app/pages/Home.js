@@ -73,123 +73,95 @@ export function Home() {
   ];
 
   return (
-    <div className="select-none">
-      {/*================= Hero Section ===================*/}
+    <div className="min-h-screen overflow-hidden flex flex-col select-none ">
+      <main className="flex-grow">
+        {/*================= Hero Section ===================*/}
 
-      <section className="flex items-center justify-center h-screen  bg-white">
-        <div className=" mt-10 lg:mt-20  px-10 lg:px-20 xl:px-20  grid lg:grid-cols-12 gap-10 lg:gap-10  ">
-          <div className="col-span-full  lg:col-span-6 flex flex-col justify-center  w-full ">
-            <div className="text-center  lg:text-left w-full">
-              <h1 className="text-4xl lg:text-left tracking-wide lg:tracking-wide  font-bold  uppercase lg:text-5xl  xl:text-6xl">
-                AI at the edge
-              </h1>
-              <p className=" mt-2 lg:mt-5 lg:text-left text-lg  sm:max-w-xl mx-auto lg:mx-0    lg:max-w-lg lg:text-xl">
-                Guise AI at the Edge leverages local compute to extract
-                meaningful data, delivering better insights for enterprises.
-              </p>
-            </div>
-          </div>
-          <div className="col-span-full flex items-center justify-center lg:col-span-6 ">
-            <img
-              src={BGTech}
-              className="object-cover bg-cover bg-center sm:h-96 sm:w-wl lg:w-wl lg:h-hl rounded-lg shadow-xl  filter drop-shadow-2xl   "
-              alt="sdf"
-              draggable="false"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/*========================== Background Image with text ==========================*/}
-      {/* <section className="lg:py-10">
-        <div className=" lg:mt-20  px-10   md:px-20  lg:px-40  grid lg:grid-cols-12 gap-10 lg:gap-20  ">
-          <div className="col-span-full lg:col-span-6  order-2 lg:order-1">
-            <img
-              className="object-cover bg-cover bg-center w-full h-full  rounded-lg shadow-xl  filter drop-shadow-2xl   "
-              src={BGTech4}
-              alt="sdf"
-              draggable="false"
-              loading="lazy"
-            />
-          </div>
-
-          <div className="pb-10 col-span-full lg:col-span-6 flex flex-col justify-center w-full  order-1 lg:order-2">
-            <div className="text-center lg:text-left w-full ">
-              <h1 className="text-3xl font-bold uppercase  lg:tracking-tight lg:text-4xl">
-                Target Data Where It Lives
-              </h1>
-              <div className="mt-2 lg:mt-5 text-center lg:text-justify text-base lg:text-xl  space-y-5 ">
-                <p className="sm:max-w-lg sm:mx-auto lg:mx-0">
-                  The need to overcome latency and bandwidth issues combined
-                  with massive volumes of data is changing the topology of
-                  distributed enterprises. Computing data at the edge is rapidly
-                  growing, but how do you properly harness your untapped data?  
+        <section className="flex  justify-center items-center bg-white ">
+          <div className="grid lg:grid-cols-12 container py-12  sm:py-24 gap-10 lg:gap-20">
+            <div className="col-span-full lg:col-span-6 items-center flex flex-col justify-center  w-full ">
+              <div className="text-center pt-10 my-10 md:mt-0  lg:text-left w-full">
+                {/* <h1 className="text-4xl lg:text-left tracking-wide lg:tracking-wide  font-bold   lg:text-5xl  xl:text-6xl"> */}
+                <h1 className="text-3xl sm:text-3xl md:text-4xl uppercase lg:text-5xl xl:text-6xl  text-gray-800 font-bold leading-7 md:leading-10">
+                  AI at the edge
+                </h1>
+                <p className="lg:text-left mt-5 lg:mt-7  text-core-black  text-sm sm:text-lg lg:max-w-lg lg:text-xl">
+                  Guise AI at the Edge leverages local compute to extract
+                  meaningful data, delivering better insights for enterprises.
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* ============================= 6 SOLUTIONS CARDS ========================== */}
-      <section className="bg-bookmark-blue h-full py-10 lg:py-20  ">
-        <div className="px-10 lg:px-5">
-          <div className="text-white flex  flex-col justify-center space-y-7 lg:space-y-14 items-center">
-            <div className="flex justify-center flex-col items-center ">
-              <h2 className="text-3xl lg:text-4xl xl:text-6xl text-center font-semibold lg:leading-tight">
-                What we do?
-              </h2>
-              <p className="mt-4 lg:mt-8 text-gray-400 text-center lg:w-8/12 text-lg lg:text-xl ">
-                Through the Edge approach we make AI easier to use with low
-                latency and at less bandwidth, while still maintaining expert
-                levels of accuracy, speed, and privacy. Our hardware-agnostic
-                solutions allow you to scale up with the existing
-                infrastructure.
-              </p>
+            <div className="col-span-full flex items-center justify-center lg:col-span-6 ">
+              <img
+                src={BGTech}
+                className="object-cover bg-cover bg-center h-80 w-80 sm:h-96 sm:w-wl lg:w-full lg:h-full rounded-lg shadow-xl  filter drop-shadow-2xl   "
+                alt="sdf"
+                draggable="false"
+              />
             </div>
+          </div>
+        </section>
 
-            <Link
-              to="/products"
-              className="text-gray-100 px-4 rounded-sm py-2 md:py-2  text-lg uppercase font-semibold border-2 border-gray-100 hover:bg-gray-100  transform hover:scale-105 hoverTransition   hover:text-black ">
-              Learn more
+        {/* ============================= What we do? ========================== */}
+        <section className="bg-bookmark-blue py-10 lg:py-20 ">
+          <div className="   lg:px-5 container ">
+            <div className="text-white flex  flex-col justify-center space-y-7 lg:space-y-14 items-center">
+              <div className="flex justify-center flex-col items-center ">
+                <h2 className="text-3xl md:text-4xl xl:text-5xl text-center font-semibold lg:leading-tight">
+                  What we do?
+                </h2>
+                <p className="mt-5 lg:mt-7  text-gray-400 text-center lg:w-8/12 text-lg lg:text-xl ">
+                  Through the Edge approach we make AI easier to use with low
+                  latency and at less bandwidth, while still maintaining expert
+                  levels of accuracy, speed, and privacy. Our hardware-agnostic
+                  solutions allow you to scale up with the existing
+                  infrastructure.
+                </p>
+              </div>
+
+              <Link
+                to="/products"
+                className="text-gray-100 px-4 rounded-sm py-2 md:py-2  text-lg uppercase font-semibold border-2 border-gray-100 hover:bg-gray-100  transform hover:scale-105 hoverTransition   hover:text-black ">
+                Learn more
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-gray-800 h-full py-10  ">
+          <div className="container">
+            <div className="text-white">
+              <h2 className="text-3xl lg:text-4xl text-center font-semibold lg:leading-tight">
+                Seamlessly integrate with our
+                <span className="text-core-guise"> Edge APIs </span>
+              </h2>
+            </div>
+          </div>
+        </section>
+
+        <section className=" py-10 container lg:py-20 overflow-hidden">
+          <h1 className="text-3xl lg:text-4xl text-center  font-semibold lg:leading-tight">
+            Run industry-specific models at the Edge for all your use cases
+          </h1>
+          <div className="">
+            <AutoPlaySlide data={marqueeData} />
+          </div>
+        </section>
+
+        <section className="bg-bookmark-blue py-10 lg:py-28">
+          <div className="flex container space-y-12   flex-col justify-center items-center">
+            <h2 className="text-2xl  text-center lg:text-4xl text-white  font-semibold lg:leading-tight">
+              Get started with{" "}
+              <span className="text-core-guise  ">Guise AI </span> at the Edge
+            </h2>
+            <Link to="/demo" className="">
+              <div className="text-gray-100 px-4 rounded-sm py-2  text-lg uppercase  font-semibold border-2 border-gray-100 hover:bg-gray-100  transform hover:scale-105 hoverTransition   hover:text-black ">
+                Book A DEMO
+              </div>
             </Link>
           </div>
-        </div>
-      </section>
-
-      <section className="bg-gray-800 h-full py-10  ">
-        <div className="px-10 lg:px-20">
-          <div className="text-white">
-            <h2 className="text-3xl lg:text-4xl text-center font-semibold lg:leading-tight">
-              Seamlessly integrate with our
-              <span className="text-core-guise"> Edge APIs </span>
-            </h2>
-          </div>
-        </div>
-      </section>
-
-      <section className=" py-10 lg:py-20 overflow-hidden">
-        <h1 className="text-3xl lg:text-4xl text-center  font-semibold lg:leading-tight">
-          Run industry-specific models at the Edge for all your use cases
-        </h1>
-        <div className="">
-          <AutoPlaySlide data={marqueeData} />
-        </div>
-      </section>
-
-      <section className="bg-bookmark-blue py-10 lg:py-28">
-        <div className="flex px-10 lg:px-8 space-y-12   flex-col justify-center items-center">
-          <h2 className="text-2xl  text-center lg:text-4xl text-white  font-semibold lg:leading-tight">
-            Get started with{" "}
-            <span className="text-core-guise  ">Guise AI </span> at the Edge
-          </h2>
-          <Link to="/demo" className="">
-            <div className="text-gray-100 px-4 rounded-sm py-2  text-lg uppercase  font-semibold border-2 border-gray-100 hover:bg-gray-100  transform hover:scale-105 hoverTransition   hover:text-black ">
-              Book A DEMO
-            </div>
-          </Link>
-        </div>
-      </section>
+        </section>
+      </main>
     </div>
   );
 }

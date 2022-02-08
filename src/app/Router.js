@@ -1,4 +1,3 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Contact } from "./pages/Contact";
 import { Home } from "./pages/Home";
@@ -6,7 +5,6 @@ import { Header } from "./pages/Header";
 import { Footer } from "./pages/Footer";
 import { About } from "./pages/About";
 import { Carrers } from "./pages/Carrers";
-import { ScrollToTop } from "./pages/ScrollTop";
 import { NotFound } from "./pages/NotFound";
 import { Research } from "./components/Research/Research";
 import { Products } from "./pages/Products";
@@ -14,9 +12,9 @@ import { BookADemo } from "./pages/BookADemo";
 import { AOSOverview } from "./components/Products/AOSOverview";
 import { IAOverview } from "./components/Products/IAOverview";
 import { TMOverview } from "./components/Products/TMOverview";
-import { ProductReview } from "./components/Products/ProductReview";
 import { DSOverview } from "./components/Products/DSOverview";
 import { ScrollButton } from "./components/ScrollButton/ScrollBtn";
+import { ScrollToTop } from "./pages/ScrollTop";
 import { ComingSoon } from "./pages/ComingSoon";
 import { PrivacyPolicy } from "./pages/PrivacyPolicy";
 import { FAQ } from "./components/FAQ/Faq";
@@ -59,7 +57,6 @@ export const Router = () => {
           path="/products/digital-signage-overview"
           element={<DSOverview />}
         />
-        <Route path="/product-review" element={<ProductReview />} />
         <Route
           path="/products/traffic-management-overview"
           element={<TMOverview />}

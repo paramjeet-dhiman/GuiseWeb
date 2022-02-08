@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Tick } from "../Ticks/Tick";
 
 const Tab = ({ children, active = 0 }) => {
@@ -21,7 +20,7 @@ const Tab = ({ children, active = 0 }) => {
     setTabsData(data);
   }, [children]);
   return (
-    <div className="w-full  ">
+    <div className="w-full container ">
       <ul className="flex lg:flex-row flex-col  lg:justify-center lg:space-x-7 lg:items-center   mb-10">
         {tabsData.map(({ tab }, idx) => (
           <li className=" cursor-pointer py-2" key={idx}>
@@ -32,7 +31,10 @@ const Tab = ({ children, active = 0 }) => {
                   ? " text-gray-50 border-blue-500 shadow-2xl font-bold bg-blue-500"
                   : "border-gray-100 text-gray-700"
               } border-2  border-transparent rounded font-semibold shadow-lg hover:shadow-2xl  transition-all ease-linear duration-300 whitespace-nowrap cursor-base py-2  px-4 text-base lg:text-lg `}
-              onClick={() => setActiveTab(idx)}>
+              onClick={() => setActiveTab(idx)}
+              onKeyPress={() => setActiveTab(idx)}
+              role="button"
+              tabIndex="0">
               {tab}
             </div>
           </li>
@@ -55,7 +57,9 @@ const Tab = ({ children, active = 0 }) => {
                   <div className="flex-shrink-0 flex items-center">
                     <Tick />
                   </div>
-                  <div className="font-medium text-base xl:text-lg">{item.title}</div>
+                  <div className="font-medium text-base xl:text-lg">
+                    {item.title}
+                  </div>
                 </div>
               ))}
           </div>

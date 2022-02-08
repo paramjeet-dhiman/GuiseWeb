@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Tick = () => {
   return (
     // <div className="bg-blue-400 w-8 h-8 flex items-center justify-center rounded-full">

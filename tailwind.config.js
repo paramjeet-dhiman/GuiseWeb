@@ -1,6 +1,6 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  // darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -87,7 +87,7 @@ module.exports = {
         goLeft: "goLeft 2s infinite",
       },
 
-      height: (theme) => ({
+      height: () => ({
         "screen/3": "60vh",
         hb: "60%",
         hm: "80%",
@@ -95,7 +95,7 @@ module.exports = {
         hxl: "28rem",
         hlg: "24rem",
       }),
-      width: (theme) => ({
+      width: () => ({
         wb: "60%",
         wm: "80%",
         wl: "94%",
@@ -105,12 +105,21 @@ module.exports = {
     fontFamily: {
       Poppins: ["Poppins, sans-serif"],
     },
-    container: { center: true },
-    screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "1124px",
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+      },
     },
+
+    // container: {  },
+    // screens: {
+    //   sm: "640px",
+    //   md: "768px",
+    //   lg: "1124px",
+    // },
   },
   variants: {
     extend: {

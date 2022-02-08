@@ -1,19 +1,19 @@
-import React from "react";
-
-export const HeroHeader = ({ img, title, bgColor = "" }) => {
+export const HeroHeader = ({ img, title }) => {
   return (
     <div>
       <section
-        className="w-full bg-center bg-cover mt-10"
+        className="w-full mt-[72px]"
         style={
           img
             ? {
+                width: "100%",
+                // maxWidth: "100%",
                 height: "28rem",
                 background: `url(${img}) center center / cover no-repeat`,
+                backgroundColor: "#000",
               }
             : {
                 height: "28rem",
-
                 backgroundColor: "#0e141b",
               }
         }>

@@ -1,10 +1,9 @@
-import React from "react";
 import { Tick } from "../Ticks/Tick";
 
 export const AdvantageSection = ({ advantages, images, order }) => {
   return (
-    <section className="flex flex-col lg:flex-row px-10 py-10 bg-white lg:py-20 lg:px-20 gap-16 ">
-      <div className="grid lg:grid-cols-12  w-full gap-10 ">
+    <section className="flex flex-col lg:flex-row py-10 bg-white pb-20 ">
+      <div className="grid lg:grid-cols-12  w-full gap-10 container">
         <div
           className={`col-span-full lg:col-span-6 md:m-0 ${
             order ? "   " : "lg:order-1"
@@ -25,7 +24,7 @@ export const AdvantageSection = ({ advantages, images, order }) => {
         </div>
         <div
           className={`flex flex-col col-span-full lg:col-span-6 justify-center text-core-black w-full ${
-            order ? "lg:pl-20" : "lg:w-5/6"
+            order ? "lg:pl-14" : "lg:w-5/6"
           }`}>
           <h2 className="text-3xl lg:text-4xl  mb-4 lg:mb-7 font-semibold">
             Advantages
@@ -38,7 +37,7 @@ export const AdvantageSection = ({ advantages, images, order }) => {
                   <Tick />
                 </div>
 
-                <div className="text-base xl:text-xl font-medium ">
+                <div className="text-base md:text-lg  font-medium">
                   {item.title}
                 </div>
               </div>

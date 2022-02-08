@@ -1,4 +1,3 @@
-import React from "react";
 import UndrawRedHat from "../../assets/images/redHat.png";
 import UndrawSharp from "../../assets/images/sharpNec.png";
 import UndrawNorden from "../../assets/images/norden.png";
@@ -14,7 +13,6 @@ const BusinessPartners = [
         className="w-full h-full  px-10 py-2"
         alt="redhat logo"
       />
-      
     ),
     URL: "https://www.redhat.com/en",
   },

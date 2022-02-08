@@ -1,11 +1,10 @@
-import React from "react";
 import { HeroHeader } from "../components/HeroHeader/HeroHeader";
 
 export const PrivacyPolicy = () => {
   return (
     <div className="">
       <HeroHeader title="Privacy Policy" />
-      <section className="py-10 lg:py-20 px-10 lg:px-0 container ">
+      <section className="py-10 lg:py-20  container ">
         <div className="space-y-5 lg:space-y-10 ">
           <div className="space-y-5 text-lg md:text-xl">
             <div className="space-y-5 text-xl ">
