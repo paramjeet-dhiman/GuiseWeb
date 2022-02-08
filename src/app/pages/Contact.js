@@ -154,7 +154,7 @@ export const Contact = () => {
           </div> */}
 
           <div className=" col-span-full ">
-            <div className="container ">
+            <div className="container max-w-screen-xl">
               <div className="flex flex-wrap justify-center  ">
                 <div className="w-full  ">
                   <div className="relative bg-white rounded-md  border border-gray-100  flex flex-col min-w-0 shadow-lg filter drop-shadow-lg ">

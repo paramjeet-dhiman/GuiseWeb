@@ -4,8 +4,6 @@
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:jest/recommended",
-    "plugin:testing-library/react",
     "plugin:import/errors",
     "plugin:import/warnings",
     "prettier"
@@ -33,20 +31,7 @@
     "react/react-in-jsx-scope": 0,
     "react/prop-types": 0,
     "react/jsx-uses-react": "off",
-    "react/no-unescaped-entities": 0,
-    "jsx-a11y/no-static-element-interactions": [
-      "error",
-      {
-        "handlers": [
-          "onClick",
-          "onMouseDown",
-          "onMouseUp",
-          "onKeyPress",
-          "onKeyDown",
-          "onKeyUp"
-        ]
-      }
-    ]
+    "react/no-unescaped-entities": 0
   },
   "settings": {
     "react": {

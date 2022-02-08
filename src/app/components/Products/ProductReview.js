@@ -1,5 +1,4 @@
-import React from "react";
-import ReactCompareImage from "react-compare-image";
+// import ReactCompareImage from "react-compare-image";
 import Tab from "../TabSlider/TabSlider";
 import { Tick } from "../Ticks/Tick";
 import { DemoComponent } from "../DemoComponent";
@@ -311,14 +310,14 @@ export const ProductReview = () => {
               Lorem ipsum dolor sit amet
             </p>
           </div>
-
+          {/* 
           <div className="lg:container mt-10 rounded-md">
             <ReactCompareImage
               className="rounded-md"
               leftImage="https://images.pexels.com/photos/5696661/pexels-photo-5696661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
               rightImage="https://i.postimg.cc/NFKCQWTq/Group-69.png"
             />
-          </div>
+          </div> */}
         </section>
 
         {/* ====================== Section #4  ================== */}

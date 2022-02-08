@@ -1,6 +1,6 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  // darkMode: false, // or 'media' or 'class'
+
   theme: {
     extend: {
       colors: {
@@ -126,5 +126,4 @@ module.exports = {
       animation: ["hover", "group-hover"],
     },
   },
-  plugins: [require("@tailwindcss/aspect-ratio")],
 };

@@ -26,9 +26,8 @@ export const Router = () => {
       <ScrollToTop />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        {/* <Route path="/solutions" element={<Solutions />} /> */}
+
         {/* <Route path="/technology" element={<Technology />} /> */}
-        {/* <Route path="/careers/jobs" element={<Openings />} /> */}
 
         <Route path="/products" element={<Products />} />
         <Route path="/demo" element={<BookADemo />} />

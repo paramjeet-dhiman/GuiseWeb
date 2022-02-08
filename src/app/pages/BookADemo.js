@@ -7,7 +7,7 @@ export const BookADemo = () => {
       <HeroHeader img={HeaderIMG} title="Request a DEMO" />
 
       <section className="bg-white py-10 md:mt-10  ">
-        <div className=" container text-center text-core-black ">
+        <div className=" container text-center text-core-black max-w-screen-lg ">
           <h1 className="text-2xl w-full lg:text-4xl font-semibold text-center ">
             Watch our products in action & see how they can help your
             organization
@@ -19,7 +19,7 @@ export const BookADemo = () => {
         </div>
       </section>
 
-      <section className=" py-10  container ">
+      <section className=" py-10  container max-w-screen-xl">
         <div className="rounded-lg shadow-lg border  border-gray-100 p-4 md:p-10">
           <div className="space-y-5 mb-10">
             <h1 className="text-xl lg:text-3xl font-semibold text-core-black">
