@@ -193,7 +193,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
             {showProducts ? (
               <div
                 onMouseLeave={handleMouseLeave}
-                className="absolute -right-[150px] py-3   space-y-3 bg-white flex flex-col justify-center  shadow-xl filter drop-shadow-2xl"
+                className="absolute -right-[150px] pt-3   space-y-3 bg-white flex flex-col justify-center  shadow-xl filter drop-shadow-2xl"
                 style={{ width: "17rem" }}>
                 <NavLink
                   onClick={handleShowProduct}
@@ -289,7 +289,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
             {show ? (
               <div
                 onMouseLeave={handleMouseLeave}
-                className="absolute -right-6   filter drop-shadow-2xl  py-3 space-y-3 bg-white flex flex-col justify-center  shadow-xl  w-40">
+                className="absolute -right-6   filter drop-shadow-2xl  pt-3 space-y-3 bg-white flex flex-col justify-center  shadow-xl  w-40">
                 <NavLink
                   to="/resources/blogs"
                   onClick={handleShow}
@@ -369,7 +369,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
             {toggle ? (
               <div
                 onMouseLeave={handleMouseLeave}
-                className="absolute  py-3 -right-8  filter drop-shadow-2xl space-y-3 bg-white flex flex-col justify-center  shadow-xl  w-40">
+                className="absolute  pt-3 -right-8  filter drop-shadow-2xl space-y-3 bg-white flex flex-col justify-center  shadow-xl  w-40">
                 <NavLink
                   onClick={handleToggle}
                   to="/company/about"

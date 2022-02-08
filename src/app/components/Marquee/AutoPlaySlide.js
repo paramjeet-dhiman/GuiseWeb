@@ -16,9 +16,17 @@ export const AutoPlaySlide = ({ data }) => {
     pauseOnHover: true,
     responsive: [
       {
-        breakpoint: 1000,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 1,
         },
@@ -44,18 +52,18 @@ export const AutoPlaySlide = ({ data }) => {
 
   return (
     <div className="mt-10">
-      <Slider {...settings} className="">
+      <Slider {...settings}>
         {data.map((item, idx) => (
-          <div key={`marquee-example-review-${idx}`} className="group">
-            <div className="relative ">
+          <div key={`marquee-example-review-${idx}`} className="">
+            <div>
               <img
                 src={item.img}
-                alt=""
-                className="bg-cover bg-center rounded-sm w-full h-[350px]"
+                alt={item.img}
+                className="bg-cover bg-center rounded-t-sm w-full h-[350px]"
               />
             </div>
             <div className="py-4 flex bg-black text-white justify-center items-center shadow">
-              <h4 className="text-base sm:text-lg md:text-lg lg:text-xl  rounded-xl font-medium ">
+              <h4 className="text-base sm:text-lg md:text-lg   rounded-xl font-medium ">
                 {item.title}
               </h4>
             </div>

@@ -74,7 +74,7 @@ export function Home() {
 
   return (
     <div className="min-h-screen overflow-hidden flex flex-col select-none ">
-      <main className="flex-grow mt-[72px] ">
+      <main className="flex-grow mt-[36px]  md:mt-[72px] ">
         {/*================= Hero Section ===================*/}
 
         <section className="flex  justify-center items-center bg-white ">
@@ -91,7 +91,7 @@ export function Home() {
                 </p>
               </div>
             </div>
-            <div className="col-span-full flex items-center justify-center lg:col-span-6 ">
+            <div className="col-span-full flex items-center pb-10 sm:pb-0 justify-center lg:col-span-6 ">
               <img
                 src={BGTech}
                 className="object-cover bg-cover bg-center h-80 w-80 sm:h-96 sm:w-wl lg:w-full lg:h-full rounded-lg shadow-xl  filter drop-shadow-2xl   "
