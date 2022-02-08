@@ -74,7 +74,7 @@ export function Home() {
 
   return (
     <div className="min-h-screen overflow-hidden flex flex-col select-none ">
-      <main className="flex-grow">
+      <main className="flex-grow mt-[72px] ">
         {/*================= Hero Section ===================*/}
 
         <section className="flex  justify-center items-center bg-white ">
@@ -85,7 +85,7 @@ export function Home() {
                 <h1 className="text-3xl sm:text-3xl md:text-4xl uppercase lg:text-5xl xl:text-6xl  text-gray-800 font-bold leading-7 md:leading-10">
                   AI at the edge
                 </h1>
-                <p className="lg:text-left mt-5 lg:mt-7  text-core-black  text-sm sm:text-lg lg:max-w-lg lg:text-xl">
+                <p className="lg:text-left mt-5 lg:mt-7  text-core-black  text-base sm:text-lg lg:max-w-lg lg:text-xl">
                   Guise AI at the Edge leverages local compute to extract
                   meaningful data, delivering better insights for enterprises.
                 </p>
@@ -110,7 +110,7 @@ export function Home() {
                 <h2 className="text-3xl md:text-4xl xl:text-5xl text-center font-semibold lg:leading-tight">
                   What we do?
                 </h2>
-                <p className="mt-5 lg:mt-7  text-gray-400 text-center lg:w-8/12 text-lg lg:text-xl ">
+                <p className="mt-5 lg:mt-7   text-gray-400 text-center lg:w-8/12 text-lg lg:text-xl ">
                   Through the Edge approach we make AI easier to use with low
                   latency and at less bandwidth, while still maintaining expert
                   levels of accuracy, speed, and privacy. Our hardware-agnostic

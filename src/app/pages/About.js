@@ -2,16 +2,16 @@ import BGImg from "../../assets/images/BGAbout.jpg";
 
 export const About = () => {
   return (
-    <div>
+    <div className="mt-[72px]">
       <section className="flex  justify-center items-center bg-white ">
-        <div className="grid lg:grid-cols-12 container py-12 sm:py-24 gap-10 lg:gap-20">
+        <div className="grid lg:grid-cols-12 container py-14 gap-10 lg:gap-20">
           <div className="col-span-full lg:col-span-6 items-center flex flex-col justify-center  w-full ">
             <div className="text-center pt-10 my-10 md:mt-0  lg:text-left w-full">
               {/* <h1 className="text-4xl lg:text-left tracking-wide lg:tracking-wide  font-bold   lg:text-5xl  xl:text-6xl"> */}
               <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl  text-gray-800 font-bold leading-7 md:leading-10">
                 About Us
               </h1>
-              <p className="lg:text-left mt-5 lg:mt-7  text-core-black  text-sm sm:text-lg lg:max-w-lg lg:text-xl">
+              <p className="lg:text-left mt-5 lg:mt-7  text-core-black  text-base sm:text-lg lg:max-w-lg lg:text-xl">
                 Guise AI solves the cost and efficiency problems endemic in AI
                 today. Our continuous learning AI solutions on the edge allow
                 machines to continuously learn and adapt to dynamically changing
