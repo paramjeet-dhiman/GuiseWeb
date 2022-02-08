@@ -1,1 +1,0 @@
-/home/anonymous/Guise.ai/projects/jetson_anpr_frontend/public/favicon.ico

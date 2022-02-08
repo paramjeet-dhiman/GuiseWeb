@@ -100,6 +100,8 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
           </svg>
         </NavLink>
 
+        {/* <div className="h-0.5 bg-green scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out" /> */}
+
         {/* =================== Mobile Menu Button  ========================= */}
         {!isOpen ? (
           <button
@@ -233,18 +235,19 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
           </div>
 
           {/*====================================TECHNOLOGY=================================== */}
-          {/* <div>
-              <NavLink
-                onMouseEnter={handleMouseLeave}
-                className={({ isActive }) =>
-                  isActive
-                    ? "px-2 text-social-facebook text-base xl:text-lg tracking-wide font-bold py-5 transition-all duration-300"
-                    : "px-2 cursor-pointer  tracking-wide py-5 text-base xl:text-lg font-medium hover:text-gray-600 "
-                }
-                to="/technology">
-                Technology
-              </NavLink>
-            </div> */}
+          {/* <div className="group">
+            <NavLink
+              onMouseEnter={handleMouseLeave}
+              className={({ isActive }) =>
+                isActive
+                  ? "px-2 text-social-facebook text-base xl:text-lg tracking-wide font-bold py-5 transition-all duration-300"
+                  : "px-2 cursor-pointer  tracking-wide py-5 text-base xl:text-lg font-medium hover:text-gray-600 "
+              }
+              to="/technology">
+              Technology
+            </NavLink>
+            <div className="h-0.5 bg-emerald-500 scale-x-0 group-hover:scale-100 transition-transform origin-left rounded-full duration-300 ease-out" />
+          </div> */}
 
           {/*====================================RESOURCES DROPDOWN=================================== */}
 

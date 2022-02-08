@@ -25,6 +25,8 @@ body,
   height: 100%;
   width: 100%;
   font-family: "Poppins", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+
   scroll-behaviour: smooth;
   scrollbar-color: darkgrey #212529ff;
 }
@@ -63,6 +65,9 @@ body,
 
 .testing {
   @apply border-2 border-red-500 border-dashed;
+}
+.testingg {
+  @apply border-2 border-emerald-500 border-dashed;
 }
 
 .no-scrollbar::-webkit-scrollbar {

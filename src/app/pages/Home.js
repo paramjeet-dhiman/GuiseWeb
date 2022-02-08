@@ -73,35 +73,55 @@ export function Home() {
   ];
 
   return (
-    <div className="min-h-screen overflow-hidden flex flex-col select-none ">
-      <main className="flex-grow mt-[36px]  md:mt-[72px] ">
+    <div className="select-none ">
+      <main className="mt-[20px] md:mt-[72px] ">
         {/*================= Hero Section ===================*/}
-
-        <section className="flex  justify-center items-center bg-white ">
-          <div className="grid lg:grid-cols-12 container py-12  sm:py-24 gap-10 lg:gap-20">
-            <div className="col-span-full lg:col-span-6 items-center flex flex-col justify-center  w-full ">
-              <div className="text-center pt-10 my-10 md:mt-0  lg:text-left w-full">
-                {/* <h1 className="text-4xl lg:text-left tracking-wide lg:tracking-wide  font-bold   lg:text-5xl  xl:text-6xl"> */}
+        <div className="container py-20">
+          <div className="grid md:grid-cols-2 items-center pt-10 sm:pt-0 justify-center gap-20">
+            <div className="">
+              <div className="text-center  md:mt-0  md:text-left w-full">
                 <h1 className="text-3xl sm:text-3xl md:text-4xl uppercase lg:text-5xl xl:text-6xl  text-gray-800 font-bold leading-7 md:leading-10">
                   AI at the edge
                 </h1>
-                <p className="lg:text-left mt-5 lg:mt-7  text-core-black  text-base sm:text-lg lg:max-w-lg lg:text-xl">
+                <p className="md:text-left mt-5 lg:mt-7  text-core-black  text-base sm:text-lg lg:max-w-lg lg:text-xl">
                   Guise AI at the Edge leverages local compute to extract
                   meaningful data, delivering better insights for enterprises.
                 </p>
               </div>
             </div>
-            <div className="col-span-full flex items-center pb-10 sm:pb-0 justify-center lg:col-span-6 ">
+            <div className="">
               <img
                 src={BGTech}
-                className="object-cover bg-cover bg-center h-80 w-80 sm:h-96 sm:w-wl lg:w-full lg:h-full rounded-lg shadow-xl  filter drop-shadow-2xl   "
-                alt="sdf"
+                className="md:h-hl md:w-wl lg:w-full object-cover lg:h-[34rem] rounded-lg shadow-xl  filter drop-shadow-2xl"
+                alt="hero landing page img"
                 draggable="false"
               />
             </div>
           </div>
-        </section>
+        </div>
 
+        {/* <div className="bg-white container mx-auto testing min-h-full  grid lg:grid-cols-12 container py-[6rem]">
+          <div className="col-span-full lg:col-span-6">
+            <div className="text-center  md:mt-0  lg:text-left w-full">
+              <h1 className="text-3xl sm:text-3xl md:text-4xl uppercase lg:text-5xl xl:text-6xl  text-gray-800 font-bold leading-7 md:leading-10">
+                AI at the edge
+              </h1>
+              <p className="lg:text-left mt-5 lg:mt-7  text-core-black  text-base sm:text-lg lg:max-w-lg lg:text-xl">
+                Guise AI at the Edge leverages local compute to extract
+                meaningful data, delivering better insights for enterprises.
+              </p>
+            </div>
+          </div>
+          <div className="col-span-full flex  flex-1  flex-grow items-center pb-10 sm:pb-0 justify-center lg:col-span-6 ">
+            <img
+              src={BGTech}
+              className=" bg-cover bg-center w-full  h-full  rounded-lg shadow-xl  filter drop-shadow-2xl   "
+              alt="sdf"
+              draggable="false"
+            />
+          </div>
+        </div>
+ */}
         {/* ============================= What we do? ========================== */}
         <section className="bg-bookmark-blue py-10 lg:py-20 ">
           <div className="   lg:px-5 container ">
