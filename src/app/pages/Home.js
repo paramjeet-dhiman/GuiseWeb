@@ -110,7 +110,7 @@ export function Home() {
                 <h2 className="text-3xl md:text-4xl xl:text-5xl text-center font-semibold lg:leading-tight">
                   What we do?
                 </h2>
-                <p className="mt-5 lg:mt-7   text-gray-400 text-center lg:w-8/12 text-lg lg:text-xl ">
+                <p className="mt-5 lg:mt-7   text-gray-400 text-center max-w-screen-lg text-lg lg:text-xl ">
                   Through the Edge approach we make AI easier to use with low
                   latency and at less bandwidth, while still maintaining expert
                   levels of accuracy, speed, and privacy. Our hardware-agnostic
