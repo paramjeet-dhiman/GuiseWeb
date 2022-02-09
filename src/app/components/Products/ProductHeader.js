@@ -1,7 +1,7 @@
 export const ProductHeader = ({ img, title, bio }) => {
   return (
     <section
-      className="w-full mt-[72px]  "
+      className="w-full mt-16  "
       style={{
         height: "28rem",
         background: `url(${img}) center center / cover no-repeat`,

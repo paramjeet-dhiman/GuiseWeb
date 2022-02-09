@@ -59,7 +59,7 @@ export const AutoPlaySlide = ({ data }) => {
               <img
                 src={item.img}
                 alt={item.img}
-                className="bg-cover bg-center rounded-t-sm w-full h-[350px]"
+                className="bg-cover bg-center rounded-t-sm w-full h-hlg"
               />
             </div>
             <div className="py-4 flex bg-black text-white justify-center items-center shadow">

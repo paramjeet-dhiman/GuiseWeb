@@ -2,7 +2,7 @@ export const HeroHeader = ({ img, title }) => {
   return (
     <div>
       <section
-        className="w-full mt-[72px]"
+        className="w-full mt-16"
         style={
           img
             ? {

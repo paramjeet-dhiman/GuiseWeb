@@ -59,7 +59,7 @@ export const Products = () => {
             </div>
 
             <div>
-              <div className="flex justify-center mb-4 lg:h-[30rem]">
+              <div className="flex justify-center mb-4 lg:h-hlgx">
                 <Link to={product.url} className="">
                   <img
                     loading="lazy"

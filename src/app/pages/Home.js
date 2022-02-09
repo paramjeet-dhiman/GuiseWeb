@@ -74,7 +74,7 @@ export function Home() {
 
   return (
     <div className="select-none ">
-      <main className="mt-[20px] md:mt-[72px] ">
+      <main className="mt-10 md:mt-16 ">
         {/*================= Hero Section ===================*/}
         <div className="container py-20">
           <div className="grid md:grid-cols-2 items-center pt-10 sm:pt-0 justify-center gap-20">
@@ -92,7 +92,7 @@ export function Home() {
             <div className="">
               <img
                 src={BGTech}
-                className="md:h-hl md:w-wl lg:w-full object-cover lg:h-[34rem] rounded-lg shadow-xl  filter drop-shadow-2xl"
+                className="md:h-hl md:w-wl lg:w-full object-cover lg:h-hxl rounded-lg shadow-xl  filter drop-shadow-2xl"
                 alt="hero landing page img"
                 draggable="false"
               />

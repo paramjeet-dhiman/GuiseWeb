@@ -1,6 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
-
+  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     extend: {
       colors: {
@@ -92,8 +91,9 @@ module.exports = {
         hb: "60%",
         hm: "80%",
         hl: "90%",
-        hxl: "28rem",
         hlg: "24rem",
+        hlgx: "30rem",
+        hxl: "34rem",
       }),
       width: () => ({
         wb: "60%",
@@ -114,6 +114,17 @@ module.exports = {
         lg: "4rem",
       },
     },
+    xl: { max: "1279px" },
+    // => @media (max-width: 1279px) { ... }
+
+    lg: { max: "1023px" },
+    // => @media (max-width: 1023px) { ... }
+
+    md: { max: "767px" },
+    // => @media (max-width: 767px) { ... }
+
+    sm: { max: "639px" },
+    // => @media (max-width: 639px) { ... }
 
     // container: {  },
     // screens: {
@@ -121,10 +132,5 @@ module.exports = {
     //   md: "768px",
     //   lg: "1124px",
     // },
-  },
-  variants: {
-    extend: {
-      animation: ["hover", "group-hover"],
-    },
   },
 };

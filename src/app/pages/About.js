@@ -2,7 +2,7 @@ import BGImg from "../../assets/images/BGAbout.jpg";
 
 export const About = () => {
   return (
-    <div className="mt-[20px]  md:mt-[72px]">
+    <div className="mt-10 md:mt-16 ">
       <div className="container py-20">
         <div className="grid md:grid-cols-2 items-center pt-10 sm:pt-0 justify-center gap-20">
           <div className="">
@@ -22,7 +22,7 @@ export const About = () => {
           <div className="">
             <img
               src={BGImg}
-              className="md:h-hl md:w-wl lg:w-full object-cover lg:h-[36rem] rounded-lg shadow-xl  filter drop-shadow-2xl"
+              className="md:h-hl md:w-wl lg:w-full object-cover lg:h-hxl rounded-lg shadow-xl  filter drop-shadow-2xl"
               alt="hero landing page img"
               draggable="false"
             />

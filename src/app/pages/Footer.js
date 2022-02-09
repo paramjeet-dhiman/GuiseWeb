@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="flex flex-wrap py-10 lg:py-10 justify-center md:justify-between gap-5  container  sm:gap-5 md:gap-0  ">
         {/* ================================Logo==================================== */}
 
-        <div className="pt-20 w-72 lg:w-2/12 hidden lg:block">
+        <div className="pt-20  w-72 lg:w-2/12 hidden lg:block">
           <svg
             height="26"
             viewBox="0 0 4421 724"

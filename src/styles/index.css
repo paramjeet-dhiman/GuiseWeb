@@ -67,7 +67,7 @@ body,
   @apply border-2 border-red-500 border-dashed;
 }
 .testingg {
-  @apply border-2 border-emerald-500 border-dashed;
+  @apply border-2 border-green-500 border-dashed;
 }
 
 .no-scrollbar::-webkit-scrollbar {

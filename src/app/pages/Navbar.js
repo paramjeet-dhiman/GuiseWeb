@@ -195,7 +195,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
             {showProducts ? (
               <div
                 onMouseLeave={handleMouseLeave}
-                className="absolute -right-[150px] pt-3   space-y-3 bg-white flex flex-col justify-center  shadow-xl filter drop-shadow-2xl"
+                className="absolute  pt-3   space-y-3 bg-white flex flex-col justify-center  shadow-xl filter drop-shadow-2xl"
                 style={{ width: "17rem" }}>
                 <NavLink
                   onClick={handleShowProduct}
