@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <footer className="bg-gray-800  overflow-hidden select-none">
-      <div className="flex flex-wrap py-10 lg:py-10 justify-center md:justify-between gap-5  container  sm:gap-5 md:gap-0  ">
+      <div className="flex flex-wrap py-10 lg:py-20 justify-center md:justify-between gap-5  container  sm:gap-5 md:gap-0  ">
         {/* ================================Logo==================================== */}
 
-        <div className="pt-20  w-72 lg:w-2/12 hidden lg:block">
+        <div className="pt-24  w-72   lg:w-2/12 hidden lg:block">
           <svg
             height="26"
             viewBox="0 0 4421 724"
@@ -34,7 +34,7 @@ export const Footer = () => {
             </defs>
           </svg>
 
-          <p className="mt-2 tracking-wider text-lg lg:text-xl uppercase font-medium text-gray-400">
+          <p className="mt-2 tracking-wider text-base lg:text-xl uppercase font-medium text-gray-400">
             AI at the edge
           </p>
         </div>
@@ -167,7 +167,7 @@ export const Footer = () => {
       <div className="bg-bookmark-blue">
         <div className="flex container  justify-between py-5  text-gray-400 text-lg flex-col items-center  md:flex-row ">
           <div className="pb-4 md:pb-0 font-medium">
-            <p className="text-center text-sm xl:text-base">
+            <p className="text-center text-sm">
               &copy; {new Date().getFullYear()} Guise AI. All Rights Reserved.
             </p>
           </div>

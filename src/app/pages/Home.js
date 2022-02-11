@@ -80,7 +80,7 @@ export function Home() {
           <div className="grid md:grid-cols-2 items-center pt-10 sm:pt-0 justify-center gap-20">
             <div className="">
               <div className="text-center  md:mt-0  md:text-left w-full">
-                <h1 className="text-3xl sm:text-3xl md:text-4xl uppercase lg:text-5xl xl:text-6xl  text-gray-800 font-bold leading-7 md:leading-10">
+                <h1 className="text-4xl sm:text-3xl md:text-4xl uppercase lg:text-5xl xl:text-6xl  text-gray-800 font-bold leading-7 md:leading-10">
                   AI at the edge
                 </h1>
                 <p className="md:text-left mt-5 lg:mt-7  text-core-black  text-base sm:text-lg lg:max-w-lg lg:text-xl">
@@ -131,17 +131,18 @@ export function Home() {
                   What we do?
                 </h2>
                 <p className="mt-5 lg:mt-7   text-gray-400 text-center max-w-screen-lg text-lg lg:text-xl ">
-                  Through the Edge approach we make AI easier to use with low
-                  latency and at less bandwidth, while still maintaining expert
-                  levels of accuracy, speed, and privacy. Our hardware-agnostic
-                  solutions allow you to scale up with the existing
-                  infrastructure.
+                  Guise AI at the Edge is built to make AI easier to use with
+                  low latency and at less bandwidth, while still maintaining
+                  expert levels of accuracy, speed, and privacy. Our
+                  hardware-agnostic solutions allow you to scale up with the
+                  existing infrastructure.
                 </p>
               </div>
 
               <Link
                 to="/products"
-                className="text-gray-100 px-4 rounded-sm py-2 md:py-2  text-lg uppercase font-semibold border-2 border-gray-100 hover:bg-gray-100  transform hover:scale-105 hoverTransition   hover:text-black ">
+                className="text-gray-100 px-4 rounded-sm py-2 md:py-2  text-lg uppercase font-semibold border-2 border-gray-100 hover:bg-gray-100  transform hover:scale-105 hoverTransition   hover:text-black "
+              >
                 Learn more
               </Link>
             </div>

@@ -160,7 +160,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               className={({ isActive }) =>
                 isActive
                   ? "flex  py-2 pr-4 pl-3  text-social-facebook items-center  px-4 cursor-pointer   font-bold"
-                  : "flex  py-2 pr-4 pl-3   items-center  px-4 cursor-pointer    hover:text-gray-600  "
+                  : "flex  py-2 pr-4 pl-3   items-center  px-4 cursor-pointer    hover:text-gray-600"
               }
               // className="flex  items-center  px-4 cursor-pointer   py-3 transition-colors ease-in-out  duration-500 text-base xl:text-lg font-medium hover:text-blue-600 "
             >

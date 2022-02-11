@@ -19,7 +19,7 @@ export const HeroHeader = ({ img, title }) => {
         }>
         <div className="flex items-center justify-center w-full h-full  bg-black bg-opacity-70">
           <div className="text-center  px-10 lg:px-0">
-            <h1 className="text-3xl font-bold  text-white uppercase md:text-5xl filter drop-shadow-2xl">
+            <h1 className="text-4xl font-bold  text-white uppercase md:text-5xl filter drop-shadow-2xl">
               {title}
             </h1>
             {/* <Link

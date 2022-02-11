@@ -3,8 +3,6 @@ import airplaneProduct from "../../assets/images/airplane_product.jpg";
 import audioProduct from "../../assets/images/audio_product.jpeg";
 import signageProduct from "../../assets/images/ds_product.jpeg";
 import trafficProduct from "../../assets/images/traffic_product.jpeg";
-import ProductBgImg from "../../assets/images/product_bg.jpg";
-import { HeroHeader } from "../components/HeroHeader/HeroHeader";
 
 export const Products = () => {
   const productsInfo = [
@@ -43,7 +41,15 @@ export const Products = () => {
 
   return (
     <div className="bg-white h-full">
-      <HeroHeader img={ProductBgImg} title="Products" />
+      <section className="w-full mt-16" id="products-bg-img">
+        <div className="flex items-center justify-center w-full h-full  bg-black bg-opacity-70">
+          <div className="text-center  px-10 lg:px-0">
+            <h1 className="text-4xl font-bold  text-white uppercase md:text-5xl filter drop-shadow-2xl">
+              Products
+            </h1>
+          </div>
+        </div>
+      </section>
 
       <div className="py-5 lg:py-10"></div>
 
@@ -58,13 +64,13 @@ export const Products = () => {
               </h1>
             </div>
 
-            <div>
-              <div className="flex justify-center mb-4 lg:h-hlgx">
+            <div className="">
+              <div className="flex justify-center mb-4">
                 <Link to={product.url} className="">
                   <img
                     loading="lazy"
                     src={product.img}
-                    className="object-cover bg-contain  filter drop-shadow-xl  w-full h-full  bg-center rounded-lg shadow-xl hover:shadow-sm hoverTransition"
+                    className="  filter drop-shadow-xl lg:h-hlgx rounded-lg shadow-xl hover:shadow-sm hoverTransition"
                     alt={product.img}
                     draggable="false"
                   />
@@ -77,7 +83,7 @@ export const Products = () => {
 
               <Link
                 to={product.url}
-                className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-core-guise border-2 border-core-guise rounded-sm hoverTransition hover:text-white hover:bg-core-guise ">
+                className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-core-guise border-2 border-core-guise rounded-sm hover:text-white hover:bg-core-guise ">
                 Read more
                 <svg
                   className="ml-2 -mr-1 w-4 h-4"

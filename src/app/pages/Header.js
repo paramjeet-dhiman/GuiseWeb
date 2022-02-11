@@ -24,21 +24,19 @@ export const Header = () => {
         closeMobileMenu={closeMobileMenu}
       />
 
-      <div className="relative">
+      <div className="relative   md:hidden">
         {isOpen ? (
-          <nav className="z-40  flex items-center fixed top-0 left-0 right-0 h-screen   text-2xl bg-white text-gray-900 transition-opacity duration-500 opacity-100  ease-in">
+          <nav className="z-40  flex items-center fixed top-0 left-0 right-0 h-screen pt-10 bg-white text-core-black">
             <div className="w-full">
               {MobileNavItems.map((item, i) => (
                 <Link
                   to={item.link}
-                  className="cursor-pointer text-color-500 hover:text-social-facebook "
+                  className="cursor-pointer  hover:text-social-facebook "
                   key={i}
                   onClick={closeMobileMenu}>
-                  <div className="flex border-b border-gray-400 py-5 justify-between items-center px-10  transform hover:scale-105 transition-all ease-in-out duration-300">
-                    <span className="text-3xl  font-normal    ">
-                      {item.title}
-                    </span>
-                    <svg className="w-5 h-5 " viewBox="0 0 19 19" fill="none">
+                  <div className="flex border-b border-gray-400 py-5 justify-between items-center px-10  transition-all ease-in-out duration-300">
+                    <span className="text-xl font-normal">{item.title}</span>
+                    <svg className="w-4 h-4 " viewBox="0 0 19 19" fill="none">
                       <path
                         d="M1 2H17V18"
                         strokeWidth="3"

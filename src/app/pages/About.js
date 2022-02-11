@@ -6,11 +6,11 @@ export const About = () => {
       <div className="container py-20">
         <div className="grid md:grid-cols-2 items-center pt-10 sm:pt-0 justify-center gap-20">
           <div className="">
-            <div className="text-center  md:mt-0  lg:text-left w-full">
+            <div className="text-center  md:mt-0  md:text-left w-full">
               <h1 className="text-3xl sm:text-3xl md:text-4xl  lg:text-5xl xl:text-6xl  text-gray-800 font-bold leading-7 md:leading-10">
                 About Us
               </h1>
-              <p className="lg:text-left mt-5 lg:mt-7  text-core-black  text-base sm:text-lg lg:max-w-xl lg:text-xl">
+              <p className="mt-5 lg:mt-7  text-core-black  text-base sm:text-lg lg:max-w-xl lg:text-xl">
                 Guise AI solves the cost and efficiency problems endemic in AI
                 today. Our continuous learning AI solutions on the edge allow
                 machines to continuously learn and adapt to dynamically changing
