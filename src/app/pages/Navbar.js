@@ -59,7 +59,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
   };
 
   return (
-    <nav className="z-50 fixed top-0 w-full bg-white py-2.5  filter drop-shadow-md  shadow select-none  text-gray-900">
+    <nav className="z-50 fixed top-0 w-full bg-white py-2.5  shadow-md select-none  text-gray-900">
       <div
         className="container flex flex-wrap justify-between items-center  mx-auto"
         onMouseLeave={handleMouseLeave}>
