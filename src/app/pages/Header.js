@@ -26,7 +26,7 @@ export const Header = () => {
 
       <div className="relative   md:hidden">
         {isOpen ? (
-          <nav className="z-40  flex items-center fixed top-0 left-0 right-0 h-screen pt-10 bg-white text-core-black">
+          <nav className="z-40  flex items-center fixed top-0 left-0 right-0 h-screen bg-white text-core-black">
             <div className="w-full">
               {MobileNavItems.map((item, i) => (
                 <Link

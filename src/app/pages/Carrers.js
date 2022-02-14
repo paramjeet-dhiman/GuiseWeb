@@ -7,9 +7,9 @@ export const Carrers = () => {
     <div className="">
       <HeroHeader img={BGCareers} title={"Careers"} />
 
-      <section className="bg-bookmark-white py-10 lg:py-20">
-        <div className="flex flex-col lg:flex-row items-center  container  gap-y-10">
-          <div className="w-full lg:w-1/2  order-2 lg:order-1">
+      <section className="bg-bookmark-white py-20 lg:py-20">
+        <div className="flex flex-col lg:flex-row items-center  container  gap-y-20">
+          <div className="w-full lg:w-1/2  ">
             <h1 className="text-core-black font-semibold text-3xl lg:text-4xl lg:w-5/6 lg:leading-tight ">
               Are you ready to share your expertise?
             </h1>
@@ -30,7 +30,7 @@ export const Carrers = () => {
               </a>
             </div>
           </div>
-          <div className="w-full lg:w-1/2 order-1 lg:order-2">
+          <div className="w-full lg:w-1/2 ">
             <img
               className="object-cover w-full h-full bg-cover bg-center  rounded-lg shadow-xl  filter drop-shadow-2xl  "
               src={BGJoin}

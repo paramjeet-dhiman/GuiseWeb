@@ -202,7 +202,7 @@ export const BookDemoForm = () => {
                 autoFocus: false,
                 name: "phone",
               }}
-              country="in"
+              country="us"
               // containerStyle={{
               //   padding: "0.6rem 0.3rem",
               //   borderRadius: `0.5rem`,
