@@ -16,9 +16,9 @@ export const Research = () => {
           className=" bg-white py-10 lg:py-10 mt-10 container  w-full "
           key={index}>
           <a href={item.link} target="_blank" rel="noreferrer noopener">
-            <h1 className="text-xl lg:text-2xl  font-semibold  lg:leading-tight hover:underline   hover:text-blue-500 ">
+            <h4 className="text-xl lg:text-2xl  font-semibold  lg:leading-tight hover:underline   hover:text-blue-500 ">
               {item.title}
-            </h1>
+            </h4>
           </a>
           <p className=" mt-2 lg:mt-4 text-justify text-lg xl:text-xl">
             {item.description}

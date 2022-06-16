@@ -61,7 +61,7 @@ export function FAQ() {
   const toggle = (index) => {
     if (clicked === index) {
       // if clicked question already active then close it
-      return setClicked(null);
+      return setClicked(false);
     }
     setClicked(index);
   };

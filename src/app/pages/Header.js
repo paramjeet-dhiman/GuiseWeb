@@ -24,10 +24,10 @@ export const Header = () => {
         closeMobileMenu={closeMobileMenu}
       />
 
-      <div className="relative   md:hidden">
+      <div className="relative lg:hidden">
         {isOpen ? (
-          <nav className="z-40  flex items-center fixed top-0 left-0 right-0 h-screen bg-white text-core-black">
-            <div className="w-full">
+          <nav className="bg-white z-40  flex items-center fixed top-0 left-0 right-0 h-screen  text-core-black">
+            <div className="w-full container">
               {MobileNavItems.map((item, i) => (
                 <Link
                   to={item.link}

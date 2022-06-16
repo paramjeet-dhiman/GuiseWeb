@@ -220,7 +220,7 @@ export const Contact = () => {
 
                         <div className="text-center mt-6">
                           <button
-                            className="btn btn-black   active:bg-gray-600 xl:text-lg font-bold uppercase px-6 py-3 rounded-sm shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                            className="btn btn-black   active:bg-gray-600 xl:text-lg font-medium uppercase px-6 py-3 rounded-sm shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                             type="submit">
                             {sending ? (
                               <div className="flex items-center justify-center  ">

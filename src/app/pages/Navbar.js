@@ -105,7 +105,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
         {/* =================== Mobile Menu Button  ========================= */}
         {!isOpen ? (
           <button
-            className="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            className="inline-flex items-center p-2 ml-3 text-sm rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             // className="mobile-menu-button transform text-gray-900  transition-all duration-500 hover:scale-125 "
             data-collapse-toggle="mobile-menu"
             aria-controls="mobile-menu-btn"
@@ -126,7 +126,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
           </button>
         ) : (
           <button
-            className="inline-flex items-center p-2 ml-3 text-sm  rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            className="inline-flex items-center p-2 ml-3 text-sm  rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             data-collapse-toggle="mobile-menu"
             aria-controls="mobile-menu-btn"
             aria-expanded="false"
@@ -147,7 +147,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
 
         {/* ===================  Menu Items  ========================= */}
 
-        <div className="hidden md:flex  items-center w-full  md:w-auto  lg:space-x-7 text-sm md:text-base md:font-medium">
+        <div className="hidden lg:flex  items-center w-full  md:w-auto  lg:space-x-7 text-sm md:text-base md:font-medium">
           {/*====================================PRODUCTS DROPDOWN=================================== */}
           <div
             className="relative"
@@ -240,8 +240,8 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
               onMouseEnter={handleMouseLeave}
               className={({ isActive }) =>
                 isActive
-                  ? "px-2 text-social-facebook text-base xl:text-lg tracking-wide font-bold py-5 transition-all duration-300"
-                  : "px-2 cursor-pointer  tracking-wide py-5 text-base xl:text-lg font-medium hover:text-gray-600 "
+                  ? "px-2 text-social-facebook  tracking-wide font-bold py-5"
+                  : "px-2 cursor-pointer  tracking-wide py-5  hover:text-gray-600 "
               }
               to="/technology">
               Technology
@@ -263,7 +263,7 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                   ? "flex  py-2 pr-4 pl-3  items-center px-4 text-social-facebook tracking-wide font-bold"
                   : "flex   py-2 pr-4 pl-3 items-center  px-4 cursor-pointer  tracking-wide  transition-colors ease-in-out  duration-500  hover:text-gray-600  "
               }`}>
-              <h4>Resources</h4>
+              Resources
               <span className="">
                 {!show ? (
                   <svg
@@ -299,13 +299,13 @@ export const Navbar = ({ isOpen, handleOpen, closeMobileMenu }) => {
                   className="block px-3 py-2  hover:bg-core-black hover:text-white">
                   Blogs
                 </NavLink>
-
-                {/* <NavLink
-                    to="/resources/videos"
-                    onClick={handleShow}
-                    className="block px-3 py-2  hover:bg-core-black hover:text-white">
-                    Videos
-                  </NavLink> */}
+                {/* 
+                <NavLink
+                  to="/resources/videos"
+                  onClick={handleShow}
+                  className="block px-3 py-2  hover:bg-core-black hover:text-white">
+                  Videos
+                </NavLink> */}
 
                 <NavLink
                   to="/resources/research"

@@ -5,6 +5,7 @@ module.exports = {
       colors: {
         "core-black": "#23282F",
         "core-guise": "#007eff",
+        "core-link": "#0196c7",
         "bookmark-purple": "#5267DF",
         "bookmark-red": "#FA5959",
         "bookmark-teal": "#00c7bc",

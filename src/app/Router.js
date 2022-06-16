@@ -4,6 +4,7 @@ import { Home } from "./pages/Home";
 import { Header } from "./pages/Header";
 import { Footer } from "./pages/Footer";
 import { About } from "./pages/About";
+import { Press } from "./pages/Press";
 import { Carrers } from "./pages/Carrers";
 import { NotFound } from "./pages/NotFound";
 import { Research } from "./components/Research/Research";
@@ -35,7 +36,7 @@ export const Router = () => {
         <Route path="/resources/research" element={<Research />} />
         {/* <Route path="/resources/videos" element={<ProductsVideos />} /> */}
         <Route path="/resources/blogs" element={<ComingSoon />} />
-        <Route path="/resources/press" element={<ComingSoon />} />
+        <Route path="/resources/press" element={<Press />} />
 
         <Route path="/company/about" element={<About />} />
         <Route path="/company/careers" element={<Carrers />} />

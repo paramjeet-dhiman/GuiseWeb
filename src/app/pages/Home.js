@@ -9,6 +9,11 @@ import noiseCancel_slide_img from "../../assets/images/noise_cancel_slide.jpg";
 import noisedetect_slide_img from "../../assets/images/noise_detect_slide.jpg";
 import logodetect_slide_img from "../../assets/images/logo_detect_slide.jpg";
 import colordetect_slide_img from "../../assets/images/color_detect_slide.jpg";
+import RavePubsImg from "../../assets/images/file.png";
+import BusinessWireImg from "../../assets/images/BusinessWire_Logo.png";
+import YahooFinanceImg from "../../assets/images/Yahoo_Finance.png";
+
+import AVmagzineImg from "../../assets/images/av-magazine.png";
 
 export function Home() {
   const marqueeData = [
@@ -72,6 +77,8 @@ export function Home() {
     },
   ];
 
+  const press = [BusinessWireImg, YahooFinanceImg, RavePubsImg, AVmagzineImg];
+
   return (
     <div className="select-none ">
       <main className="mt-10 md:mt-16 ">
@@ -100,28 +107,6 @@ export function Home() {
           </div>
         </div>
 
-        {/* <div className="bg-white container mx-auto testing min-h-full  grid lg:grid-cols-12 container py-[6rem]">
-          <div className="col-span-full lg:col-span-6">
-            <div className="text-center  md:mt-0  lg:text-left w-full">
-              <h1 className="text-3xl sm:text-3xl md:text-4xl uppercase lg:text-5xl xl:text-6xl  text-gray-800 font-bold leading-7 md:leading-10">
-                AI at the edge
-              </h1>
-              <p className="lg:text-left mt-5 lg:mt-7  text-core-black  text-base sm:text-lg lg:max-w-lg lg:text-xl">
-                Guise AI at the Edge leverages local compute to extract
-                meaningful data, delivering better insights for enterprises.
-              </p>
-            </div>
-          </div>
-          <div className="col-span-full flex  flex-1  flex-grow items-center pb-10 sm:pb-0 justify-center lg:col-span-6 ">
-            <img
-              src={BGTech}
-              className=" bg-cover bg-center w-full  h-full  rounded-lg shadow-xl  filter drop-shadow-2xl   "
-              alt="sdf"
-              draggable="false"
-            />
-          </div>
-        </div>
- */}
         {/* ============================= What we do? ========================== */}
         <section className="bg-bookmark-blue py-10 lg:py-20 ">
           <div className="   lg:px-5 container ">
@@ -160,22 +145,57 @@ export function Home() {
         </section>
 
         <section className=" py-10 container lg:py-20 overflow-hidden">
-          <h1 className="text-3xl lg:text-4xl text-center  font-semibold lg:leading-tight">
+          <h2 className="text-3xl lg:text-4xl text-center  font-semibold lg:leading-tight">
             Run industry-specific models at the Edge for all your use cases
-          </h1>
+          </h2>
           <div className="">
             <AutoPlaySlide data={marqueeData} />
           </div>
         </section>
 
+        <section className="bg-gray-100 py-10 lg:py-28 ">
+          <div className=" container space-y-10">
+            <h2 className="text-2xl  text-center lg:text-4xl text-gray-800  font-semibold lg:leading-tight">
+              As seen in
+            </h2>
+            <div className="flex justify-around items-center">
+              {press.map((item, idx) => (
+                <div key={idx}>
+                  <div className="w-36 h-36  flex items-center justify-center">
+                    <img className="w-28" src={item} alt="RavePubsImg" />,
+                  </div>
+                </div>
+              ))}
+            </div>
+            <Link
+              to="/resources/press"
+              className="hover:text-core-link text-lg  group  cursor-pointer  ease-linear duration-300 text-black font-medium text-center uppercase flex justify-center  items-center space-x-3">
+              <span>See all press</span>
+              <svg className="h-4 " viewBox="0 0 12 12" fill="none">
+                <path
+                  d="M0 1.00586H11V12.0059"
+                  stroke="currentColor"
+                  strokeWidth="2"></path>
+                <line
+                  x1="10.857"
+                  y1="1.15437"
+                  x2="0.745382"
+                  y2="11.266"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeMiterlimit="2.61313"></line>
+              </svg>
+            </Link>
+          </div>
+        </section>
         <section className="bg-bookmark-blue py-10 lg:py-28">
           <div className="flex container space-y-12   flex-col justify-center items-center">
-            <h2 className="text-2xl  text-center lg:text-4xl text-white  font-semibold lg:leading-tight">
+            <h2 className="text-2xl  text-center lg:text-4xl text-gray-100  font-semibold lg:leading-tight">
               Get started with{" "}
               <span className="text-core-guise  ">Guise AI </span> at the Edge
             </h2>
             <Link to="/demo" className="">
-              <div className="text-gray-100 px-4 rounded-sm py-2  text-lg uppercase  font-semibold border-2 border-gray-100 hover:bg-gray-100  transform hover:scale-105 hoverTransition   hover:text-black ">
+              <div className="text-gray-50 px-4 rounded-sm py-2  text-lg uppercase  font-semibold border-2 border-gray-100 hover:bg-gray-100  transform hover:scale-105 hoverTransition   hover:text-black ">
                 Book A DEMO
               </div>
             </Link>

@@ -1,92 +1,85 @@
+// import { useState } from "react";
 import { HeroHeader } from "../components/HeroHeader/HeroHeader";
-
+// import { Pagination } from "../components/Pagination/Pagination";
+import { data } from "../PressData";
 export const Press = () => {
+  // const [showPerPage] = useState(6);
+  // const [pagination, setPagination] = useState({
+  //   start: 0,
+  //   end: showPerPage,
+  // });
+
+  // const onPaginationChange = (start, end) => {
+  //   setPagination({ start: start, end: end });
+  // };
+
   return (
     <div>
-      <HeroHeader title="Press & News" />
-      <div>fdsf</div>
-      <div className="focus:outline-none">
-        <div className="mx-auto container py-8">
-          <div className="flex flex-wrap items-center lg:justify-between justify-center">
-            {new Array(10).fill(0).map((item, index) => (
-              /* <!-- Card  --> */
-              <divi
-                key={index}
-                className="focus:outline-none mx-2 w-72 xl:mb-0 mb-8 shadow-md hover:shadow-lg  filter drop-shadow-xl transform hover:scale-105 hoverTransition ">
-                <div>
+      <HeroHeader
+        title="Press & News"
+        img={`https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80`}
+      />
+
+      <div className="mx-auto  py-20">
+        <div className="grid lg:grid-cols-2 sm:grid-cols-2 md:grid-cols-1 container gap-10">
+          {/* {data.slice(pagination.start, pagination.end).map((item, index) => ( */}
+          {data.map((item, index) => (
+            <div className="p-5" key={index}>
+              <div className=" bg-white group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200  md:shadow-xl  mb-6 ">
+                <div className="relative h-80">
                   <img
-                    alt="person capturing an"
-                    src="https://cdn.tuk.dev/assets/templates/classified/Bitmap (1).png"
-                    className="focus:outline-none w-full h-44"
+                    src={item.imgLink}
+                    alt="uploaded cover"
+                    className="w-full h-full  rounded-lg rounded-b-none"
                   />
                 </div>
-                <div className="bg-white">
-                  <div className="flex items-center justify-between px-4 pt-4">
-                    <div>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="focus:outline-none"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="#2c3e50"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeLinejoin="round">
-                        <path
-                          stroke="none"
-                          d="M0 0h24v24H0z"
-                          fill="none"></path>
-                        <path d="M9 4h6a2 2 0 0 1 2 2v14l-5-3l-5 3v-14a2 2 0 0 1 2 -2"></path>
-                      </svg>
-                    </div>
-                    <div className="bg-yellow-200 py-1.5 px-6 rounded-full">
-                      <p className="focus:outline-none text-xs text-yellow-700">
-                        Featured
-                      </p>
-                    </div>
-                  </div>
-                  <div className="p-4">
-                    <div className="flex items-center">
-                      <h2 className="focus:outline-none text-lg font-semibold">
-                        iphone XS
-                      </h2>
-                      <p className="focus:outline-none text-xs text-gray-600 pl-5">
-                        4 days ago
-                      </p>
-                    </div>
-                    <p className="focus:outline-none text-xs text-gray-600 mt-2">
-                      The Apple iPhone XS is available in 3 colors with 64GB
-                      memory. Shoot amazing videos
+
+                <div className="py-1">
+                  <div className="p-4 ">
+                    <h2 className="truncate font-bold mb-2 md:mt-4 text-2xl text-gray-800 tracking-normal">
+                      {item.title}
+                    </h2>
+                    <p className="text-gray-500 font-medium text-sm">
+                      {item.time}
                     </p>
-                    <div className="flex mt-4">
-                      <div>
-                        <p className="focus:outline-none text-xs text-gray-600 px-2 bg-gray-200 py-1">
-                          12 months warranty
-                        </p>
+
+                    <p className="break-words text-sm text-gray-800 mt-4 ">
+                      {item.bio}
+                    </p>
+                  </div>
+
+                  <div className="flex items-center justify-between p-2 md:p-4  ">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href={item.link}>
+                      <div className="flex items-center">
+                        <div className="text-sm  ">
+                          {item.img}
+                          {/* <p className="text-gray-800 font-medium leading-none">
+                            {item.webName}
+                          </p> */}
+                        </div>
                       </div>
-                      <div className="pl-2">
-                        <p className="focus:outline-none text-xs text-gray-600 px-2 bg-gray-200 py-1">
-                          Complete box
-                        </p>
-                      </div>
-                    </div>
-                    <div className="flex items-center justify-between py-4">
-                      <h2 className="focus:outline-none text-indigo-700 text-xs font-semibold">
-                        Bay Area, San Francisco
-                      </h2>
-                      <h3 className="focus:outline-none text-indigo-700 text-xl font-semibold">
-                        d
-                      </h3>
-                    </div>
+                    </a>
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href={item.link}
+                      className="border-2 border-transparent hover:border-blue-500  text-blue-500  rounded px-4 py-2">
+                      Read More
+                    </a>
                   </div>
                 </div>
-              </divi>
-              /* <!-- Card 1 Ends --> */
-            ))}
-          </div>
+              </div>
+            </div>
+          ))}
         </div>
+        {/* <Pagination
+            showPerPage={showPerPage}
+            onPaginationChange={onPaginationChange}
+            total={20}
+          /> */}
       </div>
     </div>
   );

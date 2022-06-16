@@ -4,10 +4,10 @@ export const DemoComponent = () => {
   return (
     <section className="bg-bookmark-blue py-20 lg:py-36 ">
       <div className="container px-10 lg:px-0">
-        <h1 className="text-2xl lg:text-5xl text-white uppercase  font-bold text-center ">
+        <h4 className="text-2xl lg:text-5xl text-white uppercase font-bold text-center">
           See what <span className="text-core-guise">Guise AI</span> can do for
           you
-        </h1>
+        </h4>
         <div className="flex justify-center items-center mt-5 lg:mt-14 ">
           <Link to="/demo">
             <div className="text-white px-6 rounded-sm py-2 md:py-3  text-lg lg:text-xl uppercase  font-semibold border-2 border-white hover:bg-white  hover:scale-105 hoverTransition  hover:text-black ">
