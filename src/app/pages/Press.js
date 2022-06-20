@@ -26,11 +26,11 @@ export const Press = () => {
           {data.map((item, index) => (
             <div className="p-5" key={index}>
               <div className=" bg-white group relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform duration-200  md:shadow-xl  mb-6 ">
-                <div className="relative h-80">
+                <div className="relative h-80  bg-gray-50">
                   <img
                     src={item.imgLink}
                     alt="uploaded cover"
-                    className="w-full h-full  rounded-lg rounded-b-none"
+                    className="w-full h-full object-contain rounded-lg rounded-b-none"
                   />
                 </div>
 

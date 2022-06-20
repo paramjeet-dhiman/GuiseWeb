@@ -31,16 +31,25 @@ export const data = [
     imgLink: `https://2ley7l42nt9s3jvzio2zneqa-wpengine.netdna-ssl.com/wp-content/uploads/2022/06/unnamed_8_12_750x400.jpeg`,
     time: `June 8, 2022`,
     webName: `rAVe [PUBS]`,
-    img: <img className="w-24" src={RavePubsImg} alt="RavePubsImg" />,
+    img: <img className="w-20" src={RavePubsImg} alt="RavePubsImg" />,
   },
   {
-    title: `Sharp NEC Display Solutions Debuts NaViSense Computer Vision at InfoComm 2022`,
+    title: `NaViSense Computer Vision at InfoComm 2022`,
     bio: `The groundbreaking solution will lead to sharper audience insights and improved customer experience in a multitude of industries. Its revolutionary NaViSense computer vision technology at InfoComm 2022 in Las Vegas on Wednesday, June 8, 2022.`,
     link: `https://finance.yahoo.com/news/sharp-nec-display-solutions-debuts-203900162.html?guccounter=1`,
     imgLink: NecNewzImg,
     time: `June 8, 2022`,
     webName: `Yahoo Finance`,
 
-    img: <img className="w-36" src={YahooFinanceImg} alt="YahooFinanceImg" />,
+    img: <img className="w-32" src={YahooFinanceImg} alt="YahooFinanceImg" />,
+  },
+  {
+    title: `Sharp NEC Display Solutions Better Together, Stronger as One.`,
+    bio: `The groundbreaking solution will lead to sharper audience insights and improved customer experience in a multitude of industries. NaViSense technology will bring a depth of features to currently available displays and introduce of variety of groundbreaking innovations to the market.`,
+    link: `https://www.businesswire.com/news/home/20220607006282/en/Sharp-NEC-Display-Solutions-Debuts-NaViSense-Computer-Vision-at-InfoComm-2022`,
+    imgLink: `https://d3hjf51r9j54j7.cloudfront.net/wp-content/uploads/sites/9/2022/06/NaViSense-Image2.jpg`,
+    time: `June 07, 2022`,
+    webName: `Business Wire`,
+    img: <img className="w-40" src={BusinessWireImg} alt="BusinessWireImg" />,
   },
 ];
